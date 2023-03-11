@@ -1,0 +1,12 @@
+.sidebarButton {
+	border-radius: 5px;
+}
+
+.sidebarButton:hover {
+	background-color: #ffffff10;
+}
+
+.sidebarButton:active,
+.sidebarButtonActive {
+	background-color: #ffffff20;
+}

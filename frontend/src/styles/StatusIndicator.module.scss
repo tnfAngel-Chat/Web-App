@@ -1,0 +1,24 @@
+.indicator {
+	border-radius: 50%;
+	position: relative;
+	top: -31%;
+	right: -61%;
+	border-width: 2px;
+	border-color: #252525;
+}
+
+.onlineIndicator {
+	background-color: #2bdd58;
+}
+
+.idleIndicator {
+	background-color: #eeba59;
+}
+
+.dndIndicator {
+	background-color: #ee5959;
+}
+
+.offlineIndicator {
+	background-color: #9b9b9b;
+}
