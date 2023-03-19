@@ -1,4 +1,4 @@
-export enum MessageTypes {
+export const enum MessageTypes {
 	System,
 	Text,
 }

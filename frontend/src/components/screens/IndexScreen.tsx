@@ -3,11 +3,9 @@
 import useColorValue from '@/hooks/useColorValue';
 import { ArrowForwardIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Button, Center, Heading, Stack, useColorMode } from '@chakra-ui/react';
-
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function IndexScreen() {
-	const router = useRouter();
 	const { colorMode, toggleColorMode } = useColorMode();
 	const { getColorValue } = useColorValue();
 
@@ -16,12 +14,11 @@ export default function IndexScreen() {
 			<Stack spacing="24px">
 				<Heading as="h1">tnfAngel Chat</Heading>
 
-				<Button
-					rightIcon={<ArrowForwardIcon />}
-					onClick={() => router.push('/home')}
-				>
-					Empezar
-				</Button>
+				<Link href="/home">
+					<Button rightIcon={<ArrowForwardIcon />}>
+						Empezar
+					</Button>
+				</Link>
 
 				<Button
 					variant="outline"

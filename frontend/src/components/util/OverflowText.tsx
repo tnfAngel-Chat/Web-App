@@ -2,7 +2,11 @@ import useColorValue from '@/hooks/useColorValue';
 import { Tooltip, Box } from '@chakra-ui/react';
 import { useRef, useState, useEffect } from 'react';
 
-export default function OverflownText({ children, ...props }: any) {
+export default function OverflownText({
+	children,
+	tooltipPlacement,
+	...props
+}: any) {
 	const ref = useRef(null);
 	const [isOverflown, setIsOverflown] = useState(false);
 	const { getColorValue } = useColorValue();
@@ -16,7 +20,7 @@ export default function OverflownText({ children, ...props }: any) {
 		<Tooltip
 			label={children}
 			isDisabled={!isOverflown}
-			placement={props.tooltipPlacement ?? 'bottom'}
+			placement={tooltipPlacement ?? 'bottom'}
 			openDelay={500}
 			bg={getColorValue('tooltipBG')}
 			color={getColorValue('textColor')}

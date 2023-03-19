@@ -1,4 +1,4 @@
-export enum UserStatusTypes {
+export const enum UserStatusTypes {
 	Online,
 	Offline,
 	Idle,

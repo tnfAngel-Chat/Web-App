@@ -328,7 +328,8 @@ export default function ChatScreen({ chatID }: { chatID: string }) {
 				flexDirection="column-reverse"
 				h="100%"
 			>
-				<MessagesBox channel={channel} messages={messages} />
+				<MessagesBox channel={channel} messages={messages
+				} />
 			</Box>
 			<Box minH="75px" bg={getColorValue('secondaryContentBackground')}>
 				<InputBox channel={channel} />

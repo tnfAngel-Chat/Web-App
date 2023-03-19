@@ -21,10 +21,8 @@ import {
 	PopoverTrigger,
 } from '@chakra-ui/react';
 import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
-import { useRouter } from 'next/navigation';
 import {
 	IChannel,
-	IDirectMessageChannel,
 	IRawChannel,
 } from '@/types/interfaces/Channel';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
@@ -41,6 +39,7 @@ import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
 import OverflownText from '../util/OverflowText';
 import useColorValue from '@/hooks/useColorValue';
+import Link from 'next/link';
 
 export function DirectButtonLink({
 	icon,
@@ -53,43 +52,44 @@ export function DirectButtonLink({
 	href: string;
 	isSelected: boolean;
 }) {
-	const router = useRouter();
 	const { getColorValue } = useColorValue();
 
 	return (
-		<Box
-			as="button"
-			className={styles.sidebarButton}
-			bg={
-				isSelected
-					? getColorValue('sideBarButtonActive')
-					: 'transparent'
-			}
-			_hover={{
-				bg: isSelected
-					? getColorValue('sideBarButtonActive')
-					: getColorValue('sidebarButtonHover'),
-			}}
-			padding="5px 10px 5px 10px"
-			minHeight="50px"
-			onClick={() => router.push(href)}
-		>
-			<Flex flex="1" gap="3" alignItems="center" flexWrap="wrap">
-				<Box w="32px">
-					<Center>
-						<Icon as={icon} boxSize="24px" />
-					</Center>
-				</Box>
-				<Box>
-					<Text
-						className={isSelected ? 'text-bold' : ''}
-						fontSize="md"
-					>
-						{label}
-					</Text>
-				</Box>
+		<Link href={href}>
+			<Flex
+				w="100%"
+				h="100%"
+				className={styles.sidebarButton}
+				bg={
+					isSelected
+						? getColorValue('sideBarButtonActive')
+						: 'transparent'
+				}
+				_hover={{
+					bg: isSelected
+						? getColorValue('sideBarButtonActive')
+						: getColorValue('sidebarButtonHover'),
+				}}
+				padding="5px 10px 5px 10px"
+				minHeight="50px"
+			>
+				<Flex flex="1" gap="3" alignItems="center" flexWrap="wrap">
+					<Box w="32px">
+						<Center>
+							<Icon as={icon} boxSize="24px" />
+						</Center>
+					</Box>
+					<Box>
+						<Text
+							className={isSelected ? 'text-bold' : ''}
+							fontSize="md"
+						>
+							{label}
+						</Text>
+					</Box>
+				</Flex>
 			</Flex>
-		</Box>
+		</Link>
 	);
 }
 
@@ -99,106 +99,107 @@ export type DirectChannelProps = {
 };
 
 export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
-	const router = useRouter();
 	const { getColorValue } = useColorValue();
-
 	const [isHovering, setHovering] = useState(false);
 
 	function handleMouseEnter() {
 		setHovering(true);
 	}
+
 	function handleMouseLeave() {
 		setHovering(false);
 	}
 
 	return (
-		<Flex
-			maxHeight="55px"
-			minHeight="50px"
-			className={styles.sidebarButton}
-			bg={
-				isSelected
-					? getColorValue('sideBarButtonActive')
-					: 'transparent'
-			}
-			_hover={{
-				bg: isSelected
-					? getColorValue('sideBarButtonActive')
-					: getColorValue('sidebarButtonHover'),
-			}}
-			padding="5px 10px 5px 10px"
-			onClick={() => router.push(`/channels/${channel.id}`)}
-			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}
-		>
-			<Box as="button">
-				<Flex
-					h="100%"
-					flex="1"
-					gap="10px"
-					alignItems="center"
-					flexWrap="wrap"
-				>
-					<Center>
-						<Avatar
-							size="36"
-							src={
-								channel.type === ChannelTypes.DirectMessage
-									? channel.recipient.avatar
-									: channel.icon
-							}
-							alt="Avatar"
-							indicator={
-								channel.type === ChannelTypes.DirectMessage ? (
-									<StatusIndicator
-										status={channel.recipient.status}
-										size="14"
-									/>
-								) : null
-							}
-						/>
-					</Center>
-					<Center>
-						<Box textAlign="left">
-							<OverflownText
-								fontSize="md"
-								maxW="100px"
-								tooltipPlacement="top"
-								className={isSelected ? 'text-bold' : ''}
-							>
-								{channel.type === ChannelTypes.DirectMessage
-									? channel.recipient.username
-									: channel.name}
-							</OverflownText>
-							{channel.type === ChannelTypes.DirectMessage ? (
-								channel.recipient.presence ? (
-									<Text fontSize="sm" noOfLines={1}>
-										{channel.recipient.presence}
+		<Link href={`/channels/${channel.id}` }>
+			<Flex
+				maxHeight="55px"
+				minHeight="50px"
+				className={styles.sidebarButton}
+				bg={
+					isSelected
+						? getColorValue('sideBarButtonActive')
+						: 'transparent'
+				}
+				_hover={{
+					bg: isSelected
+						? getColorValue('sideBarButtonActive')
+						: getColorValue('sidebarButtonHover'),
+				}}
+				padding="5px 10px 5px 10px"
+				onMouseEnter={handleMouseEnter}
+				onMouseLeave={handleMouseLeave}
+			>
+				<Box>
+					<Flex
+						h="100%"
+						flex="1"
+						gap="10px"
+						alignItems="center"
+						flexWrap="wrap"
+					>
+						<Center>
+							<Avatar
+								size="36"
+								src={
+									channel.type === ChannelTypes.DirectMessage
+										? channel.recipient.avatar
+										: channel.icon
+								}
+								alt="Avatar"
+								indicator={
+									channel.type ===
+									ChannelTypes.DirectMessage ? (
+										<StatusIndicator
+											status={channel.recipient.status}
+											size="14"
+										/>
+									) : null
+								}
+							/>
+						</Center>
+						<Center>
+							<Box textAlign="left">
+								<OverflownText
+									fontSize="md"
+									maxW="100px"
+									tooltipPlacement="top"
+									className={isSelected ? 'text-bold' : ''}
+								>
+									{channel.type === ChannelTypes.DirectMessage
+										? channel.recipient.username
+										: channel.name}
+								</OverflownText>
+								{channel.type === ChannelTypes.DirectMessage ? (
+									channel.recipient.presence ? (
+										<Text fontSize="sm" noOfLines={1}>
+											{channel.recipient.presence}
+										</Text>
+									) : null
+								) : channel.type === ChannelTypes.Group ? (
+									<Text fontSize="sm">
+										{channel.members.length} Miembros
 									</Text>
-								) : null
-							) : channel.type === ChannelTypes.Group ? (
-								<Text fontSize="sm">
-									{channel.members.length} Miembros
-								</Text>
-							) : null}
-						</Box>
-					</Center>
-				</Flex>
-			</Box>
-			{isHovering ? (
-				<>
-					<Spacer />
-					<Center>
-						<CloseButton
-							onClick={(e) => {
-								e.stopPropagation();
-								e.preventDefault();
-							}}
-						/>
-					</Center>
-				</>
-			) : null}
-		</Flex>
+								) : null}
+							</Box>
+						</Center>
+					</Flex>
+				</Box>
+				{isHovering ? (
+					<>
+						<Spacer />
+						<Center>
+							<CloseButton
+								onClick={(e) => {
+									e.stopPropagation();
+									e.preventDefault();
+								}}
+							/>
+						</Center>
+					</>
+				) : null}
+			</Flex>
+		</Link>
 	);
 }
 
