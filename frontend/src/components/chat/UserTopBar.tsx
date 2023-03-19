@@ -1,6 +1,7 @@
 'use client';
 
-import { IDirectMessageChannel } from '@/types/interfaces/Channel';
+import { ChannelTypes } from '@/types/enums/ChannelTypes';
+import { IChannel } from '@/types/interfaces/Channel';
 import {
 	Box,
 	Center,
@@ -18,7 +19,7 @@ import {
 } from 'react-icons/md';
 
 export type UserTopBarProps = {
-	channel: IDirectMessageChannel;
+	channel: IChannel;
 };
 export default function UserTopBar({ channel }: UserTopBarProps) {
 	return (
@@ -29,7 +30,11 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 						<Icon as={MdAlternateEmail} boxSize="24px" />
 					</Center>
 					<Center>
-						<Text>{channel.recipient.username}</Text>
+						<Text>
+							{channel.type === ChannelTypes.DirectMessage
+								? channel.recipient.username
+								: channel.name}
+						</Text>
 					</Center>
 				</Flex>
 				<Spacer />

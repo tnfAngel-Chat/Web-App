@@ -22,17 +22,25 @@ import {
 } from '@chakra-ui/react';
 import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
-import { IDirectMessageChannel } from '@/types/interfaces/Channel';
+import {
+	IChannel,
+	IDirectMessageChannel,
+	IRawChannel,
+} from '@/types/interfaces/Channel';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { UserTypes } from '@/types/enums/UserTypes';
-import { IUser } from '@/types/interfaces/User';
+import { IRawUser, IUser } from '@/types/interfaces/User';
 import styles from '../../styles/MainSidebar.module.scss';
 import Avatar from '../user/Avatar';
 import Separator from '../misc/Separator';
 import SettingsModal from '../modals/SettingsModal';
 import { useState } from 'react';
 import StatusIndicator from '../user/StatusIndicator';
+import normalizeUser from '@/util/normalizeUser';
+import normalizeChannel from '@/util/normalizeChannel';
+import OverflownText from '../util/OverflowText';
+import useColorValue from '@/hooks/useColorValue';
 
 export function DirectButtonLink({
 	icon,
@@ -46,15 +54,22 @@ export function DirectButtonLink({
 	isSelected: boolean;
 }) {
 	const router = useRouter();
-	const { colorMode } = useColorMode();
+	const { getColorValue } = useColorValue();
 
 	return (
 		<Box
 			as="button"
-			className={`${styles.sidebarButton} ${
-				isSelected ? styles.sidebarButtonActive : ''
-			}`}
-			bg={`${colorMode}.primary.sidebarContent`}
+			className={styles.sidebarButton}
+			bg={
+				isSelected
+					? getColorValue('sideBarButtonActive')
+					: 'transparent'
+			}
+			_hover={{
+				bg: isSelected
+					? getColorValue('sideBarButtonActive')
+					: getColorValue('sidebarButtonHover'),
+			}}
 			padding="5px 10px 5px 10px"
 			minHeight="50px"
 			onClick={() => router.push(href)}
@@ -66,7 +81,10 @@ export function DirectButtonLink({
 					</Center>
 				</Box>
 				<Box>
-					<Text as={isSelected ? 'b' : 'p'} fontSize="md">
+					<Text
+						className={isSelected ? 'text-bold' : ''}
+						fontSize="md"
+					>
 						{label}
 					</Text>
 				</Box>
@@ -76,14 +94,13 @@ export function DirectButtonLink({
 }
 
 export type DirectChannelProps = {
-	channel: IDirectMessageChannel;
+	channel: IChannel;
 	isSelected: boolean;
 };
 
 export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	const router = useRouter();
-	const { colorMode } = useColorMode();
-	const recipient = channel.recipient;
+	const { getColorValue } = useColorValue();
 
 	const [isHovering, setHovering] = useState(false);
 
@@ -96,12 +113,20 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 
 	return (
 		<Flex
+			maxHeight="55px"
 			minHeight="50px"
-			className={`${styles.sidebarButton} ${
-				isSelected ? styles.sidebarButtonActive : ''
-			}`}
+			className={styles.sidebarButton}
+			bg={
+				isSelected
+					? getColorValue('sideBarButtonActive')
+					: 'transparent'
+			}
+			_hover={{
+				bg: isSelected
+					? getColorValue('sideBarButtonActive')
+					: getColorValue('sidebarButtonHover'),
+			}}
 			padding="5px 10px 5px 10px"
-			bg={`${colorMode}.primary.sidebarContent`}
 			onClick={() => router.push(`/channels/${channel.id}`)}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
@@ -117,23 +142,44 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 					<Center>
 						<Avatar
 							size="36"
-							src={recipient.avatarId ?? ''}
+							src={
+								channel.type === ChannelTypes.DirectMessage
+									? channel.recipient.avatar
+									: channel.icon
+							}
 							alt="Avatar"
 							indicator={
-								<StatusIndicator
-									status={recipient.status}
-									size="14"
-								/>
+								channel.type === ChannelTypes.DirectMessage ? (
+									<StatusIndicator
+										status={channel.recipient.status}
+										size="14"
+									/>
+								) : null
 							}
 						/>
 					</Center>
 					<Center>
 						<Box textAlign="left">
-							<Text as={isSelected ? 'b' : 'p'} fontSize="md">
-								{recipient.username}
-							</Text>
-							{recipient.presence ? (
-								<Text fontSize="sm">{recipient.presence}</Text>
+							<OverflownText
+								fontSize="md"
+								maxW="100px"
+								tooltipPlacement="top"
+								className={isSelected ? 'text-bold' : ''}
+							>
+								{channel.type === ChannelTypes.DirectMessage
+									? channel.recipient.username
+									: channel.name}
+							</OverflownText>
+							{channel.type === ChannelTypes.DirectMessage ? (
+								channel.recipient.presence ? (
+									<Text fontSize="sm" noOfLines={1}>
+										{channel.recipient.presence}
+									</Text>
+								) : null
+							) : channel.type === ChannelTypes.Group ? (
+								<Text fontSize="sm">
+									{channel.members.length} Miembros
+								</Text>
 							) : null}
 						</Box>
 					</Center>
@@ -163,42 +209,44 @@ export type MainSidebarContentProps = {
 export function MainSidebarContent({
 	selectedChannelID: selectedChannelID,
 }: MainSidebarContentProps) {
-	const users: IUser[] = [
+	const users: IRawUser[] = [
 		{
 			type: UserTypes.User,
 			id: '1',
 			username: 'Ángel',
 			status: UserStatusTypes.Online,
-			avatarId: '3132',
 		},
 		{
 			type: UserTypes.User,
 			id: '3',
 			username: 'Juan',
 			status: UserStatusTypes.DoNotDisturb,
-			avatarId:
-				'https://cdn.discordapp.com/attachments/1012394358504431707/1081922878389370940/random-shot-goose-head-yellow-beak-farm-209772525.jpg',
+			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081922878389370940/random-shot-goose-head-yellow-beak-farm-209772525.jpg',
 		},
 		{
 			type: UserTypes.User,
 			id: '2',
 			username: 'Lauty',
 			status: UserStatusTypes.Idle,
-			avatarId:
-				'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
+			avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
 			presence: 'TKM',
 		},
 		{
 			type: UserTypes.User,
-			username: 'Julian',
-			id: '2',
+			username: 'Julionete jose juan',
+			id: '4',
 			status: UserStatusTypes.Offline,
-			avatarId:
-				'https://cdn.discordapp.com/attachments/1012394358504431707/1081923094916120637/6201803e9abd9.jpeg',
+			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081923094916120637/6201803e9abd9.jpeg',
+		},
+		{
+			type: UserTypes.User,
+			username: 'el pepe',
+			id: '5',
+			status: UserStatusTypes.Online,
 		},
 	];
 
-	const channels: IDirectMessageChannel[] = [
+	const rawChannels: IRawChannel[] = [
 		{
 			type: ChannelTypes.DirectMessage,
 			id: '22',
@@ -214,7 +262,26 @@ export function MainSidebarContent({
 			id: '33',
 			recipient: users[3],
 		},
+		{
+			type: ChannelTypes.Group,
+			id: '44',
+			icon: 'https://discord.com/assets/f90fca70610c4898bc57b58bce92f587.png',
+			name: 'uwu',
+			members: [users[1], users[2]],
+		},
+		{
+			type: ChannelTypes.Group,
+			id: '55',
+			members: [users[1], users[3], users[2]],
+		},
+		{
+			type: ChannelTypes.DirectMessage,
+			id: '60',
+			recipient: users[4],
+		},
 	];
+
+	const channels = rawChannels.map(normalizeChannel);
 
 	return (
 		<Stack w="100%" h="100%">
@@ -245,7 +312,7 @@ export function MainSidebarContent({
 }
 
 export function CreateGroupSection() {
-	const { colorMode } = useColorMode();
+	const { getColorValue } = useColorValue();
 
 	return (
 		<Flex gap="3px">
@@ -263,7 +330,7 @@ export function CreateGroupSection() {
 							icon={<MdAdd />}
 						/>
 					</PopoverTrigger>
-					<PopoverContent bg={`${colorMode}.primary.sidebarContent`}>
+					<PopoverContent bg={getColorValue('sidebarContent')}>
 						<PopoverCloseButton />
 						<PopoverHeader>Seleccionar amigos</PopoverHeader>
 						<PopoverBody>Aun no hay amigos</PopoverBody>
@@ -279,22 +346,22 @@ export type ProfileBoxProps = {
 };
 
 export function ProfileBox({ user }: ProfileBoxProps) {
-	const { colorMode } = useColorMode();
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	const { getColorValue } = useColorValue();
 
 	return (
 		<Box
 			w="100%"
 			h="100%"
 			padding="10px 20px 10px 20px"
-			bg={`${colorMode}.primary.userProfileSidebar`}
+			bg={getColorValue('userProfileSidebar')}
 		>
 			<Flex h="100%">
 				<Flex flex="1" gap="12px" alignItems="left" flexWrap="wrap">
 					<Center>
 						<Avatar
 							size="40"
-							src={user.avatarId ?? ''}
+							src={user.avatar ?? ''}
 							alt="Avatar"
 							indicator={
 								<StatusIndicator
@@ -340,20 +407,18 @@ export default function MainSidebar({
 }: {
 	selectedChannelID: string;
 }) {
-	const { colorMode } = useColorMode();
+	const { getColorValue } = useColorValue();
 
-	const currentUser = {
+	const currentUser = normalizeUser({
 		type: UserTypes.User,
 		id: '1',
 		username: 'Ángel',
 		status: UserStatusTypes.Online,
-		avatarId:
-			'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
-		presence: '',
-	};
+		avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
+	});
 
 	return (
-		<Stack h="100vh" bg={`${colorMode}.primary.sidebarContent`}>
+		<Stack h="100vh" bg={getColorValue('sidebarContent')}>
 			<Box h="100%" overflow="auto" width="250px" padding="10px">
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>

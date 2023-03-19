@@ -1,3 +1,4 @@
+import useColorValue from '@/hooks/useColorValue';
 import {
 	Modal,
 	ModalOverlay,
@@ -12,12 +13,13 @@ import {
 } from '@chakra-ui/react';
 
 export default function SettingsModal({ isOpen, onOpen, onClose }: any) {
+	const { getColorValue } = useColorValue();
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
 		<>
 			<Modal isOpen={isOpen} size="full" onClose={onClose}>
 				<ModalOverlay />
-				<ModalContent bg={`${colorMode}.primary.sidebarContent`}>
+				<ModalContent bg={getColorValue('sidebarContent')}>
 					<ModalHeader>Ajustes de usuario</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody>

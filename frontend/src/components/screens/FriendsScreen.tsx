@@ -1,7 +1,7 @@
 'use client';
 
+import useColorValue from '@/hooks/useColorValue';
 import {
-	useColorMode,
 	Box,
 	Center,
 	Stack,
@@ -10,9 +10,10 @@ import {
 } from '@chakra-ui/react';
 
 export default function HomeScreen() {
-	const { colorMode } = useColorMode();
+	const { getColorValue } = useColorValue();
+
 	return (
-		<Box w="100%" bg={`${colorMode}.primary.primaryContentBackground`}>
+		<Box w="100%" bg={getColorValue('primaryContentBackground')}>
 			<Center h="100vh">
 				<Stack spacing="24px">
 					<Heading as="h1">Amigos</Heading>

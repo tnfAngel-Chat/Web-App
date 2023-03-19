@@ -1,5 +1,7 @@
 body {
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	user-select: none;
+}
+
+.text-bold {
+	font-weight: 600;
 }

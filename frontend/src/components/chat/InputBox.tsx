@@ -1,11 +1,10 @@
 'use client';
 
 import { useFilePicker } from 'use-file-picker';
-import { IDirectMessageChannel } from '@/types/interfaces/Channel';
+import { IChannel } from '@/types/interfaces/Channel';
 import {
 	Input,
 	Box,
-	useColorMode,
 	Flex,
 	Center,
 	IconButton,
@@ -17,14 +16,16 @@ import {
 	PopoverTrigger,
 } from '@chakra-ui/react';
 import { MdAddCircle, MdEmojiEmotions } from 'react-icons/md';
+import { ChannelTypes } from '@/types/enums/ChannelTypes';
+import useColorValue from '@/hooks/useColorValue';
 
 export type InputBoxProps = {
-	channel: IDirectMessageChannel;
+	channel: IChannel;
 };
 
 export default function InputBox({ channel }: InputBoxProps) {
-	const { colorMode } = useColorMode();
 	const [openFileSelector /*{ filesContent, loading }*/] = useFilePicker({});
+	const { getColorValue } = useColorValue();
 
 	const handleKeyDown = (event: any) => {
 		if (event.key === 'Enter') {
@@ -33,7 +34,6 @@ export default function InputBox({ channel }: InputBoxProps) {
 			console.log(content);
 		}
 	};
-
 	return (
 		<Box w="100%" h="100%" padding="10px 20px 10px 20px">
 			<Flex h="100%" gap="24px">
@@ -51,8 +51,12 @@ export default function InputBox({ channel }: InputBoxProps) {
 				</Flex>
 				<Center w="100%">
 					<Input
-						placeholder={`Message @${channel.recipient.username}`}
-						focusBorderColor={`${colorMode}.primary.focusBorderColor`}
+						placeholder={`Message @${
+							channel.type === ChannelTypes.DirectMessage
+								? channel.recipient.username
+								: channel.name
+						}`}
+						focusBorderColor={getColorValue('focusBorderColor')}
 						autoFocus={true}
 						onKeyDown={handleKeyDown}
 					/>
@@ -70,7 +74,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 								/>
 							</PopoverTrigger>
 							<PopoverContent
-								bg={`${colorMode}.primary.sidebarContent`}
+								bg={getColorValue('sidebarContent')}
 							>
 								<PopoverCloseButton />
 								<PopoverHeader>
