@@ -10,6 +10,7 @@ import {
 import '../styles/global.scss';
 import { store } from '../store';
 import { Provider } from 'react-redux';
+import AppChakraLayout from '@/components/general/AppChakraLayout';
 
 const config = {
 	initialColorMode: 'dark',
@@ -68,7 +69,9 @@ export default function RootLayout({
 				/>
 				<CacheProvider>
 					<ChakraProvider theme={theme}>
-						<Provider store={store}>{children}</Provider>
+						<Provider store={store}>
+							<AppChakraLayout>{children}</AppChakraLayout>
+						</Provider>
 					</ChakraProvider>
 				</CacheProvider>
 			</body>

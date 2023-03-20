@@ -6,102 +6,34 @@ import { UserTypes } from '@/types/enums/UserTypes';
 import { IRawChannel } from '@/types/interfaces/Channel';
 import { IRawUser, IUser } from '@/types/interfaces/User';
 import { MessageTypes } from '@/types/enums/MessageTypes';
-import { useColorMode, Box, Stack } from '@chakra-ui/react';
+import { Box, Flex, HStack, Stack } from '@chakra-ui/react';
 import InputBox from '../chat/InputBox';
 import MessagesBox from '../chat/MessagesBox';
 import UserTopBar from '../chat/UserTopBar';
-import { IMessage, IRawMessage } from '@/types/interfaces/Message';
+import { IRawMessage } from '@/types/interfaces/Message';
 import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
 import useColorValue from '@/hooks/useColorValue';
 import normalizeMessage from '@/util/normalizeMessage';
+import UsersSidebar from '../sidebars/UsersSidebar';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
-export default function ChatScreen({ chatID }: { chatID: string }) {
+export default function ChatScreen() {
 	const { getColorValue } = useColorValue();
+	const router = useRouter();
 
-	const author: IUser = normalizeUser({
+	const rawAuthor: IRawUser = {
 		type: UserTypes.User,
 		id: '1',
 		username: 'Lauty',
 		avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
 		status: UserStatusTypes.Online,
-	});
+	};
 
-	const users: IRawUser[] = [
-		{
-			type: UserTypes.User,
-			id: '1',
-			username: 'Ángel',
-			status: UserStatusTypes.Online,
-		},
-		{
-			type: UserTypes.User,
-			id: '3',
-			username: 'Juan',
-			status: UserStatusTypes.DoNotDisturb,
-			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081922878389370940/random-shot-goose-head-yellow-beak-farm-209772525.jpg',
-		},
-		{
-			type: UserTypes.User,
-			id: '2',
-			username: 'Lauty',
-			status: UserStatusTypes.Idle,
-			avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
-			presence: 'TKM',
-		},
-		{
-			type: UserTypes.User,
-			username: 'Julio',
-			id: '4',
-			status: UserStatusTypes.Offline,
-			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081923094916120637/6201803e9abd9.jpeg',
-		},
-		{
-			type: UserTypes.User,
-			username: 'el pepe',
-			id: '5',
-			status: UserStatusTypes.Online,
-		},
-	];
-
-	const rawChannels: IRawChannel[] = [
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '22',
-			recipient: users[1],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '11',
-			recipient: users[2],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '33',
-			recipient: users[3],
-		},
-		{
-			type: ChannelTypes.Group,
-			id: '44',
-			icon: 'https://discord.com/assets/f90fca70610c4898bc57b58bce92f587.png',
-			name: 'uwu',
-			members: [users[1], users[2]],
-		},
-		{
-			type: ChannelTypes.Group,
-			id: '55',
-			members: [users[1], users[3], users[2]],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '60',
-			recipient: users[4],
-		},
-	];
-
-	const channels = rawChannels.map(normalizeChannel);
-
-	const channel = channels.find((channel) => channel.id === chatID)!;
+	const author: IUser = normalizeUser(rawAuthor);
 
 	const chats: Record<string, IRawMessage[]> = {
 		'22': [
@@ -109,14 +41,14 @@ export default function ChatScreen({ chatID }: { chatID: string }) {
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 		],
@@ -125,168 +57,154 @@ export default function ChatScreen({ chatID }: { chatID: string }) {
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
-				timestamp: Date.now(),
-			},
-			{
-				type: MessageTypes.Text,
-				id: 's',
-				content: 'holaa',
-				author: author,
-				timestamp: Date.now(),
-			},
-			{
-				type: MessageTypes.Text,
-				id: '3',
-				content: 'pruba',
-				author: author,
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 		],
@@ -295,45 +213,212 @@ export default function ChatScreen({ chatID }: { chatID: string }) {
 				type: MessageTypes.Text,
 				id: 's',
 				content: 'holaa',
-				author: author,
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba mensaje de abajo',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+		],
+		'55': [
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 			{
 				type: MessageTypes.Text,
 				id: '3',
 				content: 'pruba',
-				author: author,
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: 's',
+				content: 'holaa',
+				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				id: '3',
+				content: 'pruba',
+				author: rawAuthor,
 				timestamp: Date.now(),
 			},
 		],
 	};
+
+	const directChannelsState = useSelector(
+		(state: RootState) => state.directChannels
+	);
+	const channels = directChannelsState.channels;
+
+	const channel = channels.find(
+		(channel) => channel.id === directChannelsState.selectedChannelId
+	);
+
+	if (!directChannelsState.selectedChannelId || !channel) {
+		router.prefetch('/home');
+		router.push('/home');
+		return <></>;
+	}
 
 	const rawMessages = chats[channel.id] ?? [];
 
 	const messages = rawMessages.map(normalizeMessage);
 
 	return (
-		<Stack
+		<Flex
+			flexDirection="column"
 			h="100vh"
 			w="100%"
-			minW="400px"
+			minW="700px"
+			gap={0}
 			bg={getColorValue('primaryContentBackground')}
 		>
 			<Box h="44px" bg={getColorValue('secondaryContentBackground')}>
 				<UserTopBar channel={channel} />
 			</Box>
-			<Box
-				overflow="auto"
-				display="flex"
-				flexDirection="column-reverse"
-				h="100%"
-			>
-				<MessagesBox channel={channel} messages={messages
-				} />
-			</Box>
-			<Box minH="75px" bg={getColorValue('secondaryContentBackground')}>
-				<InputBox channel={channel} />
-			</Box>
-		</Stack>
+			<Flex h="100%" w="100%" overflow="hidden" flex="1">
+				<MessagesBox channel={channel} messages={messages} />
+				{channel.type === ChannelTypes.Group && (
+					<UsersSidebar users={channel.members} />
+				)}
+			</Flex>
+		</Flex>
 	);
 }

@@ -16,7 +16,7 @@ export interface IUser {
 	username: string;
 	status: UserStatusTypes;
 	avatar: string;
-	presence: string;
+	presence: string | null;
 }
 
 

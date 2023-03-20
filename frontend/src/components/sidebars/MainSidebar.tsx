@@ -1,7 +1,6 @@
 'use client';
 
 import {
-	useColorMode,
 	Flex,
 	Box,
 	Stack,
@@ -21,10 +20,7 @@ import {
 	PopoverTrigger,
 } from '@chakra-ui/react';
 import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
-import {
-	IChannel,
-	IRawChannel,
-} from '@/types/interfaces/Channel';
+import { IChannel, IRawChannel } from '@/types/interfaces/Channel';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { UserTypes } from '@/types/enums/UserTypes';
@@ -37,9 +33,12 @@ import { useState } from 'react';
 import StatusIndicator from '../user/StatusIndicator';
 import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
-import OverflownText from '../util/OverflowText';
+import OverflownText from '../general/OverflowText';
 import useColorValue from '@/hooks/useColorValue';
 import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '@/store';
+import { removeChannel } from '@/store/slices/directChannelsSlice';
 
 export function DirectButtonLink({
 	icon,
@@ -99,6 +98,7 @@ export type DirectChannelProps = {
 };
 
 export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
+	const dispatch = useDispatch();
 	const { getColorValue } = useColorValue();
 	const [isHovering, setHovering] = useState(false);
 
@@ -111,7 +111,7 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	}
 
 	return (
-		<Link href={`/channels/${channel.id}` }>
+		<Link href={`/channels/${channel.id}`}>
 			<Flex
 				maxHeight="55px"
 				minHeight="50px"
@@ -193,6 +193,8 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 								onClick={(e) => {
 									e.stopPropagation();
 									e.preventDefault();
+
+									dispatch(removeChannel(channel.id));
 								}}
 							/>
 						</Center>
@@ -210,79 +212,11 @@ export type MainSidebarContentProps = {
 export function MainSidebarContent({
 	selectedChannelID: selectedChannelID,
 }: MainSidebarContentProps) {
-	const users: IRawUser[] = [
-		{
-			type: UserTypes.User,
-			id: '1',
-			username: 'Ángel',
-			status: UserStatusTypes.Online,
-		},
-		{
-			type: UserTypes.User,
-			id: '3',
-			username: 'Juan',
-			status: UserStatusTypes.DoNotDisturb,
-			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081922878389370940/random-shot-goose-head-yellow-beak-farm-209772525.jpg',
-		},
-		{
-			type: UserTypes.User,
-			id: '2',
-			username: 'Lauty',
-			status: UserStatusTypes.Idle,
-			avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
-			presence: 'TKM',
-		},
-		{
-			type: UserTypes.User,
-			username: 'Julionete jose juan',
-			id: '4',
-			status: UserStatusTypes.Offline,
-			avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081923094916120637/6201803e9abd9.jpeg',
-		},
-		{
-			type: UserTypes.User,
-			username: 'el pepe',
-			id: '5',
-			status: UserStatusTypes.Online,
-		},
-	];
+	const directChannelsState = useSelector(
+		(state: RootState) => state.directChannels
+	);
 
-	const rawChannels: IRawChannel[] = [
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '22',
-			recipient: users[1],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '11',
-			recipient: users[2],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '33',
-			recipient: users[3],
-		},
-		{
-			type: ChannelTypes.Group,
-			id: '44',
-			icon: 'https://discord.com/assets/f90fca70610c4898bc57b58bce92f587.png',
-			name: 'uwu',
-			members: [users[1], users[2]],
-		},
-		{
-			type: ChannelTypes.Group,
-			id: '55',
-			members: [users[1], users[3], users[2]],
-		},
-		{
-			type: ChannelTypes.DirectMessage,
-			id: '60',
-			recipient: users[4],
-		},
-	];
-
-	const channels = rawChannels.map(normalizeChannel);
+	const channels = directChannelsState.channels;
 
 	return (
 		<Stack w="100%" h="100%">
@@ -406,7 +340,7 @@ export function ProfileBox({ user }: ProfileBoxProps) {
 export default function MainSidebar({
 	selectedChannelID,
 }: {
-	selectedChannelID: string;
+	selectedChannelID?: string;
 }) {
 	const { getColorValue } = useColorValue();
 

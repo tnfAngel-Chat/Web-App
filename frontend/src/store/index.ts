@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import chatSlice from './slices/chatSlice';
+import directChannelsSlice from './slices/directChannelsSlice';
 
 export const store = configureStore({
 	reducer: {
 		chat: chatSlice,
+		directChannels: directChannelsSlice,
 	},
 });
 
