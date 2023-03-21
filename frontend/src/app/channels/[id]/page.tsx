@@ -18,7 +18,7 @@ export default function SelectedChannelPage({
 	dispatch(setSelectedChannel(id));
 
 	return (
-		<Flex h="100%">
+		<Flex h="100%" w="100%">
 			<MainSidebar selectedChannelID={id} />
 			<ChatScreen />
 		</Flex>

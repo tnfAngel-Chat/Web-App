@@ -162,7 +162,7 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 							<Box textAlign="left">
 								<OverflownText
 									fontSize="md"
-									maxW="100px"
+									maxW="125px"
 									tooltipPlacement="top"
 									className={isSelected ? 'text-bold' : ''}
 								>
@@ -353,7 +353,7 @@ export default function MainSidebar({
 	});
 
 	return (
-		<Stack h="100vh" bg={getColorValue('sidebarContent')}>
+		<Stack h="100%" bg={getColorValue('sidebarContent')}>
 			<Box h="100%" overflow="auto" width="250px" padding="10px">
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>

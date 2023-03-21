@@ -1,8 +1,10 @@
 import { MessageTypes } from '@/types/enums/MessageTypes';
+import { MessageModes } from '../enums/MessageModes';
 import { IRawUser, IUser } from './User';
 
 export interface IRawMessage {
 	type: MessageTypes;
+	mode: MessageModes;
 	id: string;
 	content: string;
 	author: IRawUser;
@@ -11,7 +13,8 @@ export interface IRawMessage {
 
 export interface IMessage {
 	type: MessageTypes;
-	id: string;
+	mode: MessageModes;
+	id: string
 	content: string;
 	author: IUser;
 	timestamp: number;

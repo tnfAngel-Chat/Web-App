@@ -30,6 +30,7 @@ const colors = {
 		separatorColor: '#ffffff20',
 		tooltipBG: '#202020',
 		textColor: '#F1F1F1',
+		textMutedColor: '#ACACAC',
 	},
 	light: {
 		userProfileSidebar: '#ffffff',
@@ -42,6 +43,7 @@ const colors = {
 		separatorColor: '#00000020',
 		tooltipBG: '#BEBEBE',
 		textColor: '#0F0F0F',
+		textMutedColor: '#292929',
 	},
 };
 

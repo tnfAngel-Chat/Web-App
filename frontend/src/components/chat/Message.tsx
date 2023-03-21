@@ -1,6 +1,7 @@
 'use client';
 
 import useColorValue from '@/hooks/useColorValue';
+import { MessageModes } from '@/types/enums/MessageModes';
 import { IMessage } from '@/types/interfaces/Message';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import Avatar from '../user/Avatar';
@@ -31,7 +32,16 @@ export default function Message({ message }: MessageProps) {
 					<Text className="text-bold" fontSize="md">
 						{message.author.username}
 					</Text>
-					<Text fontSize="md">{message.content}</Text>
+					<Text
+						fontSize="md"
+						color={
+							message.mode === MessageModes.Sent
+								? getColorValue('textColor')
+								: getColorValue('textMutedColor')
+						}
+					>
+						{message.content}
+					</Text>
 				</Box>
 			</Flex>
 		</Box>

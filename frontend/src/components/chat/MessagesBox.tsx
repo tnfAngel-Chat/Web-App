@@ -4,14 +4,7 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 import { IChannel } from '@/types/interfaces/Channel';
 import { IMessage } from '@/types/interfaces/Message';
-import {
-	Box,
-	Center,
-	Flex,
-	Heading,
-	Stack,
-	Text,
-} from '@chakra-ui/react';
+import { Box, Center, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import Avatar from '../user/Avatar';
 import Message from './Message';
 import Separator from '../misc/Separator';

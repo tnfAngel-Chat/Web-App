@@ -16,8 +16,8 @@ export default function HomeScreen() {
 	const { getColorValue } = useColorValue();
 
 	return (
-		<Box w="100%" bg={getColorValue('primaryContentBackground')}>
-			<Center h="100vh">
+		<Box h="100%" w="100%" minW="500px" bg={getColorValue('primaryContentBackground')}>
+			<Center h="100%">
 				<Stack spacing="24px">
 					<Heading as="h1">Bienvenido a tnfAngel Chat</Heading>
 					<Button

@@ -6,7 +6,7 @@ import { Flex } from '@chakra-ui/react';
 
 export default function FriendsPage() {
 	return (
-		<Flex>
+		<Flex h="100%" w="100%">
 			<MainSidebar selectedChannelID="friends" />
 			<FriendsScreen />
 		</Flex>

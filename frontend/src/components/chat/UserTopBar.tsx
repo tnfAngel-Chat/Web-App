@@ -21,6 +21,7 @@ import {
 export type UserTopBarProps = {
 	channel: IChannel;
 };
+
 export default function UserTopBar({ channel }: UserTopBarProps) {
 	return (
 		<Box w="100%" padding="5px 20px 5px 20px">

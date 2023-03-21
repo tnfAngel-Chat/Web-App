@@ -2,14 +2,13 @@
 
 import { Flex, Box, Stack, Text, Center } from '@chakra-ui/react';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
-import { UserTypes } from '@/types/enums/UserTypes';
 import { IUser } from '@/types/interfaces/User';
 import styles from '../../styles/UsersSidebar.module.scss';
 import Avatar from '../user/Avatar';
 import OverflownText from '../general/OverflowText';
 import useColorValue from '@/hooks/useColorValue';
-import normalizeUser from '@/util/normalizeUser';
 import StatusIndicator from '../user/StatusIndicator';
+import Separator from '../misc/Separator';
 
 export type UserListItemProps = {
 	user: IUser;
@@ -50,7 +49,7 @@ export function UserListItem({ user }: UserListItemProps) {
 					<Box textAlign="left">
 						<OverflownText
 							fontSize="md"
-							maxW="100px"
+							maxW="160px"
 							tooltipPlacement="top"
 						>
 							{user.username}
@@ -67,14 +66,51 @@ export function UserListItem({ user }: UserListItemProps) {
 	);
 }
 
+export function StatusSection({ label }: { label: string }) {
+	const { getColorValue } = useColorValue();
+
+	return (
+		<Flex gap="10px">
+			<Center w="40%">
+				<Text fontSize="11px" fontWeight="normal" color={getColorValue('textMutedColor')}>
+					{label}
+				</Text>
+			</Center>
+			<Center w="100%" h="100%">
+				<Separator />
+			</Center>
+		</Flex>
+	);
+}
+
 export type UsersSidebarContentProps = {
 	users: IUser[];
 };
 
 export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
+	const onlineUsers: IUser[] = [];
+	const offlineUsers: IUser[] = [];
+
+	users.forEach((user) => {
+		if (user.status !== UserStatusTypes.Offline) {
+			onlineUsers.push(user);
+		} else {
+			offlineUsers.push(user);
+		}
+	});
+
 	return (
 		<Stack w="100%" h="100%">
-			{users.map((user) => {
+			{onlineUsers.length > 0 && (
+				<StatusSection label={`ONLINE - ${onlineUsers.length}`} />
+			)}
+			{onlineUsers.map((user) => {
+				return <UserListItem user={user} key={user.id} />;
+			})}
+			{offlineUsers.length > 0 && (
+				<StatusSection label={`OFFLINE - ${offlineUsers.length}`} />
+			)}
+			{offlineUsers.map((user) => {
 				return <UserListItem user={user} key={user.id} />;
 			})}
 		</Stack>

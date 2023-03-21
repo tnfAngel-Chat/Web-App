@@ -1,0 +1,9 @@
+.chatScreenFlex {
+	min-width: 400px;
+}
+
+@media all and (max-device-width: 800px) {
+	.chatScreenFlex {
+		min-width: 100vw;
+	}
+}

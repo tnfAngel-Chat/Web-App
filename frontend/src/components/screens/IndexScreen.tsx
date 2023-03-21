@@ -10,14 +10,17 @@ export default function IndexScreen() {
 	const { getColorValue } = useColorValue();
 
 	return (
-		<Center h="100vh" bg={getColorValue('sidebarContent')}>
+		<Center
+			h="100%"
+			w="100%"
+			minW="500px"
+			bg={getColorValue('sidebarContent')}
+		>
 			<Stack spacing="24px">
 				<Heading as="h1">tnfAngel Chat</Heading>
 
 				<Link href="/home">
-					<Button rightIcon={<ArrowForwardIcon />}>
-						Empezar
-					</Button>
+					<Button rightIcon={<ArrowForwardIcon />}>Empezar</Button>
 				</Link>
 
 				<Button
