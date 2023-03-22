@@ -12,7 +12,7 @@ export type MessageProps = {
 };
 
 export function HeadlessAvatarSpace() {
-	return <Box w="42px" />;
+	return <Box w="42px" h="100%" />;
 }
 
 export default function Message({ message, headless }: MessageProps) {
@@ -21,12 +21,19 @@ export default function Message({ message, headless }: MessageProps) {
 	return (
 		<Box
 			w="100%"
+			maxW="100%"
 			padding="3px 20px 3px 20px"
 			_hover={{
 				bg: getColorValue('messageHover'),
 			}}
 		>
-			<Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
+			<Flex
+				flex="1"
+				maxW="100%"
+				gap="4"
+				alignItems="center"
+				flexWrap="wrap"
+			>
 				{headless ? (
 					<HeadlessAvatarSpace />
 				) : (
@@ -37,7 +44,7 @@ export default function Message({ message, headless }: MessageProps) {
 					/>
 				)}
 
-				<Box textAlign="left">
+				<Box textAlign="left" maxW="100%">
 					{headless ? null : (
 						<Text className="text-bold" fontSize="md">
 							{message.author.username}
@@ -45,6 +52,7 @@ export default function Message({ message, headless }: MessageProps) {
 					)}
 					<Text
 						fontSize="md"
+						whiteSpace="initial"
 						color={
 							message.mode === MessageModes.Sent
 								? getColorValue('textColor')

@@ -5,7 +5,7 @@ import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { IUser } from '@/types/interfaces/User';
 import styles from '../../styles/UsersSidebar.module.scss';
 import Avatar from '../user/Avatar';
-import OverflownText from '../general/OverflowText';
+import OverflownText from '../general/OverflownText';
 import useColorValue from '@/hooks/useColorValue';
 import StatusIndicator from '../user/StatusIndicator';
 import Separator from '../misc/Separator';
@@ -47,17 +47,13 @@ export function UserListItem({ user }: UserListItemProps) {
 				</Center>
 				<Center>
 					<Box textAlign="left">
-						<OverflownText
-							fontSize="md"
-							maxW="160px"
-							tooltipPlacement="top"
-						>
+						<OverflownText fontSize="md" tooltipPlacement="top">
 							{user.username}
 						</OverflownText>
 						{user.presence ? (
-							<Text fontSize="sm" noOfLines={1}>
+							<OverflownText fontSize="sm" tooltipPlacement="top">
 								{user.presence}
-							</Text>
+							</OverflownText>
 						) : null}
 					</Box>
 				</Center>
@@ -72,7 +68,11 @@ export function StatusSection({ label }: { label: string }) {
 	return (
 		<Flex gap="10px">
 			<Center w="40%">
-				<Text fontSize="11px" fontWeight="normal" color={getColorValue('textMutedColor')}>
+				<Text
+					fontSize="11px"
+					fontWeight="normal"
+					color={getColorValue('textMutedColor')}
+				>
 					{label}
 				</Text>
 			</Center>

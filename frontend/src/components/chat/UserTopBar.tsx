@@ -19,7 +19,7 @@ import {
 	MdSearch,
 	MdVideocam,
 } from 'react-icons/md';
-import OverflownText from '../general/OverflowText';
+import OverflownText from '../general/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
 
 export type UserTopBarProps = {
@@ -31,8 +31,8 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 
 	return (
 		<Box w="100%" padding="5px 20px 5px 20px">
-			<Flex h="100%" maxH="100%">
-				<Flex gap="8px" h="100%" minW="0px" maxH="100%">
+			<Flex h="100%" maxH="100%" alignItems="center">
+				<Flex gap="8px" h="100%" minW="30px" maxH="100%">
 					<Center>
 						<Icon as={MdAlternateEmail} boxSize="24px" />
 					</Center>
@@ -54,13 +54,13 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 					) : null}
 					{channel.type === ChannelTypes.DirectMessage &&
 					channel.recipient.presence ? (
-						<Center>
-							<Text
+						<Center minW="0px">
+							<OverflownText
 								fontSize="sm"
 								color={getColorValue('textMutedColor')}
 							>
 								{channel.recipient.presence}
-							</Text>
+							</OverflownText>
 						</Center>
 					) : null}
 				</Flex>

@@ -1,33 +1,61 @@
+import useColorValue from '@/hooks/useColorValue';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { SafeNumber } from '@/types/util/SafeNumber';
-import { Box } from '@chakra-ui/react';
+import { Box, PlacementWithLogical, Tooltip } from '@chakra-ui/react';
 import styles from '../../styles/StatusIndicator.module.scss';
 
 export type StatusIndicatorProps = {
 	status: UserStatusTypes;
 	size: SafeNumber;
 	positioned?: boolean;
+	tooltipPlacement?: PlacementWithLogical;
 };
 
 export default function StatusIndicator({
 	status,
 	size,
 	positioned = true,
+	tooltipPlacement,
 }: StatusIndicatorProps) {
-	const statusClasses: Record<UserStatusTypes, string> = {
-		[UserStatusTypes.Online]: styles.onlineIndicator,
-		[UserStatusTypes.Offline]: styles.offlineIndicator,
-		[UserStatusTypes.Idle]: styles.idleIndicator,
-		[UserStatusTypes.DoNotDisturb]: styles.dndIndicator,
+	const { getColorValue } = useColorValue();
+	const statusValues: Record<
+		UserStatusTypes,
+		{ style: string; label: string }
+	> = {
+		[UserStatusTypes.Online]: {
+			style: styles.onlineIndicator,
+			label: 'Online',
+		},
+		[UserStatusTypes.Offline]: {
+			style: styles.offlineIndicator,
+			label: 'Offline',
+		},
+		[UserStatusTypes.Idle]: {
+			style: styles.idleIndicator,
+			label: 'Idle',
+		},
+		[UserStatusTypes.DoNotDisturb]: {
+			style: styles.dndIndicator,
+			label: 'Do Not Disturb',
+		},
 	};
 
 	return (
-		<Box
-			w={`${size}px`}
-			h={`${size}px`}
-			className={`${styles.indicator} ${
-				positioned ? styles.positionedIndicator : ''
-			} ${statusClasses[status]}`}
-		/>
+		<Tooltip
+			label={statusValues[status].label}
+			placement={tooltipPlacement ?? 'top'}
+			openDelay={100}
+			bg={getColorValue('tooltipBG')}
+			color={getColorValue('textColor')}
+			hasArrow
+		>
+			<Box
+				w={`${size}px`}
+				h={`${size}px`}
+				className={`${styles.indicator} ${
+					positioned ? styles.positionedIndicator : ''
+				} ${statusValues[status].style}`}
+			/>
+		</Tooltip>
 	);
 }

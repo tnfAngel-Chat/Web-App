@@ -62,7 +62,7 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 }
 
 export function MessageGroupSpacer() {
-	return <Box h="15px" />;
+	return <Box h="15px"  />;
 }
 
 export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
@@ -71,11 +71,12 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 	let lastAuthorId: string = '';
 
 	return (
-		<Stack w="100%" className={styles.messagesStack}>
+		<Stack w="100%" maxW="100%" className={styles.messagesStack}>
 			<Box
 				overflow="auto"
 				flexDirection="column-reverse"
 				display="flex"
+				maxW="100%"
 				h="100%"
 			>
 				<Box className={styles.selectableMessagesBox}>
@@ -96,7 +97,9 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 							<>
 								{isHeadless ? null : <MessageGroupSpacer />}
 								{MessageElement}
-								{i === messages.length - 1 ? <MessageGroupSpacer/> : null}
+								{i === messages.length - 1 ? (
+									<MessageGroupSpacer />
+								) : null}
 							</>
 						);
 					})}

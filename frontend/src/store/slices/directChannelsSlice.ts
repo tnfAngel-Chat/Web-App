@@ -18,7 +18,7 @@ const users: IRawUser[] = [
 		id: '3',
 		username: 'Juan',
 		status: UserStatusTypes.DoNotDisturb,
-		avatar: 'https://cdn.discordapp.com/attachments/1012394358504431707/1081922878389370940/random-shot-goose-head-yellow-beak-farm-209772525.jpg',
+		avatar: 'https://media.discordapp.net/attachments/770017179512471598/965703809366110268/makesweet-hn74h8.gif',
 	},
 	{
 		type: UserTypes.User,
@@ -40,6 +40,7 @@ const users: IRawUser[] = [
 		username: 'el pepe',
 		id: '5',
 		status: UserStatusTypes.Online,
+		presence: 'Aver ijueputa mama binga que te pasa bobolon',
 	},
 ];
 

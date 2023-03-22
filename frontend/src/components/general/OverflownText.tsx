@@ -7,13 +7,22 @@ export default function OverflownText({
 	tooltipPlacement,
 	...props
 }: any) {
-	const ref = useRef(null);
+	const ref = useRef<HTMLElement | null>(null);
 	const [isOverflown, setIsOverflown] = useState(false);
 	const { getColorValue } = useColorValue();
 
+	function updateOverflow() {
+		if (ref.current)
+			setIsOverflown(
+				ref?.current?.scrollWidth > ref?.current?.clientWidth
+			);
+	}
+
 	useEffect(() => {
-		const element: HTMLElement = ref.current!;
-		setIsOverflown(element.scrollWidth > element.clientWidth);
+		if (ref.current)
+			setIsOverflown(
+				ref?.current?.scrollWidth > ref?.current?.clientWidth
+			);
 	}, []);
 
 	return (
@@ -21,12 +30,18 @@ export default function OverflownText({
 			label={children}
 			isDisabled={!isOverflown}
 			placement={tooltipPlacement ?? 'bottom'}
-			openDelay={500}
+			openDelay={300}
 			bg={getColorValue('tooltipBG')}
 			color={getColorValue('textColor')}
 			hasArrow
 		>
-			<Box position="relative"  isTruncated ref={ref} {...props}>
+			<Box
+				position="relative"
+				onMouseOver={updateOverflow}
+				isTruncated
+				ref={ref}
+				{...props}
+			>
 				{children}
 			</Box>
 		</Tooltip>

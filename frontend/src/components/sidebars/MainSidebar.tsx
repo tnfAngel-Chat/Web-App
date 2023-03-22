@@ -35,7 +35,7 @@ import Separator from '../misc/Separator';
 import SettingsModal from '../modals/SettingsModal';
 import StatusIndicator from '../user/StatusIndicator';
 import normalizeUser from '@/util/normalizeUser';
-import OverflownText from '../general/OverflowText';
+import OverflownText from '../general/OverflownText';
 import useColorValue from '@/hooks/useColorValue';
 import styles from '../../styles/MainSidebar.module.scss';
 
