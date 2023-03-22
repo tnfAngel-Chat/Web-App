@@ -4,7 +4,6 @@ import { useFilePicker } from 'use-file-picker';
 import { isMobile } from 'react-device-detect';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
-	Input,
 	Box,
 	Flex,
 	Center,
@@ -17,7 +16,7 @@ import {
 	PopoverTrigger,
 	Textarea,
 } from '@chakra-ui/react';
-import { MdAddCircle, MdEmojiEmotions } from 'react-icons/md';
+import { MdAddCircle, MdEmojiEmotions, MdSend } from 'react-icons/md';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import useColorValue from '@/hooks/useColorValue';
 import { useDispatch, useSelector } from 'react-redux';
@@ -63,38 +62,60 @@ export default function InputBox({ channel }: InputBoxProps) {
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
-		if (
-			event.key === 'Enter' &&
-			!event.shiftKey &&
-			directChannelsState.selectedChannelId &&
-			content
-		) {
+		if (event.key === 'Enter' && !event.shiftKey && !isMobile && content) {
 			event.preventDefault();
-			const sentChannelId = directChannelsState.selectedChannelId;
+			handleSend(content);
+		} else if (event.key === 'Enter' && !event.shiftKey) {
+			if (!isMobile) event.preventDefault();
+		}
+	};
 
-			const rawAuthor = {
-				type: UserTypes.User,
-				id: '1',
-				username: 'Lauty',
-				avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
-				status: UserStatusTypes.Online,
-			};
+	function handleSend(rawContent: string) {
+		const content = rawContent.trim();
 
+		const selectedChannelId = directChannelsState.selectedChannelId;
+
+		if (!selectedChannelId) return;
+
+		const rawAuthor = {
+			type: UserTypes.User,
+			id: '1',
+			username: 'Lauty',
+			avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
+			status: UserStatusTypes.Online,
+		};
+
+		dispatch(
+			setMessageInput({
+				channelId: selectedChannelId,
+				content: '',
+			})
+		);
+
+		const tempMessageId = `${Math.random() * 1000}`;
+
+		dispatch(
+			addMessage({
+				channelId: selectedChannelId,
+				message: normalizeMessage({
+					type: MessageTypes.Text,
+					mode: MessageModes.Sending,
+					id: tempMessageId,
+					content: content,
+					author: rawAuthor,
+					timestamp: Date.now(),
+				}),
+			})
+		);
+
+		setTimeout(() => {
 			dispatch(
-				setMessageInput({
-					channelId: directChannelsState.selectedChannelId,
-					content: '',
-				})
-			);
-
-			const tempMessageId = `${Math.random() * 1000}`;
-
-			dispatch(
-				addMessage({
-					channelId: sentChannelId,
-					message: normalizeMessage({
+				modifyMessage({
+					channelId: selectedChannelId,
+					messageId: tempMessageId,
+					newMessage: normalizeMessage({
 						type: MessageTypes.Text,
-						mode: MessageModes.Sending,
+						mode: MessageModes.Sent,
 						id: tempMessageId,
 						content: content,
 						author: rawAuthor,
@@ -102,27 +123,8 @@ export default function InputBox({ channel }: InputBoxProps) {
 					}),
 				})
 			);
-
-			setTimeout(() => {
-				dispatch(
-					modifyMessage({
-						channelId: sentChannelId,
-						messageId: tempMessageId,
-						newMessage: normalizeMessage({
-							type: MessageTypes.Text,
-							mode: MessageModes.Sent,
-							id: tempMessageId,
-							content: content,
-							author: rawAuthor,
-							timestamp: Date.now(),
-						}),
-					})
-				);
-			}, Math.random() * 260);
-		} else if (event.key === 'Enter' && !event.shiftKey) {
-			event.preventDefault();
-		}
-	};
+		}, Math.random() * 260);
+	}
 
 	const handleChange = (event: any) => {
 		if (directChannelsState.selectedChannelId) {
@@ -197,6 +199,18 @@ export default function InputBox({ channel }: InputBoxProps) {
 						</PopoverContent>
 					</Popover>
 				</Flex>
+				{isMobile && (
+					<Flex gap="24px" paddingTop="6px">
+						<IconButton
+							aria-label="Send message"
+							bg="transparent"
+							size="sm"
+							fontSize="24px"
+							icon={<MdSend />}
+							onClick={() => handleSend(inputValue)}
+						/>
+					</Flex>
+				)}
 			</Flex>
 		</Box>
 	);
