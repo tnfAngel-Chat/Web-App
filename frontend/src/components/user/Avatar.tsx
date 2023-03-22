@@ -14,6 +14,7 @@ export type AvatarProps = {
 	quality?: SafeNumber;
 	status?: UserStatusTypes;
 	indicator?: ReactNode;
+	onClick?: any;
 };
 
 export default function Avatar({
@@ -22,12 +23,15 @@ export default function Avatar({
 	size,
 	quality,
 	indicator,
+	onClick,
 }: AvatarProps) {
 	return (
 		<Box
 			height={`${size}px`}
 			width={`${size}px`}
 			className={styles.avatarBox}
+			onClick={onClick}
+			_hover={{ cursor: onClick ? 'pointer' : 'inherit' }}
 		>
 			<Image
 				className={styles.avatar}

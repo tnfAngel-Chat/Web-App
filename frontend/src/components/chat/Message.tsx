@@ -11,6 +11,7 @@ import Avatar from '../user/Avatar';
 export type MessageProps = {
 	message: IMessage;
 	headless?: boolean;
+	onShowAuthor?: any;
 };
 
 export function HeadlessAvatarSpace() {
@@ -31,7 +32,11 @@ export function AvatarSpaceDate({ timestamp }: { timestamp: number }) {
 	);
 }
 
-export default function Message({ message, headless }: MessageProps) {
+export default function Message({
+	message,
+	headless,
+	onShowAuthor,
+}: MessageProps) {
 	const { getColorValue } = useColorValue();
 	const [isHovering, setHovering] = useState(false);
 
@@ -56,12 +61,18 @@ export default function Message({ message, headless }: MessageProps) {
 						size="42"
 						src={message.author.avatar}
 						alt={`Avatar de ${message.author.username}`}
+						onClick={onShowAuthor}
 					/>
 				)}
 				<Box textAlign="left">
 					{headless ? null : (
 						<Flex gap="6px" alignItems="center">
-							<Text className="text-bold" fontSize="md">
+							<Text
+								className="text-bold"
+								fontSize="md"
+								onClick={onShowAuthor}
+								_hover={{ textDecoration: 'underline', cursor: 'pointer' }}
+							>
 								{message.author.username}
 							</Text>
 							<TextDate

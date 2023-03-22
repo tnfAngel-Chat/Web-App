@@ -4,7 +4,15 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 import { IChannel } from '@/types/interfaces/Channel';
 import { IMessage } from '@/types/interfaces/Message';
-import { Box, Center, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+	Box,
+	Center,
+	Flex,
+	Heading,
+	Stack,
+	Text,
+	useDisclosure,
+} from '@chakra-ui/react';
 import Avatar from '../user/Avatar';
 import Message from './Message';
 import Separator from '../misc/Separator';
@@ -12,6 +20,9 @@ import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import InputBox from './InputBox';
 import useColorValue from '@/hooks/useColorValue';
+import UserProfileModal from '../modals/UserProfileModal';
+import { IUser } from '@/types/interfaces/User';
+import { useState } from 'react';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
@@ -66,6 +77,8 @@ export function MessageGroupSpacer() {
 }
 
 export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
+	const { isOpen, onOpen, onClose } = useDisclosure();
+	const [clickedUser, setClickedUser] = useState<IUser>();
 	let lastAuthorId: string = '';
 
 	return (
@@ -75,6 +88,12 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 			overflow="auto"
 			className={styles.messagesStack}
 		>
+			<UserProfileModal
+				isOpen={isOpen}
+				onOpen={onOpen}
+				onClose={onClose}
+				user={clickedUser}
+			/>
 			<Box
 				overflow="auto"
 				flexDirection="column-reverse"
@@ -87,6 +106,10 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 
 						const MessageElement = (
 							<Message
+								onShowAuthor={() => {
+									setClickedUser(message.author);
+									onOpen();
+								}}
 								message={message}
 								key={message.id}
 								headless={isHeadless}

@@ -1,4 +1,5 @@
 import useColorValue from '@/hooks/useColorValue';
+import { Box } from '@chakra-ui/react';
 import OverflownText from '../general/OverflownText';
 
 export type TextDateProps = {
@@ -11,11 +12,13 @@ export default function TextDate({ timestamp, long, fontSize }: TextDateProps) {
 	const { getColorValue } = useColorValue();
 
 	return (
-		<OverflownText
-			fontSize={fontSize}
-			color={getColorValue('textMutedColor')}
-		>
-			{long ? 'Hoy a las 10:31' : '10:31 AM'}
-		</OverflownText>
+		<Box userSelect={long ? 'auto' : 'none'}>
+			<OverflownText
+				fontSize={fontSize}
+				color={getColorValue('textMutedColor')}
+			>
+				{long ? 'Hoy a las 10:31' : '10:31 AM'}
+			</OverflownText>
+		</Box>
 	);
 }
