@@ -126,6 +126,7 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 				padding="5px 10px 5px 10px"
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}
+				gap="1px"
 			>
 				<Flex
 					h="100%"
@@ -184,7 +185,6 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 						<Spacer />
 						<Center>
 							<CloseButton
-								marginLeft="5px"
 								onClick={(e) => {
 									e.stopPropagation();
 									e.preventDefault();
@@ -283,15 +283,17 @@ export function ProfileBox({ user }: ProfileBoxProps) {
 		<Box
 			w="100%"
 			h="100%"
+			maxW="100%"
+			maxH="100%"
 			padding="10px 20px 10px 20px"
 			bg={getColorValue('userProfileSidebar')}
 		>
-			<Flex h="100%">
-				<Flex flex="1" gap="12px" alignItems="left" flexWrap="wrap">
+			<Flex minW="0px" h="100%" gap="5px">
+				<Flex minW="0px" gap="12px" alignItems="left">
 					<Center>
 						<Avatar
 							size="40"
-							src={user.avatar ?? ''}
+							src={user.avatar}
 							alt="Avatar"
 							indicator={
 								<StatusIndicator
@@ -301,15 +303,20 @@ export function ProfileBox({ user }: ProfileBoxProps) {
 							}
 						/>
 					</Center>
-					<Center>
-						<Box textAlign="left">
-							<Text fontSize="md">{user.username}</Text>
+					<Center w="100%" minW="0px">
+						<Box textAlign="left" w="100%" maxW="100%" minW="0px">
+							<OverflownText fontSize="md">
+								{user.username}
+							</OverflownText>
 							{user.presence ? (
-								<Text fontSize="sm">{user.presence}</Text>
+								<OverflownText fontSize="sm">
+									{user.presence}
+								</OverflownText>
 							) : null}
 						</Box>
 					</Center>
 				</Flex>
+				<Spacer />
 				<Flex gap="24px">
 					<SettingsModal
 						isOpen={isOpen}
@@ -348,8 +355,8 @@ export default function MainSidebar({
 	});
 
 	return (
-		<Stack h="100%" bg={getColorValue('sidebarContent')}>
-			<Box h="100%" overflow="auto" width="250px" padding="10px">
+		<Stack h="100%" width="250px" bg={getColorValue('sidebarContent')}>
+			<Box h="100%" overflow="auto" padding="10px">
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>
 			<Box minH="75px">

@@ -33,7 +33,6 @@ export function UserListItem({ user }: UserListItemProps) {
 				flex="1"
 				gap="10px"
 				alignItems="center"
-				flexWrap="wrap"
 			>
 				<Center>
 					<Avatar

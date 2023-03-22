@@ -32,7 +32,6 @@ export default function Message({ message, headless }: MessageProps) {
 				maxW="100%"
 				gap="4"
 				alignItems="center"
-				flexWrap="wrap"
 			>
 				{headless ? (
 					<HeadlessAvatarSpace />
