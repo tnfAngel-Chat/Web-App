@@ -47,7 +47,7 @@ export default function ChatScreen() {
 				scrollSnapAlign="center"
 				scrollSnapStop="always"
 				h="100%"
-				gap="5px"
+				gap="10px"
 				w="100%"
 				direction="column"
 			>
