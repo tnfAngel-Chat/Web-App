@@ -118,7 +118,14 @@ export default function InputBox({ channel }: InputBoxProps) {
 	};
 
 	return (
-		<Box w="100%" h="100%" padding="10px 20px 10px 20px">
+		<Box
+			minH="75px"
+			maxH="75px"
+			bg={getColorValue('secondaryContentBackground')}
+			w="100%"
+			h="100%"
+			padding="10px 20px 10px 20px"
+		>
 			<Flex h="100%" gap="24px">
 				<Flex gap="24px">
 					<Center>
@@ -140,9 +147,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 								: channel.name
 						}`}
 						focusBorderColor={getColorValue('focusBorderColor')}
-						autoFocus={true}
 						onKeyDown={handleKeyDown}
 						onChange={handleChange}
+						autoFocus={true}
 						value={
 							chatsState.inputs[
 								directChannelsState.selectedChannelId ?? ''

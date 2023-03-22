@@ -348,7 +348,14 @@ export default function MainSidebar({
 	});
 
 	return (
-		<Stack h="100%" minW="250px" maxW="250px" bg={getColorValue('sidebarContent')}>
+		<Stack
+			scrollSnapAlign="start"
+			scrollSnapStop="always"
+			h="100%"
+			minW="250px"
+			maxW="250px"
+			bg={getColorValue('sidebarContent')}
+		>
 			<Box h="100%" w="100%" overflow="auto" padding="10px">
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>

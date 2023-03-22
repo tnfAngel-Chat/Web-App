@@ -3,10 +3,10 @@
 }
 
 .messagesStack {
-	min-width: 400px;
+	min-width: 200px;
 }
 
-@media all and (max-device-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	.messagesStack {
 		min-width: 100vw;
 	}

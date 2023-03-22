@@ -4,11 +4,12 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import UsersSidebar from '../sidebars/UsersSidebar';
 import useColorValue from '@/hooks/useColorValue';
 import MessagesBox from '../chat/MessagesBox';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Stack } from '@chakra-ui/react';
 import UserTopBar from '../chat/UserTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
+import InputBox from '../chat/InputBox';
 
 export default function ChatScreen() {
 	const { getColorValue } = useColorValue();
@@ -37,21 +38,26 @@ export default function ChatScreen() {
 
 	return (
 		<Flex
-			flexDirection="column"
 			h="100%"
 			w="100%"
 			gap={0}
 			bg={getColorValue('primaryContentBackground')}
 		>
-			<Box h="44px" bg={getColorValue('secondaryContentBackground')}>
+			<Flex
+				scrollSnapAlign="center"
+				scrollSnapStop="always"
+				h="100%"
+				gap="5px"
+				w="100%"
+				direction="column"
+			>
 				<UserTopBar channel={channel} />
-			</Box>
-			<Flex h="100%" w="100%" overflow="hidden" flex="1">
 				<MessagesBox channel={channel} messages={messages} />
-				{channel.type === ChannelTypes.Group && (
-					<UsersSidebar users={channel.members} />
-				)}
+				<InputBox channel={channel} />
 			</Flex>
+			{channel.type === ChannelTypes.Group && (
+				<UsersSidebar users={channel.members} />
+			)}
 		</Flex>
 	);
 }

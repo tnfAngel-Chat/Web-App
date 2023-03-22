@@ -62,21 +62,23 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 }
 
 export function MessageGroupSpacer() {
-	return <Box h="15px"  />;
+	return <Box h="15px" />;
 }
 
 export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
-	const { getColorValue } = useColorValue();
-
 	let lastAuthorId: string = '';
 
 	return (
-		<Stack w="100%" maxW="100%" className={styles.messagesStack}>
+		<Stack
+			w="100%"
+			h="100%"
+			overflow="auto"
+			className={styles.messagesStack}
+		>
 			<Box
 				overflow="auto"
 				flexDirection="column-reverse"
 				display="flex"
-				maxW="100%"
 				h="100%"
 			>
 				<Box className={styles.selectableMessagesBox}>
@@ -106,9 +108,6 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 				</Box>
 				{messages.length ? <Separator /> : null}
 				<WelcomeMessage channel={channel} messages={messages} />
-			</Box>
-			<Box minH="75px" bg={getColorValue('secondaryContentBackground')}>
-				<InputBox channel={channel} />
 			</Box>
 		</Stack>
 	);

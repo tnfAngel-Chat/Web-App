@@ -11,7 +11,11 @@ export default function IndexScreen() {
 	const router = useRouter();
 
 	return (
-		<Center h="100%" w="100%" bg={getColorValue('sidebarContent')}>
+		<Center
+			h="100%"
+			w="100%"
+			bg={getColorValue('sidebarContent')}
+		>
 			<Stack spacing="24px">
 				<Heading as="h1">tnfAngel Chat</Heading>
 

@@ -30,7 +30,12 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 	const { getColorValue } = useColorValue();
 
 	return (
-		<Box w="100%" padding="5px 20px 5px 20px">
+		<Box
+			h="44px"
+			bg={getColorValue('secondaryContentBackground')}
+			w="100%"
+			padding="5px 20px 5px 20px"
+		>
 			<Flex h="100%" maxH="100%" alignItems="center">
 				<Flex gap="8px" h="100%" minW="30px" maxH="100%">
 					<Center>

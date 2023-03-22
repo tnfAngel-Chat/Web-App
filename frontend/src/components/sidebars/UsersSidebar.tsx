@@ -1,6 +1,13 @@
 'use client';
 
-import { Flex, Box, Stack, Text, Center } from '@chakra-ui/react';
+import {
+	Flex,
+	Box,
+	Stack,
+	Text,
+	Center,
+	useDisclosure,
+} from '@chakra-ui/react';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { IUser } from '@/types/interfaces/User';
 import styles from '../../styles/UsersSidebar.module.scss';
@@ -9,16 +16,20 @@ import OverflownText from '../general/OverflownText';
 import useColorValue from '@/hooks/useColorValue';
 import StatusIndicator from '../user/StatusIndicator';
 import Separator from '../misc/Separator';
+import UserProfileModal from '../modals/UserProfileModal';
+import { useState } from 'react';
 
 export type UserListItemProps = {
 	user: IUser;
+	onClick: any;
 };
 
-export function UserListItem({ user }: UserListItemProps) {
+export function UserListItem({ user, onClick }: UserListItemProps) {
 	const { getColorValue } = useColorValue();
 
 	return (
 		<Flex
+			onClick={onClick}
 			maxHeight="55px"
 			minHeight="50px"
 			className={styles.sidebarButton}
@@ -28,12 +39,7 @@ export function UserListItem({ user }: UserListItemProps) {
 			}}
 			padding="5px 10px 5px 10px"
 		>
-			<Flex
-				h="100%"
-				flex="1"
-				gap="10px"
-				alignItems="center"
-			>
+			<Flex h="100%" flex="1" gap="10px" alignItems="center">
 				<Center>
 					<Avatar
 						size="36"
@@ -87,6 +93,8 @@ export type UsersSidebarContentProps = {
 };
 
 export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
+	const { isOpen, onOpen, onClose } = useDisclosure();
+	const [clickedUser, setClickedUser] = useState<IUser>();
 	const onlineUsers: IUser[] = [];
 	const offlineUsers: IUser[] = [];
 
@@ -99,20 +107,46 @@ export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
 	});
 
 	return (
-		<Stack w="100%" h="100%">
-			{onlineUsers.length > 0 && (
-				<StatusSection label={`ONLINE - ${onlineUsers.length}`} />
-			)}
-			{onlineUsers.map((user) => {
-				return <UserListItem user={user} key={user.id} />;
-			})}
-			{offlineUsers.length > 0 && (
-				<StatusSection label={`OFFLINE - ${offlineUsers.length}`} />
-			)}
-			{offlineUsers.map((user) => {
-				return <UserListItem user={user} key={user.id} />;
-			})}
-		</Stack>
+		<>
+			<UserProfileModal
+				isOpen={isOpen}
+				onOpen={onOpen}
+				onClose={onClose}
+				user={clickedUser}
+			/>
+			<Stack w="100%" h="100%">
+				{onlineUsers.length > 0 && (
+					<StatusSection label={`ONLINE - ${onlineUsers.length}`} />
+				)}
+				{onlineUsers.map((user) => {
+					return (
+						<UserListItem
+							user={user}
+							onClick={() => {
+								setClickedUser(user);
+								onOpen();
+							}}
+							key={user.id}
+						/>
+					);
+				})}
+				{offlineUsers.length > 0 && (
+					<StatusSection label={`OFFLINE - ${offlineUsers.length}`} />
+				)}
+				{offlineUsers.map((user) => {
+					return (
+						<UserListItem
+							user={user}
+							onClick={() => {
+								setClickedUser(user);
+								onOpen();
+							}}
+							key={user.id}
+						/>
+					);
+				})}
+			</Stack>
+		</>
 	);
 }
 
@@ -123,8 +157,15 @@ export type UsersSidebarProps = {
 export default function UsersSidebar({ users }: UsersSidebarProps) {
 	const { getColorValue } = useColorValue();
 	return (
-		<Stack h="100%" bg={getColorValue('sidebarContent')}>
-			<Box h="100%" overflow="auto" width="250px" padding="10px">
+		<Stack
+			scrollSnapAlign="end"
+			scrollSnapStop="always"
+			h="100%"
+			minW="250px"
+			maxW="250px"
+			bg={getColorValue('sidebarContent')}
+		>
+			<Box h="100%" w="100%" padding="10px">
 				<UsersSidebarContent users={users} />
 			</Box>
 		</Stack>

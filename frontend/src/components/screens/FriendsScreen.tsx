@@ -7,7 +7,14 @@ export default function HomeScreen() {
 	const { getColorValue } = useColorValue();
 
 	return (
-		<Box h="100%" w="100%" minW="500px" bg={getColorValue('primaryContentBackground')}>
+		<Box
+			scrollSnapAlign="center"
+			scrollSnapStop="always"
+			h="100%"
+			w="100%"
+			minW="500px"
+			bg={getColorValue('primaryContentBackground')}
+		>
 			<Center h="100%">
 				<Stack spacing="24px">
 					<Heading as="h1">Amigos</Heading>

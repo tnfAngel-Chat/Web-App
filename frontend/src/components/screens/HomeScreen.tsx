@@ -17,6 +17,8 @@ export default function HomeScreen() {
 
 	return (
 		<Box
+			scrollSnapAlign="center"
+			scrollSnapStop="always"
 			h="100%"
 			w="100%"
 			minW="500px"
