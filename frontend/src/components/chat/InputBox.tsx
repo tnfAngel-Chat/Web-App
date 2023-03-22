@@ -1,6 +1,7 @@
 'use client';
 
 import { useFilePicker } from 'use-file-picker';
+import { isMobile } from 'react-device-detect';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
 	Input,
@@ -30,6 +31,7 @@ import { MessageModes } from '@/types/enums/MessageModes';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { UserTypes } from '@/types/enums/UserTypes';
 import normalizeMessage from '@/util/normalizeMessage';
+import { useEffect, useRef } from 'react';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -44,7 +46,18 @@ export default function InputBox({ channel }: InputBoxProps) {
 		(state: RootState) => state.directChannels
 	);
 
+	useEffect(() => {
+		inputRef.current?.scrollIntoView({ behavior: 'smooth' });
+
+		if (isMobile)
+			setTimeout(() => {
+				inputRef.current?.scrollIntoView({ behavior: 'smooth' });
+			}, 550);
+	}, []);
+
 	const chatsState = useSelector((state: RootState) => state.chats);
+
+	const inputRef = useRef<null | HTMLInputElement>(null);
 
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
@@ -155,6 +168,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 								directChannelsState.selectedChannelId ?? ''
 							] ?? ''
 						}
+						ref={inputRef}
 					/>
 				</Center>
 				<Flex gap="24px">

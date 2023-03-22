@@ -11,6 +11,7 @@ body {
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-snap-stop: always;
+	scroll-behavior: smooth;
 }
 
 .text-bold {
