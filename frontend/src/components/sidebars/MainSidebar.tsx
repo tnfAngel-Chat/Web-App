@@ -57,6 +57,7 @@ export function DirectButtonLink({
 			<Flex
 				w="100%"
 				h="100%"
+				minH="50px"
 				className={styles.sidebarButton}
 				bg={
 					isSelected
@@ -69,7 +70,6 @@ export function DirectButtonLink({
 						: getColorValue('sidebarButtonHover'),
 				}}
 				padding="5px 10px 5px 10px"
-				minHeight="50px"
 			>
 				<Flex flex="1" gap="3" alignItems="center" flexWrap="wrap">
 					<Box w="32px">
@@ -101,14 +101,6 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	const { getColorValue } = useColorValue();
 	const [isHovering, setHovering] = useState(false);
 
-	function handleMouseEnter() {
-		setHovering(true);
-	}
-
-	function handleMouseLeave() {
-		setHovering(false);
-	}
-
 	return (
 		<Link href={`/channels/${channel.id}`}>
 			<Flex
@@ -124,8 +116,8 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 						: getColorValue('sidebarButtonHover'),
 				}}
 				padding="5px 10px 5px 10px"
-				onMouseEnter={handleMouseEnter}
-				onMouseLeave={handleMouseLeave}
+				onMouseEnter={() => setHovering(true)}
+				onMouseLeave={() => setHovering(false)}
 				gap="1px"
 			>
 				<Flex
@@ -349,14 +341,15 @@ export default function MainSidebar({
 	const currentUser = normalizeUser({
 		type: UserTypes.User,
 		id: '1',
-		username: 'Ángel',
+		username: 'Angelito',
+		presence: 'Me dejaste el cuerpo fuera...',
 		status: UserStatusTypes.Online,
 		avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
 	});
 
 	return (
-		<Stack h="100%" width="250px" bg={getColorValue('sidebarContent')}>
-			<Box h="100%" overflow="auto" padding="10px">
+		<Stack h="100%" minW="250px" maxW="250px" bg={getColorValue('sidebarContent')}>
+			<Box h="100%" w="100%" overflow="auto" padding="10px">
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>
 			<Box minH="75px">
