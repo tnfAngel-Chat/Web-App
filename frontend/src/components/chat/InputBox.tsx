@@ -15,6 +15,7 @@ import {
 	PopoverContent,
 	PopoverHeader,
 	PopoverTrigger,
+	Textarea,
 } from '@chakra-ui/react';
 import { MdAddCircle, MdEmojiEmotions } from 'react-icons/md';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
@@ -57,16 +58,18 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 	const chatsState = useSelector((state: RootState) => state.chats);
 
-	const inputRef = useRef<null | HTMLInputElement>(null);
+	const inputRef = useRef<null | any>(null);
 
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
 		if (
 			event.key === 'Enter' &&
+			!event.shiftKey &&
 			directChannelsState.selectedChannelId &&
 			content
 		) {
+			event.preventDefault();
 			const sentChannelId = directChannelsState.selectedChannelId;
 
 			const rawAuthor = {
@@ -116,6 +119,8 @@ export default function InputBox({ channel }: InputBoxProps) {
 					})
 				);
 			}, Math.random() * 260);
+		} else if (event.key === 'Enter' && !event.shiftKey) {
+			event.preventDefault();
 		}
 	};
 
@@ -130,72 +135,67 @@ export default function InputBox({ channel }: InputBoxProps) {
 		}
 	};
 
+	const inputValue =
+		chatsState.inputs[directChannelsState.selectedChannelId ?? ''] ?? '';
+
+	const numberOfLines = inputValue.split('\n').length;
+
 	return (
 		<Box
-			minH="75px"
-			maxH="75px"
 			bg={getColorValue('secondaryContentBackground')}
 			w="100%"
-			h="100%"
-			padding="10px 20px 10px 20px"
+			padding="15px 20px 15px 20px"
 		>
 			<Flex h="100%" gap="24px">
-				<Flex gap="24px">
-					<Center>
-						<IconButton
-							aria-label="Add attachments"
-							bg="transparent"
-							size="sm"
-							fontSize="24px"
-							icon={<MdAddCircle />}
-							onClick={openFileSelector}
-						/>
-					</Center>
+				<Flex gap="24px" paddingTop="6px">
+					<IconButton
+						aria-label="Add attachments"
+						bg="transparent"
+						size="sm"
+						fontSize="24px"
+						icon={<MdAddCircle />}
+						onClick={openFileSelector}
+					/>
 				</Flex>
 				<Center w="100%">
-					<Input
+					<Textarea
 						placeholder={`Message @${
 							channel.type === ChannelTypes.DirectMessage
 								? channel.recipient.username
 								: channel.name
 						}`}
+						rows={numberOfLines > 22 ? 22 : numberOfLines}
+						maxH="50vh"
+						minH="45px"
+						size="md"
+						resize="none"
 						focusBorderColor={getColorValue('focusBorderColor')}
 						onKeyDown={handleKeyDown}
 						onChange={handleChange}
 						autoFocus={true}
-						value={
-							chatsState.inputs[
-								directChannelsState.selectedChannelId ?? ''
-							] ?? ''
-						}
+						value={inputValue}
 						ref={inputRef}
 					/>
 				</Center>
-				<Flex gap="24px">
-					<Center>
-						<Popover placement="top-end" isLazy>
-							<PopoverTrigger>
-								<IconButton
-									aria-label="Add emojis"
-									bg="transparent"
-									size="sm"
-									fontSize="24px"
-									icon={<MdEmojiEmotions />}
-								/>
-							</PopoverTrigger>
-							<PopoverContent
-								bg={getColorValue('sidebarContent')}
-							>
-								<PopoverCloseButton />
-								<PopoverHeader>
-									Selector de emojis
-								</PopoverHeader>
-								<PopoverBody>
-									Aun no hay ninguno (Por ahora)
-								</PopoverBody>
-							</PopoverContent>
-						</Popover>
-					</Center>
+				<Flex gap="24px" paddingTop="6px">
+					<Popover placement="top-end" isLazy>
+						<PopoverTrigger>
+							<IconButton
+								aria-label="Add emojis"
+								bg="transparent"
+								size="sm"
+								fontSize="24px"
+								icon={<MdEmojiEmotions />}
+							/>
+						</PopoverTrigger>
+						<PopoverContent bg={getColorValue('sidebarContent')}>
+							<PopoverCloseButton />
+							<PopoverHeader>Selector de emojis</PopoverHeader>
+							<PopoverBody>
+								Aun no hay ninguno (Por ahora)
+							</PopoverBody>
+						</PopoverContent>
+					</Popover>
 				</Flex>
 			</Flex>
 		</Box>

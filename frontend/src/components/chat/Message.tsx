@@ -49,7 +49,7 @@ export default function Message({
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
 		>
-			<Flex flex="1" gap="4" alignItems="center">
+			<Flex flex="1" gap="4" alignItems="start">
 				{headless ? (
 					isHovering ? (
 						<AvatarSpaceDate timestamp={message.timestamp} />
@@ -57,12 +57,14 @@ export default function Message({
 						<HeadlessAvatarSpace />
 					)
 				) : (
-					<Avatar
-						size="42"
-						src={message.author.avatar}
-						alt={`Avatar de ${message.author.username}`}
-						onClick={onShowAuthor}
-					/>
+					<Box paddingTop="2px">
+						<Avatar
+							size="42"
+							src={message.author.avatar}
+							alt={`Avatar de ${message.author.username}`}
+							onClick={onShowAuthor}
+						/>
+					</Box>
 				)}
 				<Box textAlign="left">
 					{headless ? null : (
@@ -71,7 +73,10 @@ export default function Message({
 								className="text-bold"
 								fontSize="md"
 								onClick={onShowAuthor}
-								_hover={{ textDecoration: 'underline', cursor: 'pointer' }}
+								_hover={{
+									textDecoration: 'underline',
+									cursor: 'pointer',
+								}}
 							>
 								{message.author.username}
 							</Text>
@@ -82,17 +87,24 @@ export default function Message({
 							/>
 						</Flex>
 					)}
-					<Text
-						fontSize="md"
-						whiteSpace="initial"
-						color={
-							message.mode === MessageModes.Sent
-								? getColorValue('textColor')
-								: getColorValue('textMutedColor')
-						}
-					>
-						{message.content}
-					</Text>
+					{message.content.split('\n').map((line, i) => {
+						const lineKey = `${message.id}-${i}`;
+
+						return (
+							<Text
+								key={lineKey}
+								fontSize="md"
+								whiteSpace="initial"
+								color={
+									message.mode === MessageModes.Sent
+										? getColorValue('textColor')
+										: getColorValue('textMutedColor')
+								}
+							>
+								{line}
+							</Text>
+						);
+					})}
 				</Box>
 			</Flex>
 		</Box>
