@@ -6,11 +6,13 @@ import styles from '../../styles/StatusIndicator.module.scss';
 export type StatusIndicatorProps = {
 	status: UserStatusTypes;
 	size: SafeNumber;
+	positioned?: boolean;
 };
 
 export default function StatusIndicator({
 	status,
 	size,
+	positioned = true,
 }: StatusIndicatorProps) {
 	const statusClasses: Record<UserStatusTypes, string> = {
 		[UserStatusTypes.Online]: styles.onlineIndicator,
@@ -23,7 +25,9 @@ export default function StatusIndicator({
 		<Box
 			w={`${size}px`}
 			h={`${size}px`}
-			className={`${styles.indicator} ${statusClasses[status]}`}
+			className={`${styles.indicator} ${
+				positioned ? styles.positionedIndicator : ''
+			} ${statusClasses[status]}`}
 		/>
 	);
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import useColorValue from '@/hooks/useColorValue';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
@@ -13,30 +14,55 @@ import {
 } from '@chakra-ui/react';
 import {
 	MdAlternateEmail,
+	MdPeople,
 	MdPhone,
 	MdSearch,
 	MdVideocam,
 } from 'react-icons/md';
+import OverflownText from '../general/OverflowText';
+import StatusIndicator from '../user/StatusIndicator';
 
 export type UserTopBarProps = {
 	channel: IChannel;
 };
 
 export default function UserTopBar({ channel }: UserTopBarProps) {
+	const { getColorValue } = useColorValue();
+
 	return (
 		<Box w="100%" padding="5px 20px 5px 20px">
-			<Flex>
-				<Flex gap="10px">
+			<Flex h="100%" maxH="100%">
+				<Flex gap="8px" h="100%" minW="0px" maxH="100%">
 					<Center>
 						<Icon as={MdAlternateEmail} boxSize="24px" />
 					</Center>
-					<Center>
-						<Text>
+					<Center minW="0px">
+						<OverflownText fontSize="lg">
 							{channel.type === ChannelTypes.DirectMessage
 								? channel.recipient.username
 								: channel.name}
-						</Text>
+						</OverflownText>
 					</Center>
+					{channel.type === ChannelTypes.DirectMessage ? (
+						<Center>
+							<StatusIndicator
+								status={channel.recipient.status}
+								size="13"
+								positioned={false}
+							/>
+						</Center>
+					) : null}
+					{channel.type === ChannelTypes.DirectMessage &&
+					channel.recipient.presence ? (
+						<Center>
+							<Text
+								fontSize="sm"
+								color={getColorValue('textMutedColor')}
+							>
+								{channel.recipient.presence}
+							</Text>
+						</Center>
+					) : null}
 				</Flex>
 				<Spacer />
 				<Flex gap="24px">
@@ -58,6 +84,17 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 							icon={<MdVideocam />}
 						/>
 					</Center>
+					{channel.type === ChannelTypes.Group ? (
+						<Center>
+							<IconButton
+								aria-label="Members"
+								bg="transparent"
+								size="sm"
+								fontSize="24px"
+								icon={<MdPeople />}
+							/>
+						</Center>
+					) : null}
 					<Center>
 						<IconButton
 							aria-label="Search Messages"

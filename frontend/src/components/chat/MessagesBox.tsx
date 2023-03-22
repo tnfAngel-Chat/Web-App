@@ -61,11 +61,17 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 	);
 }
 
+export function MessageGroupSpacer() {
+	return <Box h="15px" />;
+}
+
 export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 	const { getColorValue } = useColorValue();
 
+	let lastAuthorId: string = '';
+
 	return (
-		<Stack w="100%">
+		<Stack w="100%" className={styles.messagesStack}>
 			<Box
 				overflow="auto"
 				flexDirection="column-reverse"
@@ -73,9 +79,27 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 				h="100%"
 			>
 				<Box className={styles.selectableMessagesBox}>
-					{messages.map((message) => (
-						<Message message={message} key={message.id} />
-					))}
+					{messages.map((message, i) => {
+						const isHeadless = lastAuthorId === message.author.id;
+
+						const MessageElement = (
+							<Message
+								message={message}
+								key={message.id}
+								headless={isHeadless}
+							/>
+						);
+
+						lastAuthorId = message.author.id;
+
+						return (
+							<>
+								{isHeadless ? null : <MessageGroupSpacer />}
+								{MessageElement}
+								{i === messages.length - 1 ? <MessageGroupSpacer/> : null}
+							</>
+						);
+					})}
 				</Box>
 				{messages.length ? <Separator /> : null}
 				<WelcomeMessage channel={channel} messages={messages} />

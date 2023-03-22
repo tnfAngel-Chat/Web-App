@@ -1,15 +1,14 @@
 'use client';
 
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { Box, Flex } from '@chakra-ui/react';
-import MessagesBox from '../chat/MessagesBox';
-import UserTopBar from '../chat/UserTopBar';
-import useColorValue from '@/hooks/useColorValue';
 import UsersSidebar from '../sidebars/UsersSidebar';
+import useColorValue from '@/hooks/useColorValue';
+import MessagesBox from '../chat/MessagesBox';
+import { Box, Flex } from '@chakra-ui/react';
+import UserTopBar from '../chat/UserTopBar';
+import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
-import { useRouter } from 'next/navigation';
-import styles from '../../styles/ChatScreen.module.scss';
 
 export default function ChatScreen() {
 	const { getColorValue } = useColorValue();
@@ -18,6 +17,7 @@ export default function ChatScreen() {
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
 	);
+
 	const chatsState = useSelector((state: RootState) => state.chats);
 
 	const channels = directChannelsState.channels;
@@ -42,7 +42,6 @@ export default function ChatScreen() {
 			w="100%"
 			gap={0}
 			bg={getColorValue('primaryContentBackground')}
-			className={styles.chatScreenFlex}
 		>
 			<Box h="44px" bg={getColorValue('secondaryContentBackground')}>
 				<UserTopBar channel={channel} />

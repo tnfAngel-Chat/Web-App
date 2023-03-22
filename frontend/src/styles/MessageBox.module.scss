@@ -1,3 +1,13 @@
 .selectableMessagesBox {
 	user-select: text;
 }
+
+.messagesStack {
+	min-width: 400px;
+}
+
+@media all and (max-device-width: 800px) {
+	.messagesStack {
+		min-width: 100vw;
+	}
+}

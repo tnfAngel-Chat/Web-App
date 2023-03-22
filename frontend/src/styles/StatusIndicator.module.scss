@@ -1,10 +1,13 @@
 .indicator {
 	border-radius: 50%;
 	position: relative;
-	top: -31%;
-	right: -61%;
 	border-width: 2px;
 	border-color: #252525;
+}
+
+.positionedIndicator {
+	top: -31%;
+	right: -61%;
 }
 
 .onlineIndicator {

@@ -20,6 +20,14 @@ const rawAuthor: IRawUser = {
 	status: UserStatusTypes.Online,
 };
 
+const rawDest: IRawUser = {
+	type: UserTypes.User,
+	id: '2',
+	username: 'Angelito',
+	avatar: 'https://media.discordapp.net/attachments/866159939247931432/1060336031234277407/plink.gif',
+	status: UserStatusTypes.Idle,
+};
+
 const rawMessagesT: IRawMessage[] = [
 	{
 		type: MessageTypes.Text,
@@ -64,7 +72,23 @@ const chats = {
 				mode: MessageModes.Sent,
 				id: 's',
 				content: 'holaa',
+				author: rawDest,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				mode: MessageModes.Sent,
+				id: '3',
+				content: 'pruba',
 				author: rawAuthor,
+				timestamp: Date.now(),
+			},
+			{
+				type: MessageTypes.Text,
+				mode: MessageModes.Sent,
+				id: 's',
+				content: 'holaa',
+				author: rawDest,
 				timestamp: Date.now(),
 			},
 			{
@@ -88,7 +112,7 @@ const chats = {
 				mode: MessageModes.Sent,
 				id: '3',
 				content: 'pruba',
-				author: rawAuthor,
+				author: rawDest,
 				timestamp: Date.now(),
 			},
 			{
@@ -96,7 +120,7 @@ const chats = {
 				mode: MessageModes.Sent,
 				id: 's',
 				content: 'holaa',
-				author: rawAuthor,
+				author: rawDest,
 				timestamp: Date.now(),
 			},
 			{
@@ -104,23 +128,7 @@ const chats = {
 				mode: MessageModes.Sent,
 				id: '3',
 				content: 'pruba',
-				author: rawAuthor,
-				timestamp: Date.now(),
-			},
-			{
-				type: MessageTypes.Text,
-				mode: MessageModes.Sent,
-				id: 's',
-				content: 'holaa',
-				author: rawAuthor,
-				timestamp: Date.now(),
-			},
-			{
-				type: MessageTypes.Text,
-				mode: MessageModes.Sent,
-				id: '3',
-				content: 'pruba',
-				author: rawAuthor,
+				author: rawDest,
 				timestamp: Date.now(),
 			},
 			{

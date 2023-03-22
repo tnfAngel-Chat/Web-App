@@ -24,7 +24,11 @@ export default function Avatar({
 	indicator,
 }: AvatarProps) {
 	return (
-		<Box width={`${size}px`} className={styles.avatarBox} height={`${size}px`}>
+		<Box
+			height={`${size}px`}
+			width={`${size}px`}
+			className={styles.avatarBox}
+		>
 			<Image
 				className={styles.avatar}
 				src={src}

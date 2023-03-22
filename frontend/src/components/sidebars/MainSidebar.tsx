@@ -20,25 +20,24 @@ import {
 	PopoverTrigger,
 } from '@chakra-ui/react';
 import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
-import { IChannel, IRawChannel } from '@/types/interfaces/Channel';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
+import { IChannel } from '@/types/interfaces/Channel';
 import { UserTypes } from '@/types/enums/UserTypes';
-import { IRawUser, IUser } from '@/types/interfaces/User';
-import styles from '../../styles/MainSidebar.module.scss';
+import { IUser } from '@/types/interfaces/User';
+import { RootState } from '@/store';
+import { useState } from 'react';
+import { removeChannel } from '@/store/slices/directChannelsSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import Link from 'next/link';
 import Avatar from '../user/Avatar';
 import Separator from '../misc/Separator';
 import SettingsModal from '../modals/SettingsModal';
-import { useState } from 'react';
 import StatusIndicator from '../user/StatusIndicator';
 import normalizeUser from '@/util/normalizeUser';
-import normalizeChannel from '@/util/normalizeChannel';
 import OverflownText from '../general/OverflowText';
 import useColorValue from '@/hooks/useColorValue';
-import Link from 'next/link';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '@/store';
-import { removeChannel } from '@/store/slices/directChannelsSlice';
+import styles from '../../styles/MainSidebar.module.scss';
 
 export function DirectButtonLink({
 	icon,
@@ -113,8 +112,6 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	return (
 		<Link href={`/channels/${channel.id}`}>
 			<Flex
-				maxHeight="55px"
-				minHeight="50px"
 				className={styles.sidebarButton}
 				bg={
 					isSelected
@@ -130,66 +127,64 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseLeave}
 			>
-				<Box>
-					<Flex
-						h="100%"
-						flex="1"
-						gap="10px"
-						alignItems="center"
-						flexWrap="wrap"
-					>
-						<Center>
-							<Avatar
-								size="36"
-								src={
-									channel.type === ChannelTypes.DirectMessage
-										? channel.recipient.avatar
-										: channel.icon
-								}
-								alt="Avatar"
-								indicator={
-									channel.type ===
-									ChannelTypes.DirectMessage ? (
-										<StatusIndicator
-											status={channel.recipient.status}
-											size="14"
-										/>
-									) : null
-								}
-							/>
-						</Center>
-						<Center>
-							<Box textAlign="left">
-								<OverflownText
-									fontSize="md"
-									maxW="125px"
-									tooltipPlacement="top"
-									className={isSelected ? 'text-bold' : ''}
-								>
-									{channel.type === ChannelTypes.DirectMessage
-										? channel.recipient.username
-										: channel.name}
-								</OverflownText>
-								{channel.type === ChannelTypes.DirectMessage ? (
-									channel.recipient.presence ? (
-										<Text fontSize="sm" noOfLines={1}>
-											{channel.recipient.presence}
-										</Text>
-									) : null
-								) : channel.type === ChannelTypes.Group ? (
-									<Text fontSize="sm">
-										{channel.members.length} Miembros
-									</Text>
-								) : null}
-							</Box>
-						</Center>
+				<Flex
+					h="100%"
+					minH="45px"
+					gap="10px"
+					alignItems="center"
+					minW="0px"
+				>
+					<Center h="100%">
+						<Avatar
+							size="36"
+							src={
+								channel.type === ChannelTypes.DirectMessage
+									? channel.recipient.avatar
+									: channel.icon
+							}
+							alt="Avatar"
+							indicator={
+								channel.type === ChannelTypes.DirectMessage ? (
+									<StatusIndicator
+										status={channel.recipient.status}
+										size="14"
+									/>
+								) : null
+							}
+						/>
+					</Center>
+					<Flex minW="0px" alignItems="start" direction="column">
+						<Box w="100%">
+							<OverflownText
+								fontSize="md"
+								tooltipPlacement="top"
+								className={isSelected ? 'text-bold' : ''}
+							>
+								{channel.type === ChannelTypes.DirectMessage
+									? channel.recipient.username
+									: channel.name}
+							</OverflownText>
+						</Box>
+
+						{channel.type === ChannelTypes.DirectMessage ? (
+							channel.recipient.presence ? (
+								<Text fontSize="sm" noOfLines={1}>
+									{channel.recipient.presence}
+								</Text>
+							) : null
+						) : channel.type === ChannelTypes.Group ? (
+							<Text fontSize="sm">
+								{channel.members.length} Miembros
+							</Text>
+						) : null}
 					</Flex>
-				</Box>
+				</Flex>
 				{isHovering ? (
 					<>
 						<Spacer />
 						<Center>
 							<CloseButton
+								marginLeft="5px"
 								onClick={(e) => {
 									e.stopPropagation();
 									e.preventDefault();

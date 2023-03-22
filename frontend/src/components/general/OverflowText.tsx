@@ -26,7 +26,7 @@ export default function OverflownText({
 			color={getColorValue('textColor')}
 			hasArrow
 		>
-			<Box position="relative" isTruncated ref={ref} {...props}>
+			<Box position="relative"  isTruncated ref={ref} {...props}>
 				{children}
 			</Box>
 		</Tooltip>

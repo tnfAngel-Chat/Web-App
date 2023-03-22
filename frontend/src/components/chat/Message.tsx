@@ -8,30 +8,41 @@ import Avatar from '../user/Avatar';
 
 export type MessageProps = {
 	message: IMessage;
+	headless?: boolean;
 };
 
-export default function Message({ message }: MessageProps) {
+export function HeadlessAvatarSpace() {
+	return <Box w="42px" />;
+}
+
+export default function Message({ message, headless }: MessageProps) {
 	const { getColorValue } = useColorValue();
 
 	return (
 		<Box
 			w="100%"
-			padding="8px 20px 8px 20px"
+			padding="3px 20px 3px 20px"
 			_hover={{
 				bg: getColorValue('messageHover'),
 			}}
 		>
 			<Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-				<Avatar
-					size="42"
-					src={message.author.avatar}
-					alt={`Avatar de ${message.author.username}`}
-				/>
+				{headless ? (
+					<HeadlessAvatarSpace />
+				) : (
+					<Avatar
+						size="42"
+						src={message.author.avatar}
+						alt={`Avatar de ${message.author.username}`}
+					/>
+				)}
 
 				<Box textAlign="left">
-					<Text className="text-bold" fontSize="md">
-						{message.author.username}
-					</Text>
+					{headless ? null : (
+						<Text className="text-bold" fontSize="md">
+							{message.author.username}
+						</Text>
+					)}
 					<Text
 						fontSize="md"
 						color={
