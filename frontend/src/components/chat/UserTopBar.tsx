@@ -1,6 +1,6 @@
 'use client';
 
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
@@ -27,7 +27,7 @@ export type UserTopBarProps = {
 };
 
 export default function UserTopBar({ channel }: UserTopBarProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Box

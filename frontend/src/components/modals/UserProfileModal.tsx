@@ -1,4 +1,4 @@
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { IUser } from '@/types/interfaces/User';
 import {
 	ModalOverlay,
@@ -29,14 +29,17 @@ export default function UserProfileModal({
 	onClose: any;
 	user?: IUser;
 }) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	if (!user) return <></>;
 
 	return (
 		<Modal isOpen={isOpen} size="lg" onClose={onClose} isCentered>
 			<ModalOverlay backdropFilter="blur(5px)" />
-			<ModalContent bg={getColorValue('sidebarContent')}>
+			<ModalContent
+				color={getColorValue('textColor')}
+				bg={getColorValue('sidebarContent')}
+			>
 				<ModalBody padding="15px">
 					<Stack h="100%">
 						<Flex

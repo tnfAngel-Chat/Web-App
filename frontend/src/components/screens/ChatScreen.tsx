@@ -2,7 +2,7 @@
 
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import UsersSidebar from '../sidebars/UsersSidebar';
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import MessagesBox from '../chat/MessagesBox';
 import { Box, Flex, Stack } from '@chakra-ui/react';
 import UserTopBar from '../chat/UserTopBar';
@@ -12,7 +12,7 @@ import { RootState } from '@/store';
 import InputBox from '../chat/InputBox';
 
 export default function ChatScreen() {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	const router = useRouter();
 
 	const directChannelsState = useSelector(

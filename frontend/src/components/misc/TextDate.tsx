@@ -1,4 +1,4 @@
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { Box } from '@chakra-ui/react';
 import OverflownText from '../general/OverflownText';
 
@@ -9,7 +9,7 @@ export type TextDateProps = {
 };
 
 export default function TextDate({ timestamp, long, fontSize }: TextDateProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Box userSelect={long ? 'auto' : 'none'}>

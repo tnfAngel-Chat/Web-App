@@ -13,7 +13,7 @@ import { IUser } from '@/types/interfaces/User';
 import styles from '../../styles/UsersSidebar.module.scss';
 import Avatar from '../user/Avatar';
 import OverflownText from '../general/OverflownText';
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import StatusIndicator from '../user/StatusIndicator';
 import Separator from '../misc/Separator';
 import UserProfileModal from '../modals/UserProfileModal';
@@ -25,7 +25,7 @@ export type UserListItemProps = {
 };
 
 export function UserListItem({ user, onClick }: UserListItemProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Flex
@@ -69,7 +69,7 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 }
 
 export function StatusSection({ label }: { label: string }) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Flex gap="10px">
@@ -156,7 +156,7 @@ export type UsersSidebarProps = {
 };
 
 export default function UsersSidebar({ users }: UsersSidebarProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	return (
 		<Stack
 			scrollSnapAlign="end"

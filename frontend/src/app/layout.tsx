@@ -1,51 +1,22 @@
 'use client';
 
 import { CacheProvider } from '@chakra-ui/next-js';
-import {
-	extendTheme,
-	ChakraProvider,
-	ColorModeScript,
-	useColorMode,
-} from '@chakra-ui/react';
+import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import '../styles/global.scss';
-import { store } from '../store';
+import { persistor, store } from '../store';
 import { Provider } from 'react-redux';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
+import { PersistGate } from 'redux-persist/integration/react';
+import { themes } from '@/constants/themes';
 
 const config = {
 	initialColorMode: 'dark',
 	useSystemColorMode: false,
 };
 
-const colors = {
-	dark: {
-		userProfileSidebar: '#252525',
-		sidebarContent: '#2E2E2E',
-		primaryContentBackground: '#333333',
-		secondaryContentBackground: '#3F3F3F',
-		focusBorderColor: '#4D4D4D',
-		sidebarButtonHover: '#ffffff10',
-		sideBarButtonActive: '#ffffff20',
-		messageHover: '#00000020',
-		separatorColor: '#ffffff20',
-		tooltipBG: '#202020',
-		textColor: '#F1F1F1',
-		textMutedColor: '#ACACAC',
-	},
-	light: {
-		userProfileSidebar: '#ffffff',
-		sidebarContent: '#F1F1F1',
-		primaryContentBackground: '#EBEBEB',
-		secondaryContentBackground: '#DADADA',
-		sidebarButtonHover: '#00000010',
-		sideBarButtonActive: '#00000020',
-		messageHover: '#00000020',
-		separatorColor: '#00000020',
-		tooltipBG: '#BEBEBE',
-		textColor: '#0F0F0F',
-		textMutedColor: '#292929',
-	},
-};
+const colors = Object.fromEntries(
+	themes.map((theme) => [theme.id, theme.colors])
+);
 
 const fonts = {};
 
@@ -69,13 +40,15 @@ export default function RootLayout({
 				<ColorModeScript
 					initialColorMode={theme.config.initialColorMode}
 				/>
-				<CacheProvider>
-					<ChakraProvider theme={theme}>
+				<ChakraProvider theme={theme}>
+					<CacheProvider>
 						<Provider store={store}>
-							<AppChakraLayout>{children}</AppChakraLayout>
+							<PersistGate loading={<p>Olilla</p>} persistor={persistor}>
+								<AppChakraLayout>{children}</AppChakraLayout>
+							</PersistGate>
 						</Provider>
-					</ChakraProvider>
-				</CacheProvider>
+					</CacheProvider>
+				</ChakraProvider>
 			</body>
 		</html>
 	);

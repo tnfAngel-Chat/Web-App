@@ -2,7 +2,9 @@
 	"typescript.tsdk": "node_modules\\typescript\\lib",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"cSpell.words": [
+		"amoled",
 		"chakra",
+		"persistor",
 		"reduxjs",
 		"tnfangel",
 		"Videocam"

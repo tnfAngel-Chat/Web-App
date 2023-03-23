@@ -36,7 +36,7 @@ import SettingsModal from '../modals/SettingsModal';
 import StatusIndicator from '../user/StatusIndicator';
 import normalizeUser from '@/util/normalizeUser';
 import OverflownText from '../general/OverflownText';
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import styles from '../../styles/MainSidebar.module.scss';
 
 export function DirectButtonLink({
@@ -50,7 +50,7 @@ export function DirectButtonLink({
 	href: string;
 	isSelected: boolean;
 }) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Link href={href}>
@@ -98,7 +98,7 @@ export type DirectChannelProps = {
 
 export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	const dispatch = useDispatch();
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
 
 	return (
@@ -234,7 +234,7 @@ export function MainSidebarContent({
 }
 
 export function CreateGroupSection() {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Flex gap="3px">
@@ -269,7 +269,7 @@ export type ProfileBoxProps = {
 
 export function ProfileBox({ user }: ProfileBoxProps) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Box
@@ -336,7 +336,7 @@ export default function MainSidebar({
 }: {
 	selectedChannelID?: string;
 }) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	const currentUser = normalizeUser({
 		type: UserTypes.User,

@@ -1,36 +1,64 @@
-import useColorValue from '@/hooks/useColorValue';
+import useTheme from '@/hooks/useTheme';
+import useThemeColors from '@/hooks/useThemeColors';
 import {
 	ModalCloseButton,
 	ModalOverlay,
 	ModalContent,
-	useColorMode,
 	ModalHeader,
 	ModalBody,
 	Switch,
 	Stack,
 	Modal,
 	Text,
+	Button,
+	Menu,
+	MenuButton,
+	MenuItem,
+	MenuList,
 } from '@chakra-ui/react';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function SettingsModal({ isOpen, onClose }: any) {
-	const { getColorValue } = useColorValue();
-	const { colorMode, toggleColorMode } = useColorMode();
+	const { getColorValue } = useThemeColors();
+	const [theme, setTheme, themes] = useTheme();
 
 	return (
 		<Modal isOpen={isOpen} size="full" onClose={onClose}>
 			<ModalOverlay />
-			<ModalContent bg={getColorValue('sidebarContent')}>
+			<ModalContent
+				color={getColorValue('textColor')}
+				bg={getColorValue('sidebarContent')}
+			>
 				<ModalHeader>Ajustes de usuario</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>
 					<Stack>
-						<Text>Modo oscuro</Text>
-						<Switch
-							isChecked={colorMode === 'dark'}
-							onChange={toggleColorMode}
-							colorScheme="green"
-							size="md"
-						/>
+						<Text>Tema</Text>
+						<Menu>
+							<MenuButton
+								w="150px"
+								as={Button}
+								rightIcon={<MdKeyboardArrowDown />}
+							>
+								{theme.name}
+							</MenuButton>
+							<MenuList bg={getColorValue('sidebarContent')}>
+								{themes.map((theme) => (
+									<MenuItem
+										bg={getColorValue('sidebarContent')}
+										_hover={{
+											bg: getColorValue(
+												'userProfileSidebar'
+											),
+										}}
+										onClick={() => setTheme(theme.id)}
+										key={theme.id}
+									>
+										{theme.name}
+									</MenuItem>
+								))}
+							</MenuList>
+						</Menu>
 					</Stack>
 				</ModalBody>
 			</ModalContent>

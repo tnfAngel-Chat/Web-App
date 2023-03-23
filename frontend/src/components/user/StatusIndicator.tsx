@@ -1,4 +1,4 @@
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { SafeNumber } from '@/types/util/SafeNumber';
 import { Box, PlacementWithLogical, Tooltip } from '@chakra-ui/react';
@@ -17,7 +17,7 @@ export default function StatusIndicator({
 	positioned = true,
 	tooltipPlacement,
 }: StatusIndicatorProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	const statusValues: Record<
 		UserStatusTypes,
 		{ style: string; label: string }

@@ -1,10 +1,10 @@
 'use client';
 
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { Box, Center, Stack, Heading, Text } from '@chakra-ui/react';
 
 export default function HomeScreen() {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	return (
 		<Box

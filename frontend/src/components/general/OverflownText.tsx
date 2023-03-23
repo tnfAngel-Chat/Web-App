@@ -1,4 +1,4 @@
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { Tooltip, Box } from '@chakra-ui/react';
 import { useRef, useState, useEffect } from 'react';
 
@@ -9,7 +9,7 @@ export default function OverflownText({
 }: any) {
 	const ref = useRef<HTMLElement | null>(null);
 	const [isOverflown, setIsOverflown] = useState(false);
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 
 	function updateOverflow() {
 		if (ref.current)

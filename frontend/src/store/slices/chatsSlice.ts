@@ -6,10 +6,11 @@ import { IMessage, IRawMessage } from '@/types/interfaces/Message';
 import { IRawUser } from '@/types/interfaces/User';
 import normalizeMessage from '@/util/normalizeMessage';
 import { createSlice } from '@reduxjs/toolkit';
+import { FileContent } from 'use-file-picker';
 
 type ChatState = {
 	chats: Record<string, IMessage[]>;
-	inputs: Record<string, string>;
+	inputs: Record<string, { content: string; attachments: FileContent[] }>;
 };
 
 const rawAuthor: IRawUser = {
@@ -486,10 +487,13 @@ export const chatsSlice = createSlice({
 				payload,
 			}: {
 				type: string;
-				payload: { channelId: string; content: string };
+				payload: {
+					channelId: string;
+					input: { content: string; attachments: FileContent[] };
+				};
 			}
 		) => {
-			state.inputs[payload.channelId] = payload.content;
+			state.inputs[payload.channelId] = payload.input;
 
 			return state;
 		},

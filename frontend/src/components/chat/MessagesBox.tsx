@@ -19,7 +19,7 @@ import Separator from '../misc/Separator';
 import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import InputBox from './InputBox';
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import UserProfileModal from '../modals/UserProfileModal';
 import { IUser } from '@/types/interfaces/User';
 import { useState } from 'react';

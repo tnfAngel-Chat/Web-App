@@ -1,9 +1,9 @@
 'use client';
 
-import useColorValue from '@/hooks/useColorValue';
+import useThemeColors from '@/hooks/useThemeColors';
 import { MessageModes } from '@/types/enums/MessageModes';
 import { IMessage } from '@/types/interfaces/Message';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import TextDate from '../misc/TextDate';
 import Avatar from '../user/Avatar';
@@ -24,11 +24,9 @@ export function HeadlessAvatarSpace() {
 
 export function AvatarSpaceDate({ timestamp }: { timestamp: number }) {
 	return (
-		<Box>
-			<Box w="42px">
-				<TextDate timestamp={timestamp} fontSize="10px" long={false} />
-			</Box>
-		</Box>
+		<Center w="42px" h="22px">
+			<TextDate timestamp={timestamp} fontSize="10px" long={false} />
+		</Center>
 	);
 }
 
@@ -37,7 +35,7 @@ export default function Message({
 	headless,
 	onShowAuthor,
 }: MessageProps) {
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
 
 	return (
@@ -52,7 +50,9 @@ export default function Message({
 			<Flex flex="1" gap="4" alignItems="start">
 				{headless ? (
 					isHovering ? (
-						<AvatarSpaceDate timestamp={message.timestamp} />
+						<Center h="100%">
+							<AvatarSpaceDate timestamp={message.timestamp} />
+						</Center>
 					) : (
 						<HeadlessAvatarSpace />
 					)

@@ -1,21 +1,17 @@
 'use client';
 
-import useColorValue from '@/hooks/useColorValue';
-import { ArrowForwardIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { Button, Center, Heading, Stack, useColorMode } from '@chakra-ui/react';
+import useThemeColors from '@/hooks/useThemeColors';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
+import { Button, Center, Heading, Stack } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
+import { MdSettings } from 'react-icons/md';
 
 export default function IndexScreen() {
-	const { colorMode, toggleColorMode } = useColorMode();
-	const { getColorValue } = useColorValue();
+	const { getColorValue } = useThemeColors();
 	const router = useRouter();
 
 	return (
-		<Center
-			h="100%"
-			w="100%"
-			bg={getColorValue('sidebarContent')}
-		>
+		<Center h="100%" w="100%" bg={getColorValue('sidebarContent')}>
 			<Stack spacing="24px">
 				<Heading as="h1">tnfAngel Chat</Heading>
 
@@ -27,14 +23,8 @@ export default function IndexScreen() {
 					Empezar
 				</Button>
 
-				<Button
-					variant="outline"
-					leftIcon={
-						colorMode === 'light' ? <MoonIcon /> : <SunIcon />
-					}
-					onClick={toggleColorMode}
-				>
-					Activar modo {colorMode === 'light' ? 'oscuro' : 'claro'}
+				<Button variant="outline" rightIcon={<MdSettings />}>
+					Abrir ajustes
 				</Button>
 			</Stack>
 		</Center>
