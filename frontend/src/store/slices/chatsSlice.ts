@@ -8,7 +8,7 @@ import normalizeMessage from '@/util/normalizeMessage';
 import { createSlice } from '@reduxjs/toolkit';
 import { FileContent } from 'use-file-picker';
 
-type ChatState = {
+export type ChatState = {
 	chats: Record<string, IMessage[]>;
 	inputs: Record<string, { content: string; attachments: FileContent[] }>;
 };

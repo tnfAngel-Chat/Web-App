@@ -10,6 +10,8 @@ import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
 import InputBox from '../chat/InputBox';
+import { ChatState } from '@/store/slices/chatsSlice';
+import { DirectChannelState } from '@/store/slices/directChannelsSlice';
 
 export default function ChatScreen() {
 	const { getColorValue } = useThemeColors();
@@ -17,9 +19,9 @@ export default function ChatScreen() {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	);
+	) as DirectChannelState;
 
-	const chatsState = useSelector((state: RootState) => state.chats);
+	const chatsState = useSelector((state: RootState) => state.chats) as ChatState;
 
 	const channels = directChannelsState.channels;
 

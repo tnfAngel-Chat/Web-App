@@ -14,14 +14,13 @@ import {
 	PURGE,
 	REGISTER,
 } from 'redux-persist';
-import { PersistPartial } from 'redux-persist/es/persistReducer';
 
 const persistConfig = {
 	key: 'root',
 	storage,
 };
 
-export const store = configureStore<IRootState & PersistPartial, any, any, any>({
+export const store = configureStore({
 	reducer: {
 		chats: persistReducer(persistConfig, chatsSlice),
 		themes: persistReducer(persistConfig, themesSlice),
@@ -45,7 +44,6 @@ export const store = configureStore<IRootState & PersistPartial, any, any, any>(
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 // Infer the `RootState` and `AppDispatch` types from the store itself
-
 
 export const persistor = persistStore(
 	store

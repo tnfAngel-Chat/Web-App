@@ -79,7 +79,7 @@ const rawChannels: IRawChannel[] = [
 	},
 ];
 
-type DirectChannelState = {
+export type DirectChannelState = {
 	channels: IChannel[];
 	selectedChannelId: string | null;
 	status: string;

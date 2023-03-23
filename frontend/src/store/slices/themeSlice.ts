@@ -1,9 +1,11 @@
 import { Theme, themes } from '@/constants/themes';
+
 import { createSlice } from '@reduxjs/toolkit';
 
-type ThemeState = {
+export type ThemeState = {
 	theme: Theme;
 };
+
 
 const initialState: ThemeState = {
 	theme: themes[0],

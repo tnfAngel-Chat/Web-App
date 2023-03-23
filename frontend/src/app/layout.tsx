@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
 import { PersistGate } from 'redux-persist/integration/react';
 import { themes } from '@/constants/themes';
+import LoadingScreen from '@/components/screens/LoadingScreen';
 
 const config = {
 	initialColorMode: 'dark',
@@ -43,7 +44,10 @@ export default function RootLayout({
 				<ChakraProvider theme={theme}>
 					<CacheProvider>
 						<Provider store={store}>
-							<PersistGate loading={<p>Olilla</p>} persistor={persistor}>
+							<PersistGate
+								loading={<LoadingScreen/>}
+								persistor={persistor}
+							>
 								<AppChakraLayout>{children}</AppChakraLayout>
 							</PersistGate>
 						</Provider>

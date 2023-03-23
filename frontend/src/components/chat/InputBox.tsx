@@ -32,6 +32,7 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { useDispatch, useSelector } from 'react-redux';
 import {
 	addMessage,
+	ChatState,
 	modifyMessage,
 	setMessageInput,
 } from '@/store/slices/chatsSlice';
@@ -44,6 +45,7 @@ import normalizeMessage from '@/util/normalizeMessage';
 import { useEffect, useRef } from 'react';
 import OverflownText from '../general/OverflownText';
 import Separator from '../misc/Separator';
+import { DirectChannelState } from '@/store/slices/directChannelsSlice';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -59,9 +61,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	);
+	) as DirectChannelState; 
 
-	const chatsState = useSelector((state: RootState) => state.chats);
+	const chatsState = useSelector((state: RootState) => state.chats) as ChatState;
 
 	const inputRef = useRef<null | any>(null);
 

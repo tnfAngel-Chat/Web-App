@@ -27,7 +27,10 @@ import { UserTypes } from '@/types/enums/UserTypes';
 import { IUser } from '@/types/interfaces/User';
 import { RootState } from '@/store';
 import { useState } from 'react';
-import { removeChannel } from '@/store/slices/directChannelsSlice';
+import {
+	DirectChannelState,
+	removeChannel,
+} from '@/store/slices/directChannelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Avatar from '../user/Avatar';
@@ -201,7 +204,7 @@ export function MainSidebarContent({
 }: MainSidebarContentProps) {
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	);
+	) as DirectChannelState;
 
 	const channels = directChannelsState.channels;
 

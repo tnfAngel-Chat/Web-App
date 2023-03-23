@@ -1,7 +1,6 @@
 'use client';
 
 import useThemeColors from '@/hooks/useThemeColors';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, Center, Stack, Heading, Button } from '@chakra-ui/react';
 import { MdSettings } from 'react-icons/md';
 
