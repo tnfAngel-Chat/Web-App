@@ -347,7 +347,7 @@ export default function MainSidebar({
 		username: 'Angelito',
 		presence: 'Me dejaste el cuerpo fuera...',
 		status: UserStatusTypes.Online,
-		avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
+		avatar: 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/07/25/62de6567185fa.jpeg',
 	});
 
 	return (

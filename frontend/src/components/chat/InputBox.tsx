@@ -106,7 +106,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
-		if (event.key === 'Enter' && !event.shiftKey && !isMobile && content) {
+		if (event.key === 'Enter' && !event.shiftKey && !isMobile && (content || inputAttachments.length)) {
 			event.preventDefault();
 			handleSend(content, inputAttachments);
 		} else if (event.key === 'Enter' && !event.shiftKey) {
@@ -114,10 +114,11 @@ export default function InputBox({ channel }: InputBoxProps) {
 		}
 	};
 
-	function handleSend(rawContent: string, attachments: FileContent[]) {
-		console.log(attachments);
+	function handleSend(rawContent: string, rawAttachments: FileContent[]) {
 
 		const content = rawContent.trim();
+
+		if (!content && !rawAttachments.length) return
 
 		const selectedChannelId = directChannelsState.selectedChannelId;
 
@@ -127,7 +128,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 			type: UserTypes.User,
 			id: '1',
 			username: 'Lauty',
-			avatar: 'https://cdn.discordapp.com/avatars/456361646273593345/b3d4494a50c05f2a3fe2e4ca68b4a741.webp',
+			avatar: 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/07/25/62de6567185fa.jpeg',
 			status: UserStatusTypes.Online,
 		};
 
@@ -286,6 +287,8 @@ export default function InputBox({ channel }: InputBoxProps) {
 		},
 	];
 
+	console.log(numberOfLines)
+
 	return (
 		<Box
 			bg={getColorValue('secondaryContentBackground')}
@@ -375,6 +378,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 										: numberOfLines
 								}
 								maxH="50vh"
+								h={numberOfLines > 1 ? "100%" : "45px"}
 								minH="45px"
 								size="md"
 								resize="none"

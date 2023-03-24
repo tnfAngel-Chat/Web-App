@@ -13,6 +13,11 @@ const nextConfig = {
 			},
 			{
 				protocol: 'https',
+				hostname: '*',
+				port: '',
+			},
+			{
+				protocol: 'https',
 				hostname: 'tnfangel.xyz',
 				port: '',
 			},
