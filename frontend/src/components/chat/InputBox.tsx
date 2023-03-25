@@ -54,16 +54,18 @@ export type InputBoxProps = {
 export default function InputBox({ channel }: InputBoxProps) {
 	const [openFileSelector, { filesContent }] = useFilePicker({
 		readAs: 'DataURL',
-		limitFilesConfig: { min: 1, max: 10 },
+		limitFilesConfig: { min: 1 },
 	});
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	) as DirectChannelState; 
+	)
 
-	const chatsState = useSelector((state: RootState) => state.chats) as ChatState;
+	const chatsState = useSelector(
+		(state: RootState) => state.chats
+	)
 
 	const inputRef = useRef<null | any>(null);
 
@@ -106,7 +108,12 @@ export default function InputBox({ channel }: InputBoxProps) {
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
-		if (event.key === 'Enter' && !event.shiftKey && !isMobile && (content || inputAttachments.length)) {
+		if (
+			event.key === 'Enter' &&
+			!event.shiftKey &&
+			!isMobile &&
+			(content || inputAttachments.length)
+		) {
 			event.preventDefault();
 			handleSend(content, inputAttachments);
 		} else if (event.key === 'Enter' && !event.shiftKey) {
@@ -115,10 +122,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 	};
 
 	function handleSend(rawContent: string, rawAttachments: FileContent[]) {
-
 		const content = rawContent.trim();
 
-		if (!content && !rawAttachments.length) return
+		if (!content && !rawAttachments.length) return;
 
 		const selectedChannelId = directChannelsState.selectedChannelId;
 
@@ -287,8 +293,6 @@ export default function InputBox({ channel }: InputBoxProps) {
 		},
 	];
 
-	console.log(numberOfLines)
-
 	return (
 		<Box
 			bg={getColorValue('secondaryContentBackground')}
@@ -298,11 +302,12 @@ export default function InputBox({ channel }: InputBoxProps) {
 			<Box overflow="auto" h="100%" maxH="60vh">
 				<Flex direction="column" overflow="auto" gap="20px" w="100%">
 					{inputAttachments.length ? (
-						<Flex overflow="auto" direction="column" gap="15px">
+						<Flex overflow="auto" direction="column">
 							<Flex gap="20px" overflow="auto">
 								{inputAttachments.map((file, i) => {
 									const fileExtension =
 										file.name.split('.').pop() ?? '';
+
 									return (
 										<Box
 											w="200px"
@@ -311,7 +316,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 											bg={getColorValue('sidebarContent')}
 											borderRadius="10px"
 											padding="20px"
-											key={file.name + i}
+											key={`${file.name}-${i}`}
 										>
 											<Flex
 												direction="column"
@@ -348,7 +353,6 @@ export default function InputBox({ channel }: InputBoxProps) {
 									);
 								})}
 							</Flex>
-							<Separator />
 						</Flex>
 					) : null}
 					<Flex h="100%" w="100%" gap="24px">
@@ -378,7 +382,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 										: numberOfLines
 								}
 								maxH="50vh"
-								h={numberOfLines > 1 ? "100%" : "45px"}
+								h={numberOfLines > 1 ? '100%' : '45px'}
 								minH="45px"
 								size="md"
 								resize="none"

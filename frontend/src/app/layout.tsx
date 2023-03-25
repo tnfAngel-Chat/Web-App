@@ -3,12 +3,10 @@
 import { CacheProvider } from '@chakra-ui/next-js';
 import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import '../styles/global.scss';
-import { persistor, store } from '../store';
+import { store } from '../store';
 import { Provider } from 'react-redux';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
-import { PersistGate } from 'redux-persist/integration/react';
 import { themes } from '@/constants/themes';
-import LoadingScreen from '@/components/screens/LoadingScreen';
 
 const config = {
 	initialColorMode: 'dark',
@@ -44,12 +42,7 @@ export default function RootLayout({
 				<ChakraProvider theme={theme}>
 					<CacheProvider>
 						<Provider store={store}>
-							<PersistGate
-								loading={<LoadingScreen/>}
-								persistor={persistor}
-							>
-								<AppChakraLayout>{children}</AppChakraLayout>
-							</PersistGate>
+							<AppChakraLayout>{children}</AppChakraLayout>
 						</Provider>
 					</CacheProvider>
 				</ChakraProvider>

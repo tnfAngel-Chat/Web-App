@@ -6,7 +6,6 @@ export type ThemeState = {
 	theme: Theme;
 };
 
-
 const initialState: ThemeState = {
 	theme: themes[0],
 };

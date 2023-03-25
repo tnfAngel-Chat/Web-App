@@ -19,9 +19,9 @@ export default function ChatScreen() {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	) as DirectChannelState;
+	)
 
-	const chatsState = useSelector((state: RootState) => state.chats) as ChatState;
+	const chatsState = useSelector((state: RootState) => state.chats)
 
 	const channels = directChannelsState.channels;
 

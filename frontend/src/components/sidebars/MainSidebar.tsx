@@ -204,7 +204,7 @@ export function MainSidebarContent({
 }: MainSidebarContentProps) {
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	) as DirectChannelState;
+	)
 
 	const channels = directChannelsState.channels;
 
