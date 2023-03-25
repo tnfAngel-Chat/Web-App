@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
 import { themes } from '@/constants/themes';
 
+
 const config = {
 	initialColorMode: 'dark',
 	useSystemColorMode: false,

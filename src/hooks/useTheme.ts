@@ -1,11 +1,11 @@
 import { themes } from '@/constants/themes';
 import { RootState } from '@/store';
-import { setTheme, ThemeState } from '@/store/slices/themeSlice';
+import { setTheme } from '@/store/slices/themeSlice';
 import { useColorMode } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function useTheme() {
-	const themesState = useSelector((state: RootState) => state.themes)
+	const themesState = useSelector((state: RootState) => state.themes);
 	const dispatch = useDispatch();
 	const { colorMode, toggleColorMode } = useColorMode();
 
