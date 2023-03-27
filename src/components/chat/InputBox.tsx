@@ -61,11 +61,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	)
+	);
 
-	const chatsState = useSelector(
-		(state: RootState) => state.chats
-	)
+	const chatsState = useSelector((state: RootState) => state.chats);
 
 	const inputRef = useRef<null | any>(null);
 
@@ -295,7 +293,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 	return (
 		<Box
-			bg={getColorValue('secondaryContentBackground')}
+			bg={getColorValue('secondaryBackground')}
 			w="100%"
 			padding="15px 20px 15px 20px"
 		>
@@ -313,7 +311,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 											w="200px"
 											h="240px"
 											objectFit="cover"
-											bg={getColorValue('sidebarContent')}
+											bg={getColorValue(
+												'primaryBackground'
+											)}
 											borderRadius="10px"
 											padding="20px"
 											key={`${file.name}-${i}`}
@@ -408,7 +408,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 									/>
 								</PopoverTrigger>
 								<PopoverContent
-									bg={getColorValue('sidebarContent')}
+									bg={getColorValue('primaryBackground')}
 								>
 									<PopoverCloseButton />
 									<PopoverHeader>

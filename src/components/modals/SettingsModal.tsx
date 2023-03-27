@@ -24,10 +24,10 @@ export default function SettingsModal({ isOpen, onClose }: any) {
 
 	return (
 		<Modal isOpen={isOpen} size="full" onClose={onClose}>
-			<ModalOverlay />
+			<ModalOverlay backdropFilter="blur(5px)" />
 			<ModalContent
 				color={getColorValue('textColor')}
-				bg={getColorValue('sidebarContent')}
+				bg={getColorValue('modalBackground')}
 			>
 				<ModalHeader>Ajustes de usuario</ModalHeader>
 				<ModalCloseButton />
@@ -42,13 +42,13 @@ export default function SettingsModal({ isOpen, onClose }: any) {
 							>
 								{theme.name}
 							</MenuButton>
-							<MenuList bg={getColorValue('sidebarContent')}>
+							<MenuList bg={getColorValue('modalBackground')}>
 								{themes.map((theme) => (
 									<MenuItem
-										bg={getColorValue('sidebarContent')}
+										bg={getColorValue('modalBackground')}
 										_hover={{
 											bg: getColorValue(
-												'userProfileSidebar'
+												'ternaryBackground'
 											),
 										}}
 										onClick={() => setTheme(theme.id)}

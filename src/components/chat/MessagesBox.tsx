@@ -79,6 +79,7 @@ export function MessageGroupSpacer() {
 export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [clickedUser, setClickedUser] = useState<IUser>();
+
 	let lastAuthorId: string = '';
 
 	return (

@@ -1,5 +1,6 @@
 export class ClientLinks {
-	api = { baseURL: 'https://localhost:3001/', version: '1' };
-	gateway = 'https://localhost:3002/';
-	cdn = 'https://localhost:3003/';
+	api = process.env.API_URL as string;
+	gateway = process.env.GATEWAY_URL as string;
+	cdn = process.env.CDN_URL as string;
+	proxy = process.env.PROXY_URL as string;
 }

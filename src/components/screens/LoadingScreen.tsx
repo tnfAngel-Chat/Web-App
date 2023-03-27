@@ -1,13 +1,14 @@
 'use client';
 
-import { Center, useColorMode } from '@chakra-ui/react';
+import useThemeColors from '@/hooks/useThemeColors';
+import { Center } from '@chakra-ui/react';
 import Image from 'next/image';
 
 export default function LoadingScreen() {
-	const { colorMode } = useColorMode();
+	const { getColorValue } = useThemeColors();
 
 	return (
-		<Center h="100%" w="100%" bg={`${colorMode}.sidebarContent`}>
+		<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
 			<Image
 				src="https://www.tnfangel.xyz/assets/logo.webp"
 				width={200}

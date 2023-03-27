@@ -2,7 +2,6 @@
 	border-radius: 50%;
 	position: relative;
 	border-width: 2px;
-	border-color: #252525;
 }
 
 .positionedIndicator {
@@ -10,18 +9,4 @@
 	right: -61%;
 }
 
-.onlineIndicator {
-	background-color: #2ed458;
-}
 
-.idleIndicator {
-	background-color: #eeba59;
-}
-
-.dndIndicator {
-	background-color: #ee5959;
-}
-
-.offlineIndicator {
-	background-color: #9b9b9b;
-}

@@ -5,6 +5,7 @@ specifiers:
   '@chakra-ui/next-js': ^2.1.0
   '@chakra-ui/react': ^2.5.3
   '@chakra-ui/system': ^2.5.3
+  '@discordjs/collection': ^1.4.0
   '@emotion/cache': ^11.10.5
   '@emotion/react': ^11.10.6
   '@emotion/styled': ^11.10.6
@@ -33,6 +34,7 @@ dependencies:
   '@chakra-ui/next-js': 2.1.0_helgxqnq3mvm2kk5vk7yiqxtq4
   '@chakra-ui/react': 2.5.3_o5ss5ii2g5qfrpqtpovq43b3pq
   '@chakra-ui/system': 2.5.3_xqp3pgpqjlfxxa3zxu4zoc4fba
+  '@discordjs/collection': 1.4.0
   '@emotion/cache': 11.10.5
   '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
@@ -1194,6 +1196,11 @@ packages:
     dependencies:
       '@chakra-ui/system': 2.5.3_xqp3pgpqjlfxxa3zxu4zoc4fba
       react: 18.2.0
+    dev: false
+
+  /@discordjs/collection/1.4.0:
+    resolution: {integrity: sha512-hiOJyk2CPFf1+FL3a4VKCuu1f448LlROVuu8nLz1+jCOAPokUcdFAV+l4pd3B3h6uJlJQSASoZzrdyNdjdtfzQ==}
+    engines: {node: '>=16.9.0'}
     dev: false
 
   /@emotion/babel-plugin/11.10.6:

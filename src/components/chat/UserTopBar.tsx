@@ -32,7 +32,7 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 	return (
 		<Box
 			h="44px"
-			bg={getColorValue('secondaryContentBackground')}
+			bg={getColorValue('secondaryBackground')}
 			w="100%"
 			padding="5px 20px 5px 20px"
 		>

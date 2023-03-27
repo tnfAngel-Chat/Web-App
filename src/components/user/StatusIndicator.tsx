@@ -20,22 +20,22 @@ export default function StatusIndicator({
 	const { getColorValue } = useThemeColors();
 	const statusValues: Record<
 		UserStatusTypes,
-		{ style: string; label: string }
+		{ color: string; label: string }
 	> = {
 		[UserStatusTypes.Online]: {
-			style: styles.onlineIndicator,
+			color: getColorValue('statusIndicatorOnlineColor'),
 			label: 'Online',
 		},
 		[UserStatusTypes.Offline]: {
-			style: styles.offlineIndicator,
+			color: getColorValue('statusIndicatorOfflineColor'),
 			label: 'Offline',
 		},
 		[UserStatusTypes.Idle]: {
-			style: styles.idleIndicator,
+			color: getColorValue('statusIndicatorIdleColor'),
 			label: 'Idle',
 		},
 		[UserStatusTypes.DoNotDisturb]: {
-			style: styles.dndIndicator,
+			color: getColorValue('statusIndicatorDNDColor'),
 			label: 'Do Not Disturb',
 		},
 	};
@@ -45,16 +45,18 @@ export default function StatusIndicator({
 			label={statusValues[status].label}
 			placement={tooltipPlacement ?? 'top'}
 			openDelay={100}
-			bg={getColorValue('tooltipBG')}
+			bg={getColorValue('tooltipBackground')}
 			color={getColorValue('textColor')}
 			hasArrow
 		>
 			<Box
 				w={`${size}px`}
 				h={`${size}px`}
+				borderColor={getColorValue('statusIndicatorBorderColor')}
+				bg={statusValues[status].color}
 				className={`${styles.indicator} ${
 					positioned ? styles.positionedIndicator : ''
-				} ${statusValues[status].style}`}
+				}`}
 			/>
 		</Tooltip>
 	);

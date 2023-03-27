@@ -164,7 +164,7 @@ export default function UsersSidebar({ users }: UsersSidebarProps) {
 			h="100%"
 			minW="250px"
 			maxW="250px"
-			bg={getColorValue('sidebarContent')}
+			bg={getColorValue('sidebarBackground')}
 		>
 			<Box h="100%" w="100%" padding="10px">
 				<UsersSidebarContent users={users} />

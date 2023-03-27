@@ -38,7 +38,7 @@ export default function UserProfileModal({
 			<ModalOverlay backdropFilter="blur(5px)" />
 			<ModalContent
 				color={getColorValue('textColor')}
-				bg={getColorValue('sidebarContent')}
+				bg={getColorValue('modalBackground')}
 			>
 				<ModalBody padding="15px">
 					<Stack h="100%">
@@ -81,7 +81,7 @@ export default function UserProfileModal({
 								</Box>
 							</Center>
 						</Flex>
-						<Card h="100%" bg={getColorValue('userProfileSidebar')}>
+						<Card h="100%" bg={getColorValue('ternaryBackground')}>
 							<CardHeader>
 								<Heading size="md">About me</Heading>
 							</CardHeader>

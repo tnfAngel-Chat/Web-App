@@ -31,7 +31,7 @@ export default function OverflownText({
 			isDisabled={!isOverflown}
 			placement={tooltipPlacement ?? 'bottom'}
 			openDelay={300}
-			bg={getColorValue('tooltipBG')}
+			bg={getColorValue('tooltipBackground')}
 			color={getColorValue('textColor')}
 			hasArrow
 		>

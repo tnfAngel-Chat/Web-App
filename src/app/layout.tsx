@@ -6,21 +6,15 @@ import '../styles/global.scss';
 import { store } from '../store';
 import { Provider } from 'react-redux';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
-import { themes } from '@/constants/themes';
-
 
 const config = {
 	initialColorMode: 'dark',
 	useSystemColorMode: false,
 };
 
-const colors = Object.fromEntries(
-	themes.map((theme) => [theme.id, theme.colors])
-);
-
 const fonts = {};
 
-const theme = extendTheme({ config, colors, fonts });
+const theme = extendTheme({ config, fonts });
 
 export default function RootLayout({
 	children,

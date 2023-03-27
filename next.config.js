@@ -38,6 +38,13 @@ const nextConfig = {
 			},
 		],
 	},
+	env: {
+		API_VERSION: process.env.API_VERSION,
+		API_URL: process.env.API_URL,
+		GATEWAY_URL: process.env.GATEWAY_URL,
+		CDN_URL: process.env.CDN_URL,
+		PROXY_URL: process.env.PROXY_URL,
+	},
 };
 
 module.exports = nextConfig;

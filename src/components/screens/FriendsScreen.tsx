@@ -13,7 +13,7 @@ export default function HomeScreen() {
 			h="100%"
 			w="100%"
 			minW="500px"
-			bg={getColorValue('primaryContentBackground')}
+			bg={getColorValue('primaryBackground')}
 		>
 			<Center h="100%">
 				<Stack spacing="24px">

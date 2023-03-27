@@ -204,7 +204,7 @@ export function MainSidebarContent({
 }: MainSidebarContentProps) {
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	)
+	);
 
 	const channels = directChannelsState.channels;
 
@@ -255,7 +255,7 @@ export function CreateGroupSection() {
 							icon={<MdAdd />}
 						/>
 					</PopoverTrigger>
-					<PopoverContent bg={getColorValue('sidebarContent')}>
+					<PopoverContent bg={getColorValue('sidebarBackground')}>
 						<PopoverCloseButton />
 						<PopoverHeader>Seleccionar amigos</PopoverHeader>
 						<PopoverBody>Aun no hay amigos</PopoverBody>
@@ -272,7 +272,6 @@ export type ProfileBoxProps = {
 
 export function ProfileBox({ user }: ProfileBoxProps) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const { getColorValue } = useThemeColors();
 
 	return (
 		<Box
@@ -281,7 +280,6 @@ export function ProfileBox({ user }: ProfileBoxProps) {
 			maxW="100%"
 			maxH="100%"
 			padding="10px 20px 10px 20px"
-			bg={getColorValue('userProfileSidebar')}
 		>
 			<Flex minW="0px" h="100%" gap="5px">
 				<Flex minW="0px" gap="12px" alignItems="left">
@@ -357,12 +355,18 @@ export default function MainSidebar({
 			h="100%"
 			minW="250px"
 			maxW="250px"
-			bg={getColorValue('sidebarContent')}
+			spacing="0px"
 		>
-			<Box h="100%" w="100%" overflow="auto" padding="10px">
+			<Box
+				h="100%"
+				w="100%"
+				bg={getColorValue('sidebarBackground')}
+				overflow="auto"
+				padding="10px"
+			>
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>
-			<Box minH="75px">
+			<Box minH="75px" bg={getColorValue('ternaryBackground')}>
 				<ProfileBox user={currentUser} />
 			</Box>
 		</Stack>

@@ -13,7 +13,7 @@ export default function IndexScreen() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
-		<Center h="100%" w="100%" bg={getColorValue('sidebarContent')}>
+		<Center h="100%" w="100%" bg={getColorValue('appBackground')}>
 			<Stack spacing="24px">
 				<Heading as="h1">tnfAngel Chat</Heading>
 

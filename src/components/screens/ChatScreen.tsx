@@ -19,9 +19,9 @@ export default function ChatScreen() {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
-	)
+	);
 
-	const chatsState = useSelector((state: RootState) => state.chats)
+	const chatsState = useSelector((state: RootState) => state.chats);
 
 	const channels = directChannelsState.channels;
 
@@ -39,13 +39,9 @@ export default function ChatScreen() {
 	const messages = chatsState.chats[channel.id] ?? [];
 
 	return (
-		<Flex
-			h="100%"
-			w="100%"
-			gap={0}
-			bg={getColorValue('primaryContentBackground')}
-		>
+		<Flex h="100%" w="100%" gap={0}>
 			<Flex
+				bg={getColorValue('primaryBackground')}
 				scrollSnapAlign="center"
 				scrollSnapStop="always"
 				h="100%"

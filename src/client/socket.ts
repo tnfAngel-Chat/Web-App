@@ -9,7 +9,8 @@ export class ClientSocket {
 	}
 
 	connect() {
-		this.io = io(this.client.links.gateway, {});
+		if (typeof window !== undefined)
+			this.io = io(this.client.links.gateway, {});
 
 		return this.io;
 	}
