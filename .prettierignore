@@ -6,5 +6,5 @@ yarn.lock
 .prettierignore
 .eslintignore
 .prettierrc
-readme.md
+README.md
 build/*

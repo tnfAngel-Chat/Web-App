@@ -1,5 +1,5 @@
-import { Collection } from '@discordjs/collection';
 import { Client } from '..';
+import { Collection } from '@discordjs/collection';
 
 export class BaseManager<CollectionKeyType extends { id: string }> {
 	client: Client;

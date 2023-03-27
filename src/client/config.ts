@@ -1,5 +1,3 @@
 export class ClientConfig {
-	constructor() {
-        
-    }
-}   
+	useMonolithicBackend = process.env.MONOLITHIC_BACKEND_URL as string;
+}

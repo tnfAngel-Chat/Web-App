@@ -16,7 +16,7 @@ export default function AppChakraLayout({ children }: any) {
 	useEffect(() => {
 		function onConnect() {
 			setIsConnected(true);
-			setIsLoading(true);
+			setIsLoading(false);
 		}
 
 		function onDisconnect() {
@@ -33,6 +33,8 @@ export default function AppChakraLayout({ children }: any) {
 	}, []);
 
 	return isLoading ? (
+		<LoadingScreen />
+	) : (
 		<Box
 			h="100%"
 			w="100%"
@@ -43,7 +45,5 @@ export default function AppChakraLayout({ children }: any) {
 		>
 			{children}
 		</Box>
-	) : (
-		<LoadingScreen />
 	);
 }

@@ -8,7 +8,13 @@ export default function LoadingScreen() {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
+		<Center
+			h="100%"
+			w="100%"
+			bg={getColorValue('appBackground')}
+			backgroundRepeat="no-repeat"
+			backgroundSize="cover"
+		>
 			<Image
 				src="https://www.tnfangel.xyz/assets/logo.webp"
 				width={200}

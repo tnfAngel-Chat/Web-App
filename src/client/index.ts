@@ -1,10 +1,10 @@
-import { ClientConfig } from './config';
 import { ClientLinks } from './links';
+import { ClientConfig } from './config';
 import { ClientSocket } from './socket';
+import { RestClient } from './rest/client';
 import { UsersManager } from './classes/UsersManager';
 import { ChannelsManager } from './classes/ChannelsManager';
 import { MessagesManager } from './classes/MessagesManager';
-import { RestClient } from './rest/client';
 
 export class Client {
 	constructor() {

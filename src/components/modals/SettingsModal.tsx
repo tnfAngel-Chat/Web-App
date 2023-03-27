@@ -45,7 +45,7 @@ export default function SettingsModal({ isOpen, onClose }: any) {
 							<MenuList bg={getColorValue('modalBackground')}>
 								{themes.map((theme) => (
 									<MenuItem
-										bg={getColorValue('modalBackground')}
+										bg="transparent"
 										_hover={{
 											bg: getColorValue(
 												'ternaryBackground'

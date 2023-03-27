@@ -1,11 +1,11 @@
 'use client';
 
-import { CacheProvider } from '@chakra-ui/next-js';
-import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import '../styles/global.scss';
-import { store } from '../store';
 import { Provider } from 'react-redux';
+import { store } from '../store';
+import { CacheProvider } from '@chakra-ui/next-js';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
+import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 
 const config = {
 	initialColorMode: 'dark',
