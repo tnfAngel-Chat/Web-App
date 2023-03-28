@@ -1,13 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import chatsSlice from './slices/chatsSlice';
-import directChannelsSlice from './slices/directChannelsSlice';
 import themesSlice from './slices/themeSlice';
+import collapsiblesSlice from './slices/collapsiblesSlice';
+import directChannelsSlice from './slices/directChannelsSlice';
 
 export const store = configureStore({
 	reducer: {
 		chats: chatsSlice,
 		themes: themesSlice,
+		collapsibles: collapsiblesSlice,
 		directChannels: directChannelsSlice,
 	},
 });

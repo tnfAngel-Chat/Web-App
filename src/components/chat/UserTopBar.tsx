@@ -1,6 +1,7 @@
 'use client';
 
 import useThemeColors from '@/hooks/useThemeColors';
+import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
@@ -10,7 +11,6 @@ import {
 	Icon,
 	IconButton,
 	Spacer,
-	Text,
 } from '@chakra-ui/react';
 import {
 	MdAlternateEmail,
@@ -19,6 +19,7 @@ import {
 	MdSearch,
 	MdVideocam,
 } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
 import OverflownText from '../general/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
 
@@ -27,6 +28,7 @@ export type UserTopBarProps = {
 };
 
 export default function UserTopBar({ channel }: UserTopBarProps) {
+	const dispatch = useDispatch()
 	const { getColorValue } = useThemeColors();
 
 	return (
@@ -92,10 +94,11 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 					{channel.type === ChannelTypes.Group ? (
 						<Center>
 							<IconButton
-								aria-label="Members"
+								aria-label="Toggle Members"
 								bg="transparent"
 								size="sm"
 								fontSize="24px"
+								onClick={() => dispatch(toggleChannelMembers())}
 								icon={<MdPeople />}
 							/>
 						</Center>

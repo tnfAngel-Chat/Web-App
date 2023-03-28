@@ -1,41 +1,61 @@
 'use client';
 
 import useThemeColors from '@/hooks/useThemeColors';
-import { Box } from '@chakra-ui/react';
+import IndexLoadingScreen from '../screens/IndexLoadingScreen';
 import { client } from '@/client';
-import { useEffect, useState } from 'react';
-import LoadingScreen from '../screens/LoadingScreen';
-import { IChannel } from '@/types/interfaces/Channel';
-import { IUser } from '@/types/interfaces/User';
+import { Box } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { IUser } from '@/types/interfaces/User';
+import { IChannel } from '@/types/interfaces/Channel';
 import { addChannel } from '@/store/slices/directChannelsSlice';
+import normalizeChannel from '@/util/normalizeChannel';
+import useTheme from '@/hooks/useTheme';
 
 const socket = client.socket.connect();
 
+interface IUserPreferences {
+	theme: string;
+}
+
 export default function AppChakraLayout({ children }: any) {
 	const dispatch = useDispatch();
+	const [theme, setTheme] = useTheme();
 	const { getColorValue } = useThemeColors();
 	const [isLoading, setIsLoading] = useState(true);
 	const [isConnected, setIsConnected] = useState(socket?.connected);
 
 	useEffect(() => {
+		let ignore = false;
+
 		function onConnect() {
-			setIsConnected(true);
-			setIsLoading(false);
+			if (!ignore) {
+				setIsConnected(true);
+			}
 		}
 
 		function onDisconnect() {
-			setIsConnected(false);
+			if (!ignore) setIsConnected(false);
 		}
 
 		function onReady({
 			channels,
 			users,
+			preferences,
 		}: {
 			channels: IChannel[];
 			users: IUser[];
+			preferences: IUserPreferences;
 		}) {
-			channels.forEach((channel) => dispatch(addChannel(channel)));
+			if (!ignore) {
+				channels.forEach((channel) =>
+					dispatch(addChannel(normalizeChannel(channel)))
+				);
+
+				setTheme(preferences.theme);
+
+				setIsLoading(false);
+			}
 		}
 
 		socket?.on('connect', onConnect);
@@ -44,14 +64,16 @@ export default function AppChakraLayout({ children }: any) {
 		socket?.on('ready', onReady);
 
 		return () => {
+			ignore = true;
+
 			socket?.off('connect', onConnect);
 			socket?.off('ready', onConnect);
 			socket?.off('disconnect', onDisconnect);
 		};
-	}, []);
+	}, [dispatch]);
 
 	return isLoading ? (
-		<LoadingScreen />
+		<IndexLoadingScreen />
 	) : (
 		<Box
 			h="100%"
@@ -62,7 +84,14 @@ export default function AppChakraLayout({ children }: any) {
 			backgroundRepeat="no-repeat"
 			backgroundSize="cover"
 		>
-			<Box h="100%" w="100%" scrollSnapType="x mandatory" scrollSnapStop="always" scrollBehavior="smooth" overflow="auto">
+			<Box
+				h="100%"
+				w="100%"
+				scrollSnapType="x mandatory"
+				scrollSnapStop="always"
+				scrollBehavior="smooth"
+				overflow="auto"
+			>
 				{children}
 			</Box>
 		</Box>

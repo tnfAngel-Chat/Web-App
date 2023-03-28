@@ -4,14 +4,30 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import UsersSidebar from '../sidebars/UsersSidebar';
 import useThemeColors from '@/hooks/useThemeColors';
 import MessagesBox from '../chat/MessagesBox';
-import { Box, Flex, Stack } from '@chakra-ui/react';
+import { Center, Flex } from '@chakra-ui/react';
 import UserTopBar from '../chat/UserTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
 import InputBox from '../chat/InputBox';
-import { ChatState } from '@/store/slices/chatsSlice';
-import { DirectChannelState } from '@/store/slices/directChannelsSlice';
+import Image from 'next/image';
+
+export function ChatLoadingScreen() {
+	const { getColorValue } = useThemeColors();
+
+	return (
+		<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
+			<Image
+				src="https://www.tnfangel.xyz/assets/logo.webp"
+				width={200}
+				height={200}
+				quality={100}
+				style={{ borderRadius: '50%' }}
+				alt="tnfAngel Chat"
+			/>
+		</Center>
+	);
+}
 
 export default function ChatScreen() {
 	const { getColorValue } = useThemeColors();
@@ -19,6 +35,10 @@ export default function ChatScreen() {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
+	);
+
+	const collapsiblesState = useSelector(
+		(state: RootState) => state.collapsibles
 	);
 
 	const chatsState = useSelector((state: RootState) => state.chats);
@@ -33,7 +53,7 @@ export default function ChatScreen() {
 		router.prefetch('/home');
 		router.push('/home');
 
-		return <></>;
+		return <ChatLoadingScreen />;
 	}
 
 	const messages = chatsState.chats[channel.id] ?? [];
@@ -53,9 +73,10 @@ export default function ChatScreen() {
 				<MessagesBox channel={channel} messages={messages} />
 				<InputBox channel={channel} />
 			</Flex>
-			{channel.type === ChannelTypes.Group && (
-				<UsersSidebar users={channel.members} />
-			)}
+			{channel.type === ChannelTypes.Group &&
+				collapsiblesState.showChannelMembers && (
+					<UsersSidebar users={channel.members} />
+				)}
 		</Flex>
 	);
 }

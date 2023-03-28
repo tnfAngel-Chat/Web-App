@@ -8,7 +8,7 @@ export interface IBaseChannel {
 export interface IRawTextChannel extends IBaseChannel {
 	type: ChannelTypes.Text;
 	name: string;
-	icon?: string;
+	icon?: string | null;
 }
 
 export interface ITextChannel extends IBaseChannel {
@@ -29,8 +29,8 @@ export interface IDirectMessageChannel extends IBaseChannel {
 
 export interface IRawGroupChannel extends IBaseChannel {
 	type: ChannelTypes.Group;
-	name?: string;
-	icon?: string;
+	name?: string | null;
+	icon?: string | null;
 	members: IRawUser[];
 }
 

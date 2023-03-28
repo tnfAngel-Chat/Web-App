@@ -17,6 +17,15 @@ export const directChannelsSlice = createSlice({
 	name: 'directChannels',
 	initialState,
 	reducers: {
+		setChannels: (
+			state,
+			{ payload }: { type: string; payload: IChannel[] }
+		) => {
+			state.channels = payload;
+
+			return state;
+		},
+
 		addChannel: (
 			state,
 			{ payload }: { type: string; payload: IChannel }
@@ -51,6 +60,6 @@ export const directChannelsSlice = createSlice({
 	},
 });
 
-export const { addChannel, removeChannel, setSelectedChannel } =
+export const { setChannels, addChannel, removeChannel, setSelectedChannel } =
 	directChannelsSlice.actions;
 export default directChannelsSlice.reducer;

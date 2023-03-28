@@ -6,8 +6,8 @@ export interface IRawUser {
 	id: string;
 	username: string;
 	status: UserStatusTypes;
-	avatar?: string;
-	presence?: string;
+	avatar?: string | null;
+	presence?: string | null;
 }
 
 export interface IUser {
