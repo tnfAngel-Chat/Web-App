@@ -38,12 +38,15 @@ export default function AppChakraLayout({ children }: any) {
 		<Box
 			h="100%"
 			w="100%"
+			overflow="hidden"
 			color={getColorValue('textColor')}
 			bg={getColorValue('appBackground')}
 			backgroundRepeat="no-repeat"
 			backgroundSize="cover"
 		>
-			{children}
+			<Box h="100%" w="100%" scrollSnapType="x mandatory" scrollSnapStop="always" scrollBehavior="smooth" overflow="auto">
+				{children}
+			</Box>
 		</Box>
 	);
 }
