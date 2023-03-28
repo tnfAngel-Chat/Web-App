@@ -10,7 +10,11 @@ export class ClientSocket {
 
 	connect() {
 		if (typeof window !== undefined)
-			this.io = io(this.client.links.gateway, {});
+			this.io = io(this.client.links.gateway, {
+				auth: {
+					token: 'test.token.123'
+				}
+			});
 
 		return this.io;
 	}

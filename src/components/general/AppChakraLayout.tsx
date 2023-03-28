@@ -5,12 +5,17 @@ import { Box } from '@chakra-ui/react';
 import { client } from '@/client';
 import { useEffect, useState } from 'react';
 import LoadingScreen from '../screens/LoadingScreen';
+import { IChannel } from '@/types/interfaces/Channel';
+import { IUser } from '@/types/interfaces/User';
+import { useDispatch } from 'react-redux';
+import { addChannel } from '@/store/slices/directChannelsSlice';
 
 const socket = client.socket.connect();
 
 export default function AppChakraLayout({ children }: any) {
+	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	const [isConnected, setIsConnected] = useState(socket?.connected);
 
 	useEffect(() => {
@@ -23,11 +28,24 @@ export default function AppChakraLayout({ children }: any) {
 			setIsConnected(false);
 		}
 
+		function onReady({
+			channels,
+			users,
+		}: {
+			channels: IChannel[];
+			users: IUser[];
+		}) {
+			channels.forEach((channel) => dispatch(addChannel(channel)));
+		}
+
 		socket?.on('connect', onConnect);
 		socket?.on('disconnect', onDisconnect);
 
+		socket?.on('ready', onReady);
+
 		return () => {
 			socket?.off('connect', onConnect);
+			socket?.off('ready', onConnect);
 			socket?.off('disconnect', onDisconnect);
 		};
 	}, []);
