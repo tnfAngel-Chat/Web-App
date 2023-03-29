@@ -7,7 +7,7 @@ export interface IRawMessage {
 	mode: MessageModes;
 	id: string;
 	content: string;
-	author: IRawUser;
+	author: string;
 	timestamp: number;
 }
 

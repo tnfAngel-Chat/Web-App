@@ -1,17 +1,11 @@
 'use client';
 
+import { client } from '@/client';
 import useThemeColors from '@/hooks/useThemeColors';
 import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
-import {
-	Box,
-	Center,
-	Flex,
-	Icon,
-	IconButton,
-	Spacer,
-} from '@chakra-ui/react';
+import { Box, Center, Flex, Icon, IconButton, Spacer } from '@chakra-ui/react';
 import {
 	MdAlternateEmail,
 	MdPeople,
@@ -28,8 +22,11 @@ export type UserTopBarProps = {
 };
 
 export default function UserTopBar({ channel }: UserTopBarProps) {
-	const dispatch = useDispatch()
+	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
+	const recipient = client.users.resolve(
+		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
+	);
 
 	return (
 		<Box
@@ -46,27 +43,27 @@ export default function UserTopBar({ channel }: UserTopBarProps) {
 					<Center minW="0px">
 						<OverflownText fontSize="lg">
 							{channel.type === ChannelTypes.DirectMessage
-								? channel.recipient.username
+								? recipient.username
 								: channel.name}
 						</OverflownText>
 					</Center>
 					{channel.type === ChannelTypes.DirectMessage ? (
 						<Center>
 							<StatusIndicator
-								status={channel.recipient.status}
+								status={recipient.status}
 								size="13"
 								positioned={false}
 							/>
 						</Center>
 					) : null}
 					{channel.type === ChannelTypes.DirectMessage &&
-					channel.recipient.presence ? (
+					recipient.presence ? (
 						<Center minW="0px">
 							<OverflownText
 								fontSize="sm"
 								color={getColorValue('textMutedColor')}
 							>
-								{channel.recipient.presence}
+								{recipient.presence}
 							</OverflownText>
 						</Center>
 					) : null}

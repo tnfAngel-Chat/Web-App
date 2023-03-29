@@ -18,11 +18,10 @@ import Message from './Message';
 import Separator from '../misc/Separator';
 import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
-import InputBox from './InputBox';
-import useThemeColors from '@/hooks/useThemeColors';
 import UserProfileModal from '../modals/UserProfileModal';
 import { IUser } from '@/types/interfaces/User';
 import { useState } from 'react';
+import { client } from '@/client';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
@@ -30,6 +29,10 @@ export type MessagesBoxProps = {
 };
 
 export function WelcomeMessage({ channel }: MessagesBoxProps) {
+	const recipient = client.users.resolve(
+		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
+	);
+
 	return (
 		<Box w="100%">
 			<Center h="70vh">
@@ -39,14 +42,14 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 							size="64"
 							src={
 								channel.type === ChannelTypes.DirectMessage
-									? channel.recipient.avatar
+									? recipient.avatar
 									: channel.icon
 							}
 							alt="Avatar"
 							indicator={
 								channel.type === ChannelTypes.DirectMessage ? (
 									<StatusIndicator
-										status={channel.recipient.status}
+										status={recipient.status}
 										size="23"
 									/>
 								) : null
@@ -55,7 +58,7 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 						<Center>
 							<Heading as="h2">
 								{channel.type === ChannelTypes.DirectMessage
-									? `@${channel.recipient.username}`
+									? `@${recipient.username}`
 									: channel.name}
 							</Heading>
 						</Center>
@@ -63,7 +66,7 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 					<Heading as="h1">Comienzo de tu chat</Heading>
 					<Text>
 						{channel.type === ChannelTypes.DirectMessage
-							? `Este es el comienzo de tu chat con @${channel.recipient.username}`
+							? `Este es el comienzo de tu chat con @${recipient.username}`
 							: `Este es el comienzo de tu chat en ${channel.name}`}
 					</Text>
 				</Stack>

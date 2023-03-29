@@ -41,6 +41,7 @@ import normalizeUser from '@/util/normalizeUser';
 import OverflownText from '../general/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import styles from '../../styles/MainSidebar.module.scss';
+import { client } from '@/client';
 
 export function DirectButtonLink({
 	icon,
@@ -103,6 +104,9 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
+	const recipient = client.users.resolve(
+		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
+	);
 
 	return (
 		<Link href={`/channels/${channel.id}`}>
@@ -135,14 +139,14 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 							size="36"
 							src={
 								channel.type === ChannelTypes.DirectMessage
-									? channel.recipient.avatar
+									? recipient.avatar
 									: channel.icon
 							}
 							alt="Avatar"
 							indicator={
 								channel.type === ChannelTypes.DirectMessage ? (
 									<StatusIndicator
-										status={channel.recipient.status}
+										status={recipient.status}
 										size="14"
 									/>
 								) : null
@@ -157,15 +161,15 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 								className={isSelected ? 'text-bold' : ''}
 							>
 								{channel.type === ChannelTypes.DirectMessage
-									? channel.recipient.username
+									? recipient.username
 									: channel.name}
 							</OverflownText>
 						</Box>
 
 						{channel.type === ChannelTypes.DirectMessage ? (
-							channel.recipient.presence ? (
+							recipient.presence ? (
 								<Text fontSize="sm" noOfLines={1}>
-									{channel.recipient.presence}
+									{recipient.presence}
 								</Text>
 							) : null
 						) : channel.type === ChannelTypes.Group ? (

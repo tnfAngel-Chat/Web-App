@@ -1,10 +1,8 @@
-import normalizeUser from './normalizeUser';
+import { client } from '@/client';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel, IRawChannel } from '@/types/interfaces/Channel';
 
-export default function normalizeChannel(
-	channel: IRawChannel
-): IChannel {
+export default function normalizeChannel(channel: IRawChannel): IChannel {
 	switch (channel.type) {
 		case ChannelTypes.Text:
 			return {
@@ -16,10 +14,11 @@ export default function normalizeChannel(
 		case ChannelTypes.DirectMessage:
 			return {
 				...channel,
-				recipient: normalizeUser(channel.recipient),
+				recipient: channel.recipient,
 			};
 		case ChannelTypes.Group:
-			const members = channel.members.map(normalizeUser);
+			const members = channel.members
+				.map((memberId) => client.users.resolve(memberId))
 
 			return {
 				...channel,

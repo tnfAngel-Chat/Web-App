@@ -4,13 +4,11 @@ import { createSlice } from '@reduxjs/toolkit';
 export type DirectChannelState = {
 	channels: IChannel[];
 	selectedChannelId: string | null;
-	status: string;
 };
 
 const initialState: DirectChannelState = {
 	channels: [],
 	selectedChannelId: null,
-	status: 'idle',
 };
 
 export const directChannelsSlice = createSlice({

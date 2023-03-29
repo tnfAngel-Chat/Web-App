@@ -19,19 +19,19 @@ export interface ITextChannel extends IBaseChannel {
 
 export interface IRawDirectMessageChannel extends IBaseChannel {
 	type: ChannelTypes.DirectMessage;
-	recipient: IRawUser;
+	recipient: string;
 }
 
 export interface IDirectMessageChannel extends IBaseChannel {
 	type: ChannelTypes.DirectMessage;
-	recipient: IUser;
+	recipient: string;
 }
 
 export interface IRawGroupChannel extends IBaseChannel {
 	type: ChannelTypes.Group;
 	name?: string | null;
 	icon?: string | null;
-	members: IRawUser[];
+	members: string[];
 }
 
 export interface IGroupChannel extends IBaseChannel {
