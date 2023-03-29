@@ -103,6 +103,10 @@ export default function InputBox({ channel }: InputBoxProps) {
 		);
 	}, [filesContent]);
 
+	useEffect(() => {
+		inputRef.current.setSelectionRange(inputRef.current.value.length, inputRef.current.value.length)
+	}, [])
+
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
