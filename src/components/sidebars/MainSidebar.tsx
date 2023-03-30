@@ -28,7 +28,6 @@ import { IUser } from '@/types/interfaces/User';
 import { RootState } from '@/store';
 import { useState } from 'react';
 import {
-	DirectChannelState,
 	removeChannel,
 } from '@/store/slices/directChannelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -270,12 +269,9 @@ export function CreateGroupSection() {
 	);
 }
 
-export type ProfileBoxProps = {
-	user: IUser;
-};
-
-export function ProfileBox({ user }: ProfileBoxProps) {
+export function ProfileBox() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	const user = client.user
 
 	return (
 		<Box
@@ -343,15 +339,6 @@ export default function MainSidebar({
 }) {
 	const { getColorValue } = useThemeColors();
 
-	const currentUser = normalizeUser({
-		type: UserTypes.User,
-		id: '1',
-		username: 'Angelito',
-		presence: 'Me dejaste el cuerpo fuera...',
-		status: UserStatusTypes.Online,
-		avatar: 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/07/25/62de6567185fa.jpeg',
-	});
-
 	return (
 		<Stack
 			scrollSnapAlign="start"
@@ -371,7 +358,7 @@ export default function MainSidebar({
 				<MainSidebarContent selectedChannelID={selectedChannelID} />
 			</Box>
 			<Box minH="75px" bg={getColorValue('ternaryBackground')}>
-				<ProfileBox user={currentUser} />
+				<ProfileBox />
 			</Box>
 		</Stack>
 	);

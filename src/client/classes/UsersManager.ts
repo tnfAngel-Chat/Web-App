@@ -12,9 +12,9 @@ export class UsersManager extends BaseManager<IUser> {
 
 	cache = new Collection<string, IUser>();
 
-	resolve(id: string) {
+	resolve(id: string | null) {
 		return (
-			this.cache.get(id) ?? {
+			(id && this.cache.get(id)) || {
 				type: UserTypes.User,
 				id: '0',
 				username: 'Unknown user',

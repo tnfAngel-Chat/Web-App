@@ -22,7 +22,6 @@ import {
 	MdAddCircle,
 	MdAudioFile,
 	MdEmojiEmotions,
-	MdFileOpen,
 	MdFilePresent,
 	MdSend,
 	MdVideoFile,
@@ -32,20 +31,16 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { useDispatch, useSelector } from 'react-redux';
 import {
 	addMessage,
-	ChatState,
 	modifyMessage,
 	setMessageInput,
 } from '@/store/slices/chatsSlice';
 import { RootState } from '@/store';
 import { MessageTypes } from '@/types/enums/MessageTypes';
 import { MessageModes } from '@/types/enums/MessageModes';
-import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
-import { UserTypes } from '@/types/enums/UserTypes';
 import normalizeMessage from '@/util/normalizeMessage';
 import { useEffect, useRef } from 'react';
 import OverflownText from '../general/OverflownText';
-import Separator from '../misc/Separator';
-import { DirectChannelState } from '@/store/slices/directChannelsSlice';
+import { client } from '@/client';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -61,6 +56,10 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 	const directChannelsState = useSelector(
 		(state: RootState) => state.directChannels
+	);
+
+	const recipient = client.users.resolve(
+		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
 
 	const chatsState = useSelector((state: RootState) => state.chats);
@@ -135,14 +134,6 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 		if (!selectedChannelId) return;
 
-		const rawAuthor = {
-			type: UserTypes.User,
-			id: '1',
-			username: 'Lauty',
-			avatar: 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/07/25/62de6567185fa.jpeg',
-			status: UserStatusTypes.Online,
-		};
-
 		dispatch(
 			setMessageInput({
 				channelId: selectedChannelId,
@@ -160,7 +151,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 					mode: MessageModes.Sending,
 					id: tempMessageId,
 					content: content,
-					author: rawAuthor,
+					author: client.user.id,
 					timestamp: Date.now(),
 				}),
 			})
@@ -176,7 +167,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 						mode: MessageModes.Sent,
 						id: tempMessageId,
 						content: content,
-						author: rawAuthor,
+						author: client.user.id,
 						timestamp: Date.now(),
 					}),
 				})
@@ -377,7 +368,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 							<Textarea
 								placeholder={`Message @${
 									channel.type === ChannelTypes.DirectMessage
-										? channel.recipient.username
+										? recipient.username
 										: channel.name
 								}`}
 								rows={

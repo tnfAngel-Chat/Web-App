@@ -49,9 +49,10 @@ export default function AppChakraLayout({ children }: any) {
 			preferences: IUserPreferences;
 		}) {
 			if (!ignore) {
-				users.forEach((user) =>
-					client.users.cache.set(user.id, normalizeUser(user))
-				);
+				client.populate({
+					users,
+					channels
+				})
 
 				dispatch(
 					setChannels(
@@ -61,6 +62,7 @@ export default function AppChakraLayout({ children }: any) {
 
 				setTheme(preferences.theme);
 				setIsLoading(false);
+
 			}
 		}
 
