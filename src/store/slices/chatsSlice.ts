@@ -16,6 +16,19 @@ export const chatsSlice = createSlice({
 	name: 'chats',
 	initialState,
 	reducers: {
+		setMessages: (
+			state,
+			{
+				payload,
+			}: {
+				type: string;
+				payload: { channelId: string; messages: IMessage[] };
+			}
+		) => {
+			state.chats[payload.channelId] = payload.messages;
+
+			return state;
+		},
 		addMessage: (
 			state,
 			{
@@ -56,6 +69,26 @@ export const chatsSlice = createSlice({
 
 			return state;
 		},
+		deleteMessage: (
+			state,
+			{
+				payload,
+			}: {
+				type: string;
+				payload: {
+					channelId: string;
+					messageId: string;
+				};
+			}
+		) => {
+			const messages = state.chats[payload.channelId] ?? [];
+
+			state.chats[payload.channelId] = messages.filter(
+				(message) => message.id !== payload.messageId
+			);
+
+			return state;
+		},
 		setMessageInput: (
 			state,
 			{
@@ -75,6 +108,11 @@ export const chatsSlice = createSlice({
 	},
 });
 
-export const { addMessage, modifyMessage, setMessageInput } =
-	chatsSlice.actions;
+export const {
+	setMessages,
+	addMessage,
+	modifyMessage,
+	deleteMessage,
+	setMessageInput,
+} = chatsSlice.actions;
 export default chatsSlice.reducer;

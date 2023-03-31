@@ -17,14 +17,6 @@ export function ChatLoadingScreen() {
 
 	return (
 		<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
-			<Image
-				src="https://www.tnfangel.xyz/assets/logo.webp"
-				width={200}
-				height={200}
-				quality={100}
-				style={{ borderRadius: '50%' }}
-				alt="tnfAngel Chat"
-			/>
 		</Center>
 	);
 }
@@ -41,8 +33,6 @@ export default function ChatScreen() {
 		(state: RootState) => state.collapsibles
 	);
 
-	const chatsState = useSelector((state: RootState) => state.chats);
-
 	const channels = directChannelsState.channels;
 
 	const channel = channels.find(
@@ -56,8 +46,6 @@ export default function ChatScreen() {
 		return <ChatLoadingScreen />;
 	}
 
-	const messages = chatsState.chats[channel.id] ?? [];
-
 	return (
 		<Flex h="100%" w="100%" gap={0}>
 			<Flex
@@ -70,7 +58,7 @@ export default function ChatScreen() {
 				direction="column"
 			>
 				<UserTopBar channel={channel} />
-				<MessagesBox channel={channel} messages={messages} />
+				<MessagesBox channel={channel} />
 				<InputBox channel={channel} />
 			</Flex>
 			{channel.type === ChannelTypes.Group &&

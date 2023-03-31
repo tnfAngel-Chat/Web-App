@@ -98,7 +98,9 @@ export default function Message({
 								color={
 									message.mode === MessageModes.Sent
 										? getColorValue('textColor')
-										: getColorValue('textMutedColor')
+										: message.mode === MessageModes.Sending
+										? getColorValue('textMutedColor')
+										: getColorValue('textBlockedColor')
 								}
 							>
 								{line}

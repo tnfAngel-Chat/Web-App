@@ -13,6 +13,7 @@ export interface ThemeColors {
 	messageHover: string;
 	tooltipBackground: string;
 	textColor: string;
+	textBlockedColor: string;
 	statusIndicatorBorderColor: string;
 	statusIndicatorOnlineColor: string;
 	statusIndicatorIdleColor: string;
@@ -47,6 +48,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#202020',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
@@ -73,6 +75,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#BEBEBE',
 			textColor: '#0F0F0F',
 			textMutedColor: '#292929',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
@@ -99,6 +102,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#202020',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
@@ -125,6 +129,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#202020',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#8437CC',
 			statusIndicatorIdleColor: '#eeba59',
@@ -152,6 +157,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#202020',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
@@ -178,6 +184,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#00000094',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
@@ -204,6 +211,7 @@ export const themes: Theme[] = [
 			tooltipBackground: '#00000094',
 			textColor: '#F1F1F1',
 			textMutedColor: '#ACACAC',
+			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',

@@ -3,7 +3,7 @@
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 import { IChannel } from '@/types/interfaces/Channel';
-import { IMessage } from '@/types/interfaces/Message';
+import { IMessage, IRawMessage } from '@/types/interfaces/Message';
 import {
 	Box,
 	Center,
@@ -20,12 +20,16 @@ import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import UserProfileModal from '../modals/UserProfileModal';
 import { IUser } from '@/types/interfaces/User';
-import { useState } from 'react';
 import { client } from '@/client';
+import { useState } from 'react';
+import useSWRImmutable from 'swr/immutable';
+import normalizeMessage from '@/util/normalizeMessage';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '@/store';
+import { setMessages } from '@/store/slices/chatsSlice';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
-	messages: IMessage[];
 };
 
 export function WelcomeMessage({ channel }: MessagesBoxProps) {
@@ -79,11 +83,28 @@ export function MessageGroupSpacer() {
 	return <Box h="15px" />;
 }
 
-export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
+export default function MessagesBox({ channel }: MessagesBoxProps) {
+	const dispatch = useDispatch();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [clickedUser, setClickedUser] = useState<IUser>();
 
-	let lastAuthorId: string = '';
+	let lastAuthorId: string;
+
+	const { data, isLoading } = useSWRImmutable<IRawMessage[]>(
+		`http://localhost:3002/api/channels/${channel?.id}/messages`
+	);
+
+	const dataMessages = data?.map((msg) => normalizeMessage(msg));
+
+	const chatsState = useSelector((state: RootState) => state.chats);
+
+	const messages = chatsState.chats[channel.id] ?? [];
+
+	if (dataMessages && !chatsState.chats[channel.id]) {
+		dispatch(
+			setMessages({ channelId: channel.id, messages: dataMessages })
+		);
+	}
 
 	return (
 		<Stack
@@ -92,50 +113,57 @@ export default function MessagesBox({ channel, messages }: MessagesBoxProps) {
 			overflow="auto"
 			className={styles.messagesStack}
 		>
-			<UserProfileModal
-				isOpen={isOpen}
-				onOpen={onOpen}
-				onClose={onClose}
-				user={clickedUser}
-			/>
-			<Box
-				overflow="auto"
-				flexDirection="column-reverse"
-				display="flex"
-				h="100%"
-			>
-				<Box className={styles.selectableMessagesBox}>
-					{messages.map((message, i) => {
-						const isHeadless = lastAuthorId === message.author.id;
+			{!isLoading && (
+				<>
+					<UserProfileModal
+						isOpen={isOpen}
+						onOpen={onOpen}
+						onClose={onClose}
+						user={clickedUser}
+					/>
+					<Box
+						overflow="auto"
+						flexDirection="column-reverse"
+						display="flex"
+						h="100%"
+					>
+						<Box className={styles.selectableMessagesBox}>
+							{messages.map((message, i) => {
+								const isHeadless =
+									lastAuthorId === message.author.id;
 
-						const MessageElement = (
-							<Message
-								onShowAuthor={() => {
-									setClickedUser(message.author);
-									onOpen();
-								}}
-								message={message}
-								key={message.id}
-								headless={isHeadless}
-							/>
-						);
+								const MessageElement = (
+									<Message
+										onShowAuthor={() => {
+											setClickedUser(message.author);
+											onOpen();
+										}}
+										message={message}
+										key={message.id}
+										headless={isHeadless}
+									/>
+								);
 
-						lastAuthorId = message.author.id;
+								lastAuthorId = message.author.id;
 
-						return (
-							<>
-								{isHeadless ? null : <MessageGroupSpacer />}
-								{MessageElement}
-								{i === messages.length - 1 ? (
-									<MessageGroupSpacer />
-								) : null}
-							</>
-						);
-					})}
-				</Box>
-				{messages.length ? <Separator /> : null}
-				<WelcomeMessage channel={channel} messages={messages} />
-			</Box>
+								return (
+									<>
+										{isHeadless ? null : (
+											<MessageGroupSpacer />
+										)}
+										{MessageElement}
+										{i === messages.length - 1 ? (
+											<MessageGroupSpacer />
+										) : null}
+									</>
+								);
+							})}
+						</Box>
+						{messages.length ? <Separator /> : null}
+						<WelcomeMessage channel={channel} />
+					</Box>
+				</>
+			)}
 		</Stack>
 	);
 }

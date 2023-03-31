@@ -9,12 +9,16 @@ export class ClientSocket {
 	}
 
 	connect() {
-		if (typeof window !== undefined)
+		if (typeof window !== 'undefined') {
+			console.log('Connecting...');
+
 			this.io = io(this.client.links.gateway, {
+				path: '/gateway',
 				auth: {
-					token: 'test.token.123'
-				}
+					token: '1.token.test',
+				},
 			});
+		}
 
 		return this.io;
 	}

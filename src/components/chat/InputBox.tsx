@@ -26,6 +26,7 @@ import {
 	MdSend,
 	MdVideoFile,
 } from 'react-icons/md';
+import axios from 'axios';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import useThemeColors from '@/hooks/useThemeColors';
 import { useDispatch, useSelector } from 'react-redux';
@@ -125,7 +126,10 @@ export default function InputBox({ channel }: InputBoxProps) {
 		}
 	};
 
-	function handleSend(rawContent: string, rawAttachments: FileContent[]) {
+	async function handleSend(
+		rawContent: string,
+		rawAttachments: FileContent[]
+	) {
 		const content = rawContent.trim();
 
 		if (!content && !rawAttachments.length) return;
@@ -143,36 +147,59 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 		const tempMessageId = `${Math.random() * 1000}`;
 
+		const rawMessage = {
+			type: MessageTypes.Text,
+			mode: MessageModes.Sending,
+			id: tempMessageId,
+			nonce: tempMessageId,
+			channelId: selectedChannelId,
+			content: content,
+			author: client.user.id,
+			timestamp: Date.now(),
+		};
+
 		dispatch(
 			addMessage({
 				channelId: selectedChannelId,
-				message: normalizeMessage({
-					type: MessageTypes.Text,
-					mode: MessageModes.Sending,
-					id: tempMessageId,
-					content: content,
-					author: client.user.id,
-					timestamp: Date.now(),
-				}),
+				message: normalizeMessage(rawMessage),
 			})
 		);
 
-		setTimeout(() => {
-			dispatch(
-				modifyMessage({
-					channelId: selectedChannelId,
-					messageId: tempMessageId,
-					newMessage: normalizeMessage({
-						type: MessageTypes.Text,
-						mode: MessageModes.Sent,
-						id: tempMessageId,
-						content: content,
-						author: client.user.id,
-						timestamp: Date.now(),
-					}),
-				})
-			);
-		}, Math.random() * 260);
+		client.sentMessagesIds.push(tempMessageId);
+
+		await axios
+			.post(
+				`http://localhost:3002/api/channels/${channel?.id}/messages`,
+				{
+					content: content,
+					nonce: tempMessageId,
+				}
+			)
+			.then((result) => {
+				dispatch(
+					modifyMessage({
+						channelId: rawMessage.channelId,
+						messageId: rawMessage.id,
+						newMessage: normalizeMessage({
+							...rawMessage,
+							mode: MessageModes.Sent,
+							id: result.data.id,
+						}),
+					})
+				);
+			})
+			.catch(() => {
+				dispatch(
+					modifyMessage({
+						channelId: rawMessage.channelId,
+						messageId: rawMessage.id,
+						newMessage: normalizeMessage({
+							...rawMessage,
+							mode: MessageModes.Blocked,
+						}),
+					})
+				);
+			});
 	}
 
 	const handleChange = (event: any) => {

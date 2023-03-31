@@ -4,16 +4,13 @@ import { ClientSocket } from './socket';
 import { RestClient } from './rest/client';
 import { UsersManager } from './classes/UsersManager';
 import { ChannelsManager } from './classes/ChannelsManager';
-import { MessagesManager } from './classes/MessagesManager';
 import { IRawChannel } from '@/types/interfaces/Channel';
 import { IRawUser } from '@/types/interfaces/User';
 import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
 
+
 export class Client {
-	constructor() {
-		console.log('new Client');
-	}
 
 	config = new ClientConfig();
 	links = new ClientLinks();
@@ -22,11 +19,14 @@ export class Client {
 	rest = new RestClient();
 
 	users = new UsersManager(this);
-	user = this.users.resolve(null)
+	user = this.users.resolve(null);
 	channels = new ChannelsManager(this);
-	Messages = new MessagesManager(this);
+	sentMessagesIds: string[] = [];
 
-	populate({ users, channels }: {
+	populate({
+		users,
+		channels,
+	}: {
 		users: IRawUser[];
 		channels: IRawChannel[];
 	}) {
@@ -38,7 +38,7 @@ export class Client {
 			client.channels.cache.set(channel.id, normalizeChannel(channel))
 		);
 
-		this.user = this.users.resolve('1')
+		this.user = this.users.resolve('1');
 	}
 }
 

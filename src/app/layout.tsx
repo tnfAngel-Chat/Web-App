@@ -6,6 +6,7 @@ import { store } from '../store';
 import { CacheProvider } from '@chakra-ui/next-js';
 import AppChakraLayout from '@/components/general/AppChakraLayout';
 import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import { SWRConfig } from 'swr';
 
 const config = {
 	initialColorMode: 'dark',
@@ -37,7 +38,16 @@ export default function RootLayout({
 				<ChakraProvider theme={theme}>
 					<CacheProvider>
 						<Provider store={store}>
-							<AppChakraLayout>{children}</AppChakraLayout>
+							<SWRConfig
+								value={{
+									fetcher: (resource, init) =>
+										fetch(resource, init).then((res) =>
+											res.json()
+										),
+								}}
+							>
+								<AppChakraLayout>{children}</AppChakraLayout>
+							</SWRConfig>
 						</Provider>
 					</CacheProvider>
 				</ChakraProvider>

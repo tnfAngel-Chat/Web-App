@@ -7,6 +7,6 @@ export class ChannelsManager extends BaseManager<IChannel> {
 	constructor(client: Client) {
 		super(client);
 	}
-
+	
 	cache = new Collection<string, IChannel>();
 }
