@@ -258,7 +258,10 @@ export function CreateGroupSection() {
 							icon={<MdAdd />}
 						/>
 					</PopoverTrigger>
-					<PopoverContent bg={getColorValue('sidebarBackground')}>
+					<PopoverContent
+						backdropFilter="blur(5px)"
+						bg={getColorValue('sidebarBackground')}
+					>
 						<PopoverCloseButton />
 						<PopoverHeader>Seleccionar amigos</PopoverHeader>
 						<PopoverBody>Aun no hay amigos</PopoverBody>

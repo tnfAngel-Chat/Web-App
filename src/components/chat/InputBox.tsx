@@ -42,6 +42,7 @@ import normalizeMessage from '@/util/normalizeMessage';
 import { useEffect, useRef } from 'react';
 import OverflownText from '../general/OverflownText';
 import { client } from '@/client';
+import EmojiPicker from './EmojiPicker';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -157,6 +158,8 @@ export default function InputBox({ channel }: InputBoxProps) {
 			author: client.user.id,
 			timestamp: Date.now(),
 		};
+
+		console.log('sent', selectedChannelId, rawMessage);
 
 		dispatch(
 			addMessage({
@@ -422,28 +425,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 							/>
 						</Center>
 						<Flex gap="24px" paddingTop="6px">
-							<Popover placement="top-end" isLazy>
-								<PopoverTrigger>
-									<IconButton
-										aria-label="Add emojis"
-										bg="transparent"
-										size="sm"
-										fontSize="24px"
-										icon={<MdEmojiEmotions />}
-									/>
-								</PopoverTrigger>
-								<PopoverContent
-									bg={getColorValue('primaryBackground')}
-								>
-									<PopoverCloseButton />
-									<PopoverHeader>
-										Selector de emojis
-									</PopoverHeader>
-									<PopoverBody>
-										Aun no hay ninguno (Por ahora)
-									</PopoverBody>
-								</PopoverContent>
-							</Popover>
+							<EmojiPicker />
 						</Flex>
 						{isMobile && (
 							<Flex gap="24px" paddingTop="6px">
