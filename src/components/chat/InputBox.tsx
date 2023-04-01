@@ -425,7 +425,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 							/>
 						</Center>
 						<Flex gap="24px" paddingTop="6px">
-							<EmojiPicker />
+							<EmojiPicker channelId={selectedChannelId ?? ''} />
 						</Flex>
 						{isMobile && (
 							<Flex gap="24px" paddingTop="6px">

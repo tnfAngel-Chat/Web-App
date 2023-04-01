@@ -36,30 +36,30 @@ export default function AppChakraLayout({ children }: any) {
 			{*/
 	return (
 		<AppSocket onConnectionReady={() => setIsLoading(false)}>
-			{isLoading ? (
-				<IndexLoadingScreen />
-			) : (
-				<Box
-					h="100%"
-					w="100%"
-					overflow="hidden"
-					color={getColorValue('textColor')}
-					bg={getColorValue('appBackground')}
-					backgroundRepeat="no-repeat"
-					backgroundSize="cover"
-				>
+				{isLoading ? (
+					<IndexLoadingScreen />
+				) : (
 					<Box
 						h="100%"
 						w="100%"
-						scrollSnapType="x mandatory"
-						scrollSnapStop="always"
-						scrollBehavior="smooth"
-						overflow="auto"
+						overflow="hidden"
+						color={getColorValue('textColor')}
+						bg={getColorValue('appBackground')}
+						backgroundRepeat="no-repeat"
+						backgroundSize="cover"
 					>
-						{children}
+						<Box
+							h="100%"
+							w="100%"
+							scrollSnapType="x mandatory"
+							scrollSnapStop="always"
+							scrollBehavior="smooth"
+							overflow="auto"
+						>
+							{children}
+						</Box>
 					</Box>
-				</Box>
-			)}
+				)}
 		</AppSocket>
 	);
 }

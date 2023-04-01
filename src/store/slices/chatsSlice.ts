@@ -105,6 +105,26 @@ export const chatsSlice = createSlice({
 
 			return state;
 		},
+		appendMessageInput: (
+			state,
+			{
+				payload,
+			}: {
+				type: string;
+				payload: {
+					channelId: string;
+					input: { content: string; attachments: FileContent[] };
+				};
+			}
+		) => {
+			state.inputs[payload.channelId].content += payload.input.content;
+
+			state.inputs[payload.channelId].attachments = state.inputs[
+				payload.channelId
+			].attachments.concat(payload.input.attachments);
+
+			return state;
+		},
 	},
 });
 
@@ -114,5 +134,6 @@ export const {
 	modifyMessage,
 	deleteMessage,
 	setMessageInput,
+	appendMessageInput,
 } = chatsSlice.actions;
 export default chatsSlice.reducer;

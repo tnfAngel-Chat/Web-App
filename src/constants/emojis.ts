@@ -17118,4 +17118,4 @@ export const emojis: Emoji[] = [
 		unicode_version: '11.0',
 		ios_version: '12.1',
 	},
-];
+].filter(e => parseFloat(e.unicode_version) < 11.0);

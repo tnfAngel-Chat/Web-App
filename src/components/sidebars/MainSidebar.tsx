@@ -27,9 +27,7 @@ import { UserTypes } from '@/types/enums/UserTypes';
 import { IUser } from '@/types/interfaces/User';
 import { RootState } from '@/store';
 import { useState } from 'react';
-import {
-	removeChannel,
-} from '@/store/slices/directChannelsSlice';
+import { removeChannel } from '@/store/slices/directChannelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Avatar from '../user/Avatar';
@@ -259,6 +257,7 @@ export function CreateGroupSection() {
 						/>
 					</PopoverTrigger>
 					<PopoverContent
+						w={['100vw', 'sm']}
 						backdropFilter="blur(5px)"
 						bg={getColorValue('sidebarBackground')}
 					>
@@ -274,7 +273,7 @@ export function CreateGroupSection() {
 
 export function ProfileBox() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const user = client.user
+	const user = client.user;
 
 	return (
 		<Box

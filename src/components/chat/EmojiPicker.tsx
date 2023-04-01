@@ -9,6 +9,7 @@ import {
 	MdEmojiPeople,
 	MdEmojiSymbols,
 	MdEmojiTransportation,
+	MdHistory,
 	MdSearch,
 } from 'react-icons/md';
 import {
@@ -31,33 +32,70 @@ import {
 	PopoverTrigger,
 	PopoverContent,
 	PopoverCloseButton,
+	CloseButton,
+	TabIndicator,
 } from '@chakra-ui/react';
 import { type Emoji, emojis } from '@/constants/emojis';
 import EmojiParser from '../general/EmojiParser';
 import OverflownText from '../general/OverflownText';
+import { appendMessageInput } from '@/store/slices/chatsSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
+import { RootState } from '@/store';
 
-export function EmojiTab({ tabEmojis }: { tabEmojis: Emoji[] }) {
+export function EmojisTab({
+	tabEmojis,
+	channelId,
+	selectedEmoji,
+	setSelectedEmoji,
+	onClose,
+}: {
+	tabEmojis: Emoji[];
+	channelId: string;
+	selectedEmoji: any;
+	setSelectedEmoji: any;
+	onClose: any;
+}) {
 	const { getColorValue } = useThemeColors();
+	const dispatch = useDispatch();
 
 	return (
-		<Box h="250px" w="100%" overflow="auto">
-			<Wrap w="100%" spacing="12px">
-				{tabEmojis.map((emoji) => (
+		<Box h="30vh" w="100%" overflow="auto">
+			<Wrap w="100%" spacing="10px">
+				{tabEmojis.map((e) => (
 					<WrapItem
-						bg="transparent"
-						_hover={{
-							bg: getColorValue('sideBarButtonActive'),
-						}}
+						bg={
+							e.emoji === selectedEmoji?.emoji
+								? getColorValue('sideBarButtonActive')
+								: 'transparent'
+						}
 						w="42px"
 						h="42px"
 						fontSize="22px"
 						textAlign="center"
-						key={emoji.description}
+						key={e.description}
 						padding="6px"
 						borderRadius="5px"
+						onClick={() => {
+							onClose();
+
+							dispatch(
+								appendMessageInput({
+									channelId: channelId,
+									input: {
+										content: `${e.emoji} `,
+										attachments: [],
+									},
+								})
+							);
+
+							dispatch(addRecentEmoji(e.emoji));
+						}}
+						onMouseEnter={() => setSelectedEmoji(e)}
 					>
 						<Center w="100%" h="100%">
-							<EmojiParser emoji={emoji.emoji} />
+							<EmojiParser emoji={e.emoji} />
 						</Center>
 					</WrapItem>
 				))}
@@ -68,7 +106,7 @@ export function EmojiTab({ tabEmojis }: { tabEmojis: Emoji[] }) {
 
 const groupedEmojis: Emoji[][] = [];
 
-const groupCategories = new Set<string>();
+const groupCategories = new Set<string>(['Recent']);
 
 emojis.forEach((emoji) => {
 	groupCategories.add(emoji.category);
@@ -82,6 +120,7 @@ for (const category of [...groupCategories]) {
 }
 
 const categoryIcons = [
+	<MdHistory fontSize="25px" key="0" />,
 	<MdEmojiEmotions fontSize="25px" key="1" />,
 	<MdEmojiPeople fontSize="25px" key="2" />,
 	<MdEmojiNature fontSize="25px" key="3" />,
@@ -93,77 +132,225 @@ const categoryIcons = [
 	<MdEmojiFlags fontSize="25px" key="9" />,
 ];
 
-export default function EmojiPicker() {
+export default function EmojiPicker({ channelId }: { channelId: string }) {
+	const recentEmojisState = useSelector(
+		(state: RootState) => state.recentEmojis
+	);
+	const recentEmojisSorted = Object.entries(recentEmojisState.emojis).sort(
+		(a, b) => b[1] - a[1]
+	);
+	const recentEmojis = recentEmojisSorted.map((pair) =>
+		emojis.find((e) => e.emoji === pair[0])
+	) as Emoji[];
+
+	groupedEmojis[0] = recentEmojis;
+
+	const [searchInput, setSearchInput] = useState('');
+	const [selectedEmoji, setSelectedEmoji] = useState<Emoji>(
+		groupedEmojis[0][0] ?? null
+	);
 	const { getColorValue } = useThemeColors();
 
 	return (
 		<Popover placement="top-end" isLazy>
-			<PopoverTrigger>
-				<IconButton
-					aria-label="Add emojis"
-					bg="transparent"
-					size="sm"
-					fontSize="24px"
-					icon={<MdEmojiEmotions />}
-				/>
-			</PopoverTrigger>
-			<PopoverContent
-				w="460px"
-				backdropFilter="blur(5px)"
-				bg={getColorValue('primaryBackground')}
-			>
-				<PopoverCloseButton />
-				<PopoverHeader>Seleccionar emojis</PopoverHeader>
-				<PopoverBody>
-					<Stack>
-						<Flex gap="10px" alignItems="center">
-							<Input
-								placeholder="Search for emoji"
-								focusBorderColor={getColorValue(
-									'focusBorderColor'
-								)}
-							/>
-							<IconButton
-								aria-label="Search emojis"
-								bg="transparent"
-								fontSize="24px"
-								icon={<MdSearch />}
-							/>
-						</Flex>
-						<Tabs
-							isLazy
-							isFitted
-							colorScheme={getColorValue('textColor')}
-						>
-							<TabList>
-								{Object.keys(groupedEmojis).map(
-									(emojiIndex) => (
-										<Tab padding="10px 0px 10px 0px" key={emojiIndex}>
-											{
-												categoryIcons[
-													emojiIndex as any as number
-												]
-											}
-										</Tab>
-									)
-								)}
-							</TabList>
-							<TabPanels>
-								{groupedEmojis.map((group, i) => (
-									<TabPanel padding="5px 0px 0px 0px" key={i}>
-										<Stack>
-											<OverflownText>
-												{[...groupCategories][i]}
-											</OverflownText>
-											<EmojiTab tabEmojis={group} />
-										</Stack>
-									</TabPanel>
-								))}
-							</TabPanels>
-						</Tabs>
-					</Stack>
-				</PopoverBody>
-			</PopoverContent>
+			{({ isOpen, onClose }) => (
+				<>
+					{!isOpen && searchInput && setSearchInput('')}
+					<PopoverTrigger>
+						<IconButton
+							aria-label="Add emojis"
+							bg="transparent"
+							size="sm"
+							fontSize="24px"
+							icon={<MdEmojiEmotions />}
+						/>
+					</PopoverTrigger>
+					<PopoverContent
+						w={['100vw', 'md']}
+						backdropFilter="blur(5px)"
+						bg={getColorValue('sidebarBackground')}
+					>
+						<PopoverCloseButton />
+						<PopoverHeader>Seleccionar emojis</PopoverHeader>
+						<PopoverBody>
+							<Stack>
+								<Flex gap="10px" alignItems="center">
+									<Input
+										placeholder="Search for emoji"
+										focusBorderColor={getColorValue(
+											'focusBorderColor'
+										)}
+										value={searchInput}
+										onChange={(e) =>
+											setSearchInput(e.target.value)
+										}
+									/>
+									{searchInput ? (
+										<CloseButton
+											size="lg"
+											onClick={() => setSearchInput('')}
+										/>
+									) : (
+										<IconButton
+											aria-label="Search"
+											bg="transparent"
+											fontSize="24px"
+											icon={<MdSearch />}
+										/>
+									)}
+								</Flex>
+								<Tabs
+									isLazy
+									isFitted
+									variant="unstyled"
+									position="relative"
+									colorScheme={getColorValue('textColor')}
+								>
+									<Box overflowX="auto">
+										<TabList>
+											{Object.keys(groupedEmojis).map(
+												(emojiIndex: any) => (
+													<Tab
+														_hover={{
+															bg: getColorValue(
+																'sideBarButtonActive'
+															),
+														}}
+														borderRadius="5px"
+														padding="10px 0px 10px 0px"
+														key={emojiIndex}
+													>
+														{
+															categoryIcons[
+																emojiIndex
+															]
+														}
+													</Tab>
+												)
+											)}
+										</TabList>
+										<TabIndicator
+											mt="2px"
+											height="2px"
+											bg={getColorValue('textColor')}
+											borderRadius="1px"
+										/>
+									</Box>
+									<TabPanels>
+										{groupedEmojis.map((group, i) => (
+											<TabPanel
+												padding="5px 0px 0px 0px"
+												key={i}
+											>
+												<Stack>
+													{searchInput ? (
+														<>
+															<OverflownText>
+																Resultados de
+																búsqueda
+															</OverflownText>
+															<EmojisTab
+																tabEmojis={emojis
+																	.filter(
+																		(e) =>
+																			e.description
+																				.toLowerCase()
+																				.includes(
+																					searchInput.toLowerCase()
+																				) ||
+																			e.aliases.includes(
+																				searchInput.toLowerCase()
+																			) ||
+																			e.tags.includes(
+																				searchInput.toLowerCase()
+																			)
+																	)
+																	.slice(
+																		0,
+																		50
+																	)}
+																channelId={
+																	channelId
+																}
+																selectedEmoji={
+																	selectedEmoji
+																}
+																setSelectedEmoji={
+																	setSelectedEmoji
+																}
+																onClose={
+																	onClose
+																}
+															/>
+														</>
+													) : (
+														<>
+															<OverflownText>
+																{
+																	[
+																		...groupCategories,
+																	][i]
+																}
+															</OverflownText>
+															<EmojisTab
+																tabEmojis={
+																	group
+																}
+																channelId={
+																	channelId
+																}
+																selectedEmoji={
+																	selectedEmoji
+																}
+																setSelectedEmoji={
+																	setSelectedEmoji
+																}
+																onClose={
+																	onClose
+																}
+															/>
+														</>
+													)}
+													{selectedEmoji && (
+														<Flex
+															alignItems="center"
+															gap="10px"
+														>
+															<Center h="100%">
+																<EmojiParser
+																	emoji={
+																		selectedEmoji.emoji
+																	}
+																	width={32}
+																	height={32}
+																/>
+															</Center>
+															<Center minW="0px">
+																<OverflownText>
+																	{selectedEmoji.aliases
+																		.map(
+																			(
+																				alias
+																			) =>
+																				`:${alias}:`
+																		)
+																		.join(
+																			' '
+																		)}
+																</OverflownText>
+															</Center>
+														</Flex>
+													)}
+												</Stack>
+											</TabPanel>
+										))}
+									</TabPanels>
+								</Tabs>
+							</Stack>
+						</PopoverBody>
+					</PopoverContent>
+				</>
+			)}
 		</Popover>
 	);
 }
