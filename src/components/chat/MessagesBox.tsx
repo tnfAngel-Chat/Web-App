@@ -40,25 +40,28 @@ export function WelcomeMessage({ channel }: MessagesBoxProps) {
 	return (
 		<Box w="100%">
 			<Center h="70vh">
-				<Stack spacing="24px">
+				<Stack spacing="24px" padding="20px">
 					<Flex gap="20px">
-						<Avatar
-							size="64"
-							src={
-								channel.type === ChannelTypes.DirectMessage
-									? recipient.avatar
-									: channel.icon
-							}
-							alt="Avatar"
-							indicator={
-								channel.type === ChannelTypes.DirectMessage ? (
-									<StatusIndicator
-										status={recipient.status}
-										size="23"
-									/>
-								) : null
-							}
-						/>
+						<Box minW="64px">
+							<Avatar
+								size="64"
+								src={
+									channel.type === ChannelTypes.DirectMessage
+										? recipient.avatar
+										: channel.icon
+								}
+								alt="Avatar"
+								indicator={
+									channel.type ===
+									ChannelTypes.DirectMessage ? (
+										<StatusIndicator
+											status={recipient.status}
+											size="23"
+										/>
+									) : null
+								}
+							/>
+						</Box>
 						<Center>
 							<Heading as="h2">
 								{channel.type === ChannelTypes.DirectMessage
@@ -91,7 +94,7 @@ export default function MessagesBox({ channel }: MessagesBoxProps) {
 	let lastAuthorId: string;
 
 	const { data, isLoading } = useSWRImmutable<IRawMessage[]>(
-		`http://localhost:3002/api/channels/${channel?.id}/messages`
+		`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`
 	);
 
 	const dataMessages = data?.map((msg) => normalizeMessage(msg));
@@ -107,12 +110,8 @@ export default function MessagesBox({ channel }: MessagesBoxProps) {
 	}
 
 	return (
-		<Stack
-			w="100%"
-			h="100%"
-			overflow="auto"
-			className={styles.messagesStack}
-		>
+		<Stack w
+		="100%" h="100%" wordBreak="break-all" className={styles.messagesStack}>
 			{!isLoading && (
 				<>
 					<UserProfileModal
@@ -122,7 +121,7 @@ export default function MessagesBox({ channel }: MessagesBoxProps) {
 						user={clickedUser}
 					/>
 					<Box
-						overflow="auto"
+						overflowX="auto"
 						flexDirection="column-reverse"
 						display="flex"
 						h="100%"
@@ -167,3 +166,40 @@ export default function MessagesBox({ channel }: MessagesBoxProps) {
 		</Stack>
 	);
 }
+
+/*
+<Box className={styles.selectableMessagesBox}>
+								{messages.map((message, i) => {
+									const isHeadless =
+										lastAuthorId === message.author.id;
+
+									const MessageElement = (
+										<Message
+											onShowAuthor={() => {
+												setClickedUser(message.author);
+												onOpen();
+											}}
+											message={message}
+											key={message.id}
+											headless={isHeadless}
+										/>
+									);
+
+									lastAuthorId = message.author.id;
+
+									return (
+										<>
+											{isHeadless ? null : (
+												<MessageGroupSpacer />
+											)}
+											{MessageElement}
+											{i === messages.length - 1 ? (
+												<MessageGroupSpacer />
+											) : null}
+										</>
+									);
+								})}
+							</Box>
+							{messages.length ? <Separator /> : null}
+							<WelcomeMessage channel={channel} />
+							*/

@@ -12,12 +12,6 @@ import {
 	CloseButton,
 	Spacer,
 	IconButton,
-	Popover,
-	PopoverBody,
-	PopoverCloseButton,
-	PopoverContent,
-	PopoverHeader,
-	PopoverTrigger,
 } from '@chakra-ui/react';
 import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
@@ -39,6 +33,7 @@ import OverflownText from '../general/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import styles from '../../styles/MainSidebar.module.scss';
 import { client } from '@/client';
+import CreateGroup from '../popovers/CreateGroup';
 
 export function DirectButtonLink({
 	icon,
@@ -223,7 +218,22 @@ export function MainSidebarContent({
 				href="/friends"
 				isSelected={selectedChannelID === 'friends'}
 			/>
-			<CreateGroupSection />
+			<Flex gap="3px">
+				<Center w="100%">
+					<Separator />
+				</Center>
+				<Center>
+					<CreateGroup>
+						<IconButton
+							aria-label="Create DM Group"
+							bg="transparent"
+							size="xs"
+							fontSize="15px"
+							icon={<MdAdd />}
+						/>
+					</CreateGroup>
+				</Center>
+			</Flex>
 			{channels.map((channel) => {
 				return (
 					<DirectChannelLink
@@ -237,39 +247,6 @@ export function MainSidebarContent({
 	);
 }
 
-export function CreateGroupSection() {
-	const { getColorValue } = useThemeColors();
-
-	return (
-		<Flex gap="3px">
-			<Center w="100%">
-				<Separator />
-			</Center>
-			<Center>
-				<Popover placement="bottom-start" isLazy>
-					<PopoverTrigger>
-						<IconButton
-							aria-label="Create DM Group"
-							bg="transparent"
-							size="xs"
-							fontSize="15px"
-							icon={<MdAdd />}
-						/>
-					</PopoverTrigger>
-					<PopoverContent
-						w={['100vw', 'sm']}
-						backdropFilter="blur(5px)"
-						bg={getColorValue('sidebarBackground')}
-					>
-						<PopoverCloseButton />
-						<PopoverHeader>Seleccionar amigos</PopoverHeader>
-						<PopoverBody>Aun no hay amigos</PopoverBody>
-					</PopoverContent>
-				</Popover>
-			</Center>
-		</Flex>
-	);
-}
 
 export function ProfileBox() {
 	const { isOpen, onOpen, onClose } = useDisclosure();

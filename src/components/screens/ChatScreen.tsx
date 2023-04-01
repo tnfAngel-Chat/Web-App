@@ -4,20 +4,22 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import UsersSidebar from '../sidebars/UsersSidebar';
 import useThemeColors from '@/hooks/useThemeColors';
 import MessagesBox from '../chat/MessagesBox';
-import { Center, Flex } from '@chakra-ui/react';
+import { Box, Center, Flex, Stack } from '@chakra-ui/react';
 import UserTopBar from '../chat/UserTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
 import InputBox from '../chat/InputBox';
-import Image from 'next/image';
 
 export function ChatLoadingScreen() {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
-		</Center>
+		<Center
+			h="100%"
+			w="100%"
+			bg={getColorValue('primaryBackground')}
+		></Center>
 	);
 }
 
@@ -48,19 +50,20 @@ export default function ChatScreen() {
 
 	return (
 		<Flex h="100%" w="100%" gap={0}>
-			<Flex
+			<Stack
 				bg={getColorValue('primaryBackground')}
 				scrollSnapAlign="center"
 				scrollSnapStop="always"
 				h="100%"
-				gap="10px"
+				spacing="10px"
 				w="100%"
-				direction="column"
 			>
 				<UserTopBar channel={channel} />
-				<MessagesBox channel={channel} />
+				<Box h="100%" maxW="100%" overflowX="auto">
+					<MessagesBox channel={channel} />
+				</Box>
 				<InputBox channel={channel} />
-			</Flex>
+			</Stack>
 			{channel.type === ChannelTypes.Group &&
 				collapsiblesState.showChannelMembers && (
 					<UsersSidebar users={channel.members} />

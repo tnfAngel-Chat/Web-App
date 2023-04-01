@@ -77,8 +77,8 @@ export function EmojisTab({
 						key={e.description}
 						padding="6px"
 						borderRadius="5px"
-						onClick={() => {
-							onClose();
+						onClick={(ev) => {
+							if (!ev.shiftKey) onClose();
 
 							dispatch(
 								appendMessageInput({
@@ -132,7 +132,13 @@ const categoryIcons = [
 	<MdEmojiFlags fontSize="25px" key="9" />,
 ];
 
-export default function EmojiPicker({ channelId }: { channelId: string }) {
+export default function EmojiPicker({
+	channelId,
+	children,
+}: {
+	channelId: string;
+	children: any;
+}) {
 	const recentEmojisState = useSelector(
 		(state: RootState) => state.recentEmojis
 	);
@@ -156,15 +162,7 @@ export default function EmojiPicker({ channelId }: { channelId: string }) {
 			{({ isOpen, onClose }) => (
 				<>
 					{!isOpen && searchInput && setSearchInput('')}
-					<PopoverTrigger>
-						<IconButton
-							aria-label="Add emojis"
-							bg="transparent"
-							size="sm"
-							fontSize="24px"
-							icon={<MdEmojiEmotions />}
-						/>
-					</PopoverTrigger>
+					<PopoverTrigger>{children}</PopoverTrigger>
 					<PopoverContent
 						w={['100vw', 'md']}
 						backdropFilter="blur(5px)"
@@ -239,7 +237,7 @@ export default function EmojiPicker({ channelId }: { channelId: string }) {
 									<TabPanels>
 										{groupedEmojis.map((group, i) => (
 											<TabPanel
-												padding="5px 0px 0px 0px"
+												padding="10px 0px 0px 0px"
 												key={i}
 											>
 												<Stack>

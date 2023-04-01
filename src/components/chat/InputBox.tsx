@@ -8,15 +8,10 @@ import {
 	Flex,
 	Center,
 	IconButton,
-	Popover,
-	PopoverBody,
-	PopoverCloseButton,
-	PopoverContent,
-	PopoverHeader,
-	PopoverTrigger,
 	Textarea,
 	Image,
 	Spacer,
+	useEventListener,
 } from '@chakra-ui/react';
 import {
 	MdAddCircle,
@@ -42,7 +37,7 @@ import normalizeMessage from '@/util/normalizeMessage';
 import { useEffect, useRef } from 'react';
 import OverflownText from '../general/OverflownText';
 import { client } from '@/client';
-import EmojiPicker from './EmojiPicker';
+import EmojiPicker from '../popovers/EmojiPicker';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -79,12 +74,12 @@ export default function InputBox({ channel }: InputBoxProps) {
 	const inputAttachments = currentInput?.attachments ?? [];
 
 	useEffect(() => {
-		inputRef.current?.scrollIntoView({ behavior: 'smooth' });
-
-		if (isMobile)
-			setTimeout(() => {
-				inputRef.current?.scrollIntoView({ behavior: 'smooth' });
-			}, 550);
+		console.log('que pasa');
+		inputRef.current?.scrollIntoView({
+			behavior: 'smooth',
+			block: 'end',
+			inline: 'end',
+		});
 	}, []);
 
 	useEffect(() => {
@@ -127,6 +122,13 @@ export default function InputBox({ channel }: InputBoxProps) {
 		}
 	};
 
+	useEventListener('keydown', (e) => {
+		const ignore = ['INPUT', 'TEXTAREA'];
+		if (!ignore.includes(document.activeElement?.tagName ?? '')) {
+			if (e.key.length === 1) inputRef.current.focus();
+		}
+	});
+
 	async function handleSend(
 		rawContent: string,
 		rawAttachments: FileContent[]
@@ -158,9 +160,6 @@ export default function InputBox({ channel }: InputBoxProps) {
 			author: client.user.id,
 			timestamp: Date.now(),
 		};
-
-		console.log('sent', selectedChannelId, rawMessage);
-
 		dispatch(
 			addMessage({
 				channelId: selectedChannelId,
@@ -172,7 +171,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 
 		await axios
 			.post(
-				`http://localhost:3002/api/channels/${channel?.id}/messages`,
+				`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`,
 				{
 					content: content,
 					nonce: tempMessageId,
@@ -419,13 +418,20 @@ export default function InputBox({ channel }: InputBoxProps) {
 								)}
 								onKeyDown={handleKeyDown}
 								onChange={handleChange}
-								autoFocus={true}
 								value={inputContent}
 								ref={inputRef}
 							/>
 						</Center>
 						<Flex gap="24px" paddingTop="6px">
-							<EmojiPicker channelId={selectedChannelId ?? ''} />
+							<EmojiPicker channelId={selectedChannelId ?? ''}>
+								<IconButton
+									aria-label="Add emojis"
+									bg="transparent"
+									size="sm"
+									fontSize="24px"
+									icon={<MdEmojiEmotions />}
+								/>
+							</EmojiPicker>
 						</Flex>
 						{isMobile && (
 							<Flex gap="24px" paddingTop="6px">
