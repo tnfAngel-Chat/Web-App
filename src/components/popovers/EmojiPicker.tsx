@@ -36,8 +36,8 @@ import {
 	PopoverCloseButton,
 } from '@chakra-ui/react';
 import { type Emoji, emojis } from '@/constants/emojis';
-import EmojiParser from '../general/EmojiParser';
-import OverflownText from '../general/OverflownText';
+import EmojiParser from '../misc/EmojiParser';
+import OverflownText from '../misc/OverflownText';
 import { appendMessageInput } from '@/store/slices/chatsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRef, useState } from 'react';

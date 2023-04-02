@@ -1,12 +1,12 @@
 'use client';
 
 import '../styles/global.scss';
-import { Provider } from 'react-redux';
 import { store } from '../store';
-import { CacheProvider } from '@chakra-ui/next-js';
-import AppChakraLayout from '@/components/general/AppChakraLayout';
-import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import { SWRConfig } from 'swr';
+import { Provider } from 'react-redux';
+import { CacheProvider } from '@chakra-ui/next-js';
+import AppWrapper from '@/components/general/AppWrapper';
+import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 
 const config = {
 	initialColorMode: 'dark',
@@ -46,7 +46,7 @@ export default function RootLayout({
 										),
 								}}
 							>
-								<AppChakraLayout>{children}</AppChakraLayout>
+								<AppWrapper>{children}</AppWrapper>
 							</SWRConfig>
 						</Provider>
 					</CacheProvider>

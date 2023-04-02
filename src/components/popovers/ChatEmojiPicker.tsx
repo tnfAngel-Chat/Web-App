@@ -11,10 +11,10 @@ import {
 } from '@chakra-ui/react';
 import { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import EmojiParser from '../general/EmojiParser';
+import EmojiParser from '../misc/EmojiParser';
 import { Emoji, emojis } from '@/constants/emojis';
 import useThemeColors from '@/hooks/useThemeColors';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
 
 export function EmojiSelector({

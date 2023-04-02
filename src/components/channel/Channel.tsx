@@ -15,7 +15,7 @@ import {
 import Avatar from '../user/Avatar';
 import Message from './Message';
 import Separator from '../layout/Separator';
-import styles from '../../styles/MessageBox.module.scss';
+import styles from '../../styles/Channel.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
@@ -140,7 +140,7 @@ export default function Channel({ channel }: MessagesBoxProps) {
 						display="flex"
 						h="100%"
 					>
-						<Box className={styles.selectableMessagesBox}>
+						<Box userSelect="auto">
 							{messages.map((message, i) => {
 								const isHeadless =
 									lastAuthorId === message.author.id;
@@ -180,40 +180,3 @@ export default function Channel({ channel }: MessagesBoxProps) {
 		</Stack>
 	);
 }
-
-/*
-<Box className={styles.selectableMessagesBox}>
-								{messages.map((message, i) => {
-									const isHeadless =
-										lastAuthorId === message.author.id;
-
-									const MessageElement = (
-										<Message
-											onShowAuthor={() => {
-												setClickedUser(message.author);
-												onOpen();
-											}}
-											message={message}
-											key={message.id}
-											headless={isHeadless}
-										/>
-									);
-
-									lastAuthorId = message.author.id;
-
-									return (
-										<>
-											{isHeadless ? null : (
-												<MessageGroupSpacer />
-											)}
-											{MessageElement}
-											{i === messages.length - 1 ? (
-												<MessageGroupSpacer />
-											) : null}
-										</>
-									);
-								})}
-							</Box>
-							{messages.length ? <Separator /> : null}
-							<WelcomeMessage channel={channel} />
-							*/

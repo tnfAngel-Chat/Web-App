@@ -25,9 +25,8 @@ import Avatar from '../user/Avatar';
 import Separator from './Separator';
 import SettingsModal from '../modals/SettingsModal';
 import StatusIndicator from '../user/StatusIndicator';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
-import styles from '../../styles/MainSidebar.module.scss';
 import { client } from '@/client';
 import CreateGroup from '../popovers/CreateGroup';
 
@@ -50,7 +49,7 @@ export function DirectButtonLink({
 				w="100%"
 				h="100%"
 				minH="50px"
-				className={styles.sidebarButton}
+				borderRadius="5px"
 				bg={
 					isSelected
 						? getColorValue('sideBarButtonActive')
@@ -99,7 +98,7 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 	return (
 		<Link href={`/channels/${channel.id}`}>
 			<Flex
-				className={styles.sidebarButton}
+				borderRadius="5px"
 				bg={
 					isSelected
 						? getColorValue('sideBarButtonActive')

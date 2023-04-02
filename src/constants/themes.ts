@@ -131,7 +131,7 @@ export const themes: Theme[] = [
 			textMutedColor: '#ACACAC',
 			textBlockedColor: '#ee5959',
 			statusIndicatorBorderColor: '#252525',
-			statusIndicatorOnlineColor: '#8437CC',
+			statusIndicatorOnlineColor: '#37CC7A',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
 			statusIndicatorOfflineColor: '#9b9b9b',

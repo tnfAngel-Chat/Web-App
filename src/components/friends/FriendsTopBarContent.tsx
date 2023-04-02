@@ -4,7 +4,7 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { Center, Flex, Icon, IconButton, Spacer } from '@chakra-ui/react';
 import { MdAdd, MdPeople, MdSearch } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
 
 export default function FriendsTopBarContent() {
@@ -24,7 +24,7 @@ export default function FriendsTopBarContent() {
 						fontSize="sm"
 						color={getColorValue('textMutedColor')}
 					>
-						- 20
+						20
 					</OverflownText>
 				</Center>
 			</Flex>

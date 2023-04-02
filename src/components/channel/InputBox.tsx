@@ -36,7 +36,7 @@ import { MessageTypes } from '@/types/enums/MessageTypes';
 import { MessageModes } from '@/types/enums/MessageModes';
 import normalizeMessage from '@/util/normalizeMessage';
 import { useEffect, useRef, useState } from 'react';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import { client } from '@/client';
 import EmojiPicker from '../popovers/EmojiPicker';
 import ChatEmojiPicker from '../popovers/ChatEmojiPicker';

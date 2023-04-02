@@ -2,7 +2,6 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { SafeNumber } from '@/types/util/SafeNumber';
 import { Box, PlacementWithLogical, Tooltip } from '@chakra-ui/react';
-import styles from '../../styles/StatusIndicator.module.scss';
 
 export type StatusIndicatorProps = {
 	status: UserStatusTypes;
@@ -52,11 +51,13 @@ export default function StatusIndicator({
 			<Box
 				w={`${size}px`}
 				h={`${size}px`}
+				position="relative"
+				borderWidth="2px"
+				borderRadius="50%"
 				borderColor={getColorValue('statusIndicatorBorderColor')}
 				bg={statusValues[status].color}
-				className={`${styles.indicator} ${
-					positioned ? styles.positionedIndicator : ''
-				}`}
+				top={positioned ? '-31%' : undefined}
+				right={positioned ? '-61%' : undefined}
 			/>
 		</Tooltip>
 	);

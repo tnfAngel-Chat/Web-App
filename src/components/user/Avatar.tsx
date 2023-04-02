@@ -5,7 +5,7 @@ import { SafeNumber } from '@/types/util/SafeNumber';
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import { ReactNode } from 'react';
-import styles from '../../styles/Avatar.module.scss';
+
 
 export type AvatarProps = {
 	src: string;
@@ -29,18 +29,19 @@ export default function Avatar({
 		<Box
 			height={`${size}px`}
 			width={`${size}px`}
-			className={styles.avatarBox}
 			onClick={onClick}
 			_hover={{ cursor: onClick ? 'pointer' : 'inherit' }}
 		>
 			<Image
-				className={styles.avatar}
 				src={src}
 				width={size}
 				height={size}
 				style={{
 					width: `${size}px`,
 					height: `${size}px`,
+					borderRadius: '50%',
+					objectFit: 'cover',
+					userSelect: 'none',
 				}}
 				quality={quality || 100}
 				alt={alt}

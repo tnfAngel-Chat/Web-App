@@ -10,9 +10,8 @@ import {
 } from '@chakra-ui/react';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { IUser } from '@/types/interfaces/User';
-import styles from '../../styles/UsersSidebar.module.scss';
 import Avatar from '../user/Avatar';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import StatusIndicator from '../user/StatusIndicator';
 import Separator from './Separator';
@@ -32,7 +31,7 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 			onClick={onClick}
 			maxHeight="55px"
 			minHeight="50px"
-			className={styles.sidebarButton}
+			borderRadius="5px"
 			bg="transparent"
 			_hover={{
 				cursor: 'pointer',

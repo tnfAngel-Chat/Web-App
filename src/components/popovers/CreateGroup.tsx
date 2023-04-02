@@ -22,7 +22,7 @@ export default function CreateGroup({ children}: { children: any}) {
 				bg={getColorValue('sidebarBackground')}
 			>
 				<PopoverCloseButton />
-				<PopoverHeader>Seleccionar amigos</PopoverHeader>
+				<PopoverHeader>Seleccionar amigos para crear un grupo</PopoverHeader>
 				<PopoverBody>Aun no hay amigos</PopoverBody>
 			</PopoverContent>
 		</Popover>

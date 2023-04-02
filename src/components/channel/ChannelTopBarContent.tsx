@@ -14,7 +14,7 @@ import {
 	MdVideocam,
 } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
 
 export type UserTopBarProps = {

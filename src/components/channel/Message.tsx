@@ -7,7 +7,7 @@ import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import TextDate from '../misc/TextDate';
 import Avatar from '../user/Avatar';
-import TextEmoji from '../general/EmojiText';
+import TextEmoji from '../misc/EmojiText';
 
 export type MessageProps = {
 	message: IMessage;

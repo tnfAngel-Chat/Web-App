@@ -15,7 +15,7 @@ import {
 	Heading,
 	Text,
 } from '@chakra-ui/react';
-import OverflownText from '../general/OverflownText';
+import OverflownText from '../misc/OverflownText';
 import Avatar from '../user/Avatar';
 import StatusIndicator from '../user/StatusIndicator';
 

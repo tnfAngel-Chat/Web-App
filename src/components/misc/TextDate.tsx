@@ -1,6 +1,6 @@
 import useThemeColors from '@/hooks/useThemeColors';
 import { Box } from '@chakra-ui/react';
-import OverflownText from '../general/OverflownText';
+import OverflownText from './OverflownText';
 
 export type TextDateProps = {
 	timestamp: number;
