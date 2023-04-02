@@ -13,22 +13,18 @@ import {
 	Spacer,
 	IconButton,
 } from '@chakra-ui/react';
-import { MdAdd, MdHome, MdPerson, MdSettings } from 'react-icons/md';
-import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
+import { MdAdd, MdHome, MdPeople, MdSettings } from 'react-icons/md';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
-import { UserTypes } from '@/types/enums/UserTypes';
-import { IUser } from '@/types/interfaces/User';
 import { RootState } from '@/store';
 import { useState } from 'react';
 import { removeChannel } from '@/store/slices/directChannelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Avatar from '../user/Avatar';
-import Separator from '../misc/Separator';
+import Separator from './Separator';
 import SettingsModal from '../modals/SettingsModal';
 import StatusIndicator from '../user/StatusIndicator';
-import normalizeUser from '@/util/normalizeUser';
 import OverflownText from '../general/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import styles from '../../styles/MainSidebar.module.scss';
@@ -41,7 +37,7 @@ export function DirectButtonLink({
 	href,
 	isSelected,
 }: {
-	icon: As<any>;
+	icon: As;
 	label: string;
 	href: string;
 	isSelected: boolean;
@@ -213,7 +209,7 @@ export function MainSidebarContent({
 				isSelected={selectedChannelID === 'home'}
 			/>
 			<DirectButtonLink
-				icon={MdPerson}
+				icon={MdPeople}
 				label="Amigos"
 				href="/friends"
 				isSelected={selectedChannelID === 'friends'}
@@ -246,7 +242,6 @@ export function MainSidebarContent({
 		</Stack>
 	);
 }
-
 
 export function ProfileBox() {
 	const { isOpen, onOpen, onClose } = useDisclosure();

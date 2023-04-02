@@ -1,7 +1,6 @@
 import { ClientLinks } from './links';
 import { ClientConfig } from './config';
 import { ClientSocket } from './socket';
-import { RestClient } from './rest/client';
 import { UsersManager } from './classes/UsersManager';
 import { ChannelsManager } from './classes/ChannelsManager';
 import { IRawChannel } from '@/types/interfaces/Channel';
@@ -9,14 +8,10 @@ import { IRawUser } from '@/types/interfaces/User';
 import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
 
-
 export class Client {
-
 	config = new ClientConfig();
 	links = new ClientLinks();
 	socket = new ClientSocket(this);
-
-	rest = new RestClient();
 
 	users = new UsersManager(this);
 	user = this.users.resolve(null);

@@ -1,17 +1,18 @@
 'use client';
 
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import UsersSidebar from '../sidebars/UsersSidebar';
+import UsersSidebar from '../layout/UsersSidebar';
 import useThemeColors from '@/hooks/useThemeColors';
-import MessagesBox from '../chat/MessagesBox';
+import Channel from '../channel/Channel';
 import { Box, Center, Flex, Stack } from '@chakra-ui/react';
-import UserTopBar from '../chat/UserTopBar';
+import MainTopBar from '../layout/MainTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
-import InputBox from '../chat/InputBox';
+import InputBox from '../channel/InputBox';
+import ChannelTopBarContent from '../channel/ChannelTopBarContent';
 
-export function ChatLoadingScreen() {
+export function ChannelLoadingScreen() {
 	const { getColorValue } = useThemeColors();
 
 	return (
@@ -23,7 +24,7 @@ export function ChatLoadingScreen() {
 	);
 }
 
-export default function ChatScreen() {
+export default function ChannelScreen() {
 	const { getColorValue } = useThemeColors();
 	const router = useRouter();
 
@@ -45,7 +46,7 @@ export default function ChatScreen() {
 		router.prefetch('/home');
 		router.push('/home');
 
-		return <ChatLoadingScreen />;
+		return <ChannelLoadingScreen />;
 	}
 
 	return (
@@ -58,9 +59,11 @@ export default function ChatScreen() {
 				spacing="10px"
 				w="100%"
 			>
-				<UserTopBar channel={channel} />
+				<MainTopBar>
+					<ChannelTopBarContent channel={channel} />
+				</MainTopBar>
 				<Box h="100%" maxW="100%" overflowX="auto">
-					<MessagesBox channel={channel} />
+					<Channel channel={channel} />
 				</Box>
 				<InputBox channel={channel} />
 			</Stack>

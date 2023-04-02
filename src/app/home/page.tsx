@@ -1,6 +1,6 @@
 'use client';
 
-import MainSidebar from '@/components/sidebars/MainSidebar';
+import MainSidebar from '@/components/layout/MainSidebar';
 import HomeScreen from '@/components/screens/HomeScreen';
 import { Flex } from '@chakra-ui/react';
 

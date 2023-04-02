@@ -27,13 +27,13 @@ import {
 	TabPanel,
 	TabPanels,
 	IconButton,
+	CloseButton,
 	PopoverBody,
+	TabIndicator,
 	PopoverHeader,
 	PopoverTrigger,
 	PopoverContent,
 	PopoverCloseButton,
-	CloseButton,
-	TabIndicator,
 } from '@chakra-ui/react';
 import { type Emoji, emojis } from '@/constants/emojis';
 import EmojiParser from '../general/EmojiParser';

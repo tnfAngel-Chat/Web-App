@@ -7,6 +7,7 @@ import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import TextDate from '../misc/TextDate';
 import Avatar from '../user/Avatar';
+import TextEmoji from '../general/EmojiText';
 
 export type MessageProps = {
 	message: IMessage;
@@ -91,10 +92,13 @@ export default function Message({
 						const lineKey = `${message.id}-${i}`;
 
 						return (
-							<Text
+							<TextEmoji
+								size={22}
 								key={lineKey}
 								fontSize="md"
-								whiteSpace="initial"
+								userSelect="auto"
+								pointerEvents="none"
+								wordBreak="break-all"
 								color={
 									message.mode === MessageModes.Sent
 										? getColorValue('textColor')
@@ -104,7 +108,7 @@ export default function Message({
 								}
 							>
 								{line}
-							</Text>
+							</TextEmoji>
 						);
 					})}
 				</Box>

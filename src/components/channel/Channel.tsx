@@ -3,7 +3,6 @@
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 import { IChannel } from '@/types/interfaces/Channel';
-import { IRawMessage } from '@/types/interfaces/Message';
 import {
 	Box,
 	Center,
@@ -15,19 +14,20 @@ import {
 } from '@chakra-ui/react';
 import Avatar from '../user/Avatar';
 import Message from './Message';
-import Separator from '../misc/Separator';
+import Separator from '../layout/Separator';
 import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
 import { useState } from 'react';
-import useSWRImmutable from 'swr/immutable';
+
 import normalizeMessage from '@/util/normalizeMessage';
 import { useDispatch, useSelector } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import { RootState } from '@/store';
 import { setMessages } from '@/store/slices/chatsSlice';
 import UserProfileModal from '../modals/UserProfileModal';
+import useChannelMessages from '@/hooks/useMessages';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
@@ -87,19 +87,11 @@ export function MessageGroupSpacer() {
 	return <Box h="15px" />;
 }
 
-function useFetchMessages({ channel }: any) {
-	const { data, isLoading } = useSWRImmutable<IRawMessage[]>(
-		`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`
-	);
-
-	return { data, isLoading };
-}
-
-export default function MessagesBox({ channel }: MessagesBoxProps) {
+export default function Channel({ channel }: MessagesBoxProps) {
 	const dispatch = useDispatch();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [clickedUser, setClickedUser] = useState<IUser>();
-	const { data, isLoading } = useFetchMessages({ channel });
+	const { data, isLoading } = useChannelMessages(channel.id);
 	const [topRef] = useInView({
 		threshold: 0,
 		onChange: (inView) => {

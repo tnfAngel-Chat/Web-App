@@ -15,7 +15,7 @@ import Avatar from '../user/Avatar';
 import OverflownText from '../general/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import StatusIndicator from '../user/StatusIndicator';
-import Separator from '../misc/Separator';
+import Separator from './Separator';
 import UserProfileModal from '../modals/UserProfileModal';
 import { useState } from 'react';
 
@@ -40,7 +40,7 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 			}}
 			padding="5px 10px 5px 10px"
 		>
-			<Flex h="100%" flex="1" gap="10px" alignItems="center">
+			<Flex h="100%" flex="1" gap="10px" alignItems="center" minW="0px">
 				<Center>
 					<Avatar
 						size="36"
@@ -51,13 +51,17 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 						}
 					/>
 				</Center>
-				<Center>
-					<Box textAlign="left">
+				<Center minW="0px">
+					<Box textAlign="left" minW="0px">
 						<OverflownText fontSize="md" tooltipPlacement="top">
 							{user.username}
 						</OverflownText>
 						{user.presence ? (
-							<OverflownText fontSize="sm" tooltipPlacement="top">
+							<OverflownText
+								minW="0px"
+								fontSize="sm"
+								tooltipPlacement="top"
+							>
 								{user.presence}
 							</OverflownText>
 						) : null}

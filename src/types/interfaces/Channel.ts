@@ -1,5 +1,5 @@
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { IRawUser, IUser } from './User';
+import { IUser } from './User';
 
 export interface IBaseChannel {
 	id: string;

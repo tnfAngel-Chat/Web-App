@@ -14,7 +14,7 @@ export default function TextDate({ timestamp, long, fontSize }: TextDateProps) {
 	return (
 		<Box userSelect={long ? 'auto' : 'none'}>
 			<OverflownText
-				userSelect="none"
+				userSelect={long ? 'auto' : 'none'}
 				fontSize={fontSize}
 				color={getColorValue('textMutedColor')}
 			>

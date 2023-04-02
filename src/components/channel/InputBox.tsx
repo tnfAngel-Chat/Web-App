@@ -122,7 +122,7 @@ export default function InputBox({ channel }: InputBoxProps) {
 			const ignore = ['INPUT', 'TEXTAREA'];
 
 			if (!ignore.includes(document.activeElement?.tagName ?? '')) {
-				if (e.key.length === 1 || e.key === 'Backspace')
+				if ((!e.ctrlKey && e.key.length === 1) || e.key === 'Backspace')
 					inputRef.current.focus();
 				if (e.key === 'Enter' && !e.shiftKey)
 					handleSend(inputContent, inputAttachments);

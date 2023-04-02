@@ -158,12 +158,11 @@ export default function ChatEmojiPicker({
 
 	return (
 		<Popover
-			autoFocus={false}
-			closeOnBlur={false}
-			isOpen={isOpen}
 			onOpen={() => setSelectedEmojiIndex(0)}
-			onClose={onClose}
 			placement="top-start"
+			autoFocus={false}
+			onClose={onClose}
+			isOpen={isOpen}
 			isLazy
 		>
 			{({ onClose }) => (
