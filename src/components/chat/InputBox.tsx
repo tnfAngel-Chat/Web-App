@@ -12,6 +12,7 @@ import {
 	Image,
 	Spacer,
 	useEventListener,
+	useDisclosure,
 } from '@chakra-ui/react';
 import {
 	MdAddCircle,
@@ -34,10 +35,11 @@ import { RootState } from '@/store';
 import { MessageTypes } from '@/types/enums/MessageTypes';
 import { MessageModes } from '@/types/enums/MessageModes';
 import normalizeMessage from '@/util/normalizeMessage';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import OverflownText from '../general/OverflownText';
 import { client } from '@/client';
 import EmojiPicker from '../popovers/EmojiPicker';
+import ChatEmojiPicker from '../popovers/ChatEmojiPicker';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -50,31 +52,26 @@ export default function InputBox({ channel }: InputBoxProps) {
 	});
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
-
-	const directChannelsState = useSelector(
-		(state: RootState) => state.directChannels
-	);
-
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
-
+	const [emojiSearchInput, setEmojiSearchInput] = useState<string | null>(
+		null
+	);
 	const chatsState = useSelector((state: RootState) => state.chats);
-
 	const inputRef = useRef<null | any>(null);
-
-	const selectedChannelId = directChannelsState.selectedChannelId;
-
-	const currentInput = chatsState.inputs[selectedChannelId ?? ''];
-
+	const currentInput = chatsState.inputs[channel.id];
 	const inputContent = currentInput?.content ?? '';
-
 	const numberOfLines = inputContent.split('\n').length;
-
 	const inputAttachments = currentInput?.attachments ?? [];
 
+	const {
+		isOpen: isChatEmojiPickerOpen,
+		onOpen: onChatEmojiPickerOpen,
+		onClose: onChatEmojiPickerClose,
+	} = useDisclosure();
+
 	useEffect(() => {
-		console.log('que pasa');
 		inputRef.current?.scrollIntoView({
 			behavior: 'smooth',
 			block: 'end',
@@ -83,11 +80,9 @@ export default function InputBox({ channel }: InputBoxProps) {
 	}, []);
 
 	useEffect(() => {
-		if (!selectedChannelId) return;
-
 		dispatch(
 			setMessageInput({
-				channelId: selectedChannelId,
+				channelId: channel.id,
 				input: {
 					content: currentInput?.content ?? '',
 					attachments: [
@@ -123,9 +118,15 @@ export default function InputBox({ channel }: InputBoxProps) {
 	};
 
 	useEventListener('keydown', (e) => {
-		const ignore = ['INPUT', 'TEXTAREA'];
-		if (!ignore.includes(document.activeElement?.tagName ?? '')) {
-			if (e.key.length === 1) inputRef.current.focus();
+		if (!isChatEmojiPickerOpen) {
+			const ignore = ['INPUT', 'TEXTAREA'];
+
+			if (!ignore.includes(document.activeElement?.tagName ?? '')) {
+				if (e.key.length === 1 || e.key === 'Backspace')
+					inputRef.current.focus();
+				if (e.key === 'Enter' && !e.shiftKey)
+					handleSend(inputContent, inputAttachments);
+			}
 		}
 	});
 
@@ -133,90 +134,163 @@ export default function InputBox({ channel }: InputBoxProps) {
 		rawContent: string,
 		rawAttachments: FileContent[]
 	) {
-		const content = rawContent.trim();
+		if (!isChatEmojiPickerOpen) {
+			const content = rawContent.trim();
 
-		if (!content && !rawAttachments.length) return;
+			onChatEmojiPickerClose();
 
-		const selectedChannelId = directChannelsState.selectedChannelId;
+			if (!content && !rawAttachments.length) return;
 
-		if (!selectedChannelId) return;
+			dispatch(
+				setMessageInput({
+					channelId: channel.id,
+					input: { content: '', attachments: [] },
+				})
+			);
 
-		dispatch(
-			setMessageInput({
-				channelId: selectedChannelId,
-				input: { content: '', attachments: [] },
-			})
-		);
+			const tempMessageId = `${Math.random() * 1000}`;
 
-		const tempMessageId = `${Math.random() * 1000}`;
+			const rawMessage = {
+				type: MessageTypes.Text,
+				mode: MessageModes.Sending,
+				id: tempMessageId,
+				nonce: tempMessageId,
+				channelId: channel.id,
+				content: content,
+				author: client.user.id,
+				timestamp: Date.now(),
+			};
+			dispatch(
+				addMessage({
+					channelId: channel.id,
+					message: normalizeMessage(rawMessage),
+				})
+			);
 
-		const rawMessage = {
-			type: MessageTypes.Text,
-			mode: MessageModes.Sending,
-			id: tempMessageId,
-			nonce: tempMessageId,
-			channelId: selectedChannelId,
-			content: content,
-			author: client.user.id,
-			timestamp: Date.now(),
-		};
-		dispatch(
-			addMessage({
-				channelId: selectedChannelId,
-				message: normalizeMessage(rawMessage),
-			})
-		);
+			client.sentMessagesIds.push(tempMessageId);
 
-		client.sentMessagesIds.push(tempMessageId);
-
-		await axios
-			.post(
-				`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`,
-				{
-					content: content,
-					nonce: tempMessageId,
-				}
-			)
-			.then((result) => {
-				dispatch(
-					modifyMessage({
-						channelId: rawMessage.channelId,
-						messageId: rawMessage.id,
-						newMessage: normalizeMessage({
-							...rawMessage,
-							mode: MessageModes.Sent,
-							id: result.data.id,
-						}),
-					})
-				);
-			})
-			.catch(() => {
-				dispatch(
-					modifyMessage({
-						channelId: rawMessage.channelId,
-						messageId: rawMessage.id,
-						newMessage: normalizeMessage({
-							...rawMessage,
-							mode: MessageModes.Blocked,
-						}),
-					})
-				);
-			});
+			await axios
+				.post(
+					`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`,
+					{
+						content: content,
+						nonce: tempMessageId,
+					}
+				)
+				.then((result) => {
+					dispatch(
+						modifyMessage({
+							channelId: rawMessage.channelId,
+							messageId: rawMessage.id,
+							newMessage: normalizeMessage({
+								...rawMessage,
+								mode: MessageModes.Sent,
+								id: result.data.id,
+							}),
+						})
+					);
+				})
+				.catch(() => {
+					dispatch(
+						modifyMessage({
+							channelId: rawMessage.channelId,
+							messageId: rawMessage.id,
+							newMessage: normalizeMessage({
+								...rawMessage,
+								mode: MessageModes.Blocked,
+							}),
+						})
+					);
+				});
+		}
 	}
 
 	const handleChange = (event: any) => {
-		if (directChannelsState.selectedChannelId) {
-			dispatch(
-				setMessageInput({
-					channelId: directChannelsState.selectedChannelId,
-					input: {
-						content: event.target.value,
-						attachments: currentInput?.attachments ?? [],
-					},
-				})
-			);
+		const content = event.target.value;
+
+		handleEmojiPickerChange(event);
+
+		dispatch(
+			setMessageInput({
+				channelId: channel.id,
+				input: {
+					content: content,
+					attachments: currentInput?.attachments ?? [],
+				},
+			})
+		);
+	};
+
+	const handleEmojiPickerChange = (event: any) => {
+		const content = event.target.value as string;
+
+		if (content.includes(':')) {
+			const spacedContent = content.split(' ');
+
+			let selectedWord = '';
+
+			let length = 0;
+
+			spacedContent.every((word, i) => {
+				length += word.length + 1;
+
+				if (length >= event.target.selectionStart) {
+					selectedWord = word;
+					return false;
+				}
+
+				return true;
+			});
+
+			if (
+				selectedWord.startsWith(':') &&
+				!selectedWord.endsWith(':') &&
+				selectedWord.split(':').length === 2
+			) {
+				const searchInput = selectedWord.replaceAll(':', '');
+
+				setEmojiSearchInput(searchInput);
+
+				if (!isChatEmojiPickerOpen && searchInput.length > 1) {
+					onChatEmojiPickerOpen();
+				}
+			} else {
+				if (isChatEmojiPickerOpen) onChatEmojiPickerClose();
+			}
+		} else {
+			if (isChatEmojiPickerOpen) onChatEmojiPickerClose();
 		}
 	};
+
+	function handleChatEmojiSelect(emoji: string) {
+		const input = inputRef.current;
+		const content = input.value as string;
+
+		const spacedContent = content.split(' ');
+
+		let length = 0;
+
+		spacedContent.every((word, i) => {
+			length += word.length + 1;
+
+			if (length >= input.selectionStart) {
+				spacedContent[i] = `${emoji} `;
+				return false;
+			}
+
+			return true;
+		});
+
+		dispatch(
+			setMessageInput({
+				channelId: channel.id,
+				input: {
+					content: spacedContent.join(' '),
+					attachments: [...(currentInput?.attachments ?? [])],
+				},
+			})
+		);
+	}
 
 	const fileIcons = [
 		{
@@ -394,36 +468,51 @@ export default function InputBox({ channel }: InputBoxProps) {
 							/>
 						</Flex>
 						<Center w="100%">
-							<Textarea
-								placeholder={`Message @${
-									channel.type === ChannelTypes.DirectMessage
-										? recipient.username
-										: channel.name
-								}`}
-								rows={
-									numberOfLines >
-									(inputAttachments.length ? 10 : 22)
-										? inputAttachments.length
-											? 10
-											: 22
-										: numberOfLines
-								}
-								maxH="50vh"
-								h={numberOfLines > 1 ? '100%' : '45px'}
-								minH="45px"
-								size="md"
-								resize="none"
-								focusBorderColor={getColorValue(
-									'focusBorderColor'
-								)}
-								onKeyDown={handleKeyDown}
-								onChange={handleChange}
-								value={inputContent}
-								ref={inputRef}
-							/>
+							<ChatEmojiPicker
+								onEmojiSelect={handleChatEmojiSelect}
+								searchInput={emojiSearchInput}
+								isOpen={isChatEmojiPickerOpen}
+								onClose={onChatEmojiPickerClose}
+							>
+								<Textarea
+									onClick={() => {
+										console.log('que pasa');
+										inputRef.current.focus();
+									}}
+									placeholder={`Message @${
+										channel.type ===
+										ChannelTypes.DirectMessage
+											? recipient.username
+											: channel.name
+									}`}
+									rows={
+										numberOfLines >
+										(inputAttachments.length ? 10 : 22)
+											? inputAttachments.length
+												? 10
+												: 22
+											: numberOfLines
+									}
+									maxH="50vh"
+									h={numberOfLines > 1 ? '100%' : '45px'}
+									minH="45px"
+									size="md"
+									resize="none"
+									focusBorderColor={getColorValue(
+										'focusBorderColor'
+									)}
+									onKeyDown={handleKeyDown}
+									onChange={handleChange}
+									value={inputContent}
+									ref={inputRef}
+								/>
+							</ChatEmojiPicker>
 						</Center>
 						<Flex gap="24px" paddingTop="6px">
-							<EmojiPicker channelId={selectedChannelId ?? ''}>
+							<EmojiPicker
+								channelId={channel.id}
+								inputRef={inputRef}
+							>
 								<IconButton
 									aria-label="Add emojis"
 									bg="transparent"

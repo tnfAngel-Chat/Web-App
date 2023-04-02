@@ -3,7 +3,7 @@
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 import { IChannel } from '@/types/interfaces/Channel';
-import { IMessage, IRawMessage } from '@/types/interfaces/Message';
+import { IRawMessage } from '@/types/interfaces/Message';
 import {
 	Box,
 	Center,
@@ -18,15 +18,16 @@ import Message from './Message';
 import Separator from '../misc/Separator';
 import styles from '../../styles/MessageBox.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
-import UserProfileModal from '../modals/UserProfileModal';
 import { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
 import { useState } from 'react';
 import useSWRImmutable from 'swr/immutable';
 import normalizeMessage from '@/util/normalizeMessage';
 import { useDispatch, useSelector } from 'react-redux';
+import { useInView } from 'react-intersection-observer';
 import { RootState } from '@/store';
 import { setMessages } from '@/store/slices/chatsSlice';
+import UserProfileModal from '../modals/UserProfileModal';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
@@ -86,16 +87,33 @@ export function MessageGroupSpacer() {
 	return <Box h="15px" />;
 }
 
+function useFetchMessages({ channel }: any) {
+	const { data, isLoading } = useSWRImmutable<IRawMessage[]>(
+		`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`
+	);
+
+	return { data, isLoading };
+}
+
 export default function MessagesBox({ channel }: MessagesBoxProps) {
 	const dispatch = useDispatch();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [clickedUser, setClickedUser] = useState<IUser>();
+	const { data, isLoading } = useFetchMessages({ channel });
+	const [topRef] = useInView({
+		threshold: 0,
+		onChange: (inView) => {
+			console.log('change top', inView);
+		},
+	});
+	const [bottomRef] = useInView({
+		threshold: 0,
+		onChange: (inView) => {
+			console.log('change bot', inView);
+		},
+	});
 
 	let lastAuthorId: string;
-
-	const { data, isLoading } = useSWRImmutable<IRawMessage[]>(
-		`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`
-	);
 
 	const dataMessages = data?.map((msg) => normalizeMessage(msg));
 
@@ -110,8 +128,12 @@ export default function MessagesBox({ channel }: MessagesBoxProps) {
 	}
 
 	return (
-		<Stack w
-		="100%" h="100%" wordBreak="break-all" className={styles.messagesStack}>
+		<Stack
+			w="100%"
+			h="100%"
+			wordBreak="break-all"
+			className={styles.messagesStack}
+		>
 			{!isLoading && (
 				<>
 					<UserProfileModal

@@ -40,7 +40,7 @@ import EmojiParser from '../general/EmojiParser';
 import OverflownText from '../general/OverflownText';
 import { appendMessageInput } from '@/store/slices/chatsSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
 import { RootState } from '@/store';
 
@@ -133,11 +133,13 @@ const categoryIcons = [
 ];
 
 export default function EmojiPicker({
-	channelId,
 	children,
+	channelId,
+	inputRef,
 }: {
-	channelId: string;
 	children: any;
+	channelId: string;
+	inputRef: any;
 }) {
 	const recentEmojisState = useSelector(
 		(state: RootState) => state.recentEmojis
@@ -156,9 +158,15 @@ export default function EmojiPicker({
 		groupedEmojis[0][0] ?? null
 	);
 	const { getColorValue } = useThemeColors();
+	const initialFocusRef = useRef<any>();
 
 	return (
-		<Popover placement="top-end" isLazy>
+		<Popover
+			placement="top-end"
+			isLazy
+			initialFocusRef={initialFocusRef}
+			onClose={() => inputRef.current?.focus()}
+		>
 			{({ isOpen, onClose }) => (
 				<>
 					{!isOpen && searchInput && setSearchInput('')}
@@ -174,6 +182,7 @@ export default function EmojiPicker({
 							<Stack>
 								<Flex gap="10px" alignItems="center">
 									<Input
+										ref={initialFocusRef}
 										placeholder="Search for emoji"
 										focusBorderColor={getColorValue(
 											'focusBorderColor'
@@ -256,12 +265,54 @@ export default function EmojiPicker({
 																				.includes(
 																					searchInput.toLowerCase()
 																				) ||
-																			e.aliases.includes(
-																				searchInput.toLowerCase()
+																			e.aliases.find(
+																				(
+																					a
+																				) =>
+																					a.includes(
+																						searchInput.toLowerCase()
+																					)
 																			) ||
-																			e.tags.includes(
-																				searchInput.toLowerCase()
+																			e.tags.find(
+																				(
+																					a
+																				) =>
+																					a.includes(
+																						searchInput.toLowerCase()
+																					)
 																			)
+																	)
+																	.sort(
+																		(
+																			a,
+																			b
+																		) => {
+																			if (
+																				a.aliases.find(
+																					(
+																						al
+																					) =>
+																						al.startsWith(
+																							searchInput.toLowerCase()
+																						)
+																				)
+																			) {
+																				return -1;
+																			} else if (
+																				b.aliases.find(
+																					(
+																						al
+																					) =>
+																						al.startsWith(
+																							searchInput.toLowerCase()
+																						)
+																				)
+																			) {
+																				return 1;
+																			} else {
+																				return 0;
+																			}
+																		}
 																	)
 																	.slice(
 																		0,
