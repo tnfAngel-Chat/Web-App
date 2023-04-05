@@ -5,7 +5,14 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
-import { Center, Flex, Icon, IconButton, Spacer } from '@chakra-ui/react';
+import {
+	Center,
+	Flex,
+	Icon,
+	IconButton,
+	Spacer,
+	useDisclosure,
+} from '@chakra-ui/react';
 import {
 	MdAlternateEmail,
 	MdPeople,
@@ -16,6 +23,7 @@ import {
 import { useDispatch } from 'react-redux';
 import OverflownText from '../misc/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
+import UserProfileModal from '../modals/UserProfileModal';
 
 export type UserTopBarProps = {
 	channel: IChannel;
@@ -27,6 +35,7 @@ export default function ChannelTopBarContent({ channel }: UserTopBarProps) {
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
+	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
 		<>
@@ -35,7 +44,28 @@ export default function ChannelTopBarContent({ channel }: UserTopBarProps) {
 					<Icon as={MdAlternateEmail} boxSize="24px" />
 				</Center>
 				<Center minW="0px">
-					<OverflownText fontSize="lg">
+					{channel.type === ChannelTypes.DirectMessage ? (
+						<UserProfileModal
+							isOpen={isOpen}
+							onOpen={onOpen}
+							onClose={onClose}
+							user={recipient}
+						/>
+					) : null}
+					<OverflownText
+						fontSize="lg"
+						_hover={{
+							cursor:
+								channel.type === ChannelTypes.DirectMessage
+									? 'pointer'
+									: undefined,
+						}}
+						onClick={
+							channel.type === ChannelTypes.DirectMessage
+								? onOpen
+								: undefined
+						}
+					>
 						{channel.type === ChannelTypes.DirectMessage
 							? recipient.username
 							: channel.name}

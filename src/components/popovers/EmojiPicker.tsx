@@ -1,21 +1,21 @@
 import useThemeColors from '@/hooks/useThemeColors';
 import {
-	MdEmojiEmotions,
-	MdEmojiEvents,
-	MdEmojiFlags,
+	MdEmojiTransportation,
 	MdEmojiFoodBeverage,
-	MdEmojiNature,
+	MdEmojiEmotions,
+	MdEmojiSymbols,
 	MdEmojiObjects,
 	MdEmojiPeople,
-	MdEmojiSymbols,
-	MdEmojiTransportation,
+	MdEmojiNature,
+	MdEmojiEvents,
+	MdEmojiFlags,
 	MdHistory,
 	MdSearch,
 } from 'react-icons/md';
 import {
 	Tab,
-	Tabs,
 	Box,
+	Tabs,
 	Flex,
 	Wrap,
 	Input,
@@ -35,14 +35,14 @@ import {
 	PopoverContent,
 	PopoverCloseButton,
 } from '@chakra-ui/react';
-import { type Emoji, emojis } from '@/constants/emojis';
+import { RootState } from '@/store';
+import { useRef, useState } from 'react';
 import EmojiParser from '../misc/EmojiParser';
 import OverflownText from '../misc/OverflownText';
-import { appendMessageInput } from '@/store/slices/chatsSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { useRef, useState } from 'react';
+import { type Emoji, emojis } from '@/constants/emojis';
+import { appendMessageInput } from '@/store/slices/chatsSlice';
 import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
-import { RootState } from '@/store';
 
 export function EmojisTab({
 	tabEmojis,

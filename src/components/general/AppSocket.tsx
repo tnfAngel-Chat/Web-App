@@ -1,7 +1,7 @@
 import { client } from '@/client';
 import useTheme from '@/hooks/useTheme';
 import { addMessage } from '@/store/slices/chatsSlice';
-import { setChannels } from '@/store/slices/directChannelsSlice';
+import { modifyChannel, setChannels } from '@/store/slices/channelsSlice';
 import { IRawChannel } from '@/types/interfaces/Channel';
 import { IRawMessage } from '@/types/interfaces/Message';
 import { IRawUser } from '@/types/interfaces/User';
@@ -82,6 +82,16 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 		}
 
 		function onMessageCreate(message: IRawMessage) {
+			const channel = client.channels.resolve(message.channelId);
+
+			dispatch(
+				modifyChannel({
+					channelId: message.channelId,
+					newChannel: { ...channel, lastMessage: message.id },
+				})
+			);
+
+		
 			if (!client.sentMessagesIds.includes(message.nonce)) {
 				dispatch(
 					addMessage({

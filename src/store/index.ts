@@ -4,7 +4,7 @@ import chatsSlice from './slices/chatsSlice';
 import themesSlice from './slices/themeSlice';
 import recentEmojisSlice from './slices/recentEmojisSlice';
 import collapsiblesSlice from './slices/collapsiblesSlice';
-import directChannelsSlice from './slices/directChannelsSlice';
+import channelsSlice from './slices/channelsSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -12,7 +12,7 @@ export const store = configureStore({
 		themes: themesSlice,
 		recentEmojis: recentEmojisSlice,
 		collapsibles: collapsiblesSlice,
-		directChannels: directChannelsSlice,
+		channels: channelsSlice,
 	},
 });
 

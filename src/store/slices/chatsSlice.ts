@@ -69,6 +69,8 @@ export const chatsSlice = createSlice({
 
 			return state;
 		},
+
+		
 		deleteMessage: (
 			state,
 			{

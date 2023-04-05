@@ -20,6 +20,7 @@ export default function AppWrapper({ children }: any) {
 					overflow="hidden"
 					color={getColorValue('textColor')}
 					bg={getColorValue('appBackground')}
+					backgroundPosition="center center"
 					backgroundRepeat="no-repeat"
 					backgroundSize="cover"
 				>

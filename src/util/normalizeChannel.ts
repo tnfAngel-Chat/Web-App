@@ -10,15 +10,18 @@ export default function normalizeChannel(channel: IRawChannel): IChannel {
 				icon:
 					channel.icon ??
 					'https://cdn.discordapp.com/attachments/865211651492937749/1086976530757996637/IMG-20230318-WA0026.jpg',
+				lastMessage: channel.lastMessage ?? null,
 			};
 		case ChannelTypes.DirectMessage:
 			return {
 				...channel,
 				recipient: channel.recipient,
+				lastMessage: channel.lastMessage ?? null,
 			};
 		case ChannelTypes.Group:
-			const members = channel.members
-				.map((memberId) => client.users.resolve(memberId))
+			const members = channel.members.map((memberId) =>
+				client.users.resolve(memberId)
+			);
 
 			return {
 				...channel,
@@ -29,6 +32,7 @@ export default function normalizeChannel(channel: IRawChannel): IChannel {
 					channel.icon ??
 					'https://cdn.discordapp.com/attachments/865211651492937749/1086976552123760670/illosandia.png',
 				members: members,
+				lastMessage: channel.lastMessage ?? null,
 			};
 	}
 }

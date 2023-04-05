@@ -19,7 +19,7 @@ import styles from '../../styles/Channel.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import normalizeMessage from '@/util/normalizeMessage';
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,6 +28,7 @@ import { RootState } from '@/store';
 import { setMessages } from '@/store/slices/chatsSlice';
 import UserProfileModal from '../modals/UserProfileModal';
 import useChannelMessages from '@/hooks/useMessages';
+import { IMessage } from '@/types/interfaces/Message';
 
 export type MessagesBoxProps = {
 	channel: IChannel;
@@ -88,35 +89,79 @@ export function MessageGroupSpacer() {
 }
 
 export default function Channel({ channel }: MessagesBoxProps) {
+	const [clickedUser, setClickedUser] = useState<IUser>();
 	const dispatch = useDispatch();
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const [clickedUser, setClickedUser] = useState<IUser>();
-	const { data, isLoading } = useChannelMessages(channel.id);
-	const [topRef] = useInView({
-		threshold: 0,
-		onChange: (inView) => {
-			console.log('change top', inView);
-		},
-	});
-	const [bottomRef] = useInView({
-		threshold: 0,
-		onChange: (inView) => {
-			console.log('change bot', inView);
-		},
-	});
+	const [beforeId, setBeforeId] = useState<string>();
 
-	let lastAuthorId: string;
+	const [afterId, setAfterId] = useState<string>();
 
-	const dataMessages = data?.map((msg) => normalizeMessage(msg));
+	const { data, isLoading } = useChannelMessages(
+		channel.id,
+		afterId,
+		beforeId
+	);
 
 	const chatsState = useSelector((state: RootState) => state.chats);
 
-	const messages = chatsState.chats[channel.id] ?? [];
+	const stateMessages = chatsState.chats[channel.id] ?? [];
 
-	if (dataMessages && !chatsState.chats[channel.id]) {
-		dispatch(
-			setMessages({ channelId: channel.id, messages: dataMessages })
-		);
+	const [topRef] = useInView({
+		threshold: 0,
+		onChange: (inView) => {
+			if (inView) {
+				const firstMessageId = stateMessages.at(0)?.id;
+
+				if (beforeId !== firstMessageId) {
+					console.log('[TOP] should fetch');
+					setAfterId(undefined);
+					setBeforeId(firstMessageId);
+				}
+			}
+		},
+	});
+
+	const [bottomRef] = useInView({
+		threshold: 0,
+		onChange: (inView) => {
+			if (inView) {
+				if (
+					!channel.lastMessage ||
+					channel.lastMessage !== stateMessages.at(-1)?.id
+				) {
+					const lastMessageId = stateMessages.at(0)?.id;
+
+					if (afterId !== lastMessageId) {
+						console.log('[BOTTOM] should fetch');
+						setBeforeId(undefined);
+						setAfterId(lastMessageId);
+					}
+				}
+			}
+		},
+	});
+
+	const dataMessages = data?.map((msg) => normalizeMessage(msg));
+
+	let lastAuthorId: string;
+
+	if (
+		dataMessages &&
+		(!chatsState.chats[channel.id] || beforeId || afterId)
+	) {
+		const result = stateMessages.slice();
+
+		if (beforeId) {
+			result.unshift(...dataMessages);
+			setBeforeId(undefined);
+		} else if (afterId) {
+			result.push(...dataMessages);
+			setAfterId(undefined);
+		} else {
+			result.push(...dataMessages);
+		}
+
+		dispatch(setMessages({ channelId: channel.id, messages: result }));
 	}
 
 	return (
@@ -126,57 +171,52 @@ export default function Channel({ channel }: MessagesBoxProps) {
 			wordBreak="break-all"
 			className={styles.messagesStack}
 		>
-			{!isLoading && (
-				<>
-					<UserProfileModal
-						isOpen={isOpen}
-						onOpen={onOpen}
-						onClose={onClose}
-						user={clickedUser}
-					/>
-					<Box
-						overflowX="auto"
-						flexDirection="column-reverse"
-						display="flex"
-						h="100%"
-					>
-						<Box userSelect="auto">
-							{messages.map((message, i) => {
-								const isHeadless =
-									lastAuthorId === message.author.id;
+			<UserProfileModal
+				isOpen={isOpen}
+				onOpen={onOpen}
+				onClose={onClose}
+				user={clickedUser}
+			/>
+			<Box
+				overflowX="auto"
+				flexDirection="column-reverse"
+				display="flex"
+				h="100%"
+			>
+				<Box userSelect="text">
+					{stateMessages?.map((message, i) => {
+						const isHeadless = lastAuthorId === message.author.id;
 
-								const MessageElement = (
-									<Message
-										onShowAuthor={() => {
-											setClickedUser(message.author);
-											onOpen();
-										}}
-										message={message}
-										key={message.id}
-										headless={isHeadless}
-									/>
-								);
+						const MessageElement = (
+							<Message
+								onShowAuthor={() => {
+									setClickedUser(message.author);
+									onOpen();
+								}}
+								message={message}
+								key={message.id}
+								headless={isHeadless}
+							/>
+						);
 
-								lastAuthorId = message.author.id;
+						lastAuthorId = message.author.id;
 
-								return (
-									<>
-										{isHeadless ? null : (
-											<MessageGroupSpacer />
-										)}
-										{MessageElement}
-										{i === messages.length - 1 ? (
-											<MessageGroupSpacer />
-										) : null}
-									</>
-								);
-							})}
-						</Box>
-						{messages.length ? <Separator /> : null}
-						<WelcomeMessage channel={channel} />
-					</Box>
-				</>
-			)}
+						return (
+							<>
+								{isHeadless ? null : <MessageGroupSpacer />}
+								{MessageElement}
+								{i === stateMessages.length - 1 ? (
+									<MessageGroupSpacer />
+								) : null}
+							</>
+						);
+					})}
+				</Box>
+				{stateMessages.length ? <Separator /> : null}
+				<WelcomeMessage channel={channel} />
+			</Box>
 		</Stack>
 	);
 }
+
+/* <Box w="100%" h="20px" bg="tomato" ref={topRef}></Box> */

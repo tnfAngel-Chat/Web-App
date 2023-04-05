@@ -13,6 +13,7 @@ export type MessageProps = {
 	message: IMessage;
 	headless?: boolean;
 	onShowAuthor?: any;
+	[props: string]: any;
 };
 
 export function HeadlessAvatarSpace() {
@@ -35,6 +36,7 @@ export default function Message({
 	message,
 	headless,
 	onShowAuthor,
+	...props
 }: MessageProps) {
 	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
@@ -47,6 +49,7 @@ export default function Message({
 			}}
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
+			{...props}
 		>
 			<Flex flex="1" gap="4" alignItems="start">
 				{headless ? (

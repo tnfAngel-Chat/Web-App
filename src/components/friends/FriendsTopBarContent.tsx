@@ -17,7 +17,7 @@ export default function FriendsTopBarContent() {
 					<Icon as={MdPeople} boxSize="24px" />
 				</Center>
 				<Center minW="0px">
-					<OverflownText fontSize="lg">Friends</OverflownText>
+					<OverflownText fontSize="lg">Amigos</OverflownText>
 				</Center>
 				<Center minW="0px">
 					<OverflownText

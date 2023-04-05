@@ -18,7 +18,7 @@ import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { IChannel } from '@/types/interfaces/Channel';
 import { RootState } from '@/store';
 import { useState } from 'react';
-import { removeChannel } from '@/store/slices/directChannelsSlice';
+import { removeChannel } from '@/store/slices/channelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Avatar from '../user/Avatar';
@@ -193,11 +193,9 @@ export type MainSidebarContentProps = {
 export function MainSidebarContent({
 	selectedChannelID: selectedChannelID,
 }: MainSidebarContentProps) {
-	const directChannelsState = useSelector(
-		(state: RootState) => state.directChannels
-	);
+	const channelsState = useSelector((state: RootState) => state.channels);
 
-	const channels = directChannelsState.channels;
+	const channels = channelsState.channels;
 
 	return (
 		<Stack w="100%" h="100%">
@@ -229,15 +227,21 @@ export function MainSidebarContent({
 					</CreateGroup>
 				</Center>
 			</Flex>
-			{channels.map((channel) => {
-				return (
-					<DirectChannelLink
-						channel={channel}
-						key={channel.id}
-						isSelected={selectedChannelID === channel.id}
-					/>
-				);
-			})}
+			{[...channels]
+				.sort(
+					(a, b) =>
+						parseInt(b.lastMessage ?? '0') -
+						parseInt(a.lastMessage ?? '0')
+				)
+				.map((channel) => {
+					return (
+						<DirectChannelLink
+							channel={channel}
+							key={channel.id}
+							isSelected={selectedChannelID === channel.id}
+						/>
+					);
+				})}
 		</Stack>
 	);
 }

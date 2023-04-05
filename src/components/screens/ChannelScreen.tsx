@@ -9,7 +9,7 @@ import MainTopBar from '../layout/MainTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store';
-import InputBox from '../channel/InputBox';
+import InputArea from '../channel/InputArea';
 import ChannelTopBarContent from '../channel/ChannelTopBarContent';
 
 export function ChannelLoadingScreen() {
@@ -28,21 +28,19 @@ export default function ChannelScreen() {
 	const { getColorValue } = useThemeColors();
 	const router = useRouter();
 
-	const directChannelsState = useSelector(
-		(state: RootState) => state.directChannels
-	);
+	const channelsState = useSelector((state: RootState) => state.channels);
 
 	const collapsiblesState = useSelector(
 		(state: RootState) => state.collapsibles
 	);
 
-	const channels = directChannelsState.channels;
+	const channels = channelsState.channels;
 
 	const channel = channels.find(
-		(channel) => channel.id === directChannelsState.selectedChannelId
+		(channel) => channel.id === channelsState.selectedChannelId
 	);
 
-	if (!directChannelsState.selectedChannelId || !channel) {
+	if (!channelsState.selectedChannelId || !channel) {
 		router.prefetch('/home');
 		router.push('/home');
 
@@ -65,7 +63,7 @@ export default function ChannelScreen() {
 				<Box h="100%" maxW="100%" overflowX="auto">
 					<Channel channel={channel} />
 				</Box>
-				<InputBox channel={channel} />
+				<InputArea channel={channel} />
 			</Stack>
 			{channel.type === ChannelTypes.Group &&
 				collapsiblesState.showChannelMembers && (
