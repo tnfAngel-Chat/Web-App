@@ -15,11 +15,10 @@ import {
 import Avatar from '../user/Avatar';
 import Message from './Message';
 import Separator from '../layout/Separator';
-import styles from '../../styles/Channel.module.scss';
 import StatusIndicator from '../user/StatusIndicator';
 import { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import normalizeMessage from '@/util/normalizeMessage';
 import { useDispatch, useSelector } from 'react-redux';
@@ -90,10 +89,10 @@ export function MessageGroupSpacer() {
 
 export default function Channel({ channel }: MessagesBoxProps) {
 	const [clickedUser, setClickedUser] = useState<IUser>();
+	const mainRef = useRef<any>();
 	const dispatch = useDispatch();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [beforeId, setBeforeId] = useState<string>();
-
 	const [afterId, setAfterId] = useState<string>();
 
 	const { data, isLoading } = useChannelMessages(
@@ -164,12 +163,19 @@ export default function Channel({ channel }: MessagesBoxProps) {
 		dispatch(setMessages({ channelId: channel.id, messages: result }));
 	}
 
+	useEffect(() => {
+		mainRef.current?.scrollIntoView({
+			behavior: 'smooth',
+		});
+	}, []);
+
 	return (
 		<Stack
 			w="100%"
 			h="100%"
+			ref={mainRef}
 			wordBreak="break-all"
-			className={styles.messagesStack}
+			className="adjustScreen"
 		>
 			<UserProfileModal
 				isOpen={isOpen}

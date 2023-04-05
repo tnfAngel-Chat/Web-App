@@ -156,10 +156,15 @@ export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
 
 export type UsersSidebarProps = {
 	users: IUser[];
+	userSidebarRef?: any;
 };
 
-export default function UsersSidebar({ users }: UsersSidebarProps) {
+export default function UsersSidebar({
+	users,
+	userSidebarRef,
+}: UsersSidebarProps) {
 	const { getColorValue } = useThemeColors();
+
 	return (
 		<Stack
 			scrollSnapAlign="end"
@@ -167,6 +172,7 @@ export default function UsersSidebar({ users }: UsersSidebarProps) {
 			h="100%"
 			minW="250px"
 			maxW="250px"
+			ref={userSidebarRef}
 			bg={getColorValue('sidebarBackground')}
 		>
 			<Box h="100%" w="100%" padding="10px">

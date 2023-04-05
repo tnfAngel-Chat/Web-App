@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import {
 	MdAlternateEmail,
+	MdMenu,
 	MdPeople,
 	MdPhone,
 	MdSearch,
@@ -24,24 +25,65 @@ import { useDispatch } from 'react-redux';
 import OverflownText from '../misc/OverflownText';
 import StatusIndicator from '../user/StatusIndicator';
 import UserProfileModal from '../modals/UserProfileModal';
+import { useState } from 'react';
+import useDevice from '@/hooks/useDevice';
 
 export type UserTopBarProps = {
 	channel: IChannel;
+	userSidebarRef: any;
+	channelFlexRef: any;
+	channelRef: any;
 };
 
-export default function ChannelTopBarContent({ channel }: UserTopBarProps) {
+export default function ChannelTopBarContent({
+	channel,
+	userSidebarRef,
+	channelFlexRef,
+	channelRef,
+}: UserTopBarProps) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
+	const { isMobile } = useDevice()
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	const [mobileShowUsers, setMobileShowUsers] = useState(true);
+	const [mobileShowSidebar, setMobileShowSidebar] = useState(true);
 
 	return (
 		<>
 			<Flex gap="8px" h="100%" minW="30px" maxH="100%">
+				{isMobile && (
+					<Center>
+						<IconButton
+							aria-label="Show menu"
+							bg="transparent"
+							size="sm"
+							fontSize="24px"
+							icon={<MdMenu />}
+							onClick={() => {
+								if (mobileShowSidebar) {
+									channelFlexRef.current?.scrollIntoView({
+										behavior: 'smooth',
+									});
+									setMobileShowSidebar(false);
+								} else {
+									channelRef.current?.scrollIntoView({
+										behavior: 'smooth',
+									});
+									setMobileShowSidebar(true);
+								}
+							}}
+						/>
+					</Center>
+				)}
 				<Center>
-					<Icon as={MdAlternateEmail} boxSize="24px" />
+					<Icon
+						color={getColorValue('textMutedColor')}
+						as={MdAlternateEmail}
+						boxSize="24px"
+					/>
 				</Center>
 				<Center minW="0px">
 					{channel.type === ChannelTypes.DirectMessage ? (
@@ -119,7 +161,23 @@ export default function ChannelTopBarContent({ channel }: UserTopBarProps) {
 							bg="transparent"
 							size="sm"
 							fontSize="24px"
-							onClick={() => dispatch(toggleChannelMembers())}
+							onClick={() => {
+								if (!isMobile) {
+									dispatch(toggleChannelMembers());
+								} else {
+									if (mobileShowUsers) {
+										userSidebarRef.current?.scrollIntoView({
+											behavior: 'smooth',
+										});
+										setMobileShowUsers(false);
+									} else {
+										channelRef.current?.scrollIntoView({
+											behavior: 'smooth',
+										});
+										setMobileShowUsers(true);
+									}
+								}
+							}}
 							icon={<MdPeople />}
 						/>
 					</Center>

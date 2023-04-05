@@ -14,3 +14,14 @@ body {
 .text-bold {
 	font-weight: 600;
 }
+
+
+.adjustScreen {
+	min-width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.adjustScreen {
+		min-width: 100vw;
+	}
+}

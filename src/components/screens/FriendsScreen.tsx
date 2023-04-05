@@ -5,19 +5,16 @@ import { Box, Stack, Flex } from '@chakra-ui/react';
 import MainTopBar from '../layout/MainTopBar';
 import FriendsTopBarContent from '../friends/FriendsTopBarContent';
 import Friends from '../friends/Friends';
+import GuildsBar from '../layout/GuildsBar';
+import MainSidebar from '../layout/MainSidebar';
 
-export default function HomeScreen() {
+export default function FriendsScreen() {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Flex
-			scrollSnapAlign="center"
-			scrollSnapStop="always"
-			minW="500px"
-			h="100%"
-			w="100%"
-			gap={0}
-		>
+		<Flex h="100%" w="100%" gap={0}>
+			<GuildsBar />
+			<MainSidebar selectedChannelID="friends" />
 			<Stack
 				bg={getColorValue('primaryBackground')}
 				scrollSnapAlign="center"

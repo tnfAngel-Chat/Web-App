@@ -200,12 +200,6 @@ export function MainSidebarContent({
 	return (
 		<Stack w="100%" h="100%">
 			<DirectButtonLink
-				icon={MdHome}
-				label="Inicio"
-				href="/home"
-				isSelected={selectedChannelID === 'home'}
-			/>
-			<DirectButtonLink
 				icon={MdPeople}
 				label="Amigos"
 				href="/friends"
@@ -311,20 +305,14 @@ export function ProfileBox() {
 
 export default function MainSidebar({
 	selectedChannelID,
+
 }: {
 	selectedChannelID?: string;
 }) {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Stack
-			scrollSnapAlign="start"
-			scrollSnapStop="always"
-			h="100%"
-			minW="250px"
-			maxW="250px"
-			spacing="0px"
-		>
+		<Stack h="100%" minW="250px" maxW="250px" spacing="0px">
 			<Box
 				h="100%"
 				w="100%"

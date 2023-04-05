@@ -19,8 +19,8 @@ export default function IndexScreen() {
 
 				<Button
 					rightIcon={<ArrowForwardIcon />}
-					onMouseEnter={() => router.prefetch('/home')}
-					onClick={() => router.push('/home')}
+					onMouseEnter={() => router.prefetch('/friends')}
+					onClick={() => router.push('/friends')}
 				>
 					Empezar
 				</Button>

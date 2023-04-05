@@ -1,7 +1,6 @@
 'use client';
 
 import { FileContent, useFilePicker } from 'use-file-picker';
-import { isMobile } from 'react-device-detect';
 import { IChannel } from '@/types/interfaces/Channel';
 import {
 	Box,
@@ -40,6 +39,7 @@ import OverflownText from '../misc/OverflownText';
 import { client } from '@/client';
 import EmojiPicker from '../popovers/EmojiPicker';
 import ChatEmojiPicker from '../popovers/ChatEmojiPicker';
+import useDevice from '@/hooks/useDevice';
 
 export type InputBoxProps = {
 	channel: IChannel;
@@ -50,6 +50,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 		readAs: 'DataURL',
 		limitFilesConfig: { min: 1 },
 	});
+	const { isMobile } = useDevice();
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
 	const recipient = client.users.resolve(
@@ -72,15 +73,6 @@ export default function InputArea({ channel }: InputBoxProps) {
 	} = useDisclosure();
 
 	useEffect(() => {
-		inputRef.current?.scrollIntoView({
-			behavior: 'smooth',
-			block: 'end',
-			inline: 'end',
-		});
-	}, []);
-
-	useEffect(() => {
-		inputRef.current.focus();
 		dispatch(
 			setMessageInput({
 				channelId: channel.id,
@@ -465,7 +457,10 @@ export default function InputArea({ channel }: InputBoxProps) {
 								size="sm"
 								fontSize="24px"
 								icon={<MdAddCircle />}
-								onClick={openFileSelector}
+								onClick={() => {
+									openFileSelector();
+									inputRef.current.focus();
+								}}
 							/>
 						</Flex>
 						<Center w="100%">
@@ -476,10 +471,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 								onClose={onChatEmojiPickerClose}
 							>
 								<Textarea
-									onClick={() => {
-										console.log('que pasa');
-										inputRef.current.focus();
-									}}
+									autoFocus={isMobile ? false : true}
 									placeholder={`Message @${
 										channel.type ===
 										ChannelTypes.DirectMessage
