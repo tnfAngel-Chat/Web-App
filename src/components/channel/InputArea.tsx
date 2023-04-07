@@ -1,7 +1,7 @@
 'use client';
 
 import { FileContent, useFilePicker } from 'use-file-picker';
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel } from '@/types/interfaces/Channel';
 import {
 	Box,
 	Flex,
@@ -42,7 +42,7 @@ import ChatEmojiPicker from '../popovers/ChatEmojiPicker';
 import useDevice from '@/hooks/useDevice';
 
 export type InputBoxProps = {
-	channel: IChannel;
+	channel: Channel;
 };
 
 export default function InputArea({ channel }: InputBoxProps) {

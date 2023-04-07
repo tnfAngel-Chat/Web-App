@@ -42,7 +42,7 @@ export function EmojiSelector({
 					<Flex
 						bg={
 							isActive
-								? getColorValue('sideBarButtonActive')
+								? getColorValue('sidebarButtonActive')
 								: 'transparent'
 						}
 						h="42px"

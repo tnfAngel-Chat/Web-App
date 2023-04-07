@@ -2,7 +2,7 @@
 
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel as ChannelUnion } from '@/types/interfaces/Channel';
 import {
 	Box,
 	Center,
@@ -27,10 +27,9 @@ import { RootState } from '@/store';
 import { setMessages } from '@/store/slices/chatsSlice';
 import UserProfileModal from '../modals/UserProfileModal';
 import useChannelMessages from '@/hooks/useMessages';
-import { IMessage } from '@/types/interfaces/Message';
 
 export type MessagesBoxProps = {
-	channel: IChannel;
+	channel: ChannelUnion;
 };
 
 export function WelcomeMessage({ channel }: MessagesBoxProps) {

@@ -8,14 +8,13 @@ import {
 	Icon,
 	As,
 	Center,
-	useDisclosure,
 	CloseButton,
 	Spacer,
 	IconButton,
 } from '@chakra-ui/react';
-import { MdAdd, MdHome, MdPeople, MdSettings } from 'react-icons/md';
+import { MdAdd, MdPeople } from 'react-icons/md';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel, DirectBasedChannel } from '@/types/interfaces/Channel';
 import { RootState } from '@/store';
 import { useState } from 'react';
 import { removeChannel } from '@/store/slices/channelsSlice';
@@ -23,12 +22,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Avatar from '../user/Avatar';
 import Separator from './Separator';
-import SettingsModal from '../modals/SettingsModal';
 import StatusIndicator from '../user/StatusIndicator';
 import OverflownText from '../misc/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
 import { client } from '@/client';
 import CreateGroup from '../popovers/CreateGroup';
+import ProfileBox from './ProfileBox';
 
 export function DirectButtonLink({
 	icon,
@@ -52,12 +51,12 @@ export function DirectButtonLink({
 				borderRadius="5px"
 				bg={
 					isSelected
-						? getColorValue('sideBarButtonActive')
+						? getColorValue('sidebarButtonActive')
 						: 'transparent'
 				}
 				_hover={{
 					bg: isSelected
-						? getColorValue('sideBarButtonActive')
+						? getColorValue('sidebarButtonActive')
 						: getColorValue('sidebarButtonHover'),
 				}}
 				padding="5px 10px 5px 10px"
@@ -82,12 +81,15 @@ export function DirectButtonLink({
 	);
 }
 
-export type DirectChannelProps = {
-	channel: IChannel;
+export type DirectChannelLinkProps = {
+	channel: Channel;
 	isSelected: boolean;
 };
 
-export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
+export function DirectChannelLink({
+	channel,
+	isSelected,
+}: DirectChannelLinkProps) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
@@ -101,12 +103,12 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 				borderRadius="5px"
 				bg={
 					isSelected
-						? getColorValue('sideBarButtonActive')
+						? getColorValue('sidebarButtonActive')
 						: 'transparent'
 				}
 				_hover={{
 					bg: isSelected
-						? getColorValue('sideBarButtonActive')
+						? getColorValue('sidebarButtonActive')
 						: getColorValue('sidebarButtonHover'),
 				}}
 				padding="5px 10px 5px 10px"
@@ -161,7 +163,7 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 							) : null
 						) : channel.type === ChannelTypes.Group ? (
 							<Text fontSize="sm">
-								{channel.members.length} Miembros
+								{channel.recipients.length} Miembros
 							</Text>
 						) : null}
 					</Flex>
@@ -187,15 +189,19 @@ export function DirectChannelLink({ channel, isSelected }: DirectChannelProps) {
 }
 
 export type MainSidebarContentProps = {
-	selectedChannelID?: string;
+	selectedChannelId?: string;
 };
 
 export function MainSidebarContent({
-	selectedChannelID: selectedChannelID,
+	selectedChannelId: selectedChannelId,
 }: MainSidebarContentProps) {
 	const channelsState = useSelector((state: RootState) => state.channels);
 
-	const channels = channelsState.channels;
+	const channels = channelsState.channels.filter(
+		(channel): channel is DirectBasedChannel =>
+			channel.type === ChannelTypes.DirectMessage ||
+			channel.type === ChannelTypes.Group
+	);
 
 	return (
 		<Stack w="100%" h="100%">
@@ -203,7 +209,7 @@ export function MainSidebarContent({
 				icon={MdPeople}
 				label="Amigos"
 				href="/friends"
-				isSelected={selectedChannelID === 'friends'}
+				isSelected={selectedChannelId === 'friends'}
 			/>
 			<Flex gap="3px">
 				<Center w="100%">
@@ -232,7 +238,7 @@ export function MainSidebarContent({
 						<DirectChannelLink
 							channel={channel}
 							key={channel.id}
-							isSelected={selectedChannelID === channel.id}
+							isSelected={selectedChannelId === channel.id}
 						/>
 					);
 				})}
@@ -240,74 +246,10 @@ export function MainSidebarContent({
 	);
 }
 
-export function ProfileBox() {
-	const { isOpen, onOpen, onClose } = useDisclosure();
-	const user = client.user;
-
-	return (
-		<Box
-			w="100%"
-			h="100%"
-			maxW="100%"
-			maxH="100%"
-			padding="10px 20px 10px 20px"
-		>
-			<Flex minW="0px" h="100%" gap="5px">
-				<Flex minW="0px" gap="12px" alignItems="left">
-					<Center>
-						<Avatar
-							size="40"
-							src={user.avatar}
-							alt="Avatar"
-							indicator={
-								<StatusIndicator
-									status={user.status}
-									size="15"
-								/>
-							}
-						/>
-					</Center>
-					<Center w="100%" minW="0px">
-						<Box textAlign="left" w="100%" maxW="100%" minW="0px">
-							<OverflownText fontSize="md">
-								{user.username}
-							</OverflownText>
-							{user.presence ? (
-								<OverflownText fontSize="sm">
-									{user.presence}
-								</OverflownText>
-							) : null}
-						</Box>
-					</Center>
-				</Flex>
-				<Spacer />
-				<Flex gap="24px">
-					<SettingsModal
-						isOpen={isOpen}
-						onOpen={onOpen}
-						onClose={onClose}
-					/>
-					<Center>
-						<IconButton
-							aria-label="Open settings"
-							bg="transparent"
-							size="sm"
-							fontSize="24px"
-							onClick={onOpen}
-							icon={<MdSettings />}
-						/>
-					</Center>
-				</Flex>
-			</Flex>
-		</Box>
-	);
-}
-
 export default function MainSidebar({
-	selectedChannelID,
-
+	selectedChannelId,
 }: {
-	selectedChannelID?: string;
+	selectedChannelId?: string;
 }) {
 	const { getColorValue } = useThemeColors();
 
@@ -320,7 +262,7 @@ export default function MainSidebar({
 				overflow="auto"
 				padding="10px"
 			>
-				<MainSidebarContent selectedChannelID={selectedChannelID} />
+				<MainSidebarContent selectedChannelId={selectedChannelId} />
 			</Box>
 			<Box minH="75px" bg={getColorValue('ternaryBackground')}>
 				<ProfileBox />

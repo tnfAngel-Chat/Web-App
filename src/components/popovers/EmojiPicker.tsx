@@ -67,7 +67,7 @@ export function EmojisTab({
 					<WrapItem
 						bg={
 							e.emoji === selectedEmoji?.emoji
-								? getColorValue('sideBarButtonActive')
+								? getColorValue('sidebarButtonActive')
 								: 'transparent'
 						}
 						w="42px"
@@ -220,7 +220,7 @@ export default function EmojiPicker({
 													<Tab
 														_hover={{
 															bg: getColorValue(
-																'sideBarButtonActive'
+																'sidebarButtonActive'
 															),
 														}}
 														borderRadius="5px"

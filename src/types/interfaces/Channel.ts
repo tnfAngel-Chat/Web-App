@@ -7,15 +7,23 @@ export interface IBaseChannel {
 
 export interface IRawTextChannel extends IBaseChannel {
 	type: ChannelTypes.Text;
+	guildId: string;
+	parentId?: string | null;
 	name: string;
+	topic: string;
 	icon?: string | null;
+	position: number;
 	lastMessage?: string | null;
 }
 
 export interface ITextChannel extends IBaseChannel {
 	type: ChannelTypes.Text;
+	guildId: string;
+	parentId: string | null;
 	name: string;
+	topic: string;
 	icon: string;
+	position: number;
 	lastMessage: string | null;
 }
 
@@ -29,14 +37,13 @@ export interface IDirectMessageChannel extends IBaseChannel {
 	type: ChannelTypes.DirectMessage;
 	recipient: string;
 	lastMessage: string | null;
-	
 }
 
 export interface IRawGroupChannel extends IBaseChannel {
 	type: ChannelTypes.Group;
 	name?: string | null;
 	icon?: string | null;
-	members: string[];
+	recipients: string[];
 	lastMessage?: string | null;
 }
 
@@ -44,7 +51,7 @@ export interface IGroupChannel extends IBaseChannel {
 	type: ChannelTypes.Group;
 	name: string;
 	icon: string;
-	members: IUser[];
+	recipients: IUser[];
 	lastMessage: string | null;
 }
 
@@ -52,4 +59,8 @@ export type IRawChannel =
 	| IRawTextChannel
 	| IRawDirectMessageChannel
 	| IRawGroupChannel;
-export type IChannel = ITextChannel | IDirectMessageChannel | IGroupChannel;
+
+export type Channel = ITextChannel | IDirectMessageChannel | IGroupChannel;
+
+export type DirectBasedChannel = IDirectMessageChannel | IGroupChannel;
+export type GuildBasedChannel = ITextChannel;

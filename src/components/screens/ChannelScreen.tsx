@@ -35,6 +35,7 @@ export default function ChannelScreen() {
 	const router = useRouter();
 
 	const channelsState = useSelector((state: RootState) => state.channels);
+	const selectedState = useSelector((state: RootState) => state.selections);
 
 	const collapsiblesState = useSelector(
 		(state: RootState) => state.collapsibles
@@ -43,12 +44,14 @@ export default function ChannelScreen() {
 	const channels = channelsState.channels;
 
 	const channel = channels.find(
-		(channel) => channel.id === channelsState.selectedChannelId
+		(channel) => channel.id === selectedState.selectedDirectChannel
 	);
 
-	if (!channelsState.selectedChannelId || !channel) {
+	if (!channel) {
 		router.prefetch('/friends');
 		router.push('/friends');
+
+		console.log('Going to friends...')
 
 		return <ChannelLoadingScreen />;
 	}
@@ -56,7 +59,7 @@ export default function ChannelScreen() {
 	return (
 		<Flex h="100%" w="100%" ref={channelFlexRef} gap={0}>
 			<GuildsBar />
-			<MainSidebar selectedChannelID={channelsState.selectedChannelId} />
+			<MainSidebar selectedChannelId={channel.id} />
 			<Stack
 				bg={getColorValue('primaryBackground')}
 				ref={channelRef}
@@ -82,7 +85,7 @@ export default function ChannelScreen() {
 			{channel.type === ChannelTypes.Group &&
 				collapsiblesState.showChannelMembers && (
 					<UsersSidebar
-						users={channel.members}
+						users={channel.recipients}
 						userSidebarRef={userSidebarRef}
 					/>
 				)}

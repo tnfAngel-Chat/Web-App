@@ -1,23 +1,21 @@
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel } from '@/types/interfaces/Channel';
 import { createSlice } from '@reduxjs/toolkit';
 
-export type ChannelState = {
-	channels: IChannel[];
-	selectedChannelId: string | null;
+export type ChannelsState = {
+	channels: Channel[];
 };
 
-const initialState: ChannelState = {
+const initialState: ChannelsState = {
 	channels: [],
-	selectedChannelId: null,
 };
 
 export const channelsSlice = createSlice({
-	name: 'channels',
+	name: 'guildChannels',
 	initialState,
 	reducers: {
 		setChannels: (
 			state,
-			{ payload }: { type: string; payload: IChannel[] }
+			{ payload }: { type: string; payload: Channel[] }
 		) => {
 			state.channels = payload;
 
@@ -26,7 +24,7 @@ export const channelsSlice = createSlice({
 
 		addChannel: (
 			state,
-			{ payload }: { type: string; payload: IChannel }
+			{ payload }: { type: string; payload: Channel }
 		) => {
 			state.channels.push(payload);
 
@@ -41,7 +39,7 @@ export const channelsSlice = createSlice({
 				type: string;
 				payload: {
 					channelId: string;
-					newChannel: IChannel;
+					newChannel: Channel;
 				};
 			}
 		) => {
@@ -58,32 +56,15 @@ export const channelsSlice = createSlice({
 			state,
 			{ payload }: { type: string; payload: string }
 		) => {
-			if (state.selectedChannelId === payload)
-				state.selectedChannelId = null;
-
 			state.channels = state.channels.filter(
 				(channel) => channel.id !== payload
 			);
 
 			return state;
 		},
-
-		setSelectedChannel: (
-			state,
-			{ payload }: { type: string; payload: string }
-		) => {
-			state.selectedChannelId = payload;
-
-			return state;
-		},
 	},
 });
 
-export const {
-	setChannels,
-	addChannel,
-	modifyChannel,
-	removeChannel,
-	setSelectedChannel,
-} = channelsSlice.actions;
+export const { setChannels, addChannel, modifyChannel, removeChannel } =
+	channelsSlice.actions;
 export default channelsSlice.reducer;

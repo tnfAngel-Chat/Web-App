@@ -1,22 +1,24 @@
 'use client';
 
 import ChannelScreen from '@/components/screens/ChannelScreen';
-import MainSidebar from '@/components/layout/MainSidebar';
-import GuildsBar from '@/components/layout/GuildsBar';
+import {
+	setActivePage,
+	setSelectedChannel,
+} from '@/store/slices/selectionsSlice';
 import { Flex } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
-import { setSelectedChannel } from '@/store/slices/channelsSlice';
 
 export default function SelectedChannelPage({
 	params,
 }: {
-	params: { id: string };
+	params: { channelId: string };
 }) {
-	const { id } = params;
+	const { channelId } = params;
 
 	const dispatch = useDispatch();
 
-	dispatch(setSelectedChannel(id));
+	dispatch(setSelectedChannel({ channelId }));
+	dispatch(setActivePage('direct'));
 
 	return (
 		<Flex h="100%" w="100%">

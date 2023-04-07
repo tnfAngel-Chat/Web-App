@@ -4,7 +4,7 @@ import { client } from '@/client';
 import useThemeColors from '@/hooks/useThemeColors';
 import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel } from '@/types/interfaces/Channel';
 import {
 	Center,
 	Flex,
@@ -16,6 +16,7 @@ import {
 import {
 	MdAlternateEmail,
 	MdMenu,
+	MdNumbers,
 	MdPeople,
 	MdPhone,
 	MdSearch,
@@ -29,7 +30,7 @@ import { useState } from 'react';
 import useDevice from '@/hooks/useDevice';
 
 export type UserTopBarProps = {
-	channel: IChannel;
+	channel: Channel;
 	userSidebarRef: any;
 	channelFlexRef: any;
 	channelRef: any;
@@ -46,7 +47,7 @@ export default function ChannelTopBarContent({
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
-	const { isMobile } = useDevice()
+	const { isMobile } = useDevice();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [mobileShowUsers, setMobileShowUsers] = useState(true);
 	const [mobileShowSidebar, setMobileShowSidebar] = useState(true);
@@ -81,7 +82,11 @@ export default function ChannelTopBarContent({
 				<Center>
 					<Icon
 						color={getColorValue('textMutedColor')}
-						as={MdAlternateEmail}
+						as={
+							channel.type === ChannelTypes.Text
+								? MdNumbers
+								: MdAlternateEmail
+						}
 						boxSize="24px"
 					/>
 				</Center>
@@ -136,25 +141,31 @@ export default function ChannelTopBarContent({
 			</Flex>
 			<Spacer />
 			<Flex gap="24px">
-				<Center>
-					<IconButton
-						aria-label="Start Call"
-						bg="transparent"
-						size="sm"
-						fontSize="24px"
-						icon={<MdPhone />}
-					/>
-				</Center>
-				<Center>
-					<IconButton
-						aria-label="Start Video Call"
-						bg="transparent"
-						size="sm"
-						fontSize="24px"
-						icon={<MdVideocam />}
-					/>
-				</Center>
-				{channel.type === ChannelTypes.Group ? (
+				{(channel.type === ChannelTypes.DirectMessage ||
+					channel.type === ChannelTypes.Group) && (
+					<>
+						<Center>
+							<IconButton
+								aria-label="Start Call"
+								bg="transparent"
+								size="sm"
+								fontSize="24px"
+								icon={<MdPhone />}
+							/>
+						</Center>
+						<Center>
+							<IconButton
+								aria-label="Start Video Call"
+								bg="transparent"
+								size="sm"
+								fontSize="24px"
+								icon={<MdVideocam />}
+							/>
+						</Center>
+					</>
+				)}
+				{channel.type === ChannelTypes.Group ||
+				channel.type === ChannelTypes.Text ? (
 					<Center>
 						<IconButton
 							aria-label="Toggle Members"

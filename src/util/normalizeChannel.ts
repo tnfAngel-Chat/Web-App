@@ -1,8 +1,8 @@
 import { client } from '@/client';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { IChannel, IRawChannel } from '@/types/interfaces/Channel';
+import { Channel, IRawChannel } from '@/types/interfaces/Channel';
 
-export default function normalizeChannel(channel: IRawChannel): IChannel {
+export default function normalizeChannel(channel: IRawChannel): Channel {
 	switch (channel.type) {
 		case ChannelTypes.Text:
 			return {
@@ -19,7 +19,7 @@ export default function normalizeChannel(channel: IRawChannel): IChannel {
 				lastMessage: channel.lastMessage ?? null,
 			};
 		case ChannelTypes.Group:
-			const members = channel.members.map((memberId) =>
+			const recipients = channel.recipients.map((memberId) =>
 				client.users.resolve(memberId)
 			);
 
@@ -27,11 +27,11 @@ export default function normalizeChannel(channel: IRawChannel): IChannel {
 				...channel,
 				name:
 					channel.name ??
-					members.map((member) => member.username).join(', '),
+					recipients.map((member) => member.username).join(', '),
 				icon:
 					channel.icon ??
 					'https://cdn.discordapp.com/attachments/865211651492937749/1086976552123760670/illosandia.png',
-				members: members,
+				recipients: recipients,
 				lastMessage: channel.lastMessage ?? null,
 			};
 	}

@@ -1,15 +1,15 @@
 import { Client } from '..';
 import { BaseManager } from './BaseManager';
 import { Collection } from '@discordjs/collection';
-import { IChannel } from '@/types/interfaces/Channel';
+import { Channel } from '@/types/interfaces/Channel';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
-export class ChannelsManager extends BaseManager<IChannel> {
+export class ChannelsManager extends BaseManager<Channel> {
 	constructor(client: Client) {
 		super(client);
 	}
 
-	cache = new Collection<string, IChannel>();
+	cache = new Collection<string, Channel>();
 
 	resolve(id: string | null) {
 		return (
@@ -18,7 +18,7 @@ export class ChannelsManager extends BaseManager<IChannel> {
 				type: ChannelTypes.DirectMessage,
 				id: '0',
 				recipient: '0',
-			} as IChannel)
+			} as Channel)
 		);
 	}
 }

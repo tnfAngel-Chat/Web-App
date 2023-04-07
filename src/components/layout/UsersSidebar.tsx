@@ -35,7 +35,7 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 			bg="transparent"
 			_hover={{
 				cursor: 'pointer',
-				bg: getColorValue('sideBarButtonActive'),
+				bg: getColorValue('sidebarButtonActive'),
 			}}
 			padding="5px 10px 5px 10px"
 		>

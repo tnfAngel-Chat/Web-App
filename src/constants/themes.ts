@@ -1,7 +1,7 @@
 export interface ThemeColors {
 	secondaryBackground: string;
 	primaryBackground: string;
-	sideBarButtonActive: string;
+	sidebarButtonActive: string;
 	ternaryBackground: string;
 	sidebarButtonHover: string;
 	focusBorderColor: string;
@@ -44,7 +44,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#3F3F3F',
 			focusBorderColor: '#FFFFFF21',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			guildsBackground: '#252525',
 			separatorColor: '#ffffff20',
@@ -73,7 +73,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#EBEBEB',
 			focusBorderColor: '#0000005E',
 			sidebarButtonHover: '#00000010',
-			sideBarButtonActive: '#00000020',
+			sidebarButtonActive: '#00000020',
 			messageHover: '#00000010',
 			guildsBackground: '#FCFCFC',
 			separatorColor: '#00000020',
@@ -102,7 +102,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#181818',
 			focusBorderColor: '#3B3B3B',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#2E2E2E20',
 			guildsBackground: '#060606',
 			separatorColor: '#ffffff20',
@@ -131,7 +131,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#191120',
 			focusBorderColor: '#392947',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			guildsBackground: '#0C090F',
 			separatorColor: '#FFFFFF2D',
@@ -161,7 +161,7 @@ export const themes: Theme[] = [
 			focusBorderColor: '#FFFFFF2A',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			separatorColor: '#FFFFFF2D',
 			tooltipBackground: '#00000094',
@@ -190,7 +190,7 @@ export const themes: Theme[] = [
 			focusBorderColor: '#FFFFFF2A',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			separatorColor: '#FFFFFF2D',
 			tooltipBackground: '#00000094',
@@ -219,7 +219,7 @@ export const themes: Theme[] = [
 			focusBorderColor: '#FFFFFF2A',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			separatorColor: '#FFFFFF2D',
 			tooltipBackground: '#00000094',
@@ -248,7 +248,7 @@ export const themes: Theme[] = [
 			focusBorderColor: '#FFFFFF2A',
 			sidebarBackground: '#0000007A',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			guildsBackground: '#0000009A',
 			tooltipBackground: '#000000BE',
@@ -277,7 +277,7 @@ export const themes: Theme[] = [
 			focusBorderColor: '#FFFFFF2A',
 			sidebarBackground: '#0000007A',
 			sidebarButtonHover: '#ffffff10',
-			sideBarButtonActive: '#ffffff20',
+			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
 			guildsBackground: '#0000009A',
 			separatorColor: '#FFFFFF2D',

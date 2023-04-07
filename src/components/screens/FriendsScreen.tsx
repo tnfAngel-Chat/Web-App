@@ -7,15 +7,19 @@ import FriendsTopBarContent from '../friends/FriendsTopBarContent';
 import Friends from '../friends/Friends';
 import GuildsBar from '../layout/GuildsBar';
 import MainSidebar from '../layout/MainSidebar';
+import { useRef } from 'react';
 
 export default function FriendsScreen() {
 	const { getColorValue } = useThemeColors();
+	const friendsFlexRef = useRef<any>();
+	const friendsRef = useRef<any>();
 
 	return (
-		<Flex h="100%" w="100%" gap={0}>
+		<Flex h="100%" w="100%" ref={friendsFlexRef} gap={0}>
 			<GuildsBar />
-			<MainSidebar selectedChannelID="friends" />
+			<MainSidebar selectedChannelId="friends" />
 			<Stack
+				ref={friendsRef}
 				bg={getColorValue('primaryBackground')}
 				scrollSnapAlign="center"
 				scrollSnapStop="always"
@@ -24,7 +28,10 @@ export default function FriendsScreen() {
 				w="100%"
 			>
 				<MainTopBar>
-					<FriendsTopBarContent />
+					<FriendsTopBarContent
+						friendsFlexRef={friendsFlexRef}
+						friendsRef={friendsRef}
+					/>
 				</MainTopBar>
 				<Box h="100%" maxW="100%" overflowX="auto">
 					<Friends />

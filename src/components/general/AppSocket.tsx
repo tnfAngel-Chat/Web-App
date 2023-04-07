@@ -10,6 +10,9 @@ import normalizeMessage from '@/util/normalizeMessage';
 import { useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { setGuilds } from '@/store/slices/guildsSlice';
+import { IRawGuild } from '@/types/interfaces/Guild';
+import normalizeGuild from '@/util/normalizeGuild';
 
 interface IUserPreferences {
 	theme: string;
@@ -58,10 +61,12 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 		}
 
 		function onReady({
+			guilds,
 			users,
 			channels,
 			preferences,
 		}: {
+			guilds: IRawGuild[];
 			users: IRawUser[];
 			channels: IRawChannel[];
 			preferences: IUserPreferences;
@@ -70,6 +75,8 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 				users,
 				channels,
 			});
+
+			dispatch(setGuilds(guilds.map((guild) => normalizeGuild(guild))));
 
 			dispatch(
 				setChannels(
@@ -91,7 +98,6 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 				})
 			);
 
-		
 			if (!client.sentMessagesIds.includes(message.nonce)) {
 				dispatch(
 					addMessage({
