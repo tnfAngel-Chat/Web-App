@@ -1,9 +1,10 @@
 import useSWRImmutable from 'swr/immutable';
 import { IRawUser } from '@/types/interfaces/User';
+import { client } from '@/client';
 
 export default function useUser(userId: string) {
 	const { data, isLoading, error } = useSWRImmutable<IRawUser>(
-		`http://192.168.1.63:3002/api/users/${userId}`
+		`${client.links.api}/api/users/${userId}`
 	);
 
 	return { data, isLoading, error };

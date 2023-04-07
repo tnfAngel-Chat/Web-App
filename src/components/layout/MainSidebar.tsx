@@ -1,33 +1,33 @@
 'use client';
 
-import {
-	Flex,
-	Box,
-	Stack,
-	Text,
-	Icon,
-	As,
-	Center,
-	CloseButton,
-	Spacer,
-	IconButton,
-} from '@chakra-ui/react';
-import { MdAdd, MdPeople } from 'react-icons/md';
+import { client } from '@/client';
+import useThemeColors from '@/hooks/useThemeColors';
+import { type RootState } from '@/store';
+import { removeChannel } from '@/store/slices/channelsSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import { Channel, DirectBasedChannel } from '@/types/interfaces/Channel';
-import { RootState } from '@/store';
-import { useState } from 'react';
-import { removeChannel } from '@/store/slices/channelsSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import {
+	As,
+	Box,
+	Center,
+	CloseButton,
+	Flex,
+	Icon,
+	IconButton,
+	Spacer,
+	Stack,
+	Text,
+} from '@chakra-ui/react';
 import Link from 'next/link';
-import Avatar from '../user/Avatar';
-import Separator from './Separator';
-import StatusIndicator from '../user/StatusIndicator';
+import { useState } from 'react';
+import { MdAdd, MdPeople } from 'react-icons/md';
+import { useDispatch, useSelector } from 'react-redux';
 import OverflownText from '../misc/OverflownText';
-import useThemeColors from '@/hooks/useThemeColors';
-import { client } from '@/client';
 import CreateGroup from '../popovers/CreateGroup';
+import Avatar from '../user/Avatar';
+import StatusIndicator from '../user/StatusIndicator';
 import ProfileBox from './ProfileBox';
+import Separator from './Separator';
 
 export function DirectButtonLink({
 	icon,

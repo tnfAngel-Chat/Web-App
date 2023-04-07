@@ -164,7 +164,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			await axios
 				.post(
-					`http://192.168.1.63:3002/api/channels/${channel?.id}/messages`,
+					`${client.links.api}/channels/${channel?.id}/messages`,
 					{
 						content: content,
 						nonce: tempMessageId,

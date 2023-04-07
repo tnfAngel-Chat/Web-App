@@ -1,3 +1,4 @@
+import { client } from '@/client';
 import { IRawMessage } from '@/types/interfaces/Message';
 import useSWRImmutable from 'swr/immutable';
 
@@ -6,9 +7,7 @@ export default function useChannelMessages(
 	before?: string | null,
 	after?: string | null
 ) {
-	const url = new URL(
-		`http://192.168.1.63:3002/api/channels/${channelId}/messages`
-	);
+	const url = new URL(`${client.links.api}/channels/${channelId}/messages`);
 
 	if (before) url.searchParams.set('before', before);
 	if (after) url.searchParams.set('after', after);
