@@ -11,6 +11,7 @@ export default function normalizeChannel(channel: IRawChannel): Channel {
 					channel.icon ??
 					'https://cdn.discordapp.com/attachments/865211651492937749/1086976530757996637/IMG-20230318-WA0026.jpg',
 				lastMessage: channel.lastMessage ?? null,
+				parentId: channel.parentId ?? null,
 			};
 		case ChannelTypes.DirectMessage:
 			return {

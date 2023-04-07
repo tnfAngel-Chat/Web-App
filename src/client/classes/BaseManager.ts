@@ -28,12 +28,7 @@ export class BaseManager<CollectionKeyType extends { id: string }> {
 			if (existing) return existing;
 		}
 
-		const data = await this.client.rest.api.channels.get(id);
 
-		if (data) {
-			this.add(data as CollectionKeyType, cache);
-		}
-
-		return data;
+		return id;
 	}
 }

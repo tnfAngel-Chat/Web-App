@@ -102,11 +102,7 @@ export function GuildSidebarContent({ guild }: { guild: IGuild }) {
 	return (
 		<Stack w="100%" h="100%">
 			{[...guildTextChannels]
-				.sort(
-					(a, b) =>
-						parseInt(b.lastMessage ?? '0') -
-						parseInt(a.lastMessage ?? '0')
-				)
+				.sort((a, b) => b.position - a.position)
 				.map((channel) => {
 					return (
 						<GuildChannelLink
@@ -123,11 +119,7 @@ export function GuildSidebarContent({ guild }: { guild: IGuild }) {
 	);
 }
 
-export default function GuildSidebar({
-	guild,
-}: {
-	guild: IGuild;
-}) {
+export default function GuildSidebar({ guild }: { guild: IGuild }) {
 	const { getColorValue } = useThemeColors();
 
 	return guild ? (
