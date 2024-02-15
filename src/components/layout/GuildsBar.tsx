@@ -114,6 +114,7 @@ export function GuildLink({
 						}}
 						quality={100}
 						alt={guild.name}
+						unoptimized
 					/>
 				</Box>
 			</Tooltip>

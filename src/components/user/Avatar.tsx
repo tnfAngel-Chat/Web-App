@@ -44,6 +44,7 @@ export default function Avatar({
 				}}
 				quality={quality || 100}
 				alt={alt}
+				unoptimized
 			/>
 			{indicator ? indicator : null}
 		</Box>

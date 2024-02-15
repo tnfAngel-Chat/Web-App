@@ -29,6 +29,7 @@ function EmojiParser({
 			height={height}
 			alt={emoji}
 			draggable={false}
+			unoptimized
 		/>
 	);
 }
