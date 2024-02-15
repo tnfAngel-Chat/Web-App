@@ -10,12 +10,12 @@ function EmojiParser({
 	ext = 'svg',
 	width = 72,
 	height = 72,
-}: {
+}: Readonly<{
 	emoji: string;
 	ext?: 'svg' | 'png';
 	width?: number;
 	height?: number;
-}) {
+}>) {
 	const HEXCodePoint = twemoji.convert.toCodePoint(
 		emoji.indexOf(U200D) < 0 ? emoji.replace(UFE0Fg, '') : emoji
 	);

@@ -2,16 +2,16 @@ import { client } from '@/client';
 import useTheme from '@/hooks/useTheme';
 import { addMessage } from '@/store/slices/chatsSlice';
 import { modifyChannel, setChannels } from '@/store/slices/channelsSlice';
-import { IRawChannel } from '@/types/interfaces/Channel';
-import { IRawMessage } from '@/types/interfaces/Message';
-import { IRawUser } from '@/types/interfaces/User';
+import type { IRawChannel } from '@/types/interfaces/Channel';
+import type { IRawMessage } from '@/types/interfaces/Message';
+import type { IRawUser } from '@/types/interfaces/User';
 import normalizeChannel from '@/util/normalizeChannel';
 import normalizeMessage from '@/util/normalizeMessage';
 import { useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setGuilds } from '@/store/slices/guildsSlice';
-import { IRawGuild } from '@/types/interfaces/Guild';
+import type { IRawGuild } from '@/types/interfaces/Guild';
 import normalizeGuild from '@/util/normalizeGuild';
 
 interface IUserPreferences {
@@ -21,8 +21,8 @@ interface IUserPreferences {
 let isReconnection = false;
 
 export default function AppSocket({ children, onConnectionReady }: any) {
-	const [theme, setTheme] = useTheme();
-	const [isConnected, setIsConnected] = useState(false);
+	const [_theme, setTheme] = useTheme();
+	const [_isConnected, setIsConnected] = useState(false);
 	const dispatch = useDispatch();
 	const toast = useToast();
 

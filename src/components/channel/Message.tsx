@@ -2,7 +2,7 @@
 
 import useThemeColors from '@/hooks/useThemeColors';
 import { MessageModes } from '@/types/enums/MessageModes';
-import { IMessage } from '@/types/interfaces/Message';
+import type { IMessage } from '@/types/interfaces/Message';
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import TextDate from '../misc/TextDate';

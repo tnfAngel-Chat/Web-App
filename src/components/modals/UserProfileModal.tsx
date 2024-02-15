@@ -1,5 +1,5 @@
 import useThemeColors from '@/hooks/useThemeColors';
-import { IUser } from '@/types/interfaces/User';
+import type { IUser } from '@/types/interfaces/User';
 import {
 	ModalOverlay,
 	ModalContent,
@@ -23,12 +23,11 @@ export default function UserProfileModal({
 	isOpen,
 	onClose,
 	user,
-}: {
+}: Readonly<{
 	isOpen: boolean;
-	onOpen: any;
 	onClose: any;
 	user?: IUser;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 
 	if (!user) return <></>;
@@ -82,14 +81,11 @@ export default function UserProfileModal({
 							</Center>
 						</Flex>
 						<Card h="100%" bg={getColorValue('ternaryBackground')}>
-							<CardHeader>
+							<CardHeader pb="4px">
 								<Heading size="md">About me</Heading>
 							</CardHeader>
-
-							<CardBody minH="150px">
-								<Text pt="2" fontSize="sm">
-									que pasa bobolon
-								</Text>
+							<CardBody minH="150px" pt="2px">
+								<Text fontSize="sm">que pasa bobolon</Text>
 							</CardBody>
 						</Card>
 					</Stack>

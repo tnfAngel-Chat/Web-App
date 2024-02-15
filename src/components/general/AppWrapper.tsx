@@ -2,7 +2,7 @@
 
 import { Box, ScaleFade } from '@chakra-ui/react';
 import useThemeColors from '@/hooks/useThemeColors';
-import IndexLoadingScreen from '../screens/IndexLoadingScreen';
+import IndexLoadingScreen from '../screens/AppLoadingScreen';
 import AppSocket from './AppSocket';
 import { useState } from 'react';
 

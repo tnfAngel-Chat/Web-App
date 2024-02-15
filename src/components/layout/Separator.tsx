@@ -1,5 +1,5 @@
 import useThemeColors from '@/hooks/useThemeColors';
-import { SafeNumber } from '@/types/util/SafeNumber';
+import type { SafeNumber } from '@/types/util/SafeNumber';
 import { Box } from '@chakra-ui/react';
 
 export type SeparatorProps = {
@@ -7,7 +7,7 @@ export type SeparatorProps = {
 	h?: SafeNumber;
 };
 
-export default function Separator({ w, h }: SeparatorProps) {
+export default function Separator({ w, h }: Readonly<SeparatorProps>) {
 	const { getColorValue } = useThemeColors();
 
 	return (

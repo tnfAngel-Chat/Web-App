@@ -1,17 +1,17 @@
 import useThemeColors from '@/hooks/useThemeColors';
-import { Tooltip, Box, PlacementWithLogical } from '@chakra-ui/react';
+import { Tooltip, Box, type PlacementWithLogical } from '@chakra-ui/react';
 import { useRef, useState, useEffect } from 'react';
 
 export default function OverflownText({
 	children,
 	tooltipPlacement,
 	...props
-}: {
-	children: string | string[];
+}: Readonly<{
+	children: any;
 	tooltipPlacement?: PlacementWithLogical;
 	[props: string]: any;
-}) {
-	const ref = useRef<HTMLElement | any>(null);
+}>) {
+	const ref = useRef<any>(null);
 	const [isOverflown, setIsOverflown] = useState(false);
 	const { getColorValue } = useThemeColors();
 

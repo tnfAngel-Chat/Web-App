@@ -46,7 +46,7 @@ export type InputBoxProps = {
 };
 
 export default function InputArea({ channel }: InputBoxProps) {
-	const [openFileSelector, { filesContent }] = useFilePicker({
+	const { openFilePicker, filesContent } = useFilePicker({
 		readAs: 'DataURL',
 		limitFilesConfig: { min: 1 },
 	});
@@ -123,10 +123,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 		}
 	});
 
-	async function handleSend(
-		rawContent: string,
-		rawAttachments: any[]
-	) {
+	async function handleSend(rawContent: string, rawAttachments: any[]) {
 		if (!isChatEmojiPickerOpen) {
 			const content = rawContent.trim();
 
@@ -164,9 +161,9 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			await ky
 				.post(`${client.links.api}/channels/${channel?.id}/messages`, {
-					content: content,
-					nonce: tempMessageId,
+					json: { content: content, nonce: tempMessageId },
 				})
+				.json<{ id: string }>()
 				.then((result) => {
 					dispatch(
 						modifyMessage({
@@ -175,7 +172,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 							newMessage: normalizeMessage({
 								...rawMessage,
 								mode: MessageModes.Sent,
-								id: result.data.id,
+								id: result.id,
 							}),
 						})
 					);
@@ -455,7 +452,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 								fontSize="24px"
 								icon={<MdAddCircle />}
 								onClick={() => {
-									openFileSelector();
+									openFilePicker();
 									inputRef.current.focus();
 								}}
 							/>

@@ -1,14 +1,11 @@
 'use client';
-
-import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import UsersSidebar from '../layout/UsersSidebar';
 import useThemeColors from '@/hooks/useThemeColors';
 import { Center, Flex, Stack } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import GuildsBar from '../layout/GuildsBar';
 import GuildSidebar from '../layout/GuildSidebar';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 
 import { useSelector } from 'react-redux';
 
@@ -37,7 +34,7 @@ export default function GuildScreen() {
 	);
 
 	if (!guild) {
-				console.log('Sending to friends (no guild) GuildScren');
+		console.log('Sending to friends (no guild) GuildScreen');
 
 		router.prefetch('/friends');
 		router.push('/friends');

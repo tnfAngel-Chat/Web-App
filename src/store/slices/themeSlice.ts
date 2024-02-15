@@ -3,7 +3,7 @@ import { type Theme, themes } from '@/constants/themes';
 import { createSlice } from '@reduxjs/toolkit';
 
 export type ThemeState = {
-	theme: Theme;
+	theme?: Theme;
 };
 
 const initialState: ThemeState = {

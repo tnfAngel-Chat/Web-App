@@ -1,23 +1,17 @@
 'use client';
 
 import { Flex, Box, Stack, Icon, Center } from '@chakra-ui/react';
-import { MdAdd, MdHome, MdNumbers } from 'react-icons/md';
+import { MdNumbers } from 'react-icons/md';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { Channel, GuildBasedChannel } from '@/types/interfaces/Channel';
-import { RootState } from '@/store';
+import type { GuildBasedChannel } from '@/types/interfaces/Channel';
+import type { RootState } from '@/store';
 import { useState } from 'react';
-import { removeChannel } from '@/store/slices/channelsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
-import Avatar from '../user/Avatar';
-import Separator from './Separator';
-import StatusIndicator from '../user/StatusIndicator';
 import OverflownText from '../misc/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
-import { client } from '@/client';
-import CreateGroup from '../popovers/CreateGroup';
 import ProfileBox from './ProfileBox';
-import { IGuild } from '@/types/interfaces/Guild';
+import type { IGuild } from '@/types/interfaces/Guild';
 
 export type GuildChannelLinkProps = {
 	guild: IGuild;
@@ -29,10 +23,9 @@ export function GuildChannelLink({
 	guild,
 	channel,
 	isSelected,
-}: GuildChannelLinkProps) {
-	const dispatch = useDispatch();
+}: Readonly<GuildChannelLinkProps>) {
 	const { getColorValue } = useThemeColors();
-	const [isHovering, setHovering] = useState(false);
+	const [_isHovering, setHovering] = useState(false);
 
 	return (
 		<Link href={`/guilds/${guild.id}/${channel.id}`}>
@@ -89,7 +82,7 @@ export function GuildChannelLink({
 	);
 }
 
-export function GuildSidebarContent({ guild }: { guild: IGuild }) {
+export function GuildSidebarContent({ guild }: Readonly<{ guild: IGuild }>) {
 	const selectedState = useSelector((state: RootState) => state.selections);
 
 	const channelsState = useSelector((state: RootState) => state.channels);

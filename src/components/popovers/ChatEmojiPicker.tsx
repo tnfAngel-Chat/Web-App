@@ -9,10 +9,10 @@ import {
 	PopoverCloseButton,
 	useEventListener,
 } from '@chakra-ui/react';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import EmojiParser from '../misc/EmojiParser';
-import { Emoji, emojis } from '@/constants/emojis';
+import { type Emoji, emojis } from '@/constants/emojis';
 import useThemeColors from '@/hooks/useThemeColors';
 import OverflownText from '../misc/OverflownText';
 import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
@@ -23,13 +23,13 @@ export function EmojiSelector({
 	setSelectedEmojiIndex,
 	onEmojiSelect,
 	onClose,
-}: {
+}: Readonly<{
 	displayEmojis: Emoji[];
 	selectedEmojiIndex: any;
 	setSelectedEmojiIndex: any;
 	onEmojiSelect: any;
 	onClose: any;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
 
@@ -77,13 +77,13 @@ export default function ChatEmojiPicker({
 	onClose,
 	searchInput,
 	onEmojiSelect,
-}: {
+}: Readonly<{
 	children: any;
 	isOpen: boolean;
 	onClose: any;
 	searchInput: string | null;
 	onEmojiSelect: any;
-}) {
+}>) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 
@@ -149,9 +149,11 @@ export default function ChatEmojiPicker({
 
 				onClose();
 
-				onEmojiSelect(emoji.emoji);
+				if (emoji) {
+					onEmojiSelect(emoji.emoji);
 
-				dispatch(addRecentEmoji(emoji.emoji));
+					dispatch(addRecentEmoji(emoji.emoji));
+				}
 			}
 		}
 	});

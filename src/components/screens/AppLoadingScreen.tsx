@@ -17,7 +17,7 @@ export default function LoadingScreen() {
 		>
 			<Center h="100%" w="100%" bg={getColorValue('primaryBackground')}>
 				<Image
-					src="logo.svg"
+					src="/logo.svg"
 					width={200}
 					height={200}
 					quality={100}

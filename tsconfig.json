@@ -29,6 +29,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true,
+    "downlevelIteration": true,
     "plugins": [
       {
         "name": "next"

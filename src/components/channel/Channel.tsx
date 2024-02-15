@@ -32,7 +32,7 @@ export type MessagesBoxProps = {
 	channel: ChannelUnion;
 };
 
-export function WelcomeMessage({ channel }: MessagesBoxProps) {
+export function WelcomeMessage({ channel }: Readonly<MessagesBoxProps>) {
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
@@ -86,7 +86,7 @@ export function MessageGroupSpacer() {
 	return <Box h="15px" />;
 }
 
-export default function Channel({ channel }: MessagesBoxProps) {
+export default function Channel({ channel }: Readonly<MessagesBoxProps>) {
 	const [clickedUser, setClickedUser] = useState<IUser>();
 	const mainRef = useRef<any>();
 	const dispatch = useDispatch();
@@ -178,7 +178,6 @@ export default function Channel({ channel }: MessagesBoxProps) {
 		>
 			<UserProfileModal
 				isOpen={isOpen}
-				onOpen={onOpen}
 				onClose={onClose}
 				user={clickedUser}
 			/>

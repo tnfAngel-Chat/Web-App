@@ -1,25 +1,31 @@
 import { Stack, Box, Tooltip, Center, useDisclosure } from '@chakra-ui/react';
 import useThemeColors from '@/hooks/useThemeColors';
-import { IGuild } from '@/types/interfaces/Guild';
+import type { IGuild } from '@/types/interfaces/Guild';
 import Image from 'next/image';
 import { MdAdd, MdHome } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import AddServerModal from '../modals/AddServerModal';
 
 export function IconLink({
 	name,
 	icon,
 	onClick,
-}: {
+}: Readonly<{
 	name: string;
 	icon: any;
 	onClick: any;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 	return (
-		<Box minH="50px" maxH="50px" w="50px" onClick={onClick}>
+		<Box
+			minH="50px"
+			maxH="50px"
+			w="50px"
+			onClick={onClick}
+			cursor="pointer"
+		>
 			<Tooltip
 				w="100%"
 				h="100%"
@@ -50,10 +56,10 @@ export function IconLink({
 export function GuildLink({
 	guild,
 	isSelected,
-}: {
+}: Readonly<{
 	guild: IGuild;
 	isSelected: boolean;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 	const router = useRouter();
 	const selectedState = useSelector((state: RootState) => state.selections);
@@ -61,7 +67,7 @@ export function GuildLink({
 	const selectedGuildChannel = selectedState.guilds[guild.id];
 
 	return (
-		<Box minH="50px" maxH="50px" h="50px">
+		<Box minH="50px" maxH="50px" h="50px" cursor="pointer">
 			<Tooltip
 				label={guild.name}
 				placement="start"

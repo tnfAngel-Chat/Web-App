@@ -1,4 +1,4 @@
-import { IGuild } from '@/types/interfaces/Guild';
+import type { IGuild } from '@/types/interfaces/Guild';
 import { createSlice } from '@reduxjs/toolkit';
 
 export type GuildsState = {

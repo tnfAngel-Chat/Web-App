@@ -94,7 +94,6 @@ export default function ChannelTopBarContent({
 					{channel.type === ChannelTypes.DirectMessage ? (
 						<UserProfileModal
 							isOpen={isOpen}
-							onOpen={onOpen}
 							onClose={onClose}
 							user={recipient}
 						/>

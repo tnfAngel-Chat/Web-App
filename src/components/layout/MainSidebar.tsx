@@ -5,9 +5,9 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { type RootState } from '@/store';
 import { removeChannel } from '@/store/slices/channelsSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { Channel, DirectBasedChannel } from '@/types/interfaces/Channel';
+import type { Channel, DirectBasedChannel } from '@/types/interfaces/Channel';
 import {
-	As,
+	type As,
 	Box,
 	Center,
 	CloseButton,
@@ -34,12 +34,12 @@ export function DirectButtonLink({
 	label,
 	href,
 	isSelected,
-}: {
+}: Readonly<{
 	icon: As;
 	label: string;
 	href: string;
 	isSelected: boolean;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
@@ -89,10 +89,10 @@ export type DirectChannelLinkProps = {
 export function DirectChannelLink({
 	channel,
 	isSelected,
-}: DirectChannelLinkProps) {
+}: Readonly<DirectChannelLinkProps>) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
-	const [isHovering, setHovering] = useState(false);
+	const [isHovering, setIsHovering] = useState(false);
 	const recipient = client.users.resolve(
 		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
 	);
@@ -112,8 +112,8 @@ export function DirectChannelLink({
 						: getColorValue('sidebarButtonHover'),
 				}}
 				padding="5px 10px 5px 10px"
-				onMouseEnter={() => setHovering(true)}
-				onMouseLeave={() => setHovering(false)}
+				onMouseEnter={() => setIsHovering(true)}
+				onMouseLeave={() => setIsHovering(false)}
 				gap="1px"
 			>
 				<Flex
@@ -193,8 +193,8 @@ export type MainSidebarContentProps = {
 };
 
 export function MainSidebarContent({
-	selectedChannelId: selectedChannelId,
-}: MainSidebarContentProps) {
+	selectedChannelId,
+}: Readonly<MainSidebarContentProps>) {
 	const channelsState = useSelector((state: RootState) => state.channels);
 
 	const channels = channelsState.channels.filter(
@@ -248,9 +248,9 @@ export function MainSidebarContent({
 
 export default function MainSidebar({
 	selectedChannelId,
-}: {
+}: Readonly<{
 	selectedChannelId?: string;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 
 	return (

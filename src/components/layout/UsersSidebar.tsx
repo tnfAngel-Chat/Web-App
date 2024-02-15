@@ -9,7 +9,7 @@ import {
 	useDisclosure,
 } from '@chakra-ui/react';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
-import { IUser } from '@/types/interfaces/User';
+import type { IUser } from '@/types/interfaces/User';
 import Avatar from '../user/Avatar';
 import OverflownText from '../misc/OverflownText';
 import useThemeColors from '@/hooks/useThemeColors';
@@ -23,7 +23,7 @@ export type UserListItemProps = {
 	onClick: any;
 };
 
-export function UserListItem({ user, onClick }: UserListItemProps) {
+export function UserListItem({ user, onClick }: Readonly<UserListItemProps>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
@@ -71,7 +71,7 @@ export function UserListItem({ user, onClick }: UserListItemProps) {
 	);
 }
 
-export function StatusSection({ label }: { label: string }) {
+export function StatusSection({ label }: Readonly<{ label: string }>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
@@ -114,7 +114,6 @@ export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
 		<>
 			<UserProfileModal
 				isOpen={isOpen}
-				onOpen={onOpen}
 				onClose={onClose}
 				user={clickedUser}
 			/>

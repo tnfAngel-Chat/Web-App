@@ -114,7 +114,7 @@ emojis.forEach((emoji) => {
 
 let i = 0;
 
-for (const category of [...groupCategories]) {
+for (const category of groupCategories) {
 	groupedEmojis[i] = emojis.filter((emoji) => emoji.category === category);
 	i++;
 }
@@ -136,11 +136,11 @@ export default function EmojiPicker({
 	children,
 	channelId,
 	inputRef,
-}: {
+}: Readonly<{
 	children: any;
 	channelId: string;
 	inputRef: any;
-}) {
+}>) {
 	const recentEmojisState = useSelector(
 		(state: RootState) => state.recentEmojis
 	);
@@ -154,8 +154,8 @@ export default function EmojiPicker({
 	groupedEmojis[0] = recentEmojis;
 
 	const [searchInput, setSearchInput] = useState('');
-	const [selectedEmoji, setSelectedEmoji] = useState<Emoji>(
-		groupedEmojis[0][0] ?? null
+	const [selectedEmoji, setSelectedEmoji] = useState<Emoji | undefined>(
+		groupedEmojis[0][0] ?? undefined
 	);
 	const { getColorValue } = useThemeColors();
 	const initialFocusRef = useRef<any>();
