@@ -1,10 +1,9 @@
 import type { IMessage } from '@/types/interfaces/Message';
 import { createSlice } from '@reduxjs/toolkit';
-import { FileContent } from 'use-file-picker';
 
 export type ChatState = {
 	chats: Record<string, IMessage[]>;
-	inputs: Record<string, { content: string; attachments: FileContent[] }>;
+	inputs: Record<string, { content: string; attachments: any[] }>;
 };
 
 const initialState: ChatState = {
@@ -59,13 +58,14 @@ export const chatsSlice = createSlice({
 				};
 			}
 		) => {
-			const messages = state.chats[payload.channelId] ?? [];
+			const messages = state.chats[payload.channelId];
 
-			const index = messages.findIndex(
-				(message) => message.id === payload.messageId
-			);
+			const index =
+				messages?.findIndex(
+					(message) => message.id === payload.messageId
+				) ?? 0;
 
-			state.chats[payload.channelId][index] = payload.newMessage;
+			if (messages) messages[index] = payload.newMessage;
 
 			return state;
 		},
@@ -98,7 +98,7 @@ export const chatsSlice = createSlice({
 				type: string;
 				payload: {
 					channelId: string;
-					input: { content: string; attachments: FileContent[] };
+					input: { content: string; attachments: any[] };
 				};
 			}
 		) => {
@@ -114,15 +114,19 @@ export const chatsSlice = createSlice({
 				type: string;
 				payload: {
 					channelId: string;
-					input: { content: string; attachments: FileContent[] };
+					input: { content: string; attachments: any[] };
 				};
 			}
 		) => {
-			state.inputs[payload.channelId].content += payload.input.content;
+			const messages = state.inputs[payload.channelId];
 
-			state.inputs[payload.channelId].attachments = state.inputs[
-				payload.channelId
-			].attachments.concat(payload.input.attachments);
+			if (messages) {
+				messages.content += payload.input.content;
+
+				messages.attachments = messages.attachments.concat(
+					payload.input.attachments
+				);
+			}
 
 			return state;
 		},

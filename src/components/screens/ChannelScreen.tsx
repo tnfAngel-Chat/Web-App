@@ -8,7 +8,7 @@ import { Box, Center, Flex, Stack } from '@chakra-ui/react';
 import MainTopBar from '../layout/MainTopBar';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import InputArea from '../channel/InputArea';
 import ChannelTopBarContent from '../channel/ChannelTopBarContent';
 import { useRef } from 'react';
@@ -51,7 +51,7 @@ export default function ChannelScreen() {
 		router.prefetch('/friends');
 		router.push('/friends');
 
-		console.log('Going to friends...')
+		console.log('Going to friends...');
 
 		return <ChannelLoadingScreen />;
 	}

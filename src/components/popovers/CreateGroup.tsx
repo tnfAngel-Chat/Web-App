@@ -8,21 +8,21 @@ import {
 	PopoverBody,
 } from '@chakra-ui/react';
 
-export default function CreateGroup({ children}: { children: any}) {
+export default function CreateGroup({ children }: Readonly<{ children: any }>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
 		<Popover placement="bottom-start" isLazy>
-			<PopoverTrigger>
-				{children}
-			</PopoverTrigger>
+			<PopoverTrigger>{children}</PopoverTrigger>
 			<PopoverContent
 				w={['100vw', 'sm']}
 				backdropFilter="blur(5px)"
 				bg={getColorValue('sidebarBackground')}
 			>
 				<PopoverCloseButton />
-				<PopoverHeader>Seleccionar amigos para crear un grupo</PopoverHeader>
+				<PopoverHeader>
+					Seleccionar amigos para crear un grupo
+				</PopoverHeader>
 				<PopoverBody>Aun no hay amigos</PopoverBody>
 			</PopoverContent>
 		</Popover>

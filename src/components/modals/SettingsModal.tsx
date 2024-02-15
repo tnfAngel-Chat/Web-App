@@ -40,7 +40,7 @@ export default function SettingsModal({ isOpen, onClose }: any) {
 								as={Button}
 								rightIcon={<MdKeyboardArrowDown />}
 							>
-								{theme.name}
+								{theme?.name ?? 'Unknown theme'}
 							</MenuButton>
 							<MenuList bg={getColorValue('modalBackground')}>
 								{themes.map((theme) => (

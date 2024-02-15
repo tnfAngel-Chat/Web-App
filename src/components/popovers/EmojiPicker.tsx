@@ -35,7 +35,7 @@ import {
 	PopoverContent,
 	PopoverCloseButton,
 } from '@chakra-ui/react';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import { useRef, useState } from 'react';
 import EmojiParser from '../misc/EmojiParser';
 import OverflownText from '../misc/OverflownText';
@@ -50,13 +50,13 @@ export function EmojisTab({
 	selectedEmoji,
 	setSelectedEmoji,
 	onClose,
-}: {
+}: Readonly<{
 	tabEmojis: Emoji[];
 	channelId: string;
 	selectedEmoji: any;
 	setSelectedEmoji: any;
 	onClose: any;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
 
