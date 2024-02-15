@@ -23,7 +23,7 @@ export default function Avatar({
 	quality,
 	indicator,
 	onClick,
-}: AvatarProps) {
+}: Readonly<AvatarProps>) {
 	return (
 		<Box
 			height={`${size}px`}
@@ -46,7 +46,7 @@ export default function Avatar({
 				alt={alt}
 				unoptimized
 			/>
-			{indicator ? indicator : null}
+			{indicator || null}
 		</Box>
 	);
 }
