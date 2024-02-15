@@ -1,6 +1,6 @@
 import { client } from '@/client';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { Channel, IRawChannel } from '@/types/interfaces/Channel';
+import type { Channel, IRawChannel } from '@/types/interfaces/Channel';
 
 export default function normalizeChannel(channel: IRawChannel): Channel {
 	switch (channel.type) {

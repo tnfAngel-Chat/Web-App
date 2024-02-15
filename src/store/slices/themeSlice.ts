@@ -1,4 +1,4 @@
-import { Theme, themes } from '@/constants/themes';
+import { type Theme, themes } from '@/constants/themes';
 
 import { createSlice } from '@reduxjs/toolkit';
 

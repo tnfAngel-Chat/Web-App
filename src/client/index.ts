@@ -3,8 +3,8 @@ import { ClientConfig } from './config';
 import { ClientSocket } from './socket';
 import { UsersManager } from './classes/UsersManager';
 import { ChannelsManager } from './classes/ChannelsManager';
-import { IRawChannel } from '@/types/interfaces/Channel';
-import { IRawUser } from '@/types/interfaces/User';
+import type { IRawChannel } from '@/types/interfaces/Channel';
+import type { IRawUser } from '@/types/interfaces/User';
 import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
 

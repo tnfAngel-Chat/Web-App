@@ -1,4 +1,4 @@
-import { IRawUser, IUser } from '@/types/interfaces/User';
+import type { IRawUser, IUser } from '@/types/interfaces/User';
 
 export default function normalizeUser(user: IRawUser): IUser {
 	return {

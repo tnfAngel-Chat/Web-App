@@ -1,8 +1,7 @@
+import million from 'million/compiler';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		appDir: true,
-	},
 	reactStrictMode: true,
 	images: {
 		remotePatterns: [
@@ -48,4 +47,11 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+let configExport = nextConfig;
+
+if (process.env.NODE_ENV === 'production') {
+	console.log('Loaded production config');
+	configExport = million.next(nextConfig);
+}
+
+export default configExport;

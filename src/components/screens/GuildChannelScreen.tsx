@@ -9,7 +9,7 @@ import ChannelTopBarContent from '../channel/ChannelTopBarContent';
 import Channel from '../channel/Channel';
 import InputArea from '../channel/InputArea';
 import MainTopBar from '../layout/MainTopBar';
-import { RootState } from '@/store';
+import { type RootState } from '@/store';
 import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
@@ -111,7 +111,7 @@ export default function GuildChannelScreen() {
 								id: '1',
 								username: 'Ángel',
 								status: UserStatusTypes.Online,
-								presence: 'No era tu intención joderme la vida',
+								presence: 'Hola',
 							},
 							{
 								type: UserTypes.User,

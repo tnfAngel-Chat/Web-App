@@ -1,4 +1,4 @@
-import { IMessage } from '@/types/interfaces/Message';
+import type { IMessage } from '@/types/interfaces/Message';
 import { createSlice } from '@reduxjs/toolkit';
 import { FileContent } from 'use-file-picker';
 
@@ -70,7 +70,6 @@ export const chatsSlice = createSlice({
 			return state;
 		},
 
-		
 		deleteMessage: (
 			state,
 			{

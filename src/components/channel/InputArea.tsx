@@ -1,7 +1,8 @@
 'use client';
 
-import { FileContent, useFilePicker } from 'use-file-picker';
-import { Channel } from '@/types/interfaces/Channel';
+import ky from 'ky';
+import { useFilePicker } from 'use-file-picker';
+import type { Channel } from '@/types/interfaces/Channel';
 import {
 	Box,
 	Flex,
@@ -21,7 +22,6 @@ import {
 	MdSend,
 	MdVideoFile,
 } from 'react-icons/md';
-import axios from 'axios';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import useThemeColors from '@/hooks/useThemeColors';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +30,7 @@ import {
 	modifyMessage,
 	setMessageInput,
 } from '@/store/slices/chatsSlice';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import { MessageTypes } from '@/types/enums/MessageTypes';
 import { MessageModes } from '@/types/enums/MessageModes';
 import normalizeMessage from '@/util/normalizeMessage';
@@ -125,7 +125,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 	async function handleSend(
 		rawContent: string,
-		rawAttachments: FileContent[]
+		rawAttachments: any[]
 	) {
 		if (!isChatEmojiPickerOpen) {
 			const content = rawContent.trim();
@@ -162,14 +162,11 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			client.sentMessagesIds.push(tempMessageId);
 
-			await axios
-				.post(
-					`${client.links.api}/channels/${channel?.id}/messages`,
-					{
-						content: content,
-						nonce: tempMessageId,
-					}
-				)
+			await ky
+				.post(`${client.links.api}/channels/${channel?.id}/messages`, {
+					content: content,
+					nonce: tempMessageId,
+				})
 				.then((result) => {
 					dispatch(
 						modifyMessage({

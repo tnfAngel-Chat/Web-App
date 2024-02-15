@@ -1,6 +1,5 @@
 'use client';
 
-import ChannelScreen from '@/components/screens/ChannelScreen';
 import GuildChannelScreen from '@/components/screens/GuildChannelScreen';
 import {
 	setActivePage,

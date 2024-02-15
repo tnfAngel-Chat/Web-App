@@ -1,5 +1,5 @@
 import useSWRImmutable from 'swr/immutable';
-import { IRawChannel } from '@/types/interfaces/Channel';
+import type { IRawChannel } from '@/types/interfaces/Channel';
 import { client } from '@/client';
 
 export default function useChannel(channelId: string) {

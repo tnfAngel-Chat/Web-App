@@ -1,5 +1,5 @@
 import useSWRImmutable from 'swr/immutable';
-import { IRawUser } from '@/types/interfaces/User';
+import type { IRawUser } from '@/types/interfaces/User';
 import { client } from '@/client';
 
 export default function useUser(userId: string) {

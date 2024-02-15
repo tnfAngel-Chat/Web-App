@@ -2,7 +2,7 @@
 
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
-import { Channel as ChannelUnion } from '@/types/interfaces/Channel';
+import type { Channel as ChannelUnion } from '@/types/interfaces/Channel';
 import {
 	Box,
 	Center,
@@ -16,14 +16,14 @@ import Avatar from '../user/Avatar';
 import Message from './Message';
 import Separator from '../layout/Separator';
 import StatusIndicator from '../user/StatusIndicator';
-import { IUser } from '@/types/interfaces/User';
+import type { IUser } from '@/types/interfaces/User';
 import { client } from '@/client';
 import { useEffect, useRef, useState } from 'react';
 
 import normalizeMessage from '@/util/normalizeMessage';
 import { useDispatch, useSelector } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import { setMessages } from '@/store/slices/chatsSlice';
 import UserProfileModal from '../modals/UserProfileModal';
 import useChannelMessages from '@/hooks/useMessages';

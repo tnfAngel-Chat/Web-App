@@ -1,4 +1,4 @@
-import { ThemeColors } from '@/constants/themes';
+import type { ThemeColors } from '@/constants/themes';
 import useTheme from './useTheme';
 
 export default function useThemeColors() {

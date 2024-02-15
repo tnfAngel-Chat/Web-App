@@ -1,4 +1,4 @@
-import { IGuild, IRawGuild } from '@/types/interfaces/Guild';
+import type { IGuild, IRawGuild } from '@/types/interfaces/Guild';
 
 export default function normalizeGuild(guild: IRawGuild): IGuild {
 	return {

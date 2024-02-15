@@ -1,11 +1,10 @@
 'use client';
 
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
-import { SafeNumber } from '@/types/util/SafeNumber';
+import type { SafeNumber } from '@/types/util/SafeNumber';
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
-import { ReactNode } from 'react';
-
+import type { ReactNode } from 'react';
 
 export type AvatarProps = {
 	src: string;

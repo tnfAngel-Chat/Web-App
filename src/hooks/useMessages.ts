@@ -1,5 +1,5 @@
 import { client } from '@/client';
-import { IRawMessage } from '@/types/interfaces/Message';
+import type { IRawMessage } from '@/types/interfaces/Message';
 import useSWRImmutable from 'swr/immutable';
 
 export default function useChannelMessages(

@@ -7,7 +7,6 @@ import {
 	setSelectedGuild,
 } from '@/store/slices/selectionsSlice';
 import { Flex } from '@chakra-ui/react';
-import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 export default function SelectedGuildPage({

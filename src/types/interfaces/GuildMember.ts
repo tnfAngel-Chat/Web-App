@@ -1,4 +1,4 @@
-import { IRawUser, IUser } from './User';
+import type { IRawUser, IUser } from './User';
 
 export interface IRawMember extends IRawUser {
 

@@ -1,5 +1,5 @@
 import { themes } from '@/constants/themes';
-import { RootState } from '@/store';
+import type { RootState } from '@/store';
 import { setTheme } from '@/store/slices/themeSlice';
 import { useColorMode } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';

@@ -1,6 +1,6 @@
 import { Client } from '..';
 import { BaseManager } from './BaseManager';
-import { IUser } from '@/types/interfaces/User';
+import type { IUser } from '@/types/interfaces/User';
 import { Collection } from '@discordjs/collection';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import { UserTypes } from '@/types/enums/UserTypes';
@@ -10,7 +10,7 @@ export class UsersManager extends BaseManager<IUser> {
 		super(client);
 	}
 
-	cache = new Collection<string, IUser>();
+	override cache = new Collection<string, IUser>();
 
 	resolve(id: string | null) {
 		return (

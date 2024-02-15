@@ -33,7 +33,7 @@ export default function RootLayout({
 			</head>
 			<body>
 				<ColorModeScript
-					initialColorMode={theme.config.initialColorMode}
+					initialColorMode={theme['config'].initialColorMode}
 				/>
 				<ChakraProvider theme={theme}>
 					<CacheProvider>

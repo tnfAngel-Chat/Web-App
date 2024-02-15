@@ -1,7 +1,7 @@
 import useThemeColors from '@/hooks/useThemeColors';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
-import { SafeNumber } from '@/types/util/SafeNumber';
-import { Box, PlacementWithLogical, Tooltip } from '@chakra-ui/react';
+import type { SafeNumber } from '@/types/util/SafeNumber';
+import { Box, type PlacementWithLogical, Tooltip } from '@chakra-ui/react';
 
 export type StatusIndicatorProps = {
 	status: UserStatusTypes;

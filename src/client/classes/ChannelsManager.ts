@@ -1,7 +1,7 @@
 import { Client } from '..';
 import { BaseManager } from './BaseManager';
 import { Collection } from '@discordjs/collection';
-import { Channel } from '@/types/interfaces/Channel';
+import type { Channel } from '@/types/interfaces/Channel';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 export class ChannelsManager extends BaseManager<Channel> {
@@ -9,7 +9,7 @@ export class ChannelsManager extends BaseManager<Channel> {
 		super(client);
 	}
 
-	cache = new Collection<string, Channel>();
+	override cache = new Collection<string, Channel>();
 
 	resolve(id: string | null) {
 		return (

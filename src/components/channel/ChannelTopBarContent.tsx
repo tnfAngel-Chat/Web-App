@@ -4,7 +4,7 @@ import { client } from '@/client';
 import useThemeColors from '@/hooks/useThemeColors';
 import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import { Channel } from '@/types/interfaces/Channel';
+import type { Channel } from '@/types/interfaces/Channel';
 import {
 	Center,
 	Flex,

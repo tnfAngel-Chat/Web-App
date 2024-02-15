@@ -1,6 +1,6 @@
 import { MessageTypes } from '@/types/enums/MessageTypes';
 import { MessageModes } from '../enums/MessageModes';
-import { IUser } from './User';
+import type { IUser } from './User';
 
 export interface IRawMessage {
 	type: MessageTypes;

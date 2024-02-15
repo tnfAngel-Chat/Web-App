@@ -1,4 +1,4 @@
-import { Channel } from '@/types/interfaces/Channel';
+import type { Channel } from '@/types/interfaces/Channel';
 import { createSlice } from '@reduxjs/toolkit';
 
 export type ChannelsState = {
