@@ -1,6 +1,6 @@
 'use client';
 
-import { Box } from '@chakra-ui/react';
+import { Box, ScaleFade } from '@chakra-ui/react';
 import useThemeColors from '@/hooks/useThemeColors';
 import IndexLoadingScreen from '../screens/IndexLoadingScreen';
 import AppSocket from './AppSocket';
@@ -11,31 +11,42 @@ export default function AppWrapper({ children }: any) {
 	const [isLoading, setIsLoading] = useState(true);
 	return (
 		<AppSocket onConnectionReady={() => setIsLoading(false)}>
-			{isLoading ? (
-				<IndexLoadingScreen />
-			) : (
-				<Box
-					h="100%"
-					w="100%"
-					overflow="hidden"
-					color={getColorValue('textColor')}
-					bg={getColorValue('appBackground')}
-					backgroundPosition="center center"
-					backgroundRepeat="no-repeat"
-					backgroundSize="cover"
-				>
-					<Box
-						h="100%"
-						w="100%"
-						scrollSnapType="x mandatory"
-						scrollSnapStop="always"
-						scrollBehavior="smooth"
-						overflow="auto"
+			<Box h="100%" w="100%" bg={getColorValue('appBackground')}>
+				{isLoading ? (
+					<IndexLoadingScreen />
+				) : (
+					<ScaleFade
+						in={true}
+						style={{ height: '100%', width: '100%' }}
+						initialScale={0.8}
+						transition={{
+							enter: { duration: 0.3 },
+						}}
 					>
-						{children}
-					</Box>
-				</Box>
-			)}
+						<Box
+							h="100%"
+							w="100%"
+							overflow="hidden"
+							color={getColorValue('textColor')}
+							bg={getColorValue('appBackground')}
+							backgroundPosition="center center"
+							backgroundRepeat="no-repeat"
+							backgroundSize="cover"
+						>
+							<Box
+								h="100%"
+								w="100%"
+								scrollSnapType="x mandatory"
+								scrollSnapStop="always"
+								scrollBehavior="smooth"
+								overflow="auto"
+							>
+								{children}
+							</Box>
+						</Box>
+					</ScaleFade>
+				)}
+			</Box>
 		</AppSocket>
 	);
 }
