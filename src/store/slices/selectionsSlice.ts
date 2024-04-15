@@ -11,7 +11,7 @@ const initialState: SelectedState = {
 	selectedDirectChannel: null,
 	selectedGuild: null,
 	activePage: null,
-	guilds: {},
+	guilds: {}
 };
 
 export const selectionsSlice = createSlice({
@@ -21,7 +21,7 @@ export const selectionsSlice = createSlice({
 		setSelectedChannel: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: { guildId?: string; channelId: string | null };
@@ -44,7 +44,7 @@ export const selectionsSlice = createSlice({
 		setSelectedGuild: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: { guildId: string | null };
@@ -58,17 +58,16 @@ export const selectionsSlice = createSlice({
 		setActivePage: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: string;
 			}
 		) => {
 			state.activePage = payload;
-		},
-	},
+		}
+	}
 });
 
-export const { setSelectedChannel, setSelectedGuild, setActivePage } =
-	selectionsSlice.actions;
+export const { setSelectedChannel, setSelectedGuild, setActivePage } = selectionsSlice.actions;
 export default selectionsSlice.reducer;

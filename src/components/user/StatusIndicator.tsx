@@ -10,33 +10,25 @@ export type StatusIndicatorProps = {
 	tooltipPlacement?: PlacementWithLogical;
 };
 
-export default function StatusIndicator({
-	status,
-	size,
-	positioned = true,
-	tooltipPlacement,
-}: StatusIndicatorProps) {
+export default function StatusIndicator({ status, size, positioned = true, tooltipPlacement }: StatusIndicatorProps) {
 	const { getColorValue } = useThemeColors();
-	const statusValues: Record<
-		UserStatusTypes,
-		{ color: string; label: string }
-	> = {
+	const statusValues: Record<UserStatusTypes, { color: string; label: string }> = {
 		[UserStatusTypes.Online]: {
 			color: getColorValue('statusIndicatorOnlineColor'),
-			label: 'Online',
+			label: 'Online'
 		},
 		[UserStatusTypes.Offline]: {
 			color: getColorValue('statusIndicatorOfflineColor'),
-			label: 'Offline',
+			label: 'Offline'
 		},
 		[UserStatusTypes.Idle]: {
 			color: getColorValue('statusIndicatorIdleColor'),
-			label: 'Idle',
+			label: 'Idle'
 		},
 		[UserStatusTypes.DoNotDisturb]: {
 			color: getColorValue('statusIndicatorDNDColor'),
-			label: 'Do Not Disturb',
-		},
+			label: 'Do Not Disturb'
+		}
 	};
 
 	return (
@@ -51,9 +43,9 @@ export default function StatusIndicator({
 			<Box
 				w={`${size}px`}
 				h={`${size}px`}
-				position="relative"
-				borderWidth="2px"
-				borderRadius="50%"
+				position='relative'
+				borderWidth='2px'
+				borderRadius='50%'
 				borderColor={getColorValue('statusIndicatorBorderColor')}
 				bg={statusValues[status].color}
 				top={positioned ? '-31%' : undefined}

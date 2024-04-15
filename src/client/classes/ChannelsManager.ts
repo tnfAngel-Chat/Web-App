@@ -1,8 +1,8 @@
+import { ChannelTypes } from '@/types/enums/ChannelTypes';
+import type { Channel } from '@/types/interfaces/Channel';
+import { Collection } from '@discordjs/collection';
 import { Client } from '..';
 import { BaseManager } from './BaseManager';
-import { Collection } from '@discordjs/collection';
-import type { Channel } from '@/types/interfaces/Channel';
-import { ChannelTypes } from '@/types/enums/ChannelTypes';
 
 export class ChannelsManager extends BaseManager<Channel> {
 	constructor(client: Client) {
@@ -17,7 +17,7 @@ export class ChannelsManager extends BaseManager<Channel> {
 			({
 				type: ChannelTypes.DirectMessage,
 				id: '0',
-				recipient: '0',
+				recipient: '0'
 			} as Channel)
 		);
 	}

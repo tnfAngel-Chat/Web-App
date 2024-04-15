@@ -1,45 +1,34 @@
 'use client';
 
-import ky from 'ky';
-import { useFilePicker } from 'use-file-picker';
+import { client } from '@/client';
+import useDevice from '@/hooks/useDevice';
+import useThemeColors from '@/hooks/useThemeColors';
+import type { RootState } from '@/store';
+import { addMessage, modifyMessage, setMessageInput } from '@/store/slices/chatsSlice';
+import { ChannelTypes } from '@/types/enums/ChannelTypes';
+import { MessageModes } from '@/types/enums/MessageModes';
+import { MessageTypes } from '@/types/enums/MessageTypes';
 import type { Channel } from '@/types/interfaces/Channel';
+import normalizeMessage from '@/util/normalizeMessage';
 import {
 	Box,
-	Flex,
 	Center,
+	Flex,
 	IconButton,
-	Textarea,
 	Image,
 	Spacer,
-	useEventListener,
+	Textarea,
 	useDisclosure,
+	useEventListener
 } from '@chakra-ui/react';
-import {
-	MdAddCircle,
-	MdAudioFile,
-	MdEmojiEmotions,
-	MdFilePresent,
-	MdSend,
-	MdVideoFile,
-} from 'react-icons/md';
-import { ChannelTypes } from '@/types/enums/ChannelTypes';
-import useThemeColors from '@/hooks/useThemeColors';
-import { useDispatch, useSelector } from 'react-redux';
-import {
-	addMessage,
-	modifyMessage,
-	setMessageInput,
-} from '@/store/slices/chatsSlice';
-import type { RootState } from '@/store';
-import { MessageTypes } from '@/types/enums/MessageTypes';
-import { MessageModes } from '@/types/enums/MessageModes';
-import normalizeMessage from '@/util/normalizeMessage';
+import ky from 'ky';
 import { useEffect, useRef, useState } from 'react';
+import { MdAddCircle, MdAudioFile, MdEmojiEmotions, MdFilePresent, MdSend, MdVideoFile } from 'react-icons/md';
+import { useDispatch, useSelector } from 'react-redux';
+import { useFilePicker } from 'use-file-picker';
 import OverflownText from '../misc/OverflownText';
-import { client } from '@/client';
-import EmojiPicker from '../popovers/EmojiPicker';
 import ChatEmojiPicker from '../popovers/ChatEmojiPicker';
-import useDevice from '@/hooks/useDevice';
+import EmojiPicker from '../popovers/EmojiPicker';
 
 export type InputBoxProps = {
 	channel: Channel;
@@ -48,17 +37,13 @@ export type InputBoxProps = {
 export default function InputArea({ channel }: InputBoxProps) {
 	const { openFilePicker, filesContent } = useFilePicker({
 		readAs: 'DataURL',
-		limitFilesConfig: { min: 1 },
+		limitFilesConfig: { min: 1 }
 	});
 	const { isMobile } = useDevice();
 	const { getColorValue } = useThemeColors();
 	const dispatch = useDispatch();
-	const recipient = client.users.resolve(
-		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
-	);
-	const [emojiSearchInput, setEmojiSearchInput] = useState<string | null>(
-		null
-	);
+	const recipient = client.users.resolve(channel.type === ChannelTypes.DirectMessage ? channel.recipient : '');
+	const [emojiSearchInput, setEmojiSearchInput] = useState<string | null>(null);
 	const chatsState = useSelector((state: RootState) => state.chats);
 	const inputRef = useRef<null | any>(null);
 	const currentInput = chatsState.inputs[channel.id];
@@ -69,7 +54,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 	const {
 		isOpen: isChatEmojiPickerOpen,
 		onOpen: onChatEmojiPickerOpen,
-		onClose: onChatEmojiPickerClose,
+		onClose: onChatEmojiPickerClose
 	} = useDisclosure();
 
 	useEffect(() => {
@@ -78,31 +63,20 @@ export default function InputArea({ channel }: InputBoxProps) {
 				channelId: channel.id,
 				input: {
 					content: currentInput?.content ?? '',
-					attachments: [
-						...(currentInput?.attachments ?? []),
-						...filesContent,
-					],
-				},
+					attachments: [...(currentInput?.attachments ?? []), ...filesContent]
+				}
 			})
 		);
 	}, [filesContent]);
 
 	useEffect(() => {
-		inputRef.current.setSelectionRange(
-			inputRef.current.value.length,
-			inputRef.current.value.length
-		);
+		inputRef.current.setSelectionRange(inputRef.current.value.length, inputRef.current.value.length);
 	}, []);
 
 	const handleKeyDown = (event: any) => {
 		const content = event.target.value.trim();
 
-		if (
-			event.key === 'Enter' &&
-			!event.shiftKey &&
-			!isMobile &&
-			(content || inputAttachments.length)
-		) {
+		if (event.key === 'Enter' && !event.shiftKey && !isMobile && (content || inputAttachments.length)) {
 			event.preventDefault();
 			handleSend(content, inputAttachments);
 		} else if (event.key === 'Enter' && !event.shiftKey) {
@@ -115,10 +89,8 @@ export default function InputArea({ channel }: InputBoxProps) {
 			const ignore = ['INPUT', 'TEXTAREA'];
 
 			if (!ignore.includes(document.activeElement?.tagName ?? '')) {
-				if ((!e.ctrlKey && e.key.length === 1) || e.key === 'Backspace')
-					inputRef.current.focus();
-				if (e.key === 'Enter' && !e.shiftKey)
-					handleSend(inputContent, inputAttachments);
+				if ((!e.ctrlKey && e.key.length === 1) || e.key === 'Backspace') inputRef.current.focus();
+				if (e.key === 'Enter' && !e.shiftKey) handleSend(inputContent, inputAttachments);
 			}
 		}
 	});
@@ -134,7 +106,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 			dispatch(
 				setMessageInput({
 					channelId: channel.id,
-					input: { content: '', attachments: [] },
+					input: { content: '', attachments: [] }
 				})
 			);
 
@@ -148,12 +120,12 @@ export default function InputArea({ channel }: InputBoxProps) {
 				channelId: channel.id,
 				content: content,
 				author: client.user.id,
-				timestamp: Date.now(),
+				timestamp: Date.now()
 			};
 			dispatch(
 				addMessage({
 					channelId: channel.id,
-					message: normalizeMessage(rawMessage),
+					message: normalizeMessage(rawMessage)
 				})
 			);
 
@@ -161,7 +133,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			await ky
 				.post(`${client.links.api}/channels/${channel?.id}/messages`, {
-					json: { content: content, nonce: tempMessageId },
+					json: { content: content, nonce: tempMessageId }
 				})
 				.json<{ id: string }>()
 				.then((result) => {
@@ -172,8 +144,8 @@ export default function InputArea({ channel }: InputBoxProps) {
 							newMessage: normalizeMessage({
 								...rawMessage,
 								mode: MessageModes.Sent,
-								id: result.id,
-							}),
+								id: result.id
+							})
 						})
 					);
 				})
@@ -184,8 +156,8 @@ export default function InputArea({ channel }: InputBoxProps) {
 							messageId: rawMessage.id,
 							newMessage: normalizeMessage({
 								...rawMessage,
-								mode: MessageModes.Blocked,
-							}),
+								mode: MessageModes.Blocked
+							})
 						})
 					);
 				});
@@ -202,8 +174,8 @@ export default function InputArea({ channel }: InputBoxProps) {
 				channelId: channel.id,
 				input: {
 					content: content,
-					attachments: currentInput?.attachments ?? [],
-				},
+					attachments: currentInput?.attachments ?? []
+				}
 			})
 		);
 	};
@@ -229,11 +201,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 				return true;
 			});
 
-			if (
-				selectedWord.startsWith(':') &&
-				!selectedWord.endsWith(':') &&
-				selectedWord.split(':').length === 2
-			) {
+			if (selectedWord.startsWith(':') && !selectedWord.endsWith(':') && selectedWord.split(':').length === 2) {
 				const searchInput = selectedWord.replaceAll(':', '');
 
 				setEmojiSearchInput(searchInput);
@@ -273,8 +241,8 @@ export default function InputArea({ channel }: InputBoxProps) {
 				channelId: channel.id,
 				input: {
 					content: spacedContent.join(' '),
-					attachments: [...(currentInput?.attachments ?? [])],
-				},
+					attachments: [...(currentInput?.attachments ?? [])]
+				}
 			})
 		);
 	}
@@ -326,9 +294,9 @@ export default function InputArea({ channel }: InputBoxProps) {
 				'f4v',
 				'f4p',
 				'f4a',
-				'f4b',
+				'f4b'
 			],
-			icon: <MdVideoFile size="100%" />,
+			icon: <MdVideoFile size='100%' />
 		},
 		{
 			type: [
@@ -373,69 +341,49 @@ export default function InputArea({ channel }: InputBoxProps) {
 				'aac',
 				'aa',
 				'8svx',
-				'3gp',
+				'3gp'
 			],
-			icon: <MdAudioFile size="100%" />,
-		},
+			icon: <MdAudioFile size='100%' />
+		}
 	];
 
 	return (
-		<Box
-			bg={getColorValue('secondaryBackground')}
-			w="100%"
-			padding="15px 20px 15px 20px"
-		>
-			<Box overflow="auto" h="100%" maxH="60vh">
-				<Flex direction="column" overflow="auto" gap="20px" w="100%">
+		<Box bg={getColorValue('secondaryBackground')} w='100%' padding='15px 20px 15px 20px'>
+			<Box overflow='auto' h='100%' maxH='60vh'>
+				<Flex direction='column' overflow='auto' gap='20px' w='100%'>
 					{inputAttachments.length ? (
-						<Flex overflow="auto" direction="column">
-							<Flex gap="20px" overflow="auto">
+						<Flex overflow='auto' direction='column'>
+							<Flex gap='20px' overflow='auto'>
 								{inputAttachments.map((file, i) => {
-									const fileExtension =
-										file.name.split('.').pop() ?? '';
+									const fileExtension = file.name.split('.').pop() ?? '';
 
 									return (
 										<Box
-											w="200px"
-											h="240px"
-											objectFit="cover"
-											bg={getColorValue(
-												'primaryBackground'
-											)}
-											borderRadius="10px"
-											padding="20px"
+											w='200px'
+											h='240px'
+											objectFit='cover'
+											bg={getColorValue('primaryBackground')}
+											borderRadius='10px'
+											padding='20px'
 											key={`${file.name}-${i}`}
 										>
-											<Flex
-												direction="column"
-												h="100%"
-												w="100%"
-												gap="5px"
-											>
+											<Flex direction='column' h='100%' w='100%' gap='5px'>
 												<Image
-													h="100%"
-													w="100%"
-													fit="cover"
-													borderRadius="10px"
+													h='100%'
+													w='100%'
+													fit='cover'
+													borderRadius='10px'
 													fallback={
-														<Box padding="20px">
-															{fileIcons.find(
-																(file) =>
-																	file.type.includes(
-																		fileExtension
-																	)
-															)?.icon ?? (
-																<MdFilePresent size="100%" />
-															)}
+														<Box padding='20px'>
+															{fileIcons.find((file) => file.type.includes(fileExtension))
+																?.icon ?? <MdFilePresent size='100%' />}
 														</Box>
 													}
 													alt={file.name}
 													src={file.content}
 												/>
 												<Spacer />
-												<OverflownText>
-													{file.name}
-												</OverflownText>
+												<OverflownText>{file.name}</OverflownText>
 											</Flex>
 										</Box>
 									);
@@ -443,13 +391,13 @@ export default function InputArea({ channel }: InputBoxProps) {
 							</Flex>
 						</Flex>
 					) : null}
-					<Flex h="100%" w="100%" gap="24px">
-						<Flex gap="24px" paddingTop="6px">
+					<Flex h='100%' w='100%' gap='24px'>
+						<Flex gap='24px' paddingTop='6px'>
 							<IconButton
-								aria-label="Add attachments"
-								bg="transparent"
-								size="sm"
-								fontSize="24px"
+								aria-label='Add attachments'
+								bg='transparent'
+								size='sm'
+								fontSize='24px'
 								icon={<MdAddCircle />}
 								onClick={() => {
 									openFilePicker();
@@ -457,7 +405,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 								}}
 							/>
 						</Flex>
-						<Center w="100%">
+						<Center w='100%'>
 							<ChatEmojiPicker
 								onEmojiSelect={handleChatEmojiSelect}
 								searchInput={emojiSearchInput}
@@ -467,27 +415,21 @@ export default function InputArea({ channel }: InputBoxProps) {
 								<Textarea
 									autoFocus={isMobile ? false : true}
 									placeholder={`Message @${
-										channel.type ===
-										ChannelTypes.DirectMessage
-											? recipient.username
-											: channel.name
+										channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name
 									}`}
 									rows={
-										numberOfLines >
-										(inputAttachments.length ? 10 : 22)
+										numberOfLines > (inputAttachments.length ? 10 : 22)
 											? inputAttachments.length
 												? 10
 												: 22
 											: numberOfLines
 									}
-									maxH="50vh"
+									maxH='50vh'
 									h={numberOfLines > 1 ? '100%' : '45px'}
-									minH="45px"
-									size="md"
-									resize="none"
-									focusBorderColor={getColorValue(
-										'focusBorderColor'
-									)}
+									minH='45px'
+									size='md'
+									resize='none'
+									focusBorderColor={getColorValue('focusBorderColor')}
 									onKeyDown={handleKeyDown}
 									onChange={handleChange}
 									value={inputContent}
@@ -495,34 +437,26 @@ export default function InputArea({ channel }: InputBoxProps) {
 								/>
 							</ChatEmojiPicker>
 						</Center>
-						<Flex gap="24px" paddingTop="6px">
-							<EmojiPicker
-								channelId={channel.id}
-								inputRef={inputRef}
-							>
+						<Flex gap='24px' paddingTop='6px'>
+							<EmojiPicker channelId={channel.id} inputRef={inputRef}>
 								<IconButton
-									aria-label="Add emojis"
-									bg="transparent"
-									size="sm"
-									fontSize="24px"
+									aria-label='Add emojis'
+									bg='transparent'
+									size='sm'
+									fontSize='24px'
 									icon={<MdEmojiEmotions />}
 								/>
 							</EmojiPicker>
 						</Flex>
 						{isMobile && (
-							<Flex gap="24px" paddingTop="6px">
+							<Flex gap='24px' paddingTop='6px'>
 								<IconButton
-									aria-label="Send message"
-									bg="transparent"
-									size="sm"
-									fontSize="24px"
+									aria-label='Send message'
+									bg='transparent'
+									size='sm'
+									fontSize='24px'
 									icon={<MdSend />}
-									onClick={() =>
-										handleSend(
-											inputContent,
-											inputAttachments
-										)
-									}
+									onClick={() => handleSend(inputContent, inputAttachments)}
 								/>
 							</Flex>
 						)}

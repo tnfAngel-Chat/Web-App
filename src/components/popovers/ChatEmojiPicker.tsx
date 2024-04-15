@@ -1,28 +1,28 @@
+import { type Emoji, emojis } from '@/constants/emojis';
+import useThemeColors from '@/hooks/useThemeColors';
+import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
 import {
 	Flex,
-	Stack,
 	Popover,
 	PopoverBody,
+	PopoverCloseButton,
+	PopoverContent,
 	PopoverHeader,
 	PopoverTrigger,
-	PopoverContent,
-	PopoverCloseButton,
-	useEventListener,
+	Stack,
+	useEventListener
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import EmojiParser from '../misc/EmojiParser';
-import { type Emoji, emojis } from '@/constants/emojis';
-import useThemeColors from '@/hooks/useThemeColors';
 import OverflownText from '../misc/OverflownText';
-import { addRecentEmoji } from '@/store/slices/recentEmojisSlice';
 
 export function EmojiSelector({
 	displayEmojis,
 	selectedEmojiIndex,
 	setSelectedEmojiIndex,
 	onEmojiSelect,
-	onClose,
+	onClose
 }: Readonly<{
 	displayEmojis: Emoji[];
 	selectedEmojiIndex: any;
@@ -34,23 +34,19 @@ export function EmojiSelector({
 	const dispatch = useDispatch();
 
 	return (
-		<Stack spacing="5px" maxH="35vh" w="100%" overflowY="auto">
+		<Stack spacing='5px' maxH='35vh' w='100%' overflowY='auto'>
 			{displayEmojis.map((e, i) => {
 				const isActive = i === selectedEmojiIndex;
 
 				return (
 					<Flex
-						bg={
-							isActive
-								? getColorValue('sidebarButtonActive')
-								: 'transparent'
-						}
-						h="42px"
-						alignItems="center"
+						bg={isActive ? getColorValue('sidebarButtonActive') : 'transparent'}
+						h='42px'
+						alignItems='center'
 						key={e.description}
-						gap="8px"
-						padding="5px"
-						borderRadius="5px"
+						gap='8px'
+						padding='5px'
+						borderRadius='5px'
 						onClick={() => {
 							onClose();
 
@@ -61,9 +57,7 @@ export function EmojiSelector({
 						onMouseEnter={() => setSelectedEmojiIndex(i)}
 					>
 						<EmojiParser width={28} height={28} emoji={e.emoji} />
-						<OverflownText>
-							{e.aliases.map((alias) => `:${alias}:`).join(' ')}
-						</OverflownText>
+						<OverflownText>{e.aliases.map((alias) => `:${alias}:`).join(' ')}</OverflownText>
 					</Flex>
 				);
 			})}
@@ -76,7 +70,7 @@ export default function ChatEmojiPicker({
 	isOpen,
 	onClose,
 	searchInput,
-	onEmojiSelect,
+	onEmojiSelect
 }: Readonly<{
 	children: any;
 	isOpen: boolean;
@@ -91,28 +85,14 @@ export default function ChatEmojiPicker({
 		? emojis
 				.filter(
 					(e) =>
-						e.description
-							.toLowerCase()
-							.includes(searchInput.toLowerCase()) ||
-						e.aliases.find((a) =>
-							a.includes(searchInput.toLowerCase())
-						) ||
-						e.tags.find((a) =>
-							a.includes(searchInput.toLowerCase())
-						)
+						e.description.toLowerCase().includes(searchInput.toLowerCase()) ||
+						e.aliases.find((a) => a.includes(searchInput.toLowerCase())) ||
+						e.tags.find((a) => a.includes(searchInput.toLowerCase()))
 				)
 				.sort((a, b) => {
-					if (
-						a.aliases.find((al) =>
-							al.startsWith(searchInput.toLowerCase())
-						)
-					) {
+					if (a.aliases.find((al) => al.startsWith(searchInput.toLowerCase()))) {
 						return -1;
-					} else if (
-						b.aliases.find((al) =>
-							al.startsWith(searchInput.toLowerCase())
-						)
-					) {
+					} else if (b.aliases.find((al) => al.startsWith(searchInput.toLowerCase()))) {
 						return 1;
 					} else {
 						return 0;
@@ -161,7 +141,7 @@ export default function ChatEmojiPicker({
 	return (
 		<Popover
 			onOpen={() => setSelectedEmojiIndex(0)}
-			placement="top-start"
+			placement='top-start'
 			autoFocus={false}
 			onClose={onClose}
 			isOpen={isOpen}
@@ -173,21 +153,17 @@ export default function ChatEmojiPicker({
 					{results.length ? (
 						<PopoverContent
 							w={['100vw', 'md']}
-							backdropFilter="blur(5px)"
+							backdropFilter='blur(5px)'
 							bg={getColorValue('sidebarBackground')}
 						>
 							<PopoverCloseButton />
-							<PopoverHeader>
-								Emojis que coinciden con {searchInput}
-							</PopoverHeader>
+							<PopoverHeader>Emojis que coinciden con {searchInput}</PopoverHeader>
 							<PopoverBody>
 								{searchInput ? (
 									<EmojiSelector
 										displayEmojis={results}
 										selectedEmojiIndex={selectedEmojiIndex}
-										setSelectedEmojiIndex={
-											setSelectedEmojiIndex
-										}
+										setSelectedEmojiIndex={setSelectedEmojiIndex}
 										onClose={onClose}
 										onEmojiSelect={onEmojiSelect}
 									/>

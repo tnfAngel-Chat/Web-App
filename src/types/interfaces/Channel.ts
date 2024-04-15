@@ -55,10 +55,7 @@ export interface IGroupChannel extends IBaseChannel {
 	lastMessage: string | null;
 }
 
-export type IRawChannel =
-	| IRawTextChannel
-	| IRawDirectMessageChannel
-	| IRawGroupChannel;
+export type IRawChannel = IRawTextChannel | IRawDirectMessageChannel | IRawGroupChannel;
 
 export type Channel = ITextChannel | IDirectMessageChannel | IGroupChannel;
 

@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import channelsSlice from './slices/channelsSlice';
 import chatsSlice from './slices/chatsSlice';
-import themesSlice from './slices/themeSlice';
-import recentEmojisSlice from './slices/recentEmojisSlice';
 import collapsiblesSlice from './slices/collapsiblesSlice';
 import guildsSlice from './slices/guildsSlice';
-import channelsSlice from './slices/channelsSlice';
+import recentEmojisSlice from './slices/recentEmojisSlice';
 import selectionsSlice from './slices/selectionsSlice';
+import themesSlice from './slices/themeSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -16,8 +16,8 @@ export const store = configureStore({
 		collapsibles: collapsiblesSlice,
 		guilds: guildsSlice,
 		channels: channelsSlice,
-		selections: selectionsSlice,
-	},
+		selections: selectionsSlice
+	}
 });
 
 export type RootState = ReturnType<typeof store.getState>;

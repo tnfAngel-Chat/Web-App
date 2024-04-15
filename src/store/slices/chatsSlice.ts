@@ -8,7 +8,7 @@ export type ChatState = {
 
 const initialState: ChatState = {
 	chats: {},
-	inputs: {},
+	inputs: {}
 };
 
 export const chatsSlice = createSlice({
@@ -18,7 +18,7 @@ export const chatsSlice = createSlice({
 		setMessages: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: { channelId: string; messages: IMessage[] };
@@ -31,7 +31,7 @@ export const chatsSlice = createSlice({
 		addMessage: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: { channelId: string; message: IMessage };
@@ -48,7 +48,7 @@ export const chatsSlice = createSlice({
 		modifyMessage: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: {
@@ -60,10 +60,7 @@ export const chatsSlice = createSlice({
 		) => {
 			const messages = state.chats[payload.channelId];
 
-			const index =
-				messages?.findIndex(
-					(message) => message.id === payload.messageId
-				) ?? 0;
+			const index = messages?.findIndex((message) => message.id === payload.messageId) ?? 0;
 
 			if (messages) messages[index] = payload.newMessage;
 
@@ -73,7 +70,7 @@ export const chatsSlice = createSlice({
 		deleteMessage: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: {
@@ -84,16 +81,14 @@ export const chatsSlice = createSlice({
 		) => {
 			const messages = state.chats[payload.channelId] ?? [];
 
-			state.chats[payload.channelId] = messages.filter(
-				(message) => message.id !== payload.messageId
-			);
+			state.chats[payload.channelId] = messages.filter((message) => message.id !== payload.messageId);
 
 			return state;
 		},
 		setMessageInput: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: {
@@ -109,7 +104,7 @@ export const chatsSlice = createSlice({
 		appendMessageInput: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: {
@@ -123,22 +118,14 @@ export const chatsSlice = createSlice({
 			if (messages) {
 				messages.content += payload.input.content;
 
-				messages.attachments = messages.attachments.concat(
-					payload.input.attachments
-				);
+				messages.attachments = messages.attachments.concat(payload.input.attachments);
 			}
 
 			return state;
-		},
-	},
+		}
+	}
 });
 
-export const {
-	setMessages,
-	addMessage,
-	modifyMessage,
-	deleteMessage,
-	setMessageInput,
-	appendMessageInput,
-} = chatsSlice.actions;
+export const { setMessages, addMessage, modifyMessage, deleteMessage, setMessageInput, appendMessageInput } =
+	chatsSlice.actions;
 export default chatsSlice.reducer;

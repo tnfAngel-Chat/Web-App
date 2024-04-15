@@ -8,11 +8,7 @@ export type TextDateProps = {
 	fontSize: string;
 };
 
-export default function TextDate({
-	timestamp,
-	long,
-	fontSize,
-}: Readonly<TextDateProps>) {
+export default function TextDate({ timestamp, long, fontSize }: Readonly<TextDateProps>) {
 	const { getColorValue } = useThemeColors();
 
 	return (

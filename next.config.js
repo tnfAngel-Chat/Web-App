@@ -8,34 +8,34 @@ const nextConfig = {
 			{
 				protocol: 'https',
 				hostname: '*.tnfangel.xyz',
-				port: '',
+				port: ''
 			},
 			{
 				protocol: 'https',
 				hostname: '*',
-				port: '',
+				port: ''
 			},
 			{
 				protocol: 'https',
 				hostname: 'tnfangel.xyz',
-				port: '',
+				port: ''
 			},
 			{
 				protocol: 'https',
 				hostname: '*discordapp.com',
-				port: '',
+				port: ''
 			},
 			{
 				protocol: 'https',
 				hostname: '*discord.com',
-				port: '',
+				port: ''
 			},
 			{
 				protocol: 'https',
 				hostname: '*discordapp.net',
-				port: '',
-			},
-		],
+				port: ''
+			}
+		]
 	},
 	env: {
 		API_VERSION: process.env.API_VERSION,
@@ -43,8 +43,8 @@ const nextConfig = {
 		GATEWAY_URL: process.env.GATEWAY_URL,
 		AUTH_URL: process.env.AUTH_URL,
 		CDN_URL: process.env.CDN_URL,
-		MEDIA_PROXY_URL: process.env.MEDIA_PROXY_URL,
-	},
+		MEDIA_PROXY_URL: process.env.MEDIA_PROXY_URL
+	}
 };
 
 let configExport = nextConfig;

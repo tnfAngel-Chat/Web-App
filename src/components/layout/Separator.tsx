@@ -12,7 +12,7 @@ export default function Separator({ w, h }: Readonly<SeparatorProps>) {
 
 	return (
 		<Box
-			overflow="none"
+			overflow='none'
 			w={w ?? '100%;'}
 			minH={h ?? '1px'}
 			maxH={h ?? '1px'}

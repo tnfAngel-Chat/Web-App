@@ -6,26 +6,20 @@ export type ChannelsState = {
 };
 
 const initialState: ChannelsState = {
-	channels: [],
+	channels: []
 };
 
 export const channelsSlice = createSlice({
 	name: 'guildChannels',
 	initialState,
 	reducers: {
-		setChannels: (
-			state,
-			{ payload }: { type: string; payload: Channel[] }
-		) => {
+		setChannels: (state, { payload }: { type: string; payload: Channel[] }) => {
 			state.channels = payload;
 
 			return state;
 		},
 
-		addChannel: (
-			state,
-			{ payload }: { type: string; payload: Channel }
-		) => {
+		addChannel: (state, { payload }: { type: string; payload: Channel }) => {
 			state.channels.push(payload);
 
 			return state;
@@ -34,7 +28,7 @@ export const channelsSlice = createSlice({
 		modifyChannel: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: {
@@ -43,28 +37,20 @@ export const channelsSlice = createSlice({
 				};
 			}
 		) => {
-			const index = state.channels.findIndex(
-				(channel) => channel.id === payload.channelId
-			);
+			const index = state.channels.findIndex((channel) => channel.id === payload.channelId);
 
 			state.channels[index] = payload.newChannel;
 
 			return state;
 		},
 
-		removeChannel: (
-			state,
-			{ payload }: { type: string; payload: string }
-		) => {
-			state.channels = state.channels.filter(
-				(channel) => channel.id !== payload
-			);
+		removeChannel: (state, { payload }: { type: string; payload: string }) => {
+			state.channels = state.channels.filter((channel) => channel.id !== payload);
 
 			return state;
-		},
-	},
+		}
+	}
 });
 
-export const { setChannels, addChannel, modifyChannel, removeChannel } =
-	channelsSlice.actions;
+export const { setChannels, addChannel, modifyChannel, removeChannel } = channelsSlice.actions;
 export default channelsSlice.reducer;

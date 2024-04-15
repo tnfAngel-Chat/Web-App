@@ -1,12 +1,12 @@
-import { ClientLinks } from './links';
-import { ClientConfig } from './config';
-import { ClientSocket } from './socket';
-import { UsersManager } from './classes/UsersManager';
-import { ChannelsManager } from './classes/ChannelsManager';
 import type { IRawChannel } from '@/types/interfaces/Channel';
 import type { IRawUser } from '@/types/interfaces/User';
-import normalizeUser from '@/util/normalizeUser';
 import normalizeChannel from '@/util/normalizeChannel';
+import normalizeUser from '@/util/normalizeUser';
+import { ChannelsManager } from './classes/ChannelsManager';
+import { UsersManager } from './classes/UsersManager';
+import { ClientConfig } from './config';
+import { ClientLinks } from './links';
+import { ClientSocket } from './socket';
 
 export class Client {
 	config = new ClientConfig();
@@ -20,18 +20,14 @@ export class Client {
 
 	populate({
 		users,
-		channels,
+		channels
 	}: {
 		users: IRawUser[];
 		channels: IRawChannel[];
 	}) {
-		users.forEach((user) =>
-			client.users.cache.set(user.id, normalizeUser(user))
-		);
+		users.forEach((user) => client.users.cache.set(user.id, normalizeUser(user)));
 
-		channels.forEach((channel) =>
-			client.channels.cache.set(channel.id, normalizeChannel(channel))
-		);
+		channels.forEach((channel) => client.channels.cache.set(channel.id, normalizeChannel(channel)));
 
 		this.user = this.users.resolve('1');
 	}

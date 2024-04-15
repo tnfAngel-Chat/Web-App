@@ -7,7 +7,7 @@ export type ThemeState = {
 };
 
 const initialState: ThemeState = {
-	theme: themes[0],
+	theme: themes[0]
 };
 
 export const themesSlice = createSlice({
@@ -17,7 +17,7 @@ export const themesSlice = createSlice({
 		setTheme: (
 			state,
 			{
-				payload,
+				payload
 			}: {
 				type: string;
 				payload: Theme;
@@ -26,8 +26,8 @@ export const themesSlice = createSlice({
 			state.theme = payload;
 
 			return state;
-		},
-	},
+		}
+	}
 });
 
 export const { setTheme } = themesSlice.actions;

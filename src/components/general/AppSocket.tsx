@@ -1,18 +1,18 @@
 import { client } from '@/client';
 import useTheme from '@/hooks/useTheme';
-import { addMessage } from '@/store/slices/chatsSlice';
 import { modifyChannel, setChannels } from '@/store/slices/channelsSlice';
+import { addMessage } from '@/store/slices/chatsSlice';
+import { setGuilds } from '@/store/slices/guildsSlice';
 import type { IRawChannel } from '@/types/interfaces/Channel';
+import type { IRawGuild } from '@/types/interfaces/Guild';
 import type { IRawMessage } from '@/types/interfaces/Message';
 import type { IRawUser } from '@/types/interfaces/User';
 import normalizeChannel from '@/util/normalizeChannel';
+import normalizeGuild from '@/util/normalizeGuild';
 import normalizeMessage from '@/util/normalizeMessage';
 import { useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { setGuilds } from '@/store/slices/guildsSlice';
-import type { IRawGuild } from '@/types/interfaces/Guild';
-import normalizeGuild from '@/util/normalizeGuild';
 
 interface IUserPreferences {
 	theme: string;
@@ -42,7 +42,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 						status: 'success',
 						position: 'top-right',
 						duration: 5000,
-						isClosable: true,
+						isClosable: true
 					});
 				}
 			}, 500);
@@ -55,7 +55,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 				description: 'You have been disconnected from chat.',
 				status: 'error',
 				position: 'top-right',
-				duration: null,
+				duration: null
 			});
 			isReconnection = true;
 		}
@@ -64,7 +64,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 			guilds,
 			users,
 			channels,
-			preferences,
+			preferences
 		}: {
 			guilds: IRawGuild[];
 			users: IRawUser[];
@@ -73,16 +73,12 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 		}) {
 			client.populate({
 				users,
-				channels,
+				channels
 			});
 
 			dispatch(setGuilds(guilds.map((guild) => normalizeGuild(guild))));
 
-			dispatch(
-				setChannels(
-					channels.map((channel) => normalizeChannel(channel))
-				)
-			);
+			dispatch(setChannels(channels.map((channel) => normalizeChannel(channel))));
 
 			setTheme(preferences.theme);
 			onConnectionReady();
@@ -94,7 +90,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 			dispatch(
 				modifyChannel({
 					channelId: message.channelId,
-					newChannel: { ...channel, lastMessage: message.id },
+					newChannel: { ...channel, lastMessage: message.id }
 				})
 			);
 
@@ -102,7 +98,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 				dispatch(
 					addMessage({
 						channelId: message.channelId,
-						message: normalizeMessage(message),
+						message: normalizeMessage(message)
 					})
 				);
 			}

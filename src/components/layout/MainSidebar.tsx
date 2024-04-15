@@ -6,18 +6,7 @@ import { type RootState } from '@/store';
 import { removeChannel } from '@/store/slices/channelsSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import type { Channel, DirectBasedChannel } from '@/types/interfaces/Channel';
-import {
-	type As,
-	Box,
-	Center,
-	CloseButton,
-	Flex,
-	Icon,
-	IconButton,
-	Spacer,
-	Stack,
-	Text,
-} from '@chakra-ui/react';
+import { type As, Box, Center, CloseButton, Flex, Icon, IconButton, Spacer, Stack, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { MdAdd, MdPeople } from 'react-icons/md';
@@ -33,7 +22,7 @@ export function DirectButtonLink({
 	icon,
 	label,
 	href,
-	isSelected,
+	isSelected
 }: Readonly<{
 	icon: As;
 	label: string;
@@ -45,33 +34,24 @@ export function DirectButtonLink({
 	return (
 		<Link href={href}>
 			<Flex
-				w="100%"
-				h="100%"
-				minH="50px"
-				borderRadius="5px"
-				bg={
-					isSelected
-						? getColorValue('sidebarButtonActive')
-						: 'transparent'
-				}
+				w='100%'
+				h='100%'
+				minH='50px'
+				borderRadius='5px'
+				bg={isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}
 				_hover={{
-					bg: isSelected
-						? getColorValue('sidebarButtonActive')
-						: getColorValue('sidebarButtonHover'),
+					bg: isSelected ? getColorValue('sidebarButtonActive') : getColorValue('sidebarButtonHover')
 				}}
-				padding="5px 10px 5px 10px"
+				padding='5px 10px 5px 10px'
 			>
-				<Flex flex="1" gap="3" alignItems="center" flexWrap="wrap">
-					<Box w="32px">
+				<Flex flex='1' gap='3' alignItems='center' flexWrap='wrap'>
+					<Box w='32px'>
 						<Center>
-							<Icon as={icon} boxSize="24px" />
+							<Icon as={icon} boxSize='24px' />
 						</Center>
 					</Box>
 					<Box>
-						<Text
-							className={isSelected ? 'text-bold' : ''}
-							fontSize="md"
-						>
+						<Text className={isSelected ? 'text-bold' : ''} fontSize='md'>
 							{label}
 						</Text>
 					</Box>
@@ -86,85 +66,57 @@ export type DirectChannelLinkProps = {
 	isSelected: boolean;
 };
 
-export function DirectChannelLink({
-	channel,
-	isSelected,
-}: Readonly<DirectChannelLinkProps>) {
+export function DirectChannelLink({ channel, isSelected }: Readonly<DirectChannelLinkProps>) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 	const [isHovering, setIsHovering] = useState(false);
-	const recipient = client.users.resolve(
-		channel.type === ChannelTypes.DirectMessage ? channel.recipient : ''
-	);
+	const recipient = client.users.resolve(channel.type === ChannelTypes.DirectMessage ? channel.recipient : '');
 
 	return (
 		<Link href={`/channels/${channel.id}`}>
 			<Flex
-				borderRadius="5px"
-				bg={
-					isSelected
-						? getColorValue('sidebarButtonActive')
-						: 'transparent'
-				}
+				borderRadius='5px'
+				bg={isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}
 				_hover={{
-					bg: isSelected
-						? getColorValue('sidebarButtonActive')
-						: getColorValue('sidebarButtonHover'),
+					bg: isSelected ? getColorValue('sidebarButtonActive') : getColorValue('sidebarButtonHover')
 				}}
-				padding="5px 10px 5px 10px"
+				padding='5px 10px 5px 10px'
 				onMouseEnter={() => setIsHovering(true)}
 				onMouseLeave={() => setIsHovering(false)}
-				gap="1px"
+				gap='1px'
 			>
-				<Flex
-					h="100%"
-					minH="45px"
-					gap="10px"
-					alignItems="center"
-					minW="0px"
-				>
-					<Center h="100%">
+				<Flex h='100%' minH='45px' gap='10px' alignItems='center' minW='0px'>
+					<Center h='100%'>
 						<Avatar
-							size="36"
-							src={
-								channel.type === ChannelTypes.DirectMessage
-									? recipient.avatar
-									: channel.icon
-							}
-							alt="Avatar"
+							size='36'
+							src={channel.type === ChannelTypes.DirectMessage ? recipient.avatar : channel.icon}
+							alt='Avatar'
 							indicator={
 								channel.type === ChannelTypes.DirectMessage ? (
-									<StatusIndicator
-										status={recipient.status}
-										size="14"
-									/>
+									<StatusIndicator status={recipient.status} size='14' />
 								) : null
 							}
 						/>
 					</Center>
-					<Flex minW="0px" alignItems="start" direction="column">
-						<Box w="100%">
+					<Flex minW='0px' alignItems='start' direction='column'>
+						<Box w='100%'>
 							<OverflownText
-								fontSize="md"
-								tooltipPlacement="top"
+								fontSize='md'
+								tooltipPlacement='top'
 								className={isSelected ? 'text-bold' : ''}
 							>
-								{channel.type === ChannelTypes.DirectMessage
-									? recipient.username
-									: channel.name}
+								{channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name}
 							</OverflownText>
 						</Box>
 
 						{channel.type === ChannelTypes.DirectMessage ? (
 							recipient.presence ? (
-								<Text fontSize="sm" noOfLines={1}>
+								<Text fontSize='sm' noOfLines={1}>
 									{recipient.presence}
 								</Text>
 							) : null
 						) : channel.type === ChannelTypes.Group ? (
-							<Text fontSize="sm">
-								{channel.recipients.length} Miembros
-							</Text>
+							<Text fontSize='sm'>{channel.recipients.length} Miembros</Text>
 						) : null}
 					</Flex>
 				</Flex>
@@ -192,47 +144,40 @@ export type MainSidebarContentProps = {
 	selectedChannelId?: string;
 };
 
-export function MainSidebarContent({
-	selectedChannelId,
-}: Readonly<MainSidebarContentProps>) {
+export function MainSidebarContent({ selectedChannelId }: Readonly<MainSidebarContentProps>) {
 	const channelsState = useSelector((state: RootState) => state.channels);
 
 	const channels = channelsState.channels.filter(
 		(channel): channel is DirectBasedChannel =>
-			channel.type === ChannelTypes.DirectMessage ||
-			channel.type === ChannelTypes.Group
+			channel.type === ChannelTypes.DirectMessage || channel.type === ChannelTypes.Group
 	);
 
 	return (
-		<Stack w="100%" h="100%">
+		<Stack w='100%' h='100%'>
 			<DirectButtonLink
 				icon={MdPeople}
-				label="Amigos"
-				href="/friends"
+				label='Amigos'
+				href='/friends'
 				isSelected={selectedChannelId === 'friends'}
 			/>
-			<Flex gap="3px">
-				<Center w="100%">
+			<Flex gap='3px'>
+				<Center w='100%'>
 					<Separator />
 				</Center>
 				<Center>
 					<CreateGroup>
 						<IconButton
-							aria-label="Create DM Group"
-							bg="transparent"
-							size="xs"
-							fontSize="15px"
+							aria-label='Create DM Group'
+							bg='transparent'
+							size='xs'
+							fontSize='15px'
 							icon={<MdAdd />}
 						/>
 					</CreateGroup>
 				</Center>
 			</Flex>
 			{[...channels]
-				.sort(
-					(a, b) =>
-						parseInt(b.lastMessage ?? '0') -
-						parseInt(a.lastMessage ?? '0')
-				)
+				.sort((a, b) => parseInt(b.lastMessage ?? '0') - parseInt(a.lastMessage ?? '0'))
 				.map((channel) => {
 					return (
 						<DirectChannelLink
@@ -247,24 +192,18 @@ export function MainSidebarContent({
 }
 
 export default function MainSidebar({
-	selectedChannelId,
+	selectedChannelId
 }: Readonly<{
 	selectedChannelId?: string;
 }>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Stack h="100%" minW="250px" maxW="250px" spacing="0px">
-			<Box
-				h="100%"
-				w="100%"
-				bg={getColorValue('sidebarBackground')}
-				overflow="auto"
-				padding="10px"
-			>
+		<Stack h='100%' minW='250px' maxW='250px' spacing='0px'>
+			<Box h='100%' w='100%' bg={getColorValue('sidebarBackground')} overflow='auto' padding='10px'>
 				<MainSidebarContent selectedChannelId={selectedChannelId} />
 			</Box>
-			<Box minH="75px" bg={getColorValue('ternaryBackground')}>
+			<Box minH='75px' bg={getColorValue('ternaryBackground')}>
 				<ProfileBox />
 			</Box>
 		</Stack>

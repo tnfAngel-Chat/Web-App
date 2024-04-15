@@ -18,5 +18,3 @@ export interface IUser {
 	avatar: string;
 	presence: string | null;
 }
-
-

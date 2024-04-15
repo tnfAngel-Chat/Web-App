@@ -57,8 +57,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'light',
@@ -86,8 +86,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'amoled',
@@ -115,8 +115,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'midnight',
@@ -144,16 +144,15 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#37CC7A',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'inspiration',
 		name: 'Inspiration',
 		baseTheme: 'dark',
 		colors: {
-			appBackground:
-				'linear-gradient(120deg, rgba(32,44,112,1) 0%, rgba(108,0,103,1) 100%)',
+			appBackground: 'linear-gradient(120deg, rgba(32,44,112,1) 0%, rgba(108,0,103,1) 100%)',
 			modalBackground: '#0000007F',
 			primaryBackground: '#0000008A',
 			secondaryBackground: '#00000015',
@@ -174,8 +173,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'mountains',
@@ -203,8 +202,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'sky',
@@ -232,8 +231,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'neon',
@@ -261,8 +260,8 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
 	},
 	{
 		id: 'wh',
@@ -290,7 +289,7 @@ export const themes: Theme[] = [
 			statusIndicatorOnlineColor: '#2ed458',
 			statusIndicatorIdleColor: '#eeba59',
 			statusIndicatorDNDColor: '#ee5959',
-			statusIndicatorOfflineColor: '#9b9b9b',
-		},
-	},
+			statusIndicatorOfflineColor: '#9b9b9b'
+		}
+	}
 ];

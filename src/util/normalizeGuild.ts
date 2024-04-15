@@ -5,6 +5,6 @@ export default function normalizeGuild(guild: IRawGuild): IGuild {
 		...guild,
 		icon: guild.icon
 			? guild.icon
-			: 'https://media.discordapp.net/attachments/866159939247931432/1060336031234277407/plink.gif',
+			: 'https://media.discordapp.net/attachments/866159939247931432/1060336031234277407/plink.gif'
 	};
 }

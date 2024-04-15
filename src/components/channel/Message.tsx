@@ -5,9 +5,9 @@ import { MessageModes } from '@/types/enums/MessageModes';
 import type { IMessage } from '@/types/interfaces/Message';
 import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { useState } from 'react';
+import TextEmoji from '../misc/EmojiText';
 import TextDate from '../misc/TextDate';
 import Avatar from '../user/Avatar';
-import TextEmoji from '../misc/EmojiText';
 
 export type MessageProps = {
 	message: IMessage;
@@ -19,76 +19,67 @@ export type MessageProps = {
 export function HeadlessAvatarSpace() {
 	return (
 		<Box>
-			<Box w="42px" />
+			<Box w='42px' />
 		</Box>
 	);
 }
 
 export function AvatarSpaceDate({ timestamp }: { timestamp: number }) {
 	return (
-		<Center w="42px" h="22px">
-			<TextDate timestamp={timestamp} fontSize="10px" long={false} />
+		<Center w='42px' h='22px'>
+			<TextDate timestamp={timestamp} fontSize='10px' long={false} />
 		</Center>
 	);
 }
 
-export default function Message({
-	message,
-	headless,
-	onShowAuthor,
-	...props
-}: MessageProps) {
+export default function Message({ message, headless, onShowAuthor, ...props }: MessageProps) {
 	const { getColorValue } = useThemeColors();
 	const [isHovering, setHovering] = useState(false);
 
 	return (
 		<Box
-			padding="3px 20px 3px 20px"
+			padding='3px 20px 3px 20px'
 			_hover={{
-				bg: getColorValue('messageHover'),
+				bg: getColorValue('messageHover')
 			}}
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
 			{...props}
 		>
-			<Flex flex="1" gap="4" alignItems="start">
+			<Flex flex='1' gap='4' alignItems='start'>
 				{headless ? (
 					isHovering ? (
-						<Center h="100%">
+						<Center h='100%'>
 							<AvatarSpaceDate timestamp={message.timestamp} />
 						</Center>
 					) : (
 						<HeadlessAvatarSpace />
 					)
 				) : (
-					<Box paddingTop="2px">
+					<Box paddingTop='2px'>
 						<Avatar
-							size="42"
+							size='42'
 							src={message.author.avatar}
 							alt={`Avatar de ${message.author.username}`}
 							onClick={onShowAuthor}
 						/>
 					</Box>
 				)}
-				<Box textAlign="left">
+				<Box textAlign='left'>
 					{headless ? null : (
-						<Flex gap="6px" alignItems="center">
+						<Flex gap='6px' alignItems='center'>
 							<Text
-								className="text-bold"
-								fontSize="md"
+								className='text-bold'
+								fontSize='md'
 								onClick={onShowAuthor}
 								_hover={{
 									textDecoration: 'underline',
-									cursor: 'pointer',
+									cursor: 'pointer'
 								}}
 							>
 								{message.author.username}
 							</Text>
-							<TextDate
-								timestamp={message.timestamp}
-								fontSize="10px"
-								long={true}
-							/>
+							<TextDate timestamp={message.timestamp} fontSize='10px' long={true} />
 						</Flex>
 					)}
 					{message.content.split('\n').map((line, i) => {
@@ -98,16 +89,16 @@ export default function Message({
 							<TextEmoji
 								size={22}
 								key={lineKey}
-								fontSize="md"
-								userSelect="auto"
-								pointerEvents="none"
-								wordBreak="break-all"
+								fontSize='md'
+								userSelect='auto'
+								pointerEvents='none'
+								wordBreak='break-all'
 								color={
 									message.mode === MessageModes.Sent
 										? getColorValue('textColor')
 										: message.mode === MessageModes.Sending
-										? getColorValue('textMutedColor')
-										: getColorValue('textBlockedColor')
+											? getColorValue('textMutedColor')
+											: getColorValue('textBlockedColor')
 								}
 							>
 								{line}

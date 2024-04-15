@@ -1,18 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { isMobile as isLegitMobile } from 'react-device-detect';
 
 function getWindowDimensions() {
 	const { innerWidth: width, innerHeight: height } = window;
 	return {
 		width,
-		height,
+		height
 	};
 }
 
 export default function useDevice() {
-	const [{ width, height }, setWindowDimensions] = useState(
-		getWindowDimensions()
-	);
+	const [{ width, height }, setWindowDimensions] = useState(getWindowDimensions());
 
 	useEffect(() => {
 		function handleResize() {

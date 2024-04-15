@@ -17,7 +17,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grinning'],
 		tags: ['smile', 'happy'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😃',
@@ -26,7 +26,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smiley'],
 		tags: ['happy', 'joy', 'haha'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😄',
@@ -35,7 +35,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smile'],
 		tags: ['happy', 'joy', 'laugh', 'pleased'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😁',
@@ -44,7 +44,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😆',
@@ -53,7 +53,7 @@ export const emojis: Emoji[] = [
 		aliases: ['laughing', 'satisfied'],
 		tags: ['happy', 'haha'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😅',
@@ -62,7 +62,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sweat_smile'],
 		tags: ['hot'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤣',
@@ -71,7 +71,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rofl'],
 		tags: ['lol', 'laughing'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '😂',
@@ -80,7 +80,7 @@ export const emojis: Emoji[] = [
 		aliases: ['joy'],
 		tags: ['tears'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙂',
@@ -89,7 +89,7 @@ export const emojis: Emoji[] = [
 		aliases: ['slightly_smiling_face'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🙃',
@@ -98,7 +98,7 @@ export const emojis: Emoji[] = [
 		aliases: ['upside_down_face'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '😉',
@@ -107,7 +107,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wink'],
 		tags: ['flirt'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😊',
@@ -116,7 +116,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blush'],
 		tags: ['proud'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😇',
@@ -125,7 +125,7 @@ export const emojis: Emoji[] = [
 		aliases: ['innocent'],
 		tags: ['angel'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥰',
@@ -134,7 +134,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smiling_face_with_three_hearts'],
 		tags: ['love'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😍',
@@ -143,7 +143,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heart_eyes'],
 		tags: ['love', 'crush'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤩',
@@ -152,7 +152,7 @@ export const emojis: Emoji[] = [
 		aliases: ['star_struck'],
 		tags: ['eyes'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😘',
@@ -161,7 +161,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kissing_heart'],
 		tags: ['flirt'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😗',
@@ -170,7 +170,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kissing'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☺️',
@@ -179,7 +179,7 @@ export const emojis: Emoji[] = [
 		aliases: ['relaxed'],
 		tags: ['blush', 'pleased'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😚',
@@ -188,7 +188,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kissing_closed_eyes'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😙',
@@ -197,7 +197,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kissing_smiling_eyes'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😋',
@@ -206,7 +206,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yum'],
 		tags: ['tongue', 'lick'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😛',
@@ -215,7 +215,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stuck_out_tongue'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😜',
@@ -224,7 +224,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stuck_out_tongue_winking_eye'],
 		tags: ['prank', 'silly'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤪',
@@ -233,7 +233,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zany_face'],
 		tags: ['goofy', 'wacky'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😝',
@@ -242,7 +242,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stuck_out_tongue_closed_eyes'],
 		tags: ['prank'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤑',
@@ -251,7 +251,7 @@ export const emojis: Emoji[] = [
 		aliases: ['money_mouth_face'],
 		tags: ['rich'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🤗',
@@ -260,7 +260,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hugs'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🤭',
@@ -269,7 +269,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hand_over_mouth'],
 		tags: ['quiet', 'whoops'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🫣',
@@ -278,7 +278,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_with_peeking_eye'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🤫',
@@ -287,7 +287,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shushing_face'],
 		tags: ['silence', 'quiet'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🤔',
@@ -296,7 +296,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thinking'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🫡',
@@ -305,7 +305,7 @@ export const emojis: Emoji[] = [
 		aliases: ['saluting_face'],
 		tags: ['respect'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🤐',
@@ -314,7 +314,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zipper_mouth_face'],
 		tags: ['silence', 'hush'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🤨',
@@ -323,7 +323,7 @@ export const emojis: Emoji[] = [
 		aliases: ['raised_eyebrow'],
 		tags: ['suspicious'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😐',
@@ -332,7 +332,7 @@ export const emojis: Emoji[] = [
 		aliases: ['neutral_face'],
 		tags: ['meh'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😑',
@@ -341,7 +341,7 @@ export const emojis: Emoji[] = [
 		aliases: ['expressionless'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😶',
@@ -350,7 +350,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_mouth'],
 		tags: ['mute', 'silence'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫥',
@@ -359,7 +359,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dotted_line_face'],
 		tags: ['invisible'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '😶‍🌫️',
@@ -368,7 +368,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_in_clouds'],
 		tags: [],
 		unicode_version: '13.1',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '😏',
@@ -377,7 +377,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smirk'],
 		tags: ['smug'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😒',
@@ -386,7 +386,7 @@ export const emojis: Emoji[] = [
 		aliases: ['unamused'],
 		tags: ['meh'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙄',
@@ -395,7 +395,7 @@ export const emojis: Emoji[] = [
 		aliases: ['roll_eyes'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '😬',
@@ -404,7 +404,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grimacing'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😮‍💨',
@@ -413,7 +413,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_exhaling'],
 		tags: [],
 		unicode_version: '13.1',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🤥',
@@ -422,7 +422,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lying_face'],
 		tags: ['liar'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🫨',
@@ -431,7 +431,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shaking_face'],
 		tags: ['shock'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '😌',
@@ -440,7 +440,7 @@ export const emojis: Emoji[] = [
 		aliases: ['relieved'],
 		tags: ['whew'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😔',
@@ -449,7 +449,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pensive'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😪',
@@ -458,7 +458,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sleepy'],
 		tags: ['tired'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤤',
@@ -467,7 +467,7 @@ export const emojis: Emoji[] = [
 		aliases: ['drooling_face'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '😴',
@@ -476,7 +476,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sleeping'],
 		tags: ['zzz'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😷',
@@ -485,7 +485,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mask'],
 		tags: ['sick', 'ill'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤒',
@@ -494,7 +494,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_with_thermometer'],
 		tags: ['sick'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🤕',
@@ -503,7 +503,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_with_head_bandage'],
 		tags: ['hurt'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🤢',
@@ -512,7 +512,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nauseated_face'],
 		tags: ['sick', 'barf', 'disgusted'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🤮',
@@ -521,7 +521,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vomiting_face'],
 		tags: ['barf', 'sick'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🤧',
@@ -530,7 +530,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sneezing_face'],
 		tags: ['achoo', 'sick'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥵',
@@ -539,7 +539,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hot_face'],
 		tags: ['heat', 'sweating'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥶',
@@ -548,7 +548,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cold_face'],
 		tags: ['freezing', 'ice'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥴',
@@ -557,7 +557,7 @@ export const emojis: Emoji[] = [
 		aliases: ['woozy_face'],
 		tags: ['groggy'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😵',
@@ -566,7 +566,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dizzy_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😵‍💫',
@@ -575,7 +575,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_with_spiral_eyes'],
 		tags: [],
 		unicode_version: '13.1',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🤯',
@@ -584,7 +584,7 @@ export const emojis: Emoji[] = [
 		aliases: ['exploding_head'],
 		tags: ['mind', 'blown'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🤠',
@@ -593,7 +593,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cowboy_hat_face'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥳',
@@ -602,7 +602,7 @@ export const emojis: Emoji[] = [
 		aliases: ['partying_face'],
 		tags: ['celebration', 'birthday'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥸',
@@ -611,7 +611,7 @@ export const emojis: Emoji[] = [
 		aliases: ['disguised_face'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '😎',
@@ -620,7 +620,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sunglasses'],
 		tags: ['cool'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤓',
@@ -629,7 +629,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nerd_face'],
 		tags: ['geek', 'glasses'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧐',
@@ -638,7 +638,7 @@ export const emojis: Emoji[] = [
 		aliases: ['monocle_face'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😕',
@@ -647,7 +647,7 @@ export const emojis: Emoji[] = [
 		aliases: ['confused'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫤',
@@ -656,7 +656,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_with_diagonal_mouth'],
 		tags: ['confused'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '😟',
@@ -665,7 +665,7 @@ export const emojis: Emoji[] = [
 		aliases: ['worried'],
 		tags: ['nervous'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙁',
@@ -674,7 +674,7 @@ export const emojis: Emoji[] = [
 		aliases: ['slightly_frowning_face'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☹️',
@@ -683,7 +683,7 @@ export const emojis: Emoji[] = [
 		aliases: ['frowning_face'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '😮',
@@ -692,7 +692,7 @@ export const emojis: Emoji[] = [
 		aliases: ['open_mouth'],
 		tags: ['surprise', 'impressed', 'wow'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😯',
@@ -701,7 +701,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hushed'],
 		tags: ['silence', 'speechless'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😲',
@@ -710,7 +710,7 @@ export const emojis: Emoji[] = [
 		aliases: ['astonished'],
 		tags: ['amazed', 'gasp'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😳',
@@ -719,7 +719,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flushed'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥺',
@@ -728,7 +728,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pleading_face'],
 		tags: ['puppy', 'eyes'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥹',
@@ -737,7 +737,7 @@ export const emojis: Emoji[] = [
 		aliases: ['face_holding_back_tears'],
 		tags: ['tears', 'gratitude'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '😦',
@@ -746,7 +746,7 @@ export const emojis: Emoji[] = [
 		aliases: ['frowning'],
 		tags: [],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😧',
@@ -755,7 +755,7 @@ export const emojis: Emoji[] = [
 		aliases: ['anguished'],
 		tags: ['stunned'],
 		unicode_version: '6.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😨',
@@ -764,7 +764,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fearful'],
 		tags: ['scared', 'shocked', 'oops'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😰',
@@ -773,7 +773,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cold_sweat'],
 		tags: ['nervous'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😥',
@@ -782,7 +782,7 @@ export const emojis: Emoji[] = [
 		aliases: ['disappointed_relieved'],
 		tags: ['phew', 'sweat', 'nervous'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😢',
@@ -791,7 +791,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cry'],
 		tags: ['sad', 'tear'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😭',
@@ -800,7 +800,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sob'],
 		tags: ['sad', 'cry', 'bawling'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😱',
@@ -809,7 +809,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scream'],
 		tags: ['horror', 'shocked'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😖',
@@ -818,7 +818,7 @@ export const emojis: Emoji[] = [
 		aliases: ['confounded'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😣',
@@ -827,7 +827,7 @@ export const emojis: Emoji[] = [
 		aliases: ['persevere'],
 		tags: ['struggling'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😞',
@@ -836,7 +836,7 @@ export const emojis: Emoji[] = [
 		aliases: ['disappointed'],
 		tags: ['sad'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😓',
@@ -845,7 +845,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sweat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😩',
@@ -854,7 +854,7 @@ export const emojis: Emoji[] = [
 		aliases: ['weary'],
 		tags: ['tired'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😫',
@@ -863,7 +863,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tired_face'],
 		tags: ['upset', 'whine'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥱',
@@ -872,7 +872,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yawning_face'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '😤',
@@ -881,7 +881,7 @@ export const emojis: Emoji[] = [
 		aliases: ['triumph'],
 		tags: ['smug'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😡',
@@ -890,7 +890,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rage', 'pout'],
 		tags: ['angry'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😠',
@@ -899,7 +899,7 @@ export const emojis: Emoji[] = [
 		aliases: ['angry'],
 		tags: ['mad', 'annoyed'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤬',
@@ -908,7 +908,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cursing_face'],
 		tags: ['foul'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '😈',
@@ -917,7 +917,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smiling_imp'],
 		tags: ['devil', 'evil', 'horns'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👿',
@@ -926,7 +926,7 @@ export const emojis: Emoji[] = [
 		aliases: ['imp'],
 		tags: ['angry', 'devil', 'evil', 'horns'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💀',
@@ -935,7 +935,7 @@ export const emojis: Emoji[] = [
 		aliases: ['skull'],
 		tags: ['dead', 'danger', 'poison'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☠️',
@@ -944,7 +944,7 @@ export const emojis: Emoji[] = [
 		aliases: ['skull_and_crossbones'],
 		tags: ['danger', 'pirate'],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💩',
@@ -953,7 +953,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hankey', 'poop', 'shit'],
 		tags: ['crap'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤡',
@@ -962,7 +962,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clown_face'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '👹',
@@ -971,7 +971,7 @@ export const emojis: Emoji[] = [
 		aliases: ['japanese_ogre'],
 		tags: ['monster'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👺',
@@ -980,7 +980,7 @@ export const emojis: Emoji[] = [
 		aliases: ['japanese_goblin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👻',
@@ -989,7 +989,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ghost'],
 		tags: ['halloween'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👽',
@@ -998,7 +998,7 @@ export const emojis: Emoji[] = [
 		aliases: ['alien'],
 		tags: ['ufo'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👾',
@@ -1007,7 +1007,7 @@ export const emojis: Emoji[] = [
 		aliases: ['space_invader'],
 		tags: ['game', 'retro'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤖',
@@ -1016,7 +1016,7 @@ export const emojis: Emoji[] = [
 		aliases: ['robot'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '😺',
@@ -1025,7 +1025,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smiley_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😸',
@@ -1034,7 +1034,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smile_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😹',
@@ -1043,7 +1043,7 @@ export const emojis: Emoji[] = [
 		aliases: ['joy_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😻',
@@ -1052,7 +1052,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heart_eyes_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😼',
@@ -1061,7 +1061,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smirk_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😽',
@@ -1070,7 +1070,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kissing_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙀',
@@ -1079,7 +1079,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scream_cat'],
 		tags: ['horror'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😿',
@@ -1088,7 +1088,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crying_cat_face'],
 		tags: ['sad', 'tear'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '😾',
@@ -1097,7 +1097,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pouting_cat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙈',
@@ -1106,7 +1106,7 @@ export const emojis: Emoji[] = [
 		aliases: ['see_no_evil'],
 		tags: ['monkey', 'blind', 'ignore'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙉',
@@ -1115,7 +1115,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hear_no_evil'],
 		tags: ['monkey', 'deaf'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🙊',
@@ -1124,7 +1124,7 @@ export const emojis: Emoji[] = [
 		aliases: ['speak_no_evil'],
 		tags: ['monkey', 'mute', 'hush'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💌',
@@ -1133,7 +1133,7 @@ export const emojis: Emoji[] = [
 		aliases: ['love_letter'],
 		tags: ['email', 'envelope'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💘',
@@ -1142,7 +1142,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cupid'],
 		tags: ['love', 'heart'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💝',
@@ -1151,7 +1151,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gift_heart'],
 		tags: ['chocolates'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💖',
@@ -1160,7 +1160,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sparkling_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💗',
@@ -1169,7 +1169,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heartpulse'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💓',
@@ -1178,7 +1178,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heartbeat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💞',
@@ -1187,7 +1187,7 @@ export const emojis: Emoji[] = [
 		aliases: ['revolving_hearts'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💕',
@@ -1196,7 +1196,7 @@ export const emojis: Emoji[] = [
 		aliases: ['two_hearts'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💟',
@@ -1205,7 +1205,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heart_decoration'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❣️',
@@ -1214,7 +1214,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_heart_exclamation'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💔',
@@ -1223,7 +1223,7 @@ export const emojis: Emoji[] = [
 		aliases: ['broken_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❤️‍🔥',
@@ -1232,7 +1232,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heart_on_fire'],
 		tags: [],
 		unicode_version: '13.1',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '❤️‍🩹',
@@ -1241,7 +1241,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mending_heart'],
 		tags: [],
 		unicode_version: '13.1',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '❤️',
@@ -1250,7 +1250,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heart'],
 		tags: ['love'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩷',
@@ -1259,7 +1259,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pink_heart'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🧡',
@@ -1268,7 +1268,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orange_heart'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '💛',
@@ -1277,7 +1277,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yellow_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💚',
@@ -1286,7 +1286,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💙',
@@ -1295,7 +1295,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blue_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩵',
@@ -1304,7 +1304,7 @@ export const emojis: Emoji[] = [
 		aliases: ['light_blue_heart'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '💜',
@@ -1313,7 +1313,7 @@ export const emojis: Emoji[] = [
 		aliases: ['purple_heart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤎',
@@ -1322,7 +1322,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brown_heart'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🖤',
@@ -1331,7 +1331,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_heart'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🩶',
@@ -1340,7 +1340,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grey_heart'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🤍',
@@ -1349,7 +1349,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_heart'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '💋',
@@ -1358,7 +1358,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kiss'],
 		tags: ['lipstick'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💯',
@@ -1367,7 +1367,7 @@ export const emojis: Emoji[] = [
 		aliases: ['100'],
 		tags: ['score', 'perfect'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💢',
@@ -1376,7 +1376,7 @@ export const emojis: Emoji[] = [
 		aliases: ['anger'],
 		tags: ['angry'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💥',
@@ -1385,7 +1385,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boom', 'collision'],
 		tags: ['explode'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💫',
@@ -1394,7 +1394,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dizzy'],
 		tags: ['star'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💦',
@@ -1403,7 +1403,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sweat_drops'],
 		tags: ['water', 'workout'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💨',
@@ -1412,7 +1412,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dash'],
 		tags: ['wind', 'blow', 'fast'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕳️',
@@ -1421,7 +1421,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hole'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💬',
@@ -1430,7 +1430,7 @@ export const emojis: Emoji[] = [
 		aliases: ['speech_balloon'],
 		tags: ['comment'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👁️‍🗨️',
@@ -1439,7 +1439,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eye_speech_bubble'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🗨️',
@@ -1448,7 +1448,7 @@ export const emojis: Emoji[] = [
 		aliases: ['left_speech_bubble'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🗯️',
@@ -1457,7 +1457,7 @@ export const emojis: Emoji[] = [
 		aliases: ['right_anger_bubble'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💭',
@@ -1466,7 +1466,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thought_balloon'],
 		tags: ['thinking'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💤',
@@ -1475,7 +1475,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zzz'],
 		tags: ['sleeping'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👋',
@@ -1485,7 +1485,7 @@ export const emojis: Emoji[] = [
 		tags: ['goodbye'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤚',
@@ -1495,7 +1495,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🖐️',
@@ -1505,7 +1505,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '✋',
@@ -1515,7 +1515,7 @@ export const emojis: Emoji[] = [
 		tags: ['highfive', 'stop'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🖖',
@@ -1525,7 +1525,7 @@ export const emojis: Emoji[] = [
 		tags: ['prosper', 'spock'],
 		unicode_version: '7.0',
 		ios_version: '8.3',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫱',
@@ -1535,7 +1535,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫲',
@@ -1545,7 +1545,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫳',
@@ -1555,7 +1555,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫴',
@@ -1565,7 +1565,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫷',
@@ -1575,7 +1575,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '15.0',
 		ios_version: '16.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫸',
@@ -1585,7 +1585,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '15.0',
 		ios_version: '16.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👌',
@@ -1595,7 +1595,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤌',
@@ -1605,7 +1605,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤏',
@@ -1615,7 +1615,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '✌️',
@@ -1625,7 +1625,7 @@ export const emojis: Emoji[] = [
 		tags: ['victory', 'peace'],
 		unicode_version: '',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤞',
@@ -1635,7 +1635,7 @@ export const emojis: Emoji[] = [
 		tags: ['luck', 'hopeful'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫰',
@@ -1645,7 +1645,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤟',
@@ -1655,7 +1655,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤘',
@@ -1665,7 +1665,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '8.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤙',
@@ -1675,7 +1675,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👈',
@@ -1685,7 +1685,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👉',
@@ -1695,7 +1695,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👆',
@@ -1705,7 +1705,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🖕',
@@ -1715,7 +1715,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👇',
@@ -1725,7 +1725,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '☝️',
@@ -1735,7 +1735,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫵',
@@ -1745,7 +1745,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👍',
@@ -1755,7 +1755,7 @@ export const emojis: Emoji[] = [
 		tags: ['approve', 'ok'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👎',
@@ -1765,7 +1765,7 @@ export const emojis: Emoji[] = [
 		tags: ['disapprove', 'bury'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '✊',
@@ -1775,7 +1775,7 @@ export const emojis: Emoji[] = [
 		tags: ['power'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👊',
@@ -1785,7 +1785,7 @@ export const emojis: Emoji[] = [
 		tags: ['attack'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤛',
@@ -1795,7 +1795,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤜',
@@ -1805,7 +1805,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👏',
@@ -1815,7 +1815,7 @@ export const emojis: Emoji[] = [
 		tags: ['praise', 'applause'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙌',
@@ -1825,7 +1825,7 @@ export const emojis: Emoji[] = [
 		tags: ['hooray'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫶',
@@ -1835,7 +1835,7 @@ export const emojis: Emoji[] = [
 		tags: ['love'],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👐',
@@ -1845,7 +1845,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤲',
@@ -1855,7 +1855,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤝',
@@ -1865,7 +1865,7 @@ export const emojis: Emoji[] = [
 		tags: ['deal'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙏',
@@ -1875,7 +1875,7 @@ export const emojis: Emoji[] = [
 		tags: ['please', 'hope', 'wish'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '✍️',
@@ -1885,7 +1885,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💅',
@@ -1895,7 +1895,7 @@ export const emojis: Emoji[] = [
 		tags: ['beauty', 'manicure'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤳',
@@ -1905,7 +1905,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💪',
@@ -1915,7 +1915,7 @@ export const emojis: Emoji[] = [
 		tags: ['flex', 'bicep', 'strong', 'workout'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦾',
@@ -1924,7 +1924,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mechanical_arm'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦿',
@@ -1933,7 +1933,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mechanical_leg'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦵',
@@ -1943,7 +1943,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦶',
@@ -1953,7 +1953,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👂',
@@ -1963,7 +1963,7 @@ export const emojis: Emoji[] = [
 		tags: ['hear', 'sound', 'listen'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦻',
@@ -1973,7 +1973,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👃',
@@ -1983,7 +1983,7 @@ export const emojis: Emoji[] = [
 		tags: ['smell'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧠',
@@ -1992,7 +1992,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brain'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🫀',
@@ -2001,7 +2001,7 @@ export const emojis: Emoji[] = [
 		aliases: ['anatomical_heart'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🫁',
@@ -2010,7 +2010,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lungs'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦷',
@@ -2019,7 +2019,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tooth'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦴',
@@ -2028,7 +2028,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bone'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '👀',
@@ -2037,7 +2037,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eyes'],
 		tags: ['look', 'see', 'watch'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👁️',
@@ -2046,7 +2046,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eye'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '👅',
@@ -2055,7 +2055,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tongue'],
 		tags: ['taste'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👄',
@@ -2064,7 +2064,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lips'],
 		tags: ['kiss'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫦',
@@ -2073,7 +2073,7 @@ export const emojis: Emoji[] = [
 		aliases: ['biting_lip'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '👶',
@@ -2083,7 +2083,7 @@ export const emojis: Emoji[] = [
 		tags: ['child', 'newborn'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧒',
@@ -2093,7 +2093,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👦',
@@ -2103,7 +2103,7 @@ export const emojis: Emoji[] = [
 		tags: ['child'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👧',
@@ -2113,7 +2113,7 @@ export const emojis: Emoji[] = [
 		tags: ['child'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑',
@@ -2123,7 +2123,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👱',
@@ -2133,7 +2133,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨',
@@ -2143,7 +2143,7 @@ export const emojis: Emoji[] = [
 		tags: ['mustache', 'father', 'dad'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧔',
@@ -2153,7 +2153,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧔‍♂️',
@@ -2163,7 +2163,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.1',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧔‍♀️',
@@ -2173,7 +2173,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.1',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦰',
@@ -2183,7 +2183,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦱',
@@ -2193,7 +2193,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦳',
@@ -2203,7 +2203,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦲',
@@ -2213,7 +2213,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩',
@@ -2223,7 +2223,7 @@ export const emojis: Emoji[] = [
 		tags: ['girls'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦰',
@@ -2233,7 +2233,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦰',
@@ -2243,7 +2243,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦱',
@@ -2253,7 +2253,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦱',
@@ -2263,7 +2263,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦳',
@@ -2273,7 +2273,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦳',
@@ -2283,7 +2283,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦲',
@@ -2293,7 +2293,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦲',
@@ -2303,7 +2303,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👱‍♀️',
@@ -2313,7 +2313,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👱‍♂️',
@@ -2323,7 +2323,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧓',
@@ -2333,7 +2333,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👴',
@@ -2343,7 +2343,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👵',
@@ -2353,7 +2353,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙍',
@@ -2363,7 +2363,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙍‍♂️',
@@ -2373,7 +2373,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙍‍♀️',
@@ -2383,7 +2383,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙎',
@@ -2393,7 +2393,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙎‍♂️',
@@ -2403,7 +2403,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙎‍♀️',
@@ -2413,7 +2413,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙅',
@@ -2423,7 +2423,7 @@ export const emojis: Emoji[] = [
 		tags: ['stop', 'halt', 'denied'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙅‍♂️',
@@ -2433,7 +2433,7 @@ export const emojis: Emoji[] = [
 		tags: ['stop', 'halt', 'denied'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙅‍♀️',
@@ -2443,7 +2443,7 @@ export const emojis: Emoji[] = [
 		tags: ['stop', 'halt', 'denied'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙆',
@@ -2453,7 +2453,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙆‍♂️',
@@ -2463,7 +2463,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙆‍♀️',
@@ -2473,7 +2473,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💁',
@@ -2483,7 +2483,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💁‍♂️',
@@ -2493,7 +2493,7 @@ export const emojis: Emoji[] = [
 		tags: ['information'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💁‍♀️',
@@ -2503,7 +2503,7 @@ export const emojis: Emoji[] = [
 		tags: ['information'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙋',
@@ -2513,7 +2513,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙋‍♂️',
@@ -2523,7 +2523,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙋‍♀️',
@@ -2533,7 +2533,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧏',
@@ -2543,7 +2543,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧏‍♂️',
@@ -2553,7 +2553,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧏‍♀️',
@@ -2563,7 +2563,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙇',
@@ -2573,7 +2573,7 @@ export const emojis: Emoji[] = [
 		tags: ['respect', 'thanks'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙇‍♂️',
@@ -2583,7 +2583,7 @@ export const emojis: Emoji[] = [
 		tags: ['respect', 'thanks'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🙇‍♀️',
@@ -2593,7 +2593,7 @@ export const emojis: Emoji[] = [
 		tags: ['respect', 'thanks'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤦',
@@ -2603,7 +2603,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤦‍♂️',
@@ -2613,7 +2613,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤦‍♀️',
@@ -2623,7 +2623,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤷',
@@ -2633,7 +2633,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤷‍♂️',
@@ -2643,7 +2643,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤷‍♀️',
@@ -2653,7 +2653,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍⚕️',
@@ -2663,7 +2663,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍⚕️',
@@ -2673,7 +2673,7 @@ export const emojis: Emoji[] = [
 		tags: ['doctor', 'nurse'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍⚕️',
@@ -2683,7 +2683,7 @@ export const emojis: Emoji[] = [
 		tags: ['doctor', 'nurse'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🎓',
@@ -2693,7 +2693,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🎓',
@@ -2703,7 +2703,7 @@ export const emojis: Emoji[] = [
 		tags: ['graduation'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🎓',
@@ -2713,7 +2713,7 @@ export const emojis: Emoji[] = [
 		tags: ['graduation'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🏫',
@@ -2723,7 +2723,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🏫',
@@ -2733,7 +2733,7 @@ export const emojis: Emoji[] = [
 		tags: ['school', 'professor'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🏫',
@@ -2743,7 +2743,7 @@ export const emojis: Emoji[] = [
 		tags: ['school', 'professor'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍⚖️',
@@ -2753,7 +2753,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍⚖️',
@@ -2763,7 +2763,7 @@ export const emojis: Emoji[] = [
 		tags: ['justice'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍⚖️',
@@ -2773,7 +2773,7 @@ export const emojis: Emoji[] = [
 		tags: ['justice'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🌾',
@@ -2783,7 +2783,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🌾',
@@ -2793,7 +2793,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🌾',
@@ -2803,7 +2803,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🍳',
@@ -2813,7 +2813,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🍳',
@@ -2823,7 +2823,7 @@ export const emojis: Emoji[] = [
 		tags: ['chef'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🍳',
@@ -2833,7 +2833,7 @@ export const emojis: Emoji[] = [
 		tags: ['chef'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🔧',
@@ -2843,7 +2843,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🔧',
@@ -2853,7 +2853,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🔧',
@@ -2863,7 +2863,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🏭',
@@ -2873,7 +2873,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🏭',
@@ -2883,7 +2883,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🏭',
@@ -2893,7 +2893,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍💼',
@@ -2903,7 +2903,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍💼',
@@ -2913,7 +2913,7 @@ export const emojis: Emoji[] = [
 		tags: ['business'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍💼',
@@ -2923,7 +2923,7 @@ export const emojis: Emoji[] = [
 		tags: ['business'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🔬',
@@ -2933,7 +2933,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🔬',
@@ -2943,7 +2943,7 @@ export const emojis: Emoji[] = [
 		tags: ['research'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🔬',
@@ -2953,7 +2953,7 @@ export const emojis: Emoji[] = [
 		tags: ['research'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍💻',
@@ -2963,7 +2963,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍💻',
@@ -2973,7 +2973,7 @@ export const emojis: Emoji[] = [
 		tags: ['coder'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍💻',
@@ -2983,7 +2983,7 @@ export const emojis: Emoji[] = [
 		tags: ['coder'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🎤',
@@ -2993,7 +2993,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🎤',
@@ -3003,7 +3003,7 @@ export const emojis: Emoji[] = [
 		tags: ['rockstar'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🎤',
@@ -3013,7 +3013,7 @@ export const emojis: Emoji[] = [
 		tags: ['rockstar'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🎨',
@@ -3023,7 +3023,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🎨',
@@ -3033,7 +3033,7 @@ export const emojis: Emoji[] = [
 		tags: ['painter'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🎨',
@@ -3043,7 +3043,7 @@ export const emojis: Emoji[] = [
 		tags: ['painter'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍✈️',
@@ -3053,7 +3053,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍✈️',
@@ -3063,7 +3063,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍✈️',
@@ -3073,7 +3073,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🚀',
@@ -3083,7 +3083,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🚀',
@@ -3093,7 +3093,7 @@ export const emojis: Emoji[] = [
 		tags: ['space'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🚀',
@@ -3103,7 +3103,7 @@ export const emojis: Emoji[] = [
 		tags: ['space'],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🚒',
@@ -3113,7 +3113,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🚒',
@@ -3123,7 +3123,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🚒',
@@ -3133,7 +3133,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👮',
@@ -3143,7 +3143,7 @@ export const emojis: Emoji[] = [
 		tags: ['law'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👮‍♂️',
@@ -3153,7 +3153,7 @@ export const emojis: Emoji[] = [
 		tags: ['law', 'cop'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👮‍♀️',
@@ -3163,7 +3163,7 @@ export const emojis: Emoji[] = [
 		tags: ['law', 'cop'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🕵️',
@@ -3173,7 +3173,7 @@ export const emojis: Emoji[] = [
 		tags: ['sleuth'],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🕵️‍♂️',
@@ -3183,7 +3183,7 @@ export const emojis: Emoji[] = [
 		tags: ['sleuth'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🕵️‍♀️',
@@ -3193,7 +3193,7 @@ export const emojis: Emoji[] = [
 		tags: ['sleuth'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💂',
@@ -3203,7 +3203,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💂‍♂️',
@@ -3213,7 +3213,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💂‍♀️',
@@ -3223,7 +3223,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🥷',
@@ -3233,7 +3233,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👷',
@@ -3243,7 +3243,7 @@ export const emojis: Emoji[] = [
 		tags: ['helmet'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👷‍♂️',
@@ -3253,7 +3253,7 @@ export const emojis: Emoji[] = [
 		tags: ['helmet'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👷‍♀️',
@@ -3263,7 +3263,7 @@ export const emojis: Emoji[] = [
 		tags: ['helmet'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫅',
@@ -3273,7 +3273,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤴',
@@ -3283,7 +3283,7 @@ export const emojis: Emoji[] = [
 		tags: ['crown', 'royal'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👸',
@@ -3293,7 +3293,7 @@ export const emojis: Emoji[] = [
 		tags: ['crown', 'royal'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👳',
@@ -3303,7 +3303,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👳‍♂️',
@@ -3313,7 +3313,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👳‍♀️',
@@ -3323,7 +3323,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👲',
@@ -3333,7 +3333,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧕',
@@ -3343,7 +3343,7 @@ export const emojis: Emoji[] = [
 		tags: ['hijab'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤵',
@@ -3353,7 +3353,7 @@ export const emojis: Emoji[] = [
 		tags: ['groom', 'marriage', 'wedding'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤵‍♂️',
@@ -3363,7 +3363,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤵‍♀️',
@@ -3373,7 +3373,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👰',
@@ -3383,7 +3383,7 @@ export const emojis: Emoji[] = [
 		tags: ['marriage', 'wedding'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👰‍♂️',
@@ -3393,7 +3393,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👰‍♀️',
@@ -3403,7 +3403,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤰',
@@ -3413,7 +3413,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫃',
@@ -3423,7 +3423,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🫄',
@@ -3433,7 +3433,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '14.0',
 		ios_version: '15.4',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤱',
@@ -3443,7 +3443,7 @@ export const emojis: Emoji[] = [
 		tags: ['nursing'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🍼',
@@ -3453,7 +3453,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🍼',
@@ -3463,7 +3463,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🍼',
@@ -3473,7 +3473,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👼',
@@ -3483,7 +3483,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🎅',
@@ -3493,7 +3493,7 @@ export const emojis: Emoji[] = [
 		tags: ['christmas'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤶',
@@ -3503,7 +3503,7 @@ export const emojis: Emoji[] = [
 		tags: ['santa'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🎄',
@@ -3513,7 +3513,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '13.0',
 		ios_version: '14.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦸',
@@ -3523,7 +3523,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦸‍♂️',
@@ -3533,7 +3533,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦸‍♀️',
@@ -3543,7 +3543,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦹',
@@ -3553,7 +3553,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦹‍♂️',
@@ -3563,7 +3563,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🦹‍♀️',
@@ -3573,7 +3573,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧙',
@@ -3583,7 +3583,7 @@ export const emojis: Emoji[] = [
 		tags: ['wizard'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧙‍♂️',
@@ -3593,7 +3593,7 @@ export const emojis: Emoji[] = [
 		tags: ['wizard'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧙‍♀️',
@@ -3603,7 +3603,7 @@ export const emojis: Emoji[] = [
 		tags: ['wizard'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧚',
@@ -3613,7 +3613,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧚‍♂️',
@@ -3623,7 +3623,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧚‍♀️',
@@ -3633,7 +3633,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧛',
@@ -3643,7 +3643,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧛‍♂️',
@@ -3653,7 +3653,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧛‍♀️',
@@ -3663,7 +3663,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧜',
@@ -3673,7 +3673,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧜‍♂️',
@@ -3683,7 +3683,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧜‍♀️',
@@ -3693,7 +3693,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧝',
@@ -3703,7 +3703,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧝‍♂️',
@@ -3713,7 +3713,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧝‍♀️',
@@ -3723,7 +3723,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧞',
@@ -3732,7 +3732,7 @@ export const emojis: Emoji[] = [
 		aliases: ['genie'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧞‍♂️',
@@ -3741,7 +3741,7 @@ export const emojis: Emoji[] = [
 		aliases: ['genie_man'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧞‍♀️',
@@ -3750,7 +3750,7 @@ export const emojis: Emoji[] = [
 		aliases: ['genie_woman'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧟',
@@ -3759,7 +3759,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zombie'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧟‍♂️',
@@ -3768,7 +3768,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zombie_man'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧟‍♀️',
@@ -3777,7 +3777,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zombie_woman'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧌',
@@ -3786,7 +3786,7 @@ export const emojis: Emoji[] = [
 		aliases: ['troll'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '💆',
@@ -3796,7 +3796,7 @@ export const emojis: Emoji[] = [
 		tags: ['spa'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💆‍♂️',
@@ -3806,7 +3806,7 @@ export const emojis: Emoji[] = [
 		tags: ['spa'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💆‍♀️',
@@ -3816,7 +3816,7 @@ export const emojis: Emoji[] = [
 		tags: ['spa'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💇',
@@ -3826,7 +3826,7 @@ export const emojis: Emoji[] = [
 		tags: ['beauty'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💇‍♂️',
@@ -3836,7 +3836,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💇‍♀️',
@@ -3846,7 +3846,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚶',
@@ -3856,7 +3856,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚶‍♂️',
@@ -3866,7 +3866,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚶‍♀️',
@@ -3876,7 +3876,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧍',
@@ -3886,7 +3886,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧍‍♂️',
@@ -3896,7 +3896,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧍‍♀️',
@@ -3906,7 +3906,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧎',
@@ -3916,7 +3916,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧎‍♂️',
@@ -3926,7 +3926,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧎‍♀️',
@@ -3936,7 +3936,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦯',
@@ -3946,7 +3946,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦯',
@@ -3956,7 +3956,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦯',
@@ -3966,7 +3966,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦼',
@@ -3976,7 +3976,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦼',
@@ -3986,7 +3986,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦼',
@@ -3996,7 +3996,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🦽',
@@ -4006,7 +4006,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.1',
 		ios_version: '13.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍🦽',
@@ -4016,7 +4016,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍🦽',
@@ -4026,7 +4026,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏃',
@@ -4036,7 +4036,7 @@ export const emojis: Emoji[] = [
 		tags: ['exercise', 'workout', 'marathon'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏃‍♂️',
@@ -4046,7 +4046,7 @@ export const emojis: Emoji[] = [
 		tags: ['exercise', 'workout', 'marathon'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏃‍♀️',
@@ -4056,7 +4056,7 @@ export const emojis: Emoji[] = [
 		tags: ['exercise', 'workout', 'marathon'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💃',
@@ -4066,7 +4066,7 @@ export const emojis: Emoji[] = [
 		tags: ['dress'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🕺',
@@ -4076,7 +4076,7 @@ export const emojis: Emoji[] = [
 		tags: ['dancer'],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🕴️',
@@ -4086,7 +4086,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👯',
@@ -4095,7 +4095,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dancers'],
 		tags: ['bunny'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👯‍♂️',
@@ -4104,7 +4104,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dancing_men'],
 		tags: ['bunny'],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👯‍♀️',
@@ -4113,7 +4113,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dancing_women'],
 		tags: ['bunny'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧖',
@@ -4123,7 +4123,7 @@ export const emojis: Emoji[] = [
 		tags: ['steamy'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧖‍♂️',
@@ -4133,7 +4133,7 @@ export const emojis: Emoji[] = [
 		tags: ['steamy'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧖‍♀️',
@@ -4143,7 +4143,7 @@ export const emojis: Emoji[] = [
 		tags: ['steamy'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧗',
@@ -4153,7 +4153,7 @@ export const emojis: Emoji[] = [
 		tags: ['bouldering'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧗‍♂️',
@@ -4163,7 +4163,7 @@ export const emojis: Emoji[] = [
 		tags: ['bouldering'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧗‍♀️',
@@ -4173,7 +4173,7 @@ export const emojis: Emoji[] = [
 		tags: ['bouldering'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤺',
@@ -4182,7 +4182,7 @@ export const emojis: Emoji[] = [
 		aliases: ['person_fencing'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🏇',
@@ -4192,7 +4192,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '⛷️',
@@ -4201,7 +4201,7 @@ export const emojis: Emoji[] = [
 		aliases: ['skier'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏂',
@@ -4211,7 +4211,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏌️',
@@ -4221,7 +4221,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏌️‍♂️',
@@ -4231,7 +4231,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏌️‍♀️',
@@ -4241,7 +4241,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏄',
@@ -4251,7 +4251,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏄‍♂️',
@@ -4261,7 +4261,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏄‍♀️',
@@ -4271,7 +4271,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚣',
@@ -4281,7 +4281,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚣‍♂️',
@@ -4291,7 +4291,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚣‍♀️',
@@ -4301,7 +4301,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏊',
@@ -4311,7 +4311,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏊‍♂️',
@@ -4321,7 +4321,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏊‍♀️',
@@ -4331,7 +4331,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '⛹️',
@@ -4341,7 +4341,7 @@ export const emojis: Emoji[] = [
 		tags: ['basketball'],
 		unicode_version: '5.2',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '⛹️‍♂️',
@@ -4351,7 +4351,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '⛹️‍♀️',
@@ -4361,7 +4361,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏋️',
@@ -4371,7 +4371,7 @@ export const emojis: Emoji[] = [
 		tags: ['gym', 'workout'],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏋️‍♂️',
@@ -4381,7 +4381,7 @@ export const emojis: Emoji[] = [
 		tags: ['gym', 'workout'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🏋️‍♀️',
@@ -4391,7 +4391,7 @@ export const emojis: Emoji[] = [
 		tags: ['gym', 'workout'],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚴',
@@ -4401,7 +4401,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚴‍♂️',
@@ -4411,7 +4411,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚴‍♀️',
@@ -4421,7 +4421,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚵',
@@ -4431,7 +4431,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚵‍♂️',
@@ -4441,7 +4441,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🚵‍♀️',
@@ -4451,7 +4451,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '10.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤸',
@@ -4461,7 +4461,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤸‍♂️',
@@ -4471,7 +4471,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤸‍♀️',
@@ -4481,7 +4481,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤼',
@@ -4490,7 +4490,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wrestling'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🤼‍♂️',
@@ -4499,7 +4499,7 @@ export const emojis: Emoji[] = [
 		aliases: ['men_wrestling'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🤼‍♀️',
@@ -4508,7 +4508,7 @@ export const emojis: Emoji[] = [
 		aliases: ['women_wrestling'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🤽',
@@ -4518,7 +4518,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤽‍♂️',
@@ -4528,7 +4528,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤽‍♀️',
@@ -4538,7 +4538,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤾',
@@ -4548,7 +4548,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤾‍♂️',
@@ -4558,7 +4558,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤾‍♀️',
@@ -4568,7 +4568,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤹',
@@ -4578,7 +4578,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤹‍♂️',
@@ -4588,7 +4588,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🤹‍♀️',
@@ -4598,7 +4598,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '9.0',
 		ios_version: '10.2',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧘',
@@ -4608,7 +4608,7 @@ export const emojis: Emoji[] = [
 		tags: ['meditation'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧘‍♂️',
@@ -4618,7 +4618,7 @@ export const emojis: Emoji[] = [
 		tags: ['meditation'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧘‍♀️',
@@ -4628,7 +4628,7 @@ export const emojis: Emoji[] = [
 		tags: ['meditation'],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🛀',
@@ -4638,7 +4638,7 @@ export const emojis: Emoji[] = [
 		tags: ['shower'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🛌',
@@ -4648,7 +4648,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '7.0',
 		ios_version: '9.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '🧑‍🤝‍🧑',
@@ -4658,7 +4658,7 @@ export const emojis: Emoji[] = [
 		tags: ['couple', 'date'],
 		unicode_version: '12.0',
 		ios_version: '13.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👭',
@@ -4668,7 +4668,7 @@ export const emojis: Emoji[] = [
 		tags: ['couple', 'date'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👫',
@@ -4678,7 +4678,7 @@ export const emojis: Emoji[] = [
 		tags: ['date'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👬',
@@ -4688,7 +4688,7 @@ export const emojis: Emoji[] = [
 		tags: ['couple', 'date'],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💏',
@@ -4698,7 +4698,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍❤️‍💋‍👨',
@@ -4708,7 +4708,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍❤️‍💋‍👨',
@@ -4718,7 +4718,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '8.3',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍❤️‍💋‍👩',
@@ -4728,7 +4728,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '8.3',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '💑',
@@ -4738,7 +4738,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '6.0',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍❤️‍👨',
@@ -4748,7 +4748,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '11.0',
 		ios_version: '12.1',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👨‍❤️‍👨',
@@ -4758,7 +4758,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '8.3',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👩‍❤️‍👩',
@@ -4768,7 +4768,7 @@ export const emojis: Emoji[] = [
 		tags: [],
 		unicode_version: '6.0',
 		ios_version: '8.3',
-		skin_tones: true,
+		skin_tones: true
 	},
 	{
 		emoji: '👪',
@@ -4777,7 +4777,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family'],
 		tags: ['home', 'parents', 'child'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👨‍👩‍👦',
@@ -4786,7 +4786,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_woman_boy'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '👨‍👩‍👧',
@@ -4795,7 +4795,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_woman_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👩‍👧‍👦',
@@ -4804,7 +4804,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_woman_girl_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👩‍👦‍👦',
@@ -4813,7 +4813,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_woman_boy_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👩‍👧‍👧',
@@ -4822,7 +4822,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_woman_girl_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👨‍👦',
@@ -4831,7 +4831,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_man_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👨‍👧',
@@ -4840,7 +4840,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_man_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👨‍👧‍👦',
@@ -4849,7 +4849,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_man_girl_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👨‍👦‍👦',
@@ -4858,7 +4858,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_man_boy_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👨‍👧‍👧',
@@ -4867,7 +4867,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_man_girl_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👩‍👩‍👦',
@@ -4876,7 +4876,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_woman_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👩‍👩‍👧',
@@ -4885,7 +4885,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_woman_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👩‍👩‍👧‍👦',
@@ -4894,7 +4894,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_woman_girl_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👩‍👩‍👦‍👦',
@@ -4903,7 +4903,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_woman_boy_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👩‍👩‍👧‍👧',
@@ -4912,7 +4912,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_woman_girl_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '👨‍👦',
@@ -4921,7 +4921,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👨‍👦‍👦',
@@ -4930,7 +4930,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_boy_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👨‍👧',
@@ -4939,7 +4939,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👨‍👧‍👦',
@@ -4948,7 +4948,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_girl_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👨‍👧‍👧',
@@ -4957,7 +4957,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_man_girl_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👩‍👦',
@@ -4966,7 +4966,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👩‍👦‍👦',
@@ -4975,7 +4975,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_boy_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👩‍👧',
@@ -4984,7 +4984,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👩‍👧‍👦',
@@ -4993,7 +4993,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_girl_boy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '👩‍👧‍👧',
@@ -5002,7 +5002,7 @@ export const emojis: Emoji[] = [
 		aliases: ['family_woman_girl_girl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '🗣️',
@@ -5011,7 +5011,7 @@ export const emojis: Emoji[] = [
 		aliases: ['speaking_head'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '👤',
@@ -5020,7 +5020,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bust_in_silhouette'],
 		tags: ['user'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👥',
@@ -5029,7 +5029,7 @@ export const emojis: Emoji[] = [
 		aliases: ['busts_in_silhouette'],
 		tags: ['users', 'group', 'team'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫂',
@@ -5038,7 +5038,7 @@ export const emojis: Emoji[] = [
 		aliases: ['people_hugging'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '👣',
@@ -5047,7 +5047,7 @@ export const emojis: Emoji[] = [
 		aliases: ['footprints'],
 		tags: ['feet', 'tracks'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐵',
@@ -5056,7 +5056,7 @@ export const emojis: Emoji[] = [
 		aliases: ['monkey_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐒',
@@ -5065,7 +5065,7 @@ export const emojis: Emoji[] = [
 		aliases: ['monkey'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦍',
@@ -5074,7 +5074,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gorilla'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦧',
@@ -5083,7 +5083,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orangutan'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🐶',
@@ -5092,7 +5092,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dog'],
 		tags: ['pet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐕',
@@ -5101,7 +5101,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dog2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦮',
@@ -5110,7 +5110,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guide_dog'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🐕‍🦺',
@@ -5119,7 +5119,7 @@ export const emojis: Emoji[] = [
 		aliases: ['service_dog'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🐩',
@@ -5128,7 +5128,7 @@ export const emojis: Emoji[] = [
 		aliases: ['poodle'],
 		tags: ['dog'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐺',
@@ -5137,7 +5137,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wolf'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦊',
@@ -5146,7 +5146,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fox_face'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦝',
@@ -5155,7 +5155,7 @@ export const emojis: Emoji[] = [
 		aliases: ['raccoon'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🐱',
@@ -5164,7 +5164,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cat'],
 		tags: ['pet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐈',
@@ -5173,7 +5173,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cat2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐈‍⬛',
@@ -5182,7 +5182,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_cat'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦁',
@@ -5191,7 +5191,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lion'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🐯',
@@ -5200,7 +5200,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tiger'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐅',
@@ -5209,7 +5209,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tiger2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐆',
@@ -5218,7 +5218,7 @@ export const emojis: Emoji[] = [
 		aliases: ['leopard'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐴',
@@ -5227,7 +5227,7 @@ export const emojis: Emoji[] = [
 		aliases: ['horse'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫎',
@@ -5236,7 +5236,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moose'],
 		tags: ['canada'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🫏',
@@ -5245,7 +5245,7 @@ export const emojis: Emoji[] = [
 		aliases: ['donkey'],
 		tags: ['mule'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🐎',
@@ -5254,7 +5254,7 @@ export const emojis: Emoji[] = [
 		aliases: ['racehorse'],
 		tags: ['speed'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦄',
@@ -5263,7 +5263,7 @@ export const emojis: Emoji[] = [
 		aliases: ['unicorn'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦓',
@@ -5272,7 +5272,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zebra'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦌',
@@ -5281,7 +5281,7 @@ export const emojis: Emoji[] = [
 		aliases: ['deer'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦬',
@@ -5290,7 +5290,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bison'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🐮',
@@ -5299,7 +5299,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cow'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐂',
@@ -5308,7 +5308,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ox'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐃',
@@ -5317,7 +5317,7 @@ export const emojis: Emoji[] = [
 		aliases: ['water_buffalo'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐄',
@@ -5326,7 +5326,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cow2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐷',
@@ -5335,7 +5335,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pig'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐖',
@@ -5344,7 +5344,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pig2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐗',
@@ -5353,7 +5353,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boar'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐽',
@@ -5362,7 +5362,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pig_nose'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐏',
@@ -5371,7 +5371,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ram'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐑',
@@ -5380,7 +5380,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sheep'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐐',
@@ -5389,7 +5389,7 @@ export const emojis: Emoji[] = [
 		aliases: ['goat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐪',
@@ -5398,7 +5398,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dromedary_camel'],
 		tags: ['desert'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐫',
@@ -5407,7 +5407,7 @@ export const emojis: Emoji[] = [
 		aliases: ['camel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦙',
@@ -5416,7 +5416,7 @@ export const emojis: Emoji[] = [
 		aliases: ['llama'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦒',
@@ -5425,7 +5425,7 @@ export const emojis: Emoji[] = [
 		aliases: ['giraffe'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🐘',
@@ -5434,7 +5434,7 @@ export const emojis: Emoji[] = [
 		aliases: ['elephant'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦣',
@@ -5443,7 +5443,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mammoth'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦏',
@@ -5452,7 +5452,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rhinoceros'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦛',
@@ -5461,7 +5461,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hippopotamus'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🐭',
@@ -5470,7 +5470,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mouse'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐁',
@@ -5479,7 +5479,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mouse2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐀',
@@ -5488,7 +5488,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐹',
@@ -5497,7 +5497,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hamster'],
 		tags: ['pet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐰',
@@ -5506,7 +5506,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rabbit'],
 		tags: ['bunny'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐇',
@@ -5515,7 +5515,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rabbit2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐿️',
@@ -5524,7 +5524,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chipmunk'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦫',
@@ -5533,7 +5533,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beaver'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦔',
@@ -5542,7 +5542,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hedgehog'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦇',
@@ -5551,7 +5551,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bat'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🐻',
@@ -5560,7 +5560,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bear'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐻‍❄️',
@@ -5569,7 +5569,7 @@ export const emojis: Emoji[] = [
 		aliases: ['polar_bear'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🐨',
@@ -5578,7 +5578,7 @@ export const emojis: Emoji[] = [
 		aliases: ['koala'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐼',
@@ -5587,7 +5587,7 @@ export const emojis: Emoji[] = [
 		aliases: ['panda_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦥',
@@ -5596,7 +5596,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sloth'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦦',
@@ -5605,7 +5605,7 @@ export const emojis: Emoji[] = [
 		aliases: ['otter'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦨',
@@ -5614,7 +5614,7 @@ export const emojis: Emoji[] = [
 		aliases: ['skunk'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦘',
@@ -5623,7 +5623,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kangaroo'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦡',
@@ -5632,7 +5632,7 @@ export const emojis: Emoji[] = [
 		aliases: ['badger'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🐾',
@@ -5641,7 +5641,7 @@ export const emojis: Emoji[] = [
 		aliases: ['feet', 'paw_prints'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦃',
@@ -5650,7 +5650,7 @@ export const emojis: Emoji[] = [
 		aliases: ['turkey'],
 		tags: ['thanksgiving'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🐔',
@@ -5659,7 +5659,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chicken'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐓',
@@ -5668,7 +5668,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rooster'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐣',
@@ -5677,7 +5677,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hatching_chick'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐤',
@@ -5686,7 +5686,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baby_chick'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐥',
@@ -5695,7 +5695,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hatched_chick'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐦',
@@ -5704,7 +5704,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bird'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐧',
@@ -5713,7 +5713,7 @@ export const emojis: Emoji[] = [
 		aliases: ['penguin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕊️',
@@ -5722,7 +5722,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dove'],
 		tags: ['peace'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦅',
@@ -5731,7 +5731,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eagle'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦆',
@@ -5740,7 +5740,7 @@ export const emojis: Emoji[] = [
 		aliases: ['duck'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦢',
@@ -5749,7 +5749,7 @@ export const emojis: Emoji[] = [
 		aliases: ['swan'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦉',
@@ -5758,7 +5758,7 @@ export const emojis: Emoji[] = [
 		aliases: ['owl'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦤',
@@ -5767,7 +5767,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dodo'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪶',
@@ -5776,7 +5776,7 @@ export const emojis: Emoji[] = [
 		aliases: ['feather'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦩',
@@ -5785,7 +5785,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flamingo'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦚',
@@ -5794,7 +5794,7 @@ export const emojis: Emoji[] = [
 		aliases: ['peacock'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦜',
@@ -5803,7 +5803,7 @@ export const emojis: Emoji[] = [
 		aliases: ['parrot'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪽',
@@ -5812,7 +5812,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wing'],
 		tags: ['fly'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🐦‍⬛',
@@ -5821,7 +5821,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_bird'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🪿',
@@ -5830,7 +5830,7 @@ export const emojis: Emoji[] = [
 		aliases: ['goose'],
 		tags: ['honk'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🐸',
@@ -5839,7 +5839,7 @@ export const emojis: Emoji[] = [
 		aliases: ['frog'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐊',
@@ -5848,7 +5848,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crocodile'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐢',
@@ -5857,7 +5857,7 @@ export const emojis: Emoji[] = [
 		aliases: ['turtle'],
 		tags: ['slow'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦎',
@@ -5866,7 +5866,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lizard'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🐍',
@@ -5875,7 +5875,7 @@ export const emojis: Emoji[] = [
 		aliases: ['snake'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐲',
@@ -5884,7 +5884,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dragon_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐉',
@@ -5893,7 +5893,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dragon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦕',
@@ -5902,7 +5902,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sauropod'],
 		tags: ['dinosaur'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦖',
@@ -5911,7 +5911,7 @@ export const emojis: Emoji[] = [
 		aliases: ['t-rex'],
 		tags: ['dinosaur'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🐳',
@@ -5920,7 +5920,7 @@ export const emojis: Emoji[] = [
 		aliases: ['whale'],
 		tags: ['sea'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐋',
@@ -5929,7 +5929,7 @@ export const emojis: Emoji[] = [
 		aliases: ['whale2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐬',
@@ -5938,7 +5938,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dolphin', 'flipper'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦭',
@@ -5947,7 +5947,7 @@ export const emojis: Emoji[] = [
 		aliases: ['seal'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🐟',
@@ -5956,7 +5956,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fish'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐠',
@@ -5965,7 +5965,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tropical_fish'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐡',
@@ -5974,7 +5974,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blowfish'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦈',
@@ -5983,7 +5983,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shark'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🐙',
@@ -5992,7 +5992,7 @@ export const emojis: Emoji[] = [
 		aliases: ['octopus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐚',
@@ -6001,7 +6001,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shell'],
 		tags: ['sea', 'beach'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪸',
@@ -6010,7 +6010,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coral'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🪼',
@@ -6019,7 +6019,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jellyfish'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🐌',
@@ -6028,7 +6028,7 @@ export const emojis: Emoji[] = [
 		aliases: ['snail'],
 		tags: ['slow'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦋',
@@ -6037,7 +6037,7 @@ export const emojis: Emoji[] = [
 		aliases: ['butterfly'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🐛',
@@ -6046,7 +6046,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bug'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐜',
@@ -6055,7 +6055,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ant'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🐝',
@@ -6064,7 +6064,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bee', 'honeybee'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪲',
@@ -6073,7 +6073,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beetle'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🐞',
@@ -6082,7 +6082,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lady_beetle'],
 		tags: ['bug'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🦗',
@@ -6091,7 +6091,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cricket'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪳',
@@ -6100,7 +6100,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cockroach'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🕷️',
@@ -6109,7 +6109,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spider'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕸️',
@@ -6118,7 +6118,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spider_web'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦂',
@@ -6127,7 +6127,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scorpion'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦟',
@@ -6136,7 +6136,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mosquito'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪰',
@@ -6145,7 +6145,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fly'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪱',
@@ -6154,7 +6154,7 @@ export const emojis: Emoji[] = [
 		aliases: ['worm'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🦠',
@@ -6163,7 +6163,7 @@ export const emojis: Emoji[] = [
 		aliases: ['microbe'],
 		tags: ['germ'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '💐',
@@ -6172,7 +6172,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bouquet'],
 		tags: ['flowers'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌸',
@@ -6181,7 +6181,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cherry_blossom'],
 		tags: ['flower', 'spring'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💮',
@@ -6190,7 +6190,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_flower'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪷',
@@ -6199,7 +6199,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lotus'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🏵️',
@@ -6208,7 +6208,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rosette'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌹',
@@ -6217,7 +6217,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rose'],
 		tags: ['flower'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥀',
@@ -6226,7 +6226,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wilted_flower'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🌺',
@@ -6235,7 +6235,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hibiscus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌻',
@@ -6244,7 +6244,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sunflower'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌼',
@@ -6253,7 +6253,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blossom'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌷',
@@ -6262,7 +6262,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tulip'],
 		tags: ['flower'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪻',
@@ -6271,7 +6271,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hyacinth'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🌱',
@@ -6280,7 +6280,7 @@ export const emojis: Emoji[] = [
 		aliases: ['seedling'],
 		tags: ['plant'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪴',
@@ -6289,7 +6289,7 @@ export const emojis: Emoji[] = [
 		aliases: ['potted_plant'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🌲',
@@ -6298,7 +6298,7 @@ export const emojis: Emoji[] = [
 		aliases: ['evergreen_tree'],
 		tags: ['wood'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌳',
@@ -6307,7 +6307,7 @@ export const emojis: Emoji[] = [
 		aliases: ['deciduous_tree'],
 		tags: ['wood'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌴',
@@ -6316,7 +6316,7 @@ export const emojis: Emoji[] = [
 		aliases: ['palm_tree'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌵',
@@ -6325,7 +6325,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cactus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌾',
@@ -6334,7 +6334,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ear_of_rice'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌿',
@@ -6343,7 +6343,7 @@ export const emojis: Emoji[] = [
 		aliases: ['herb'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☘️',
@@ -6352,7 +6352,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shamrock'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🍀',
@@ -6361,7 +6361,7 @@ export const emojis: Emoji[] = [
 		aliases: ['four_leaf_clover'],
 		tags: ['luck'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍁',
@@ -6370,7 +6370,7 @@ export const emojis: Emoji[] = [
 		aliases: ['maple_leaf'],
 		tags: ['canada'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍂',
@@ -6379,7 +6379,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fallen_leaf'],
 		tags: ['autumn'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍃',
@@ -6388,7 +6388,7 @@ export const emojis: Emoji[] = [
 		aliases: ['leaves'],
 		tags: ['leaf'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪹',
@@ -6397,7 +6397,7 @@ export const emojis: Emoji[] = [
 		aliases: ['empty_nest'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🪺',
@@ -6406,7 +6406,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nest_with_eggs'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🍄',
@@ -6415,7 +6415,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mushroom'],
 		tags: ['fungus'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍇',
@@ -6424,7 +6424,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grapes'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍈',
@@ -6433,7 +6433,7 @@ export const emojis: Emoji[] = [
 		aliases: ['melon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍉',
@@ -6442,7 +6442,7 @@ export const emojis: Emoji[] = [
 		aliases: ['watermelon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍊',
@@ -6451,7 +6451,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tangerine', 'orange', 'mandarin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍋',
@@ -6460,7 +6460,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lemon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍌',
@@ -6469,7 +6469,7 @@ export const emojis: Emoji[] = [
 		aliases: ['banana'],
 		tags: ['fruit'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍍',
@@ -6478,7 +6478,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pineapple'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥭',
@@ -6487,7 +6487,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mango'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🍎',
@@ -6496,7 +6496,7 @@ export const emojis: Emoji[] = [
 		aliases: ['apple'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍏',
@@ -6505,7 +6505,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_apple'],
 		tags: ['fruit'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍐',
@@ -6514,7 +6514,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pear'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍑',
@@ -6523,7 +6523,7 @@ export const emojis: Emoji[] = [
 		aliases: ['peach'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍒',
@@ -6532,7 +6532,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cherries'],
 		tags: ['fruit'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍓',
@@ -6541,7 +6541,7 @@ export const emojis: Emoji[] = [
 		aliases: ['strawberry'],
 		tags: ['fruit'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫐',
@@ -6550,7 +6550,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blueberries'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥝',
@@ -6559,7 +6559,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kiwi_fruit'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍅',
@@ -6568,7 +6568,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tomato'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫒',
@@ -6577,7 +6577,7 @@ export const emojis: Emoji[] = [
 		aliases: ['olive'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥥',
@@ -6586,7 +6586,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coconut'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥑',
@@ -6595,7 +6595,7 @@ export const emojis: Emoji[] = [
 		aliases: ['avocado'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍆',
@@ -6604,7 +6604,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eggplant'],
 		tags: ['aubergine'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥔',
@@ -6613,7 +6613,7 @@ export const emojis: Emoji[] = [
 		aliases: ['potato'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥕',
@@ -6622,7 +6622,7 @@ export const emojis: Emoji[] = [
 		aliases: ['carrot'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🌽',
@@ -6631,7 +6631,7 @@ export const emojis: Emoji[] = [
 		aliases: ['corn'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌶️',
@@ -6640,7 +6640,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hot_pepper'],
 		tags: ['spicy'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🫑',
@@ -6649,7 +6649,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bell_pepper'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥒',
@@ -6658,7 +6658,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cucumber'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥬',
@@ -6667,7 +6667,7 @@ export const emojis: Emoji[] = [
 		aliases: ['leafy_green'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥦',
@@ -6676,7 +6676,7 @@ export const emojis: Emoji[] = [
 		aliases: ['broccoli'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧄',
@@ -6685,7 +6685,7 @@ export const emojis: Emoji[] = [
 		aliases: ['garlic'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧅',
@@ -6694,7 +6694,7 @@ export const emojis: Emoji[] = [
 		aliases: ['onion'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🥜',
@@ -6703,7 +6703,7 @@ export const emojis: Emoji[] = [
 		aliases: ['peanuts'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🫘',
@@ -6712,7 +6712,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beans'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🌰',
@@ -6721,7 +6721,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chestnut'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫚',
@@ -6730,7 +6730,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ginger_root'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🫛',
@@ -6739,7 +6739,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pea_pod'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🍞',
@@ -6748,7 +6748,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bread'],
 		tags: ['toast'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥐',
@@ -6757,7 +6757,7 @@ export const emojis: Emoji[] = [
 		aliases: ['croissant'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥖',
@@ -6766,7 +6766,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baguette_bread'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🫓',
@@ -6775,7 +6775,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flatbread'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥨',
@@ -6784,7 +6784,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pretzel'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥯',
@@ -6793,7 +6793,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bagel'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥞',
@@ -6802,7 +6802,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pancakes'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🧇',
@@ -6811,7 +6811,7 @@ export const emojis: Emoji[] = [
 		aliases: ['waffle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧀',
@@ -6820,7 +6820,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cheese'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🍖',
@@ -6829,7 +6829,7 @@ export const emojis: Emoji[] = [
 		aliases: ['meat_on_bone'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍗',
@@ -6838,7 +6838,7 @@ export const emojis: Emoji[] = [
 		aliases: ['poultry_leg'],
 		tags: ['meat', 'chicken'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥩',
@@ -6847,7 +6847,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cut_of_meat'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥓',
@@ -6856,7 +6856,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bacon'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍔',
@@ -6865,7 +6865,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hamburger'],
 		tags: ['burger'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍟',
@@ -6874,7 +6874,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fries'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍕',
@@ -6883,7 +6883,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pizza'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌭',
@@ -6892,7 +6892,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hotdog'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🥪',
@@ -6901,7 +6901,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sandwich'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🌮',
@@ -6910,7 +6910,7 @@ export const emojis: Emoji[] = [
 		aliases: ['taco'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌯',
@@ -6919,7 +6919,7 @@ export const emojis: Emoji[] = [
 		aliases: ['burrito'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🫔',
@@ -6928,7 +6928,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tamale'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥙',
@@ -6937,7 +6937,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stuffed_flatbread'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🧆',
@@ -6946,7 +6946,7 @@ export const emojis: Emoji[] = [
 		aliases: ['falafel'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🥚',
@@ -6955,7 +6955,7 @@ export const emojis: Emoji[] = [
 		aliases: ['egg'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍳',
@@ -6964,7 +6964,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fried_egg'],
 		tags: ['breakfast'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥘',
@@ -6973,7 +6973,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shallow_pan_of_food'],
 		tags: ['paella', 'curry'],
 		unicode_version: '',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍲',
@@ -6982,7 +6982,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stew'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫕',
@@ -6991,7 +6991,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fondue'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🥣',
@@ -7000,7 +7000,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bowl_with_spoon'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥗',
@@ -7009,7 +7009,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_salad'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🍿',
@@ -7018,7 +7018,7 @@ export const emojis: Emoji[] = [
 		aliases: ['popcorn'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧈',
@@ -7027,7 +7027,7 @@ export const emojis: Emoji[] = [
 		aliases: ['butter'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧂',
@@ -7036,7 +7036,7 @@ export const emojis: Emoji[] = [
 		aliases: ['salt'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥫',
@@ -7045,7 +7045,7 @@ export const emojis: Emoji[] = [
 		aliases: ['canned_food'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🍱',
@@ -7054,7 +7054,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bento'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍘',
@@ -7063,7 +7063,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rice_cracker'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍙',
@@ -7072,7 +7072,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rice_ball'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍚',
@@ -7081,7 +7081,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rice'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍛',
@@ -7090,7 +7090,7 @@ export const emojis: Emoji[] = [
 		aliases: ['curry'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍜',
@@ -7099,7 +7099,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ramen'],
 		tags: ['noodle'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍝',
@@ -7108,7 +7108,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spaghetti'],
 		tags: ['pasta'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍠',
@@ -7117,7 +7117,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sweet_potato'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍢',
@@ -7126,7 +7126,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oden'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍣',
@@ -7135,7 +7135,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sushi'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍤',
@@ -7144,7 +7144,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fried_shrimp'],
 		tags: ['tempura'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍥',
@@ -7153,7 +7153,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fish_cake'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥮',
@@ -7162,7 +7162,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moon_cake'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🍡',
@@ -7171,7 +7171,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dango'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥟',
@@ -7180,7 +7180,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dumpling'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥠',
@@ -7189,7 +7189,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fortune_cookie'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥡',
@@ -7198,7 +7198,7 @@ export const emojis: Emoji[] = [
 		aliases: ['takeout_box'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦀',
@@ -7207,7 +7207,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crab'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦞',
@@ -7216,7 +7216,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lobster'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦐',
@@ -7225,7 +7225,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shrimp'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦑',
@@ -7234,7 +7234,7 @@ export const emojis: Emoji[] = [
 		aliases: ['squid'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦪',
@@ -7243,7 +7243,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oyster'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🍦',
@@ -7252,7 +7252,7 @@ export const emojis: Emoji[] = [
 		aliases: ['icecream'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍧',
@@ -7261,7 +7261,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shaved_ice'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍨',
@@ -7270,7 +7270,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ice_cream'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍩',
@@ -7279,7 +7279,7 @@ export const emojis: Emoji[] = [
 		aliases: ['doughnut'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍪',
@@ -7288,7 +7288,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cookie'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎂',
@@ -7297,7 +7297,7 @@ export const emojis: Emoji[] = [
 		aliases: ['birthday'],
 		tags: ['party'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍰',
@@ -7306,7 +7306,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cake'],
 		tags: ['dessert'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧁',
@@ -7315,7 +7315,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cupcake'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥧',
@@ -7324,7 +7324,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pie'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🍫',
@@ -7333,7 +7333,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chocolate_bar'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍬',
@@ -7342,7 +7342,7 @@ export const emojis: Emoji[] = [
 		aliases: ['candy'],
 		tags: ['sweet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍭',
@@ -7351,7 +7351,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lollipop'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍮',
@@ -7360,7 +7360,7 @@ export const emojis: Emoji[] = [
 		aliases: ['custard'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍯',
@@ -7369,7 +7369,7 @@ export const emojis: Emoji[] = [
 		aliases: ['honey_pot'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍼',
@@ -7378,7 +7378,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baby_bottle'],
 		tags: ['milk'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥛',
@@ -7387,7 +7387,7 @@ export const emojis: Emoji[] = [
 		aliases: ['milk_glass'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '☕',
@@ -7396,7 +7396,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coffee'],
 		tags: ['cafe', 'espresso'],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫖',
@@ -7405,7 +7405,7 @@ export const emojis: Emoji[] = [
 		aliases: ['teapot'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🍵',
@@ -7414,7 +7414,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tea'],
 		tags: ['green', 'breakfast'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍶',
@@ -7423,7 +7423,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sake'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍾',
@@ -7432,7 +7432,7 @@ export const emojis: Emoji[] = [
 		aliases: ['champagne'],
 		tags: ['bottle', 'bubbly', 'celebration'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🍷',
@@ -7441,7 +7441,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wine_glass'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍸',
@@ -7450,7 +7450,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cocktail'],
 		tags: ['drink'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍹',
@@ -7459,7 +7459,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tropical_drink'],
 		tags: ['summer', 'vacation'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍺',
@@ -7468,7 +7468,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beer'],
 		tags: ['drink'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🍻',
@@ -7477,7 +7477,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beers'],
 		tags: ['drinks'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥂',
@@ -7486,7 +7486,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clinking_glasses'],
 		tags: ['cheers', 'toast'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥃',
@@ -7495,7 +7495,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tumbler_glass'],
 		tags: ['whisky'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🫗',
@@ -7504,7 +7504,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pouring_liquid'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🥤',
@@ -7513,7 +7513,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cup_with_straw'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧋',
@@ -7522,7 +7522,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bubble_tea'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🧃',
@@ -7531,7 +7531,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beverage_box'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧉',
@@ -7540,7 +7540,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mate'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧊',
@@ -7549,7 +7549,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ice_cube'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🥢',
@@ -7558,7 +7558,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chopsticks'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🍽️',
@@ -7567,7 +7567,7 @@ export const emojis: Emoji[] = [
 		aliases: ['plate_with_cutlery'],
 		tags: ['dining', 'dinner'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🍴',
@@ -7576,7 +7576,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fork_and_knife'],
 		tags: ['cutlery'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥄',
@@ -7585,7 +7585,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spoon'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🔪',
@@ -7594,7 +7594,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hocho', 'knife'],
 		tags: ['cut', 'chop'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🫙',
@@ -7603,7 +7603,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jar'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🏺',
@@ -7612,7 +7612,7 @@ export const emojis: Emoji[] = [
 		aliases: ['amphora'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌍',
@@ -7621,7 +7621,7 @@ export const emojis: Emoji[] = [
 		aliases: ['earth_africa'],
 		tags: ['globe', 'world', 'international'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌎',
@@ -7630,7 +7630,7 @@ export const emojis: Emoji[] = [
 		aliases: ['earth_americas'],
 		tags: ['globe', 'world', 'international'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌏',
@@ -7639,7 +7639,7 @@ export const emojis: Emoji[] = [
 		aliases: ['earth_asia'],
 		tags: ['globe', 'world', 'international'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌐',
@@ -7648,7 +7648,7 @@ export const emojis: Emoji[] = [
 		aliases: ['globe_with_meridians'],
 		tags: ['world', 'global', 'international'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗺️',
@@ -7657,7 +7657,7 @@ export const emojis: Emoji[] = [
 		aliases: ['world_map'],
 		tags: ['travel'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗾',
@@ -7666,7 +7666,7 @@ export const emojis: Emoji[] = [
 		aliases: ['japan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧭',
@@ -7675,7 +7675,7 @@ export const emojis: Emoji[] = [
 		aliases: ['compass'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🏔️',
@@ -7684,7 +7684,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mountain_snow'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛰️',
@@ -7693,7 +7693,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mountain'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌋',
@@ -7702,7 +7702,7 @@ export const emojis: Emoji[] = [
 		aliases: ['volcano'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗻',
@@ -7711,7 +7711,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mount_fuji'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏕️',
@@ -7720,7 +7720,7 @@ export const emojis: Emoji[] = [
 		aliases: ['camping'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏖️',
@@ -7729,7 +7729,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beach_umbrella'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏜️',
@@ -7738,7 +7738,7 @@ export const emojis: Emoji[] = [
 		aliases: ['desert'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏝️',
@@ -7747,7 +7747,7 @@ export const emojis: Emoji[] = [
 		aliases: ['desert_island'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏞️',
@@ -7756,7 +7756,7 @@ export const emojis: Emoji[] = [
 		aliases: ['national_park'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏟️',
@@ -7765,7 +7765,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stadium'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏛️',
@@ -7774,7 +7774,7 @@ export const emojis: Emoji[] = [
 		aliases: ['classical_building'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏗️',
@@ -7783,7 +7783,7 @@ export const emojis: Emoji[] = [
 		aliases: ['building_construction'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧱',
@@ -7792,7 +7792,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bricks'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪨',
@@ -7801,7 +7801,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rock'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪵',
@@ -7810,7 +7810,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wood'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🛖',
@@ -7819,7 +7819,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hut'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🏘️',
@@ -7828,7 +7828,7 @@ export const emojis: Emoji[] = [
 		aliases: ['houses'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏚️',
@@ -7837,7 +7837,7 @@ export const emojis: Emoji[] = [
 		aliases: ['derelict_house'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏠',
@@ -7846,7 +7846,7 @@ export const emojis: Emoji[] = [
 		aliases: ['house'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏡',
@@ -7855,7 +7855,7 @@ export const emojis: Emoji[] = [
 		aliases: ['house_with_garden'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏢',
@@ -7864,7 +7864,7 @@ export const emojis: Emoji[] = [
 		aliases: ['office'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏣',
@@ -7873,7 +7873,7 @@ export const emojis: Emoji[] = [
 		aliases: ['post_office'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏤',
@@ -7882,7 +7882,7 @@ export const emojis: Emoji[] = [
 		aliases: ['european_post_office'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏥',
@@ -7891,7 +7891,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hospital'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏦',
@@ -7900,7 +7900,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bank'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏨',
@@ -7909,7 +7909,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hotel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏩',
@@ -7918,7 +7918,7 @@ export const emojis: Emoji[] = [
 		aliases: ['love_hotel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏪',
@@ -7927,7 +7927,7 @@ export const emojis: Emoji[] = [
 		aliases: ['convenience_store'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏫',
@@ -7936,7 +7936,7 @@ export const emojis: Emoji[] = [
 		aliases: ['school'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏬',
@@ -7945,7 +7945,7 @@ export const emojis: Emoji[] = [
 		aliases: ['department_store'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏭',
@@ -7954,7 +7954,7 @@ export const emojis: Emoji[] = [
 		aliases: ['factory'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏯',
@@ -7963,7 +7963,7 @@ export const emojis: Emoji[] = [
 		aliases: ['japanese_castle'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏰',
@@ -7972,7 +7972,7 @@ export const emojis: Emoji[] = [
 		aliases: ['european_castle'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💒',
@@ -7981,7 +7981,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wedding'],
 		tags: ['marriage'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗼',
@@ -7990,7 +7990,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tokyo_tower'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗽',
@@ -7999,7 +7999,7 @@ export const emojis: Emoji[] = [
 		aliases: ['statue_of_liberty'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛪',
@@ -8008,7 +8008,7 @@ export const emojis: Emoji[] = [
 		aliases: ['church'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕌',
@@ -8017,7 +8017,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mosque'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛕',
@@ -8026,7 +8026,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hindu_temple'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🕍',
@@ -8035,7 +8035,7 @@ export const emojis: Emoji[] = [
 		aliases: ['synagogue'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛩️',
@@ -8044,7 +8044,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shinto_shrine'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕋',
@@ -8053,7 +8053,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kaaba'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛲',
@@ -8062,7 +8062,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fountain'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛺',
@@ -8071,7 +8071,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tent'],
 		tags: ['camping'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌁',
@@ -8080,7 +8080,7 @@ export const emojis: Emoji[] = [
 		aliases: ['foggy'],
 		tags: ['karl'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌃',
@@ -8089,7 +8089,7 @@ export const emojis: Emoji[] = [
 		aliases: ['night_with_stars'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏙️',
@@ -8098,7 +8098,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cityscape'],
 		tags: ['skyline'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌄',
@@ -8107,7 +8107,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sunrise_over_mountains'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌅',
@@ -8116,7 +8116,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sunrise'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌆',
@@ -8125,7 +8125,7 @@ export const emojis: Emoji[] = [
 		aliases: ['city_sunset'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌇',
@@ -8134,7 +8134,7 @@ export const emojis: Emoji[] = [
 		aliases: ['city_sunrise'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌉',
@@ -8143,7 +8143,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bridge_at_night'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♨️',
@@ -8152,7 +8152,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hotsprings'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎠',
@@ -8161,7 +8161,7 @@ export const emojis: Emoji[] = [
 		aliases: ['carousel_horse'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛝',
@@ -8170,7 +8170,7 @@ export const emojis: Emoji[] = [
 		aliases: ['playground_slide'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🎡',
@@ -8179,7 +8179,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ferris_wheel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎢',
@@ -8188,7 +8188,7 @@ export const emojis: Emoji[] = [
 		aliases: ['roller_coaster'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💈',
@@ -8197,7 +8197,7 @@ export const emojis: Emoji[] = [
 		aliases: ['barber'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎪',
@@ -8206,7 +8206,7 @@ export const emojis: Emoji[] = [
 		aliases: ['circus_tent'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚂',
@@ -8215,7 +8215,7 @@ export const emojis: Emoji[] = [
 		aliases: ['steam_locomotive'],
 		tags: ['train'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚃',
@@ -8224,7 +8224,7 @@ export const emojis: Emoji[] = [
 		aliases: ['railway_car'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚄',
@@ -8233,7 +8233,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bullettrain_side'],
 		tags: ['train'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚅',
@@ -8242,7 +8242,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bullettrain_front'],
 		tags: ['train'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚆',
@@ -8251,7 +8251,7 @@ export const emojis: Emoji[] = [
 		aliases: ['train2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚇',
@@ -8260,7 +8260,7 @@ export const emojis: Emoji[] = [
 		aliases: ['metro'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚈',
@@ -8269,7 +8269,7 @@ export const emojis: Emoji[] = [
 		aliases: ['light_rail'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚉',
@@ -8278,7 +8278,7 @@ export const emojis: Emoji[] = [
 		aliases: ['station'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚊',
@@ -8287,7 +8287,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tram'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚝',
@@ -8296,7 +8296,7 @@ export const emojis: Emoji[] = [
 		aliases: ['monorail'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚞',
@@ -8305,7 +8305,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mountain_railway'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚋',
@@ -8314,7 +8314,7 @@ export const emojis: Emoji[] = [
 		aliases: ['train'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚌',
@@ -8323,7 +8323,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚍',
@@ -8332,7 +8332,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oncoming_bus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚎',
@@ -8341,7 +8341,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trolleybus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚐',
@@ -8350,7 +8350,7 @@ export const emojis: Emoji[] = [
 		aliases: ['minibus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚑',
@@ -8359,7 +8359,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ambulance'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚒',
@@ -8368,7 +8368,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fire_engine'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚓',
@@ -8377,7 +8377,7 @@ export const emojis: Emoji[] = [
 		aliases: ['police_car'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚔',
@@ -8386,7 +8386,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oncoming_police_car'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚕',
@@ -8395,7 +8395,7 @@ export const emojis: Emoji[] = [
 		aliases: ['taxi'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚖',
@@ -8404,7 +8404,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oncoming_taxi'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚗',
@@ -8413,7 +8413,7 @@ export const emojis: Emoji[] = [
 		aliases: ['car', 'red_car'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚘',
@@ -8422,7 +8422,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oncoming_automobile'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚙',
@@ -8431,7 +8431,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blue_car'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛻',
@@ -8440,7 +8440,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pickup_truck'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🚚',
@@ -8449,7 +8449,7 @@ export const emojis: Emoji[] = [
 		aliases: ['truck'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚛',
@@ -8458,7 +8458,7 @@ export const emojis: Emoji[] = [
 		aliases: ['articulated_lorry'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚜',
@@ -8467,7 +8467,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tractor'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏎️',
@@ -8476,7 +8476,7 @@ export const emojis: Emoji[] = [
 		aliases: ['racing_car'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏍️',
@@ -8485,7 +8485,7 @@ export const emojis: Emoji[] = [
 		aliases: ['motorcycle'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛵',
@@ -8494,7 +8494,7 @@ export const emojis: Emoji[] = [
 		aliases: ['motor_scooter'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🦽',
@@ -8503,7 +8503,7 @@ export const emojis: Emoji[] = [
 		aliases: ['manual_wheelchair'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🦼',
@@ -8512,7 +8512,7 @@ export const emojis: Emoji[] = [
 		aliases: ['motorized_wheelchair'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🛺',
@@ -8521,7 +8521,7 @@ export const emojis: Emoji[] = [
 		aliases: ['auto_rickshaw'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🚲',
@@ -8530,7 +8530,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bike'],
 		tags: ['bicycle'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛴',
@@ -8539,7 +8539,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kick_scooter'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🛹',
@@ -8548,7 +8548,7 @@ export const emojis: Emoji[] = [
 		aliases: ['skateboard'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🛼',
@@ -8557,7 +8557,7 @@ export const emojis: Emoji[] = [
 		aliases: ['roller_skate'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🚏',
@@ -8566,7 +8566,7 @@ export const emojis: Emoji[] = [
 		aliases: ['busstop'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛣️',
@@ -8575,7 +8575,7 @@ export const emojis: Emoji[] = [
 		aliases: ['motorway'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛤️',
@@ -8584,7 +8584,7 @@ export const emojis: Emoji[] = [
 		aliases: ['railway_track'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛢️',
@@ -8593,7 +8593,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oil_drum'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛽',
@@ -8602,7 +8602,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fuelpump'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛞',
@@ -8611,7 +8611,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wheel'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🚨',
@@ -8620,7 +8620,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rotating_light'],
 		tags: ['911', 'emergency'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚥',
@@ -8629,7 +8629,7 @@ export const emojis: Emoji[] = [
 		aliases: ['traffic_light'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚦',
@@ -8638,7 +8638,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vertical_traffic_light'],
 		tags: ['semaphore'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛑',
@@ -8647,7 +8647,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stop_sign'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🚧',
@@ -8656,7 +8656,7 @@ export const emojis: Emoji[] = [
 		aliases: ['construction'],
 		tags: ['wip'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚓',
@@ -8665,7 +8665,7 @@ export const emojis: Emoji[] = [
 		aliases: ['anchor'],
 		tags: ['ship'],
 		unicode_version: '4.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛟',
@@ -8674,7 +8674,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ring_buoy'],
 		tags: ['life preserver'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '⛵',
@@ -8683,7 +8683,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boat', 'sailboat'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛶',
@@ -8692,7 +8692,7 @@ export const emojis: Emoji[] = [
 		aliases: ['canoe'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🚤',
@@ -8701,7 +8701,7 @@ export const emojis: Emoji[] = [
 		aliases: ['speedboat'],
 		tags: ['ship'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛳️',
@@ -8710,7 +8710,7 @@ export const emojis: Emoji[] = [
 		aliases: ['passenger_ship'],
 		tags: ['cruise'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛴️',
@@ -8719,7 +8719,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ferry'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛥️',
@@ -8728,7 +8728,7 @@ export const emojis: Emoji[] = [
 		aliases: ['motor_boat'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🚢',
@@ -8737,7 +8737,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ship'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✈️',
@@ -8746,7 +8746,7 @@ export const emojis: Emoji[] = [
 		aliases: ['airplane'],
 		tags: ['flight'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛩️',
@@ -8755,7 +8755,7 @@ export const emojis: Emoji[] = [
 		aliases: ['small_airplane'],
 		tags: ['flight'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛫',
@@ -8764,7 +8764,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flight_departure'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛬',
@@ -8773,7 +8773,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flight_arrival'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🪂',
@@ -8782,7 +8782,7 @@ export const emojis: Emoji[] = [
 		aliases: ['parachute'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '💺',
@@ -8791,7 +8791,7 @@ export const emojis: Emoji[] = [
 		aliases: ['seat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚁',
@@ -8800,7 +8800,7 @@ export const emojis: Emoji[] = [
 		aliases: ['helicopter'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚟',
@@ -8809,7 +8809,7 @@ export const emojis: Emoji[] = [
 		aliases: ['suspension_railway'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚠',
@@ -8818,7 +8818,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mountain_cableway'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚡',
@@ -8827,7 +8827,7 @@ export const emojis: Emoji[] = [
 		aliases: ['aerial_tramway'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛰️',
@@ -8836,7 +8836,7 @@ export const emojis: Emoji[] = [
 		aliases: ['artificial_satellite'],
 		tags: ['orbit', 'space'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🚀',
@@ -8845,7 +8845,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rocket'],
 		tags: ['ship', 'launch'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛸',
@@ -8854,7 +8854,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flying_saucer'],
 		tags: ['ufo'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🛎️',
@@ -8863,7 +8863,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bellhop_bell'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧳',
@@ -8872,7 +8872,7 @@ export const emojis: Emoji[] = [
 		aliases: ['luggage'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '⌛',
@@ -8881,7 +8881,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hourglass'],
 		tags: ['time'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏳',
@@ -8890,7 +8890,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hourglass_flowing_sand'],
 		tags: ['time'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⌚',
@@ -8899,7 +8899,7 @@ export const emojis: Emoji[] = [
 		aliases: ['watch'],
 		tags: ['time'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏰',
@@ -8908,7 +8908,7 @@ export const emojis: Emoji[] = [
 		aliases: ['alarm_clock'],
 		tags: ['morning'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏱️',
@@ -8917,7 +8917,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stopwatch'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⏲️',
@@ -8926,7 +8926,7 @@ export const emojis: Emoji[] = [
 		aliases: ['timer_clock'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕰️',
@@ -8935,7 +8935,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mantelpiece_clock'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕛',
@@ -8944,7 +8944,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock12'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕧',
@@ -8953,7 +8953,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock1230'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕐',
@@ -8962,7 +8962,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock1'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕜',
@@ -8971,7 +8971,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock130'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕑',
@@ -8980,7 +8980,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕝',
@@ -8989,7 +8989,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock230'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕒',
@@ -8998,7 +8998,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock3'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕞',
@@ -9007,7 +9007,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock330'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕓',
@@ -9016,7 +9016,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock4'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕟',
@@ -9025,7 +9025,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock430'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕔',
@@ -9034,7 +9034,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock5'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕠',
@@ -9043,7 +9043,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock530'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕕',
@@ -9052,7 +9052,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock6'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕡',
@@ -9061,7 +9061,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock630'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕖',
@@ -9070,7 +9070,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock7'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕢',
@@ -9079,7 +9079,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock730'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕗',
@@ -9088,7 +9088,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock8'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕣',
@@ -9097,7 +9097,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock830'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕘',
@@ -9106,7 +9106,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock9'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕤',
@@ -9115,7 +9115,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock930'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕙',
@@ -9124,7 +9124,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock10'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕥',
@@ -9133,7 +9133,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock1030'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕚',
@@ -9142,7 +9142,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock11'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕦',
@@ -9151,7 +9151,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clock1130'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌑',
@@ -9160,7 +9160,7 @@ export const emojis: Emoji[] = [
 		aliases: ['new_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌒',
@@ -9169,7 +9169,7 @@ export const emojis: Emoji[] = [
 		aliases: ['waxing_crescent_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌓',
@@ -9178,7 +9178,7 @@ export const emojis: Emoji[] = [
 		aliases: ['first_quarter_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌔',
@@ -9187,7 +9187,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moon', 'waxing_gibbous_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌕',
@@ -9196,7 +9196,7 @@ export const emojis: Emoji[] = [
 		aliases: ['full_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌖',
@@ -9205,7 +9205,7 @@ export const emojis: Emoji[] = [
 		aliases: ['waning_gibbous_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌗',
@@ -9214,7 +9214,7 @@ export const emojis: Emoji[] = [
 		aliases: ['last_quarter_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌘',
@@ -9223,7 +9223,7 @@ export const emojis: Emoji[] = [
 		aliases: ['waning_crescent_moon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌙',
@@ -9232,7 +9232,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crescent_moon'],
 		tags: ['night'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌚',
@@ -9241,7 +9241,7 @@ export const emojis: Emoji[] = [
 		aliases: ['new_moon_with_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌛',
@@ -9250,7 +9250,7 @@ export const emojis: Emoji[] = [
 		aliases: ['first_quarter_moon_with_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌜',
@@ -9259,7 +9259,7 @@ export const emojis: Emoji[] = [
 		aliases: ['last_quarter_moon_with_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌡️',
@@ -9268,7 +9268,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thermometer'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☀️',
@@ -9277,7 +9277,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sunny'],
 		tags: ['weather'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌝',
@@ -9286,7 +9286,7 @@ export const emojis: Emoji[] = [
 		aliases: ['full_moon_with_face'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌞',
@@ -9295,7 +9295,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sun_with_face'],
 		tags: ['summer'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪐',
@@ -9304,7 +9304,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ringed_planet'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '⭐',
@@ -9313,7 +9313,7 @@ export const emojis: Emoji[] = [
 		aliases: ['star'],
 		tags: [],
 		unicode_version: '5.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌟',
@@ -9322,7 +9322,7 @@ export const emojis: Emoji[] = [
 		aliases: ['star2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌠',
@@ -9331,7 +9331,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stars'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌌',
@@ -9340,7 +9340,7 @@ export const emojis: Emoji[] = [
 		aliases: ['milky_way'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☁️',
@@ -9349,7 +9349,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cloud'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛅',
@@ -9358,7 +9358,7 @@ export const emojis: Emoji[] = [
 		aliases: ['partly_sunny'],
 		tags: ['weather', 'cloud'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛈️',
@@ -9367,7 +9367,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cloud_with_lightning_and_rain'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌤️',
@@ -9376,7 +9376,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sun_behind_small_cloud'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌥️',
@@ -9385,7 +9385,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sun_behind_large_cloud'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌦️',
@@ -9394,7 +9394,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sun_behind_rain_cloud'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌧️',
@@ -9403,7 +9403,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cloud_with_rain'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌨️',
@@ -9412,7 +9412,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cloud_with_snow'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌩️',
@@ -9421,7 +9421,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cloud_with_lightning'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌪️',
@@ -9430,7 +9430,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tornado'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌫️',
@@ -9439,7 +9439,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fog'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌬️',
@@ -9448,7 +9448,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wind_face'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🌀',
@@ -9457,7 +9457,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cyclone'],
 		tags: ['swirl'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌈',
@@ -9466,7 +9466,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rainbow'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌂',
@@ -9475,7 +9475,7 @@ export const emojis: Emoji[] = [
 		aliases: ['closed_umbrella'],
 		tags: ['weather', 'rain'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☂️',
@@ -9484,7 +9484,7 @@ export const emojis: Emoji[] = [
 		aliases: ['open_umbrella'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☔',
@@ -9493,7 +9493,7 @@ export const emojis: Emoji[] = [
 		aliases: ['umbrella'],
 		tags: ['rain', 'weather'],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛱️',
@@ -9502,7 +9502,7 @@ export const emojis: Emoji[] = [
 		aliases: ['parasol_on_ground'],
 		tags: ['beach_umbrella'],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⚡',
@@ -9511,7 +9511,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zap'],
 		tags: ['lightning', 'thunder'],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❄️',
@@ -9520,7 +9520,7 @@ export const emojis: Emoji[] = [
 		aliases: ['snowflake'],
 		tags: ['winter', 'cold', 'weather'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☃️',
@@ -9529,7 +9529,7 @@ export const emojis: Emoji[] = [
 		aliases: ['snowman_with_snow'],
 		tags: ['winter', 'christmas'],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⛄',
@@ -9538,7 +9538,7 @@ export const emojis: Emoji[] = [
 		aliases: ['snowman'],
 		tags: ['winter'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☄️',
@@ -9547,7 +9547,7 @@ export const emojis: Emoji[] = [
 		aliases: ['comet'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔥',
@@ -9556,7 +9556,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fire'],
 		tags: ['burn'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💧',
@@ -9565,7 +9565,7 @@ export const emojis: Emoji[] = [
 		aliases: ['droplet'],
 		tags: ['water'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🌊',
@@ -9574,7 +9574,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ocean'],
 		tags: ['sea'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎃',
@@ -9583,7 +9583,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jack_o_lantern'],
 		tags: ['halloween'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎄',
@@ -9592,7 +9592,7 @@ export const emojis: Emoji[] = [
 		aliases: ['christmas_tree'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎆',
@@ -9601,7 +9601,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fireworks'],
 		tags: ['festival', 'celebration'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎇',
@@ -9610,7 +9610,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sparkler'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧨',
@@ -9619,7 +9619,7 @@ export const emojis: Emoji[] = [
 		aliases: ['firecracker'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '✨',
@@ -9628,7 +9628,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sparkles'],
 		tags: ['shiny'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎈',
@@ -9637,7 +9637,7 @@ export const emojis: Emoji[] = [
 		aliases: ['balloon'],
 		tags: ['party', 'birthday'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎉',
@@ -9646,7 +9646,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tada'],
 		tags: ['hooray', 'party'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎊',
@@ -9655,7 +9655,7 @@ export const emojis: Emoji[] = [
 		aliases: ['confetti_ball'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎋',
@@ -9664,7 +9664,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tanabata_tree'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎍',
@@ -9673,7 +9673,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bamboo'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎎',
@@ -9682,7 +9682,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dolls'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎏',
@@ -9691,7 +9691,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flags'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎐',
@@ -9700,7 +9700,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wind_chime'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎑',
@@ -9709,7 +9709,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rice_scene'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧧',
@@ -9718,7 +9718,7 @@ export const emojis: Emoji[] = [
 		aliases: ['red_envelope'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🎀',
@@ -9727,7 +9727,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ribbon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎁',
@@ -9736,7 +9736,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gift'],
 		tags: ['present', 'birthday', 'christmas'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎗️',
@@ -9745,7 +9745,7 @@ export const emojis: Emoji[] = [
 		aliases: ['reminder_ribbon'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎟️',
@@ -9754,7 +9754,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tickets'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎫',
@@ -9763,7 +9763,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ticket'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎖️',
@@ -9772,7 +9772,7 @@ export const emojis: Emoji[] = [
 		aliases: ['medal_military'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏆',
@@ -9781,7 +9781,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trophy'],
 		tags: ['award', 'contest', 'winner'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏅',
@@ -9790,7 +9790,7 @@ export const emojis: Emoji[] = [
 		aliases: ['medal_sports'],
 		tags: ['gold', 'winner'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🥇',
@@ -9799,7 +9799,7 @@ export const emojis: Emoji[] = [
 		aliases: ['1st_place_medal'],
 		tags: ['gold'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥈',
@@ -9808,7 +9808,7 @@ export const emojis: Emoji[] = [
 		aliases: ['2nd_place_medal'],
 		tags: ['silver'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥉',
@@ -9817,7 +9817,7 @@ export const emojis: Emoji[] = [
 		aliases: ['3rd_place_medal'],
 		tags: ['bronze'],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '⚽',
@@ -9826,7 +9826,7 @@ export const emojis: Emoji[] = [
 		aliases: ['soccer'],
 		tags: ['sports'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚾',
@@ -9835,7 +9835,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baseball'],
 		tags: ['sports'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥎',
@@ -9844,7 +9844,7 @@ export const emojis: Emoji[] = [
 		aliases: ['softball'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🏀',
@@ -9853,7 +9853,7 @@ export const emojis: Emoji[] = [
 		aliases: ['basketball'],
 		tags: ['sports'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏐',
@@ -9862,7 +9862,7 @@ export const emojis: Emoji[] = [
 		aliases: ['volleyball'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏈',
@@ -9871,7 +9871,7 @@ export const emojis: Emoji[] = [
 		aliases: ['football'],
 		tags: ['sports'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏉',
@@ -9880,7 +9880,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rugby_football'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎾',
@@ -9889,7 +9889,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tennis'],
 		tags: ['sports'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥏',
@@ -9898,7 +9898,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flying_disc'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🎳',
@@ -9907,7 +9907,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bowling'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏏',
@@ -9916,7 +9916,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cricket_game'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏑',
@@ -9925,7 +9925,7 @@ export const emojis: Emoji[] = [
 		aliases: ['field_hockey'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏒',
@@ -9934,7 +9934,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ice_hockey'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🥍',
@@ -9943,7 +9943,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lacrosse'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🏓',
@@ -9952,7 +9952,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ping_pong'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏸',
@@ -9961,7 +9961,7 @@ export const emojis: Emoji[] = [
 		aliases: ['badminton'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🥊',
@@ -9970,7 +9970,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boxing_glove'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥋',
@@ -9979,7 +9979,7 @@ export const emojis: Emoji[] = [
 		aliases: ['martial_arts_uniform'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🥅',
@@ -9988,7 +9988,7 @@ export const emojis: Emoji[] = [
 		aliases: ['goal_net'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '⛳',
@@ -9997,7 +9997,7 @@ export const emojis: Emoji[] = [
 		aliases: ['golf'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛸️',
@@ -10006,7 +10006,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ice_skate'],
 		tags: ['skating'],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎣',
@@ -10015,7 +10015,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fishing_pole_and_fish'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🤿',
@@ -10024,7 +10024,7 @@ export const emojis: Emoji[] = [
 		aliases: ['diving_mask'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🎽',
@@ -10033,7 +10033,7 @@ export const emojis: Emoji[] = [
 		aliases: ['running_shirt_with_sash'],
 		tags: ['marathon'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎿',
@@ -10042,7 +10042,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ski'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛷',
@@ -10051,7 +10051,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sled'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥌',
@@ -10060,7 +10060,7 @@ export const emojis: Emoji[] = [
 		aliases: ['curling_stone'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🎯',
@@ -10069,7 +10069,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dart'],
 		tags: ['target'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪀',
@@ -10078,7 +10078,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yo_yo'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🪁',
@@ -10087,7 +10087,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kite'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🔫',
@@ -10096,7 +10096,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gun'],
 		tags: ['shoot', 'weapon'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎱',
@@ -10105,7 +10105,7 @@ export const emojis: Emoji[] = [
 		aliases: ['8ball'],
 		tags: ['pool', 'billiards'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔮',
@@ -10114,7 +10114,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crystal_ball'],
 		tags: ['fortune'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪄',
@@ -10123,7 +10123,7 @@ export const emojis: Emoji[] = [
 		aliases: ['magic_wand'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🎮',
@@ -10132,7 +10132,7 @@ export const emojis: Emoji[] = [
 		aliases: ['video_game'],
 		tags: ['play', 'controller', 'console'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕹️',
@@ -10141,7 +10141,7 @@ export const emojis: Emoji[] = [
 		aliases: ['joystick'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎰',
@@ -10150,7 +10150,7 @@ export const emojis: Emoji[] = [
 		aliases: ['slot_machine'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎲',
@@ -10159,7 +10159,7 @@ export const emojis: Emoji[] = [
 		aliases: ['game_die'],
 		tags: ['dice', 'gambling'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧩',
@@ -10168,7 +10168,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jigsaw'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧸',
@@ -10177,7 +10177,7 @@ export const emojis: Emoji[] = [
 		aliases: ['teddy_bear'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪅',
@@ -10186,7 +10186,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pinata'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪩',
@@ -10195,7 +10195,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mirror_ball'],
 		tags: ['disco', 'party'],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🪆',
@@ -10204,7 +10204,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nesting_dolls'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '♠️',
@@ -10213,7 +10213,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spades'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♥️',
@@ -10222,7 +10222,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hearts'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♦️',
@@ -10231,7 +10231,7 @@ export const emojis: Emoji[] = [
 		aliases: ['diamonds'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♣️',
@@ -10240,7 +10240,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clubs'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♟️',
@@ -10249,7 +10249,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chess_pawn'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🃏',
@@ -10258,7 +10258,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_joker'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🀄',
@@ -10267,7 +10267,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mahjong'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎴',
@@ -10276,7 +10276,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flower_playing_cards'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎭',
@@ -10285,7 +10285,7 @@ export const emojis: Emoji[] = [
 		aliases: ['performing_arts'],
 		tags: ['theater', 'drama'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🖼️',
@@ -10294,7 +10294,7 @@ export const emojis: Emoji[] = [
 		aliases: ['framed_picture'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎨',
@@ -10303,7 +10303,7 @@ export const emojis: Emoji[] = [
 		aliases: ['art'],
 		tags: ['design', 'paint'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧵',
@@ -10312,7 +10312,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thread'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪡',
@@ -10321,7 +10321,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sewing_needle'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🧶',
@@ -10330,7 +10330,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yarn'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪢',
@@ -10339,7 +10339,7 @@ export const emojis: Emoji[] = [
 		aliases: ['knot'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '👓',
@@ -10348,7 +10348,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eyeglasses'],
 		tags: ['glasses'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕶️',
@@ -10357,7 +10357,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dark_sunglasses'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🥽',
@@ -10366,7 +10366,7 @@ export const emojis: Emoji[] = [
 		aliases: ['goggles'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥼',
@@ -10375,7 +10375,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lab_coat'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🦺',
@@ -10384,7 +10384,7 @@ export const emojis: Emoji[] = [
 		aliases: ['safety_vest'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '👔',
@@ -10393,7 +10393,7 @@ export const emojis: Emoji[] = [
 		aliases: ['necktie'],
 		tags: ['shirt', 'formal'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👕',
@@ -10402,7 +10402,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shirt', 'tshirt'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👖',
@@ -10411,7 +10411,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jeans'],
 		tags: ['pants'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧣',
@@ -10420,7 +10420,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scarf'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧤',
@@ -10429,7 +10429,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gloves'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧥',
@@ -10438,7 +10438,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coat'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧦',
@@ -10447,7 +10447,7 @@ export const emojis: Emoji[] = [
 		aliases: ['socks'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '👗',
@@ -10456,7 +10456,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dress'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👘',
@@ -10465,7 +10465,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kimono'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥻',
@@ -10474,7 +10474,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sari'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🩱',
@@ -10483,7 +10483,7 @@ export const emojis: Emoji[] = [
 		aliases: ['one_piece_swimsuit'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🩲',
@@ -10492,7 +10492,7 @@ export const emojis: Emoji[] = [
 		aliases: ['swim_brief'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🩳',
@@ -10501,7 +10501,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shorts'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '👙',
@@ -10510,7 +10510,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bikini'],
 		tags: ['beach'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👚',
@@ -10519,7 +10519,7 @@ export const emojis: Emoji[] = [
 		aliases: ['womans_clothes'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪭',
@@ -10528,7 +10528,7 @@ export const emojis: Emoji[] = [
 		aliases: ['folding_hand_fan'],
 		tags: ['sensu'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '👛',
@@ -10537,7 +10537,7 @@ export const emojis: Emoji[] = [
 		aliases: ['purse'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👜',
@@ -10546,7 +10546,7 @@ export const emojis: Emoji[] = [
 		aliases: ['handbag'],
 		tags: ['bag'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👝',
@@ -10555,7 +10555,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pouch'],
 		tags: ['bag'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛍️',
@@ -10564,7 +10564,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shopping'],
 		tags: ['bags'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎒',
@@ -10573,7 +10573,7 @@ export const emojis: Emoji[] = [
 		aliases: ['school_satchel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩴',
@@ -10582,7 +10582,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thong_sandal'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '👞',
@@ -10591,7 +10591,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mans_shoe', 'shoe'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👟',
@@ -10600,7 +10600,7 @@ export const emojis: Emoji[] = [
 		aliases: ['athletic_shoe'],
 		tags: ['sneaker', 'sport', 'running'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🥾',
@@ -10609,7 +10609,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hiking_boot'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🥿',
@@ -10618,7 +10618,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flat_shoe'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '👠',
@@ -10627,7 +10627,7 @@ export const emojis: Emoji[] = [
 		aliases: ['high_heel'],
 		tags: ['shoe'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👡',
@@ -10636,7 +10636,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sandal'],
 		tags: ['shoe'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩰',
@@ -10645,7 +10645,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ballet_shoes'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '👢',
@@ -10654,7 +10654,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boot'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪮',
@@ -10663,7 +10663,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hair_pick'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '👑',
@@ -10672,7 +10672,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crown'],
 		tags: ['king', 'queen', 'royal'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '👒',
@@ -10681,7 +10681,7 @@ export const emojis: Emoji[] = [
 		aliases: ['womans_hat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎩',
@@ -10690,7 +10690,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tophat'],
 		tags: ['hat', 'classy'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎓',
@@ -10699,7 +10699,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mortar_board'],
 		tags: ['education', 'college', 'university', 'graduation'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧢',
@@ -10708,7 +10708,7 @@ export const emojis: Emoji[] = [
 		aliases: ['billed_cap'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪖',
@@ -10717,7 +10717,7 @@ export const emojis: Emoji[] = [
 		aliases: ['military_helmet'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '⛑️',
@@ -10726,7 +10726,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rescue_worker_helmet'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📿',
@@ -10735,7 +10735,7 @@ export const emojis: Emoji[] = [
 		aliases: ['prayer_beads'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💄',
@@ -10744,7 +10744,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lipstick'],
 		tags: ['makeup'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💍',
@@ -10753,7 +10753,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ring'],
 		tags: ['wedding', 'marriage', 'engaged'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💎',
@@ -10762,7 +10762,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gem'],
 		tags: ['diamond'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔇',
@@ -10771,7 +10771,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mute'],
 		tags: ['sound', 'volume'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔈',
@@ -10780,7 +10780,7 @@ export const emojis: Emoji[] = [
 		aliases: ['speaker'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔉',
@@ -10789,7 +10789,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sound'],
 		tags: ['volume'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔊',
@@ -10798,7 +10798,7 @@ export const emojis: Emoji[] = [
 		aliases: ['loud_sound'],
 		tags: ['volume'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📢',
@@ -10807,7 +10807,7 @@ export const emojis: Emoji[] = [
 		aliases: ['loudspeaker'],
 		tags: ['announcement'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📣',
@@ -10816,7 +10816,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mega'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📯',
@@ -10825,7 +10825,7 @@ export const emojis: Emoji[] = [
 		aliases: ['postal_horn'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔔',
@@ -10834,7 +10834,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bell'],
 		tags: ['sound', 'notification'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔕',
@@ -10843,7 +10843,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_bell'],
 		tags: ['volume', 'off'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎼',
@@ -10852,7 +10852,7 @@ export const emojis: Emoji[] = [
 		aliases: ['musical_score'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎵',
@@ -10861,7 +10861,7 @@ export const emojis: Emoji[] = [
 		aliases: ['musical_note'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎶',
@@ -10870,7 +10870,7 @@ export const emojis: Emoji[] = [
 		aliases: ['notes'],
 		tags: ['music'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎙️',
@@ -10879,7 +10879,7 @@ export const emojis: Emoji[] = [
 		aliases: ['studio_microphone'],
 		tags: ['podcast'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎚️',
@@ -10888,7 +10888,7 @@ export const emojis: Emoji[] = [
 		aliases: ['level_slider'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎛️',
@@ -10897,7 +10897,7 @@ export const emojis: Emoji[] = [
 		aliases: ['control_knobs'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎤',
@@ -10906,7 +10906,7 @@ export const emojis: Emoji[] = [
 		aliases: ['microphone'],
 		tags: ['sing'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎧',
@@ -10915,7 +10915,7 @@ export const emojis: Emoji[] = [
 		aliases: ['headphones'],
 		tags: ['music', 'earphones'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📻',
@@ -10924,7 +10924,7 @@ export const emojis: Emoji[] = [
 		aliases: ['radio'],
 		tags: ['podcast'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎷',
@@ -10933,7 +10933,7 @@ export const emojis: Emoji[] = [
 		aliases: ['saxophone'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪗',
@@ -10942,7 +10942,7 @@ export const emojis: Emoji[] = [
 		aliases: ['accordion'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🎸',
@@ -10951,7 +10951,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guitar'],
 		tags: ['rock'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎹',
@@ -10960,7 +10960,7 @@ export const emojis: Emoji[] = [
 		aliases: ['musical_keyboard'],
 		tags: ['piano'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎺',
@@ -10969,7 +10969,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trumpet'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎻',
@@ -10978,7 +10978,7 @@ export const emojis: Emoji[] = [
 		aliases: ['violin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪕',
@@ -10987,7 +10987,7 @@ export const emojis: Emoji[] = [
 		aliases: ['banjo'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🥁',
@@ -10996,7 +10996,7 @@ export const emojis: Emoji[] = [
 		aliases: ['drum'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🪘',
@@ -11005,7 +11005,7 @@ export const emojis: Emoji[] = [
 		aliases: ['long_drum'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪇',
@@ -11014,7 +11014,7 @@ export const emojis: Emoji[] = [
 		aliases: ['maracas'],
 		tags: ['shaker'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '🪈',
@@ -11023,7 +11023,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flute'],
 		tags: ['recorder'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '📱',
@@ -11032,7 +11032,7 @@ export const emojis: Emoji[] = [
 		aliases: ['iphone'],
 		tags: ['smartphone', 'mobile'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📲',
@@ -11041,7 +11041,7 @@ export const emojis: Emoji[] = [
 		aliases: ['calling'],
 		tags: ['call', 'incoming'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☎️',
@@ -11050,7 +11050,7 @@ export const emojis: Emoji[] = [
 		aliases: ['phone', 'telephone'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📞',
@@ -11059,7 +11059,7 @@ export const emojis: Emoji[] = [
 		aliases: ['telephone_receiver'],
 		tags: ['phone', 'call'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📟',
@@ -11068,7 +11068,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pager'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📠',
@@ -11077,7 +11077,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fax'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔋',
@@ -11086,7 +11086,7 @@ export const emojis: Emoji[] = [
 		aliases: ['battery'],
 		tags: ['power'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪫',
@@ -11095,7 +11095,7 @@ export const emojis: Emoji[] = [
 		aliases: ['low_battery'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🔌',
@@ -11104,7 +11104,7 @@ export const emojis: Emoji[] = [
 		aliases: ['electric_plug'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💻',
@@ -11113,7 +11113,7 @@ export const emojis: Emoji[] = [
 		aliases: ['computer'],
 		tags: ['desktop', 'screen'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🖥️',
@@ -11122,7 +11122,7 @@ export const emojis: Emoji[] = [
 		aliases: ['desktop_computer'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖨️',
@@ -11131,7 +11131,7 @@ export const emojis: Emoji[] = [
 		aliases: ['printer'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⌨️',
@@ -11140,7 +11140,7 @@ export const emojis: Emoji[] = [
 		aliases: ['keyboard'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖱️',
@@ -11149,7 +11149,7 @@ export const emojis: Emoji[] = [
 		aliases: ['computer_mouse'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖲️',
@@ -11158,7 +11158,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trackball'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💽',
@@ -11167,7 +11167,7 @@ export const emojis: Emoji[] = [
 		aliases: ['minidisc'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💾',
@@ -11176,7 +11176,7 @@ export const emojis: Emoji[] = [
 		aliases: ['floppy_disk'],
 		tags: ['save'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💿',
@@ -11185,7 +11185,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cd'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📀',
@@ -11194,7 +11194,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dvd'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧮',
@@ -11203,7 +11203,7 @@ export const emojis: Emoji[] = [
 		aliases: ['abacus'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🎥',
@@ -11212,7 +11212,7 @@ export const emojis: Emoji[] = [
 		aliases: ['movie_camera'],
 		tags: ['film', 'video'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎞️',
@@ -11221,7 +11221,7 @@ export const emojis: Emoji[] = [
 		aliases: ['film_strip'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📽️',
@@ -11230,7 +11230,7 @@ export const emojis: Emoji[] = [
 		aliases: ['film_projector'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🎬',
@@ -11239,7 +11239,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clapper'],
 		tags: ['film'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📺',
@@ -11248,7 +11248,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tv'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📷',
@@ -11257,7 +11257,7 @@ export const emojis: Emoji[] = [
 		aliases: ['camera'],
 		tags: ['photo'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📸',
@@ -11266,7 +11266,7 @@ export const emojis: Emoji[] = [
 		aliases: ['camera_flash'],
 		tags: ['photo'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📹',
@@ -11275,7 +11275,7 @@ export const emojis: Emoji[] = [
 		aliases: ['video_camera'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📼',
@@ -11284,7 +11284,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vhs'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔍',
@@ -11293,7 +11293,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mag'],
 		tags: ['search', 'zoom'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔎',
@@ -11302,7 +11302,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mag_right'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🕯️',
@@ -11311,7 +11311,7 @@ export const emojis: Emoji[] = [
 		aliases: ['candle'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💡',
@@ -11320,7 +11320,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bulb'],
 		tags: ['idea', 'light'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔦',
@@ -11329,7 +11329,7 @@ export const emojis: Emoji[] = [
 		aliases: ['flashlight'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏮',
@@ -11338,7 +11338,7 @@ export const emojis: Emoji[] = [
 		aliases: ['izakaya_lantern', 'lantern'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪔',
@@ -11347,7 +11347,7 @@ export const emojis: Emoji[] = [
 		aliases: ['diya_lamp'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '📔',
@@ -11356,7 +11356,7 @@ export const emojis: Emoji[] = [
 		aliases: ['notebook_with_decorative_cover'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📕',
@@ -11365,7 +11365,7 @@ export const emojis: Emoji[] = [
 		aliases: ['closed_book'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📖',
@@ -11374,7 +11374,7 @@ export const emojis: Emoji[] = [
 		aliases: ['book', 'open_book'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📗',
@@ -11383,7 +11383,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_book'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📘',
@@ -11392,7 +11392,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blue_book'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📙',
@@ -11401,7 +11401,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orange_book'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📚',
@@ -11410,7 +11410,7 @@ export const emojis: Emoji[] = [
 		aliases: ['books'],
 		tags: ['library'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📓',
@@ -11419,7 +11419,7 @@ export const emojis: Emoji[] = [
 		aliases: ['notebook'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📒',
@@ -11428,7 +11428,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ledger'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📃',
@@ -11437,7 +11437,7 @@ export const emojis: Emoji[] = [
 		aliases: ['page_with_curl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📜',
@@ -11446,7 +11446,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scroll'],
 		tags: ['document'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📄',
@@ -11455,7 +11455,7 @@ export const emojis: Emoji[] = [
 		aliases: ['page_facing_up'],
 		tags: ['document'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📰',
@@ -11464,7 +11464,7 @@ export const emojis: Emoji[] = [
 		aliases: ['newspaper'],
 		tags: ['press'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗞️',
@@ -11473,7 +11473,7 @@ export const emojis: Emoji[] = [
 		aliases: ['newspaper_roll'],
 		tags: ['press'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📑',
@@ -11482,7 +11482,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bookmark_tabs'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔖',
@@ -11491,7 +11491,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bookmark'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏷️',
@@ -11500,7 +11500,7 @@ export const emojis: Emoji[] = [
 		aliases: ['label'],
 		tags: ['tag'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💰',
@@ -11509,7 +11509,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moneybag'],
 		tags: ['dollar', 'cream'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪙',
@@ -11518,7 +11518,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coin'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '💴',
@@ -11527,7 +11527,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yen'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💵',
@@ -11536,7 +11536,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dollar'],
 		tags: ['money'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💶',
@@ -11545,7 +11545,7 @@ export const emojis: Emoji[] = [
 		aliases: ['euro'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💷',
@@ -11554,7 +11554,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pound'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💸',
@@ -11563,7 +11563,7 @@ export const emojis: Emoji[] = [
 		aliases: ['money_with_wings'],
 		tags: ['dollar'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💳',
@@ -11572,7 +11572,7 @@ export const emojis: Emoji[] = [
 		aliases: ['credit_card'],
 		tags: ['subscription'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🧾',
@@ -11581,7 +11581,7 @@ export const emojis: Emoji[] = [
 		aliases: ['receipt'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '💹',
@@ -11590,7 +11590,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chart'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✉️',
@@ -11599,7 +11599,7 @@ export const emojis: Emoji[] = [
 		aliases: ['envelope'],
 		tags: ['letter', 'email'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📧',
@@ -11608,7 +11608,7 @@ export const emojis: Emoji[] = [
 		aliases: ['email', 'e-mail'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📨',
@@ -11617,7 +11617,7 @@ export const emojis: Emoji[] = [
 		aliases: ['incoming_envelope'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📩',
@@ -11626,7 +11626,7 @@ export const emojis: Emoji[] = [
 		aliases: ['envelope_with_arrow'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📤',
@@ -11635,7 +11635,7 @@ export const emojis: Emoji[] = [
 		aliases: ['outbox_tray'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📥',
@@ -11644,7 +11644,7 @@ export const emojis: Emoji[] = [
 		aliases: ['inbox_tray'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📦',
@@ -11653,7 +11653,7 @@ export const emojis: Emoji[] = [
 		aliases: ['package'],
 		tags: ['shipping'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📫',
@@ -11662,7 +11662,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mailbox'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📪',
@@ -11671,7 +11671,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mailbox_closed'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📬',
@@ -11680,7 +11680,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mailbox_with_mail'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📭',
@@ -11689,7 +11689,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mailbox_with_no_mail'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📮',
@@ -11698,7 +11698,7 @@ export const emojis: Emoji[] = [
 		aliases: ['postbox'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗳️',
@@ -11707,7 +11707,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ballot_box'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '✏️',
@@ -11716,7 +11716,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pencil2'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✒️',
@@ -11725,7 +11725,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_nib'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🖋️',
@@ -11734,7 +11734,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fountain_pen'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖊️',
@@ -11743,7 +11743,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pen'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖌️',
@@ -11752,7 +11752,7 @@ export const emojis: Emoji[] = [
 		aliases: ['paintbrush'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🖍️',
@@ -11761,7 +11761,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crayon'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📝',
@@ -11770,7 +11770,7 @@ export const emojis: Emoji[] = [
 		aliases: ['memo', 'pencil'],
 		tags: ['document', 'note'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💼',
@@ -11779,7 +11779,7 @@ export const emojis: Emoji[] = [
 		aliases: ['briefcase'],
 		tags: ['business'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📁',
@@ -11788,7 +11788,7 @@ export const emojis: Emoji[] = [
 		aliases: ['file_folder'],
 		tags: ['directory'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📂',
@@ -11797,7 +11797,7 @@ export const emojis: Emoji[] = [
 		aliases: ['open_file_folder'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗂️',
@@ -11806,7 +11806,7 @@ export const emojis: Emoji[] = [
 		aliases: ['card_index_dividers'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📅',
@@ -11815,7 +11815,7 @@ export const emojis: Emoji[] = [
 		aliases: ['date'],
 		tags: ['calendar', 'schedule'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📆',
@@ -11824,7 +11824,7 @@ export const emojis: Emoji[] = [
 		aliases: ['calendar'],
 		tags: ['schedule'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗒️',
@@ -11833,7 +11833,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spiral_notepad'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗓️',
@@ -11842,7 +11842,7 @@ export const emojis: Emoji[] = [
 		aliases: ['spiral_calendar'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📇',
@@ -11851,7 +11851,7 @@ export const emojis: Emoji[] = [
 		aliases: ['card_index'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📈',
@@ -11860,7 +11860,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chart_with_upwards_trend'],
 		tags: ['graph', 'metrics'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📉',
@@ -11869,7 +11869,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chart_with_downwards_trend'],
 		tags: ['graph', 'metrics'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📊',
@@ -11878,7 +11878,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bar_chart'],
 		tags: ['stats', 'metrics'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📋',
@@ -11887,7 +11887,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clipboard'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📌',
@@ -11896,7 +11896,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pushpin'],
 		tags: ['location'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📍',
@@ -11905,7 +11905,7 @@ export const emojis: Emoji[] = [
 		aliases: ['round_pushpin'],
 		tags: ['location'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📎',
@@ -11914,7 +11914,7 @@ export const emojis: Emoji[] = [
 		aliases: ['paperclip'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🖇️',
@@ -11923,7 +11923,7 @@ export const emojis: Emoji[] = [
 		aliases: ['paperclips'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '📏',
@@ -11932,7 +11932,7 @@ export const emojis: Emoji[] = [
 		aliases: ['straight_ruler'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📐',
@@ -11941,7 +11941,7 @@ export const emojis: Emoji[] = [
 		aliases: ['triangular_ruler'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✂️',
@@ -11950,7 +11950,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scissors'],
 		tags: ['cut'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗃️',
@@ -11959,7 +11959,7 @@ export const emojis: Emoji[] = [
 		aliases: ['card_file_box'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗄️',
@@ -11968,7 +11968,7 @@ export const emojis: Emoji[] = [
 		aliases: ['file_cabinet'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗑️',
@@ -11977,7 +11977,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wastebasket'],
 		tags: ['trash'],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔒',
@@ -11986,7 +11986,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lock'],
 		tags: ['security', 'private'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔓',
@@ -11995,7 +11995,7 @@ export const emojis: Emoji[] = [
 		aliases: ['unlock'],
 		tags: ['security'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔏',
@@ -12004,7 +12004,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lock_with_ink_pen'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔐',
@@ -12013,7 +12013,7 @@ export const emojis: Emoji[] = [
 		aliases: ['closed_lock_with_key'],
 		tags: ['security'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔑',
@@ -12022,7 +12022,7 @@ export const emojis: Emoji[] = [
 		aliases: ['key'],
 		tags: ['lock', 'password'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🗝️',
@@ -12031,7 +12031,7 @@ export const emojis: Emoji[] = [
 		aliases: ['old_key'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔨',
@@ -12040,7 +12040,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hammer'],
 		tags: ['tool'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪓',
@@ -12049,7 +12049,7 @@ export const emojis: Emoji[] = [
 		aliases: ['axe'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '⛏️',
@@ -12058,7 +12058,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pick'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⚒️',
@@ -12067,7 +12067,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hammer_and_pick'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛠️',
@@ -12076,7 +12076,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hammer_and_wrench'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗡️',
@@ -12085,7 +12085,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dagger'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⚔️',
@@ -12094,7 +12094,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crossed_swords'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '💣',
@@ -12103,7 +12103,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bomb'],
 		tags: ['boom'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪃',
@@ -12112,7 +12112,7 @@ export const emojis: Emoji[] = [
 		aliases: ['boomerang'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🏹',
@@ -12121,7 +12121,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bow_and_arrow'],
 		tags: ['archery'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛡️',
@@ -12130,7 +12130,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shield'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🪚',
@@ -12139,7 +12139,7 @@ export const emojis: Emoji[] = [
 		aliases: ['carpentry_saw'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🔧',
@@ -12148,7 +12148,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wrench'],
 		tags: ['tool'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪛',
@@ -12157,7 +12157,7 @@ export const emojis: Emoji[] = [
 		aliases: ['screwdriver'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🔩',
@@ -12166,7 +12166,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nut_and_bolt'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚙️',
@@ -12175,7 +12175,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gear'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🗜️',
@@ -12184,7 +12184,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clamp'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⚖️',
@@ -12193,7 +12193,7 @@ export const emojis: Emoji[] = [
 		aliases: ['balance_scale'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🦯',
@@ -12202,7 +12202,7 @@ export const emojis: Emoji[] = [
 		aliases: ['probing_cane'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🔗',
@@ -12211,7 +12211,7 @@ export const emojis: Emoji[] = [
 		aliases: ['link'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛓️',
@@ -12220,7 +12220,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chains'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🪝',
@@ -12229,7 +12229,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hook'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🧰',
@@ -12238,7 +12238,7 @@ export const emojis: Emoji[] = [
 		aliases: ['toolbox'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧲',
@@ -12247,7 +12247,7 @@ export const emojis: Emoji[] = [
 		aliases: ['magnet'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪜',
@@ -12256,7 +12256,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ladder'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '⚗️',
@@ -12265,7 +12265,7 @@ export const emojis: Emoji[] = [
 		aliases: ['alembic'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧪',
@@ -12274,7 +12274,7 @@ export const emojis: Emoji[] = [
 		aliases: ['test_tube'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧫',
@@ -12283,7 +12283,7 @@ export const emojis: Emoji[] = [
 		aliases: ['petri_dish'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧬',
@@ -12292,7 +12292,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dna'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🔬',
@@ -12301,7 +12301,7 @@ export const emojis: Emoji[] = [
 		aliases: ['microscope'],
 		tags: ['science', 'laboratory', 'investigate'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔭',
@@ -12310,7 +12310,7 @@ export const emojis: Emoji[] = [
 		aliases: ['telescope'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📡',
@@ -12319,7 +12319,7 @@ export const emojis: Emoji[] = [
 		aliases: ['satellite'],
 		tags: ['signal'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💉',
@@ -12328,7 +12328,7 @@ export const emojis: Emoji[] = [
 		aliases: ['syringe'],
 		tags: ['health', 'hospital', 'needle'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩸',
@@ -12337,7 +12337,7 @@ export const emojis: Emoji[] = [
 		aliases: ['drop_of_blood'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '💊',
@@ -12346,7 +12346,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pill'],
 		tags: ['health', 'medicine'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🩹',
@@ -12355,7 +12355,7 @@ export const emojis: Emoji[] = [
 		aliases: ['adhesive_bandage'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🩼',
@@ -12364,7 +12364,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crutch'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🩺',
@@ -12373,7 +12373,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stethoscope'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🩻',
@@ -12382,7 +12382,7 @@ export const emojis: Emoji[] = [
 		aliases: ['x_ray'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🚪',
@@ -12391,7 +12391,7 @@ export const emojis: Emoji[] = [
 		aliases: ['door'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛗',
@@ -12400,7 +12400,7 @@ export const emojis: Emoji[] = [
 		aliases: ['elevator'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪞',
@@ -12409,7 +12409,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mirror'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪟',
@@ -12418,7 +12418,7 @@ export const emojis: Emoji[] = [
 		aliases: ['window'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🛏️',
@@ -12427,7 +12427,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bed'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🛋️',
@@ -12436,7 +12436,7 @@ export const emojis: Emoji[] = [
 		aliases: ['couch_and_lamp'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🪑',
@@ -12445,7 +12445,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chair'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🚽',
@@ -12454,7 +12454,7 @@ export const emojis: Emoji[] = [
 		aliases: ['toilet'],
 		tags: ['wc'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪠',
@@ -12463,7 +12463,7 @@ export const emojis: Emoji[] = [
 		aliases: ['plunger'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🚿',
@@ -12472,7 +12472,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shower'],
 		tags: ['bath'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛁',
@@ -12481,7 +12481,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bathtub'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪤',
@@ -12490,7 +12490,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mouse_trap'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪒',
@@ -12499,7 +12499,7 @@ export const emojis: Emoji[] = [
 		aliases: ['razor'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🧴',
@@ -12508,7 +12508,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lotion_bottle'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧷',
@@ -12517,7 +12517,7 @@ export const emojis: Emoji[] = [
 		aliases: ['safety_pin'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧹',
@@ -12526,7 +12526,7 @@ export const emojis: Emoji[] = [
 		aliases: ['broom'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧺',
@@ -12535,7 +12535,7 @@ export const emojis: Emoji[] = [
 		aliases: ['basket'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧻',
@@ -12544,7 +12544,7 @@ export const emojis: Emoji[] = [
 		aliases: ['roll_of_paper'],
 		tags: ['toilet'],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪣',
@@ -12553,7 +12553,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bucket'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🧼',
@@ -12562,7 +12562,7 @@ export const emojis: Emoji[] = [
 		aliases: ['soap'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🫧',
@@ -12571,7 +12571,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bubbles'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🪥',
@@ -12580,7 +12580,7 @@ export const emojis: Emoji[] = [
 		aliases: ['toothbrush'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🧽',
@@ -12589,7 +12589,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sponge'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🧯',
@@ -12598,7 +12598,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fire_extinguisher'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🛒',
@@ -12607,7 +12607,7 @@ export const emojis: Emoji[] = [
 		aliases: ['shopping_cart'],
 		tags: [],
 		unicode_version: '9.0',
-		ios_version: '10.2',
+		ios_version: '10.2'
 	},
 	{
 		emoji: '🚬',
@@ -12616,7 +12616,7 @@ export const emojis: Emoji[] = [
 		aliases: ['smoking'],
 		tags: ['cigarette'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚰️',
@@ -12625,7 +12625,7 @@ export const emojis: Emoji[] = [
 		aliases: ['coffin'],
 		tags: ['funeral'],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🪦',
@@ -12634,7 +12634,7 @@ export const emojis: Emoji[] = [
 		aliases: ['headstone'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '⚱️',
@@ -12643,7 +12643,7 @@ export const emojis: Emoji[] = [
 		aliases: ['funeral_urn'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🧿',
@@ -12652,7 +12652,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nazar_amulet'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🪬',
@@ -12661,7 +12661,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hamsa'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🗿',
@@ -12670,7 +12670,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moyai'],
 		tags: ['stone'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪧',
@@ -12679,7 +12679,7 @@ export const emojis: Emoji[] = [
 		aliases: ['placard'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🪪',
@@ -12688,7 +12688,7 @@ export const emojis: Emoji[] = [
 		aliases: ['identification_card'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '🏧',
@@ -12697,7 +12697,7 @@ export const emojis: Emoji[] = [
 		aliases: ['atm'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚮',
@@ -12706,7 +12706,7 @@ export const emojis: Emoji[] = [
 		aliases: ['put_litter_in_its_place'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚰',
@@ -12715,7 +12715,7 @@ export const emojis: Emoji[] = [
 		aliases: ['potable_water'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♿',
@@ -12724,7 +12724,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wheelchair'],
 		tags: ['accessibility'],
 		unicode_version: '4.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚹',
@@ -12733,7 +12733,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mens'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚺',
@@ -12742,7 +12742,7 @@ export const emojis: Emoji[] = [
 		aliases: ['womens'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚻',
@@ -12751,7 +12751,7 @@ export const emojis: Emoji[] = [
 		aliases: ['restroom'],
 		tags: ['toilet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚼',
@@ -12760,7 +12760,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baby_symbol'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚾',
@@ -12769,7 +12769,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wc'],
 		tags: ['toilet', 'restroom'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛂',
@@ -12778,7 +12778,7 @@ export const emojis: Emoji[] = [
 		aliases: ['passport_control'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛃',
@@ -12787,7 +12787,7 @@ export const emojis: Emoji[] = [
 		aliases: ['customs'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛄',
@@ -12796,7 +12796,7 @@ export const emojis: Emoji[] = [
 		aliases: ['baggage_claim'],
 		tags: ['airport'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛅',
@@ -12805,7 +12805,7 @@ export const emojis: Emoji[] = [
 		aliases: ['left_luggage'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚠️',
@@ -12814,7 +12814,7 @@ export const emojis: Emoji[] = [
 		aliases: ['warning'],
 		tags: ['wip'],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚸',
@@ -12823,7 +12823,7 @@ export const emojis: Emoji[] = [
 		aliases: ['children_crossing'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛔',
@@ -12832,7 +12832,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_entry'],
 		tags: ['limit'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚫',
@@ -12841,7 +12841,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_entry_sign'],
 		tags: ['block', 'forbidden'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚳',
@@ -12850,7 +12850,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_bicycles'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚭',
@@ -12859,7 +12859,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_smoking'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚯',
@@ -12868,7 +12868,7 @@ export const emojis: Emoji[] = [
 		aliases: ['do_not_litter'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚱',
@@ -12877,7 +12877,7 @@ export const emojis: Emoji[] = [
 		aliases: ['non-potable_water'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚷',
@@ -12886,7 +12886,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_pedestrians'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📵',
@@ -12895,7 +12895,7 @@ export const emojis: Emoji[] = [
 		aliases: ['no_mobile_phones'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔞',
@@ -12904,7 +12904,7 @@ export const emojis: Emoji[] = [
 		aliases: ['underage'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☢️',
@@ -12913,7 +12913,7 @@ export const emojis: Emoji[] = [
 		aliases: ['radioactive'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☣️',
@@ -12922,7 +12922,7 @@ export const emojis: Emoji[] = [
 		aliases: ['biohazard'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⬆️',
@@ -12931,7 +12931,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_up'],
 		tags: [],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↗️',
@@ -12940,7 +12940,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_upper_right'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➡️',
@@ -12949,7 +12949,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_right'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↘️',
@@ -12958,7 +12958,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_lower_right'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⬇️',
@@ -12967,7 +12967,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_down'],
 		tags: [],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↙️',
@@ -12976,7 +12976,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_lower_left'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⬅️',
@@ -12985,7 +12985,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_left'],
 		tags: [],
 		unicode_version: '4.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↖️',
@@ -12994,7 +12994,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_upper_left'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↕️',
@@ -13003,7 +13003,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_up_down'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↔️',
@@ -13012,7 +13012,7 @@ export const emojis: Emoji[] = [
 		aliases: ['left_right_arrow'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↩️',
@@ -13021,7 +13021,7 @@ export const emojis: Emoji[] = [
 		aliases: ['leftwards_arrow_with_hook'],
 		tags: ['return'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '↪️',
@@ -13030,7 +13030,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_right_hook'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⤴️',
@@ -13039,7 +13039,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_heading_up'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⤵️',
@@ -13048,7 +13048,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_heading_down'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔃',
@@ -13057,7 +13057,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrows_clockwise'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔄',
@@ -13066,7 +13066,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrows_counterclockwise'],
 		tags: ['sync'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔙',
@@ -13075,7 +13075,7 @@ export const emojis: Emoji[] = [
 		aliases: ['back'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔚',
@@ -13084,7 +13084,7 @@ export const emojis: Emoji[] = [
 		aliases: ['end'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔛',
@@ -13093,7 +13093,7 @@ export const emojis: Emoji[] = [
 		aliases: ['on'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔜',
@@ -13102,7 +13102,7 @@ export const emojis: Emoji[] = [
 		aliases: ['soon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔝',
@@ -13111,7 +13111,7 @@ export const emojis: Emoji[] = [
 		aliases: ['top'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛐',
@@ -13120,7 +13120,7 @@ export const emojis: Emoji[] = [
 		aliases: ['place_of_worship'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⚛️',
@@ -13129,7 +13129,7 @@ export const emojis: Emoji[] = [
 		aliases: ['atom_symbol'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕉️',
@@ -13138,7 +13138,7 @@ export const emojis: Emoji[] = [
 		aliases: ['om'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '✡️',
@@ -13147,7 +13147,7 @@ export const emojis: Emoji[] = [
 		aliases: ['star_of_david'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☸️',
@@ -13156,7 +13156,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wheel_of_dharma'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☯️',
@@ -13165,7 +13165,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yin_yang'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '✝️',
@@ -13174,7 +13174,7 @@ export const emojis: Emoji[] = [
 		aliases: ['latin_cross'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☦️',
@@ -13183,7 +13183,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orthodox_cross'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☪️',
@@ -13192,7 +13192,7 @@ export const emojis: Emoji[] = [
 		aliases: ['star_and_crescent'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '☮️',
@@ -13201,7 +13201,7 @@ export const emojis: Emoji[] = [
 		aliases: ['peace_symbol'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🕎',
@@ -13210,7 +13210,7 @@ export const emojis: Emoji[] = [
 		aliases: ['menorah'],
 		tags: [],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔯',
@@ -13219,7 +13219,7 @@ export const emojis: Emoji[] = [
 		aliases: ['six_pointed_star'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🪯',
@@ -13228,7 +13228,7 @@ export const emojis: Emoji[] = [
 		aliases: ['khanda'],
 		tags: [],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '♈',
@@ -13237,7 +13237,7 @@ export const emojis: Emoji[] = [
 		aliases: ['aries'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♉',
@@ -13246,7 +13246,7 @@ export const emojis: Emoji[] = [
 		aliases: ['taurus'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♊',
@@ -13255,7 +13255,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gemini'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♋',
@@ -13264,7 +13264,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cancer'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♌',
@@ -13273,7 +13273,7 @@ export const emojis: Emoji[] = [
 		aliases: ['leo'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♍',
@@ -13282,7 +13282,7 @@ export const emojis: Emoji[] = [
 		aliases: ['virgo'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♎',
@@ -13291,7 +13291,7 @@ export const emojis: Emoji[] = [
 		aliases: ['libra'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♏',
@@ -13300,7 +13300,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scorpius'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♐',
@@ -13309,7 +13309,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sagittarius'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♑',
@@ -13318,7 +13318,7 @@ export const emojis: Emoji[] = [
 		aliases: ['capricorn'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♒',
@@ -13327,7 +13327,7 @@ export const emojis: Emoji[] = [
 		aliases: ['aquarius'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♓',
@@ -13336,7 +13336,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pisces'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⛎',
@@ -13345,7 +13345,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ophiuchus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔀',
@@ -13354,7 +13354,7 @@ export const emojis: Emoji[] = [
 		aliases: ['twisted_rightwards_arrows'],
 		tags: ['shuffle'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔁',
@@ -13363,7 +13363,7 @@ export const emojis: Emoji[] = [
 		aliases: ['repeat'],
 		tags: ['loop'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔂',
@@ -13372,7 +13372,7 @@ export const emojis: Emoji[] = [
 		aliases: ['repeat_one'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '▶️',
@@ -13381,7 +13381,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_forward'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏩',
@@ -13390,7 +13390,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fast_forward'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏭️',
@@ -13399,7 +13399,7 @@ export const emojis: Emoji[] = [
 		aliases: ['next_track_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⏯️',
@@ -13408,7 +13408,7 @@ export const emojis: Emoji[] = [
 		aliases: ['play_or_pause_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '◀️',
@@ -13417,7 +13417,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_backward'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏪',
@@ -13426,7 +13426,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rewind'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏮️',
@@ -13435,7 +13435,7 @@ export const emojis: Emoji[] = [
 		aliases: ['previous_track_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔼',
@@ -13444,7 +13444,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_up_small'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏫',
@@ -13453,7 +13453,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_double_up'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔽',
@@ -13462,7 +13462,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_down_small'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏬',
@@ -13471,7 +13471,7 @@ export const emojis: Emoji[] = [
 		aliases: ['arrow_double_down'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⏸️',
@@ -13480,7 +13480,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pause_button'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⏹️',
@@ -13489,7 +13489,7 @@ export const emojis: Emoji[] = [
 		aliases: ['stop_button'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⏺️',
@@ -13498,7 +13498,7 @@ export const emojis: Emoji[] = [
 		aliases: ['record_button'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '⏏️',
@@ -13507,7 +13507,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eject_button'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🎦',
@@ -13516,7 +13516,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cinema'],
 		tags: ['film', 'movie'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔅',
@@ -13525,7 +13525,7 @@ export const emojis: Emoji[] = [
 		aliases: ['low_brightness'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔆',
@@ -13534,7 +13534,7 @@ export const emojis: Emoji[] = [
 		aliases: ['high_brightness'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📶',
@@ -13543,7 +13543,7 @@ export const emojis: Emoji[] = [
 		aliases: ['signal_strength'],
 		tags: ['wifi'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🛜',
@@ -13552,7 +13552,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wireless'],
 		tags: ['wifi'],
 		unicode_version: '15.0',
-		ios_version: '16.4',
+		ios_version: '16.4'
 	},
 	{
 		emoji: '📳',
@@ -13561,7 +13561,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vibration_mode'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📴',
@@ -13570,7 +13570,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mobile_phone_off'],
 		tags: ['mute', 'off'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '♀️',
@@ -13579,7 +13579,7 @@ export const emojis: Emoji[] = [
 		aliases: ['female_sign'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '♂️',
@@ -13588,7 +13588,7 @@ export const emojis: Emoji[] = [
 		aliases: ['male_sign'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '⚧️',
@@ -13597,7 +13597,7 @@ export const emojis: Emoji[] = [
 		aliases: ['transgender_symbol'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '✖️',
@@ -13606,7 +13606,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_multiplication_x'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➕',
@@ -13615,7 +13615,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_plus_sign'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➖',
@@ -13624,7 +13624,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_minus_sign'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➗',
@@ -13633,7 +13633,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_division_sign'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🟰',
@@ -13642,7 +13642,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_equals_sign'],
 		tags: [],
 		unicode_version: '14.0',
-		ios_version: '15.4',
+		ios_version: '15.4'
 	},
 	{
 		emoji: '♾️',
@@ -13651,7 +13651,7 @@ export const emojis: Emoji[] = [
 		aliases: ['infinity'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '‼️',
@@ -13660,7 +13660,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bangbang'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⁉️',
@@ -13669,7 +13669,7 @@ export const emojis: Emoji[] = [
 		aliases: ['interrobang'],
 		tags: [],
 		unicode_version: '3.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❓',
@@ -13678,7 +13678,7 @@ export const emojis: Emoji[] = [
 		aliases: ['question'],
 		tags: ['confused'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❔',
@@ -13687,7 +13687,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grey_question'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❕',
@@ -13696,7 +13696,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grey_exclamation'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❗',
@@ -13705,7 +13705,7 @@ export const emojis: Emoji[] = [
 		aliases: ['exclamation', 'heavy_exclamation_mark'],
 		tags: ['bang'],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '〰️',
@@ -13714,7 +13714,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wavy_dash'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💱',
@@ -13723,7 +13723,7 @@ export const emojis: Emoji[] = [
 		aliases: ['currency_exchange'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💲',
@@ -13732,7 +13732,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_dollar_sign'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚕️',
@@ -13741,7 +13741,7 @@ export const emojis: Emoji[] = [
 		aliases: ['medical_symbol'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '♻️',
@@ -13750,7 +13750,7 @@ export const emojis: Emoji[] = [
 		aliases: ['recycle'],
 		tags: ['environment', 'green'],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚜️',
@@ -13759,7 +13759,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fleur_de_lis'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🔱',
@@ -13768,7 +13768,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trident'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '📛',
@@ -13777,7 +13777,7 @@ export const emojis: Emoji[] = [
 		aliases: ['name_badge'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔰',
@@ -13786,7 +13786,7 @@ export const emojis: Emoji[] = [
 		aliases: ['beginner'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⭕',
@@ -13795,7 +13795,7 @@ export const emojis: Emoji[] = [
 		aliases: ['o'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✅',
@@ -13804,7 +13804,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_check_mark'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '☑️',
@@ -13813,7 +13813,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ballot_box_with_check'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✔️',
@@ -13822,7 +13822,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heavy_check_mark'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❌',
@@ -13831,7 +13831,7 @@ export const emojis: Emoji[] = [
 		aliases: ['x'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❎',
@@ -13840,7 +13840,7 @@ export const emojis: Emoji[] = [
 		aliases: ['negative_squared_cross_mark'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➰',
@@ -13849,7 +13849,7 @@ export const emojis: Emoji[] = [
 		aliases: ['curly_loop'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '➿',
@@ -13858,7 +13858,7 @@ export const emojis: Emoji[] = [
 		aliases: ['loop'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '〽️',
@@ -13867,7 +13867,7 @@ export const emojis: Emoji[] = [
 		aliases: ['part_alternation_mark'],
 		tags: [],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✳️',
@@ -13876,7 +13876,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eight_spoked_asterisk'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '✴️',
@@ -13885,7 +13885,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eight_pointed_black_star'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '❇️',
@@ -13894,7 +13894,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sparkle'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '©️',
@@ -13903,7 +13903,7 @@ export const emojis: Emoji[] = [
 		aliases: ['copyright'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '®️',
@@ -13912,7 +13912,7 @@ export const emojis: Emoji[] = [
 		aliases: ['registered'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '™️',
@@ -13921,7 +13921,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tm'],
 		tags: ['trademark'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '#️⃣',
@@ -13930,7 +13930,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hash'],
 		tags: ['number'],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '*️⃣',
@@ -13939,7 +13939,7 @@ export const emojis: Emoji[] = [
 		aliases: ['asterisk'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '0️⃣',
@@ -13948,7 +13948,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zero'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '1️⃣',
@@ -13957,7 +13957,7 @@ export const emojis: Emoji[] = [
 		aliases: ['one'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '2️⃣',
@@ -13966,7 +13966,7 @@ export const emojis: Emoji[] = [
 		aliases: ['two'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '3️⃣',
@@ -13975,7 +13975,7 @@ export const emojis: Emoji[] = [
 		aliases: ['three'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '4️⃣',
@@ -13984,7 +13984,7 @@ export const emojis: Emoji[] = [
 		aliases: ['four'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '5️⃣',
@@ -13993,7 +13993,7 @@ export const emojis: Emoji[] = [
 		aliases: ['five'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '6️⃣',
@@ -14002,7 +14002,7 @@ export const emojis: Emoji[] = [
 		aliases: ['six'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '7️⃣',
@@ -14011,7 +14011,7 @@ export const emojis: Emoji[] = [
 		aliases: ['seven'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '8️⃣',
@@ -14020,7 +14020,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eight'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '9️⃣',
@@ -14029,7 +14029,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nine'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔟',
@@ -14038,7 +14038,7 @@ export const emojis: Emoji[] = [
 		aliases: ['keycap_ten'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔠',
@@ -14047,7 +14047,7 @@ export const emojis: Emoji[] = [
 		aliases: ['capital_abcd'],
 		tags: ['letters'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔡',
@@ -14056,7 +14056,7 @@ export const emojis: Emoji[] = [
 		aliases: ['abcd'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔢',
@@ -14065,7 +14065,7 @@ export const emojis: Emoji[] = [
 		aliases: ['1234'],
 		tags: ['numbers'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔣',
@@ -14074,7 +14074,7 @@ export const emojis: Emoji[] = [
 		aliases: ['symbols'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔤',
@@ -14083,7 +14083,7 @@ export const emojis: Emoji[] = [
 		aliases: ['abc'],
 		tags: ['alphabet'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🅰️',
@@ -14092,7 +14092,7 @@ export const emojis: Emoji[] = [
 		aliases: ['a'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆎',
@@ -14101,7 +14101,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ab'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🅱️',
@@ -14110,7 +14110,7 @@ export const emojis: Emoji[] = [
 		aliases: ['b'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆑',
@@ -14119,7 +14119,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cl'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆒',
@@ -14128,7 +14128,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cool'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆓',
@@ -14137,7 +14137,7 @@ export const emojis: Emoji[] = [
 		aliases: ['free'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: 'ℹ️',
@@ -14146,7 +14146,7 @@ export const emojis: Emoji[] = [
 		aliases: ['information_source'],
 		tags: [],
 		unicode_version: '3.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆔',
@@ -14155,7 +14155,7 @@ export const emojis: Emoji[] = [
 		aliases: ['id'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: 'Ⓜ️',
@@ -14164,7 +14164,7 @@ export const emojis: Emoji[] = [
 		aliases: ['m'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆕',
@@ -14173,7 +14173,7 @@ export const emojis: Emoji[] = [
 		aliases: ['new'],
 		tags: ['fresh'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆖',
@@ -14182,7 +14182,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ng'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🅾️',
@@ -14191,7 +14191,7 @@ export const emojis: Emoji[] = [
 		aliases: ['o2'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆗',
@@ -14200,7 +14200,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ok'],
 		tags: ['yes'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🅿️',
@@ -14209,7 +14209,7 @@ export const emojis: Emoji[] = [
 		aliases: ['parking'],
 		tags: [],
 		unicode_version: '5.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆘',
@@ -14218,7 +14218,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sos'],
 		tags: ['help', 'emergency'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆙',
@@ -14227,7 +14227,7 @@ export const emojis: Emoji[] = [
 		aliases: ['up'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🆚',
@@ -14236,7 +14236,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vs'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈁',
@@ -14245,7 +14245,7 @@ export const emojis: Emoji[] = [
 		aliases: ['koko'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈂️',
@@ -14254,7 +14254,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sa'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈷️',
@@ -14263,7 +14263,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u6708'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈶',
@@ -14272,7 +14272,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u6709'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈯',
@@ -14281,7 +14281,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u6307'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🉐',
@@ -14290,7 +14290,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ideograph_advantage'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈹',
@@ -14299,7 +14299,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u5272'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈚',
@@ -14308,7 +14308,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u7121'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈲',
@@ -14317,7 +14317,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u7981'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🉑',
@@ -14326,7 +14326,7 @@ export const emojis: Emoji[] = [
 		aliases: ['accept'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈸',
@@ -14335,7 +14335,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u7533'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈴',
@@ -14344,7 +14344,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u5408'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈳',
@@ -14353,7 +14353,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u7a7a'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '㊗️',
@@ -14362,7 +14362,7 @@ export const emojis: Emoji[] = [
 		aliases: ['congratulations'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '㊙️',
@@ -14371,7 +14371,7 @@ export const emojis: Emoji[] = [
 		aliases: ['secret'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈺',
@@ -14380,7 +14380,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u55b6'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🈵',
@@ -14389,7 +14389,7 @@ export const emojis: Emoji[] = [
 		aliases: ['u6e80'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔴',
@@ -14398,7 +14398,7 @@ export const emojis: Emoji[] = [
 		aliases: ['red_circle'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🟠',
@@ -14407,7 +14407,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orange_circle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟡',
@@ -14416,7 +14416,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yellow_circle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟢',
@@ -14425,7 +14425,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_circle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🔵',
@@ -14434,7 +14434,7 @@ export const emojis: Emoji[] = [
 		aliases: ['large_blue_circle'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🟣',
@@ -14443,7 +14443,7 @@ export const emojis: Emoji[] = [
 		aliases: ['purple_circle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟤',
@@ -14452,7 +14452,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brown_circle'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '⚫',
@@ -14461,7 +14461,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_circle'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⚪',
@@ -14470,7 +14470,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_circle'],
 		tags: [],
 		unicode_version: '4.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🟥',
@@ -14479,7 +14479,7 @@ export const emojis: Emoji[] = [
 		aliases: ['red_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟧',
@@ -14488,7 +14488,7 @@ export const emojis: Emoji[] = [
 		aliases: ['orange_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟨',
@@ -14497,7 +14497,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yellow_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟩',
@@ -14506,7 +14506,7 @@ export const emojis: Emoji[] = [
 		aliases: ['green_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟦',
@@ -14515,7 +14515,7 @@ export const emojis: Emoji[] = [
 		aliases: ['blue_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟪',
@@ -14524,7 +14524,7 @@ export const emojis: Emoji[] = [
 		aliases: ['purple_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '🟫',
@@ -14533,7 +14533,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brown_square'],
 		tags: [],
 		unicode_version: '12.0',
-		ios_version: '13.0',
+		ios_version: '13.0'
 	},
 	{
 		emoji: '⬛',
@@ -14542,7 +14542,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_large_square'],
 		tags: [],
 		unicode_version: '5.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '⬜',
@@ -14551,7 +14551,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_large_square'],
 		tags: [],
 		unicode_version: '5.1',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '◼️',
@@ -14560,7 +14560,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_medium_square'],
 		tags: [],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '◻️',
@@ -14569,7 +14569,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_medium_square'],
 		tags: [],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '◾',
@@ -14578,7 +14578,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_medium_small_square'],
 		tags: [],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '◽',
@@ -14587,7 +14587,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_medium_small_square'],
 		tags: [],
 		unicode_version: '3.2',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '▪️',
@@ -14596,7 +14596,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_small_square'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '▫️',
@@ -14605,7 +14605,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_small_square'],
 		tags: [],
 		unicode_version: '',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔶',
@@ -14614,7 +14614,7 @@ export const emojis: Emoji[] = [
 		aliases: ['large_orange_diamond'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔷',
@@ -14623,7 +14623,7 @@ export const emojis: Emoji[] = [
 		aliases: ['large_blue_diamond'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔸',
@@ -14632,7 +14632,7 @@ export const emojis: Emoji[] = [
 		aliases: ['small_orange_diamond'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔹',
@@ -14641,7 +14641,7 @@ export const emojis: Emoji[] = [
 		aliases: ['small_blue_diamond'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔺',
@@ -14650,7 +14650,7 @@ export const emojis: Emoji[] = [
 		aliases: ['small_red_triangle'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔻',
@@ -14659,7 +14659,7 @@ export const emojis: Emoji[] = [
 		aliases: ['small_red_triangle_down'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '💠',
@@ -14668,7 +14668,7 @@ export const emojis: Emoji[] = [
 		aliases: ['diamond_shape_with_a_dot_inside'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔘',
@@ -14677,7 +14677,7 @@ export const emojis: Emoji[] = [
 		aliases: ['radio_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔳',
@@ -14686,7 +14686,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_square_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🔲',
@@ -14695,7 +14695,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_square_button'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏁',
@@ -14704,7 +14704,7 @@ export const emojis: Emoji[] = [
 		aliases: ['checkered_flag'],
 		tags: ['milestone', 'finish'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🚩',
@@ -14713,7 +14713,7 @@ export const emojis: Emoji[] = [
 		aliases: ['triangular_flag_on_post'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🎌',
@@ -14722,7 +14722,7 @@ export const emojis: Emoji[] = [
 		aliases: ['crossed_flags'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🏴',
@@ -14731,7 +14731,7 @@ export const emojis: Emoji[] = [
 		aliases: ['black_flag'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏳️',
@@ -14740,7 +14740,7 @@ export const emojis: Emoji[] = [
 		aliases: ['white_flag'],
 		tags: [],
 		unicode_version: '7.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🏳️‍🌈',
@@ -14749,7 +14749,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rainbow_flag'],
 		tags: ['pride'],
 		unicode_version: '6.0',
-		ios_version: '10.0',
+		ios_version: '10.0'
 	},
 	{
 		emoji: '🏳️‍⚧️',
@@ -14758,7 +14758,7 @@ export const emojis: Emoji[] = [
 		aliases: ['transgender_flag'],
 		tags: [],
 		unicode_version: '13.0',
-		ios_version: '14.0',
+		ios_version: '14.0'
 	},
 	{
 		emoji: '🏴‍☠️',
@@ -14767,7 +14767,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pirate_flag'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇦🇨',
@@ -14776,7 +14776,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ascension_island'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇦🇩',
@@ -14785,7 +14785,7 @@ export const emojis: Emoji[] = [
 		aliases: ['andorra'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇪',
@@ -14794,7 +14794,7 @@ export const emojis: Emoji[] = [
 		aliases: ['united_arab_emirates'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇫',
@@ -14803,7 +14803,7 @@ export const emojis: Emoji[] = [
 		aliases: ['afghanistan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇬',
@@ -14812,7 +14812,7 @@ export const emojis: Emoji[] = [
 		aliases: ['antigua_barbuda'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇮',
@@ -14821,7 +14821,7 @@ export const emojis: Emoji[] = [
 		aliases: ['anguilla'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇱',
@@ -14830,7 +14830,7 @@ export const emojis: Emoji[] = [
 		aliases: ['albania'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇲',
@@ -14839,7 +14839,7 @@ export const emojis: Emoji[] = [
 		aliases: ['armenia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇴',
@@ -14848,7 +14848,7 @@ export const emojis: Emoji[] = [
 		aliases: ['angola'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇶',
@@ -14857,7 +14857,7 @@ export const emojis: Emoji[] = [
 		aliases: ['antarctica'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇦🇷',
@@ -14866,7 +14866,7 @@ export const emojis: Emoji[] = [
 		aliases: ['argentina'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇸',
@@ -14875,7 +14875,7 @@ export const emojis: Emoji[] = [
 		aliases: ['american_samoa'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇹',
@@ -14884,7 +14884,7 @@ export const emojis: Emoji[] = [
 		aliases: ['austria'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇺',
@@ -14893,7 +14893,7 @@ export const emojis: Emoji[] = [
 		aliases: ['australia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇼',
@@ -14902,7 +14902,7 @@ export const emojis: Emoji[] = [
 		aliases: ['aruba'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇦🇽',
@@ -14911,7 +14911,7 @@ export const emojis: Emoji[] = [
 		aliases: ['aland_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇦🇿',
@@ -14920,7 +14920,7 @@ export const emojis: Emoji[] = [
 		aliases: ['azerbaijan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇦',
@@ -14929,7 +14929,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bosnia_herzegovina'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇧',
@@ -14938,7 +14938,7 @@ export const emojis: Emoji[] = [
 		aliases: ['barbados'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇩',
@@ -14947,7 +14947,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bangladesh'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇪',
@@ -14956,7 +14956,7 @@ export const emojis: Emoji[] = [
 		aliases: ['belgium'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇫',
@@ -14965,7 +14965,7 @@ export const emojis: Emoji[] = [
 		aliases: ['burkina_faso'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇬',
@@ -14974,7 +14974,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bulgaria'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇭',
@@ -14983,7 +14983,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bahrain'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇮',
@@ -14992,7 +14992,7 @@ export const emojis: Emoji[] = [
 		aliases: ['burundi'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇯',
@@ -15001,7 +15001,7 @@ export const emojis: Emoji[] = [
 		aliases: ['benin'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇱',
@@ -15010,7 +15010,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_barthelemy'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇧🇲',
@@ -15019,7 +15019,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bermuda'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇳',
@@ -15028,7 +15028,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brunei'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇴',
@@ -15037,7 +15037,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bolivia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇶',
@@ -15046,7 +15046,7 @@ export const emojis: Emoji[] = [
 		aliases: ['caribbean_netherlands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇧🇷',
@@ -15055,7 +15055,7 @@ export const emojis: Emoji[] = [
 		aliases: ['brazil'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇸',
@@ -15064,7 +15064,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bahamas'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇹',
@@ -15073,7 +15073,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bhutan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇻',
@@ -15082,7 +15082,7 @@ export const emojis: Emoji[] = [
 		aliases: ['bouvet_island'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇧🇼',
@@ -15091,7 +15091,7 @@ export const emojis: Emoji[] = [
 		aliases: ['botswana'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇾',
@@ -15100,7 +15100,7 @@ export const emojis: Emoji[] = [
 		aliases: ['belarus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇧🇿',
@@ -15109,7 +15109,7 @@ export const emojis: Emoji[] = [
 		aliases: ['belize'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇦',
@@ -15118,7 +15118,7 @@ export const emojis: Emoji[] = [
 		aliases: ['canada'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇨',
@@ -15127,7 +15127,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cocos_islands'],
 		tags: ['keeling'],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇨🇩',
@@ -15136,7 +15136,7 @@ export const emojis: Emoji[] = [
 		aliases: ['congo_kinshasa'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇫',
@@ -15145,7 +15145,7 @@ export const emojis: Emoji[] = [
 		aliases: ['central_african_republic'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇬',
@@ -15154,7 +15154,7 @@ export const emojis: Emoji[] = [
 		aliases: ['congo_brazzaville'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇭',
@@ -15163,7 +15163,7 @@ export const emojis: Emoji[] = [
 		aliases: ['switzerland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇮',
@@ -15172,7 +15172,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cote_divoire'],
 		tags: ['ivory'],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇰',
@@ -15181,7 +15181,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cook_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇱',
@@ -15190,7 +15190,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chile'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇲',
@@ -15199,7 +15199,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cameroon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇳',
@@ -15208,7 +15208,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cn'],
 		tags: ['china'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇨🇴',
@@ -15217,7 +15217,7 @@ export const emojis: Emoji[] = [
 		aliases: ['colombia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇵',
@@ -15226,7 +15226,7 @@ export const emojis: Emoji[] = [
 		aliases: ['clipperton_island'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇨🇷',
@@ -15235,7 +15235,7 @@ export const emojis: Emoji[] = [
 		aliases: ['costa_rica'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇺',
@@ -15244,7 +15244,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cuba'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇻',
@@ -15253,7 +15253,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cape_verde'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇼',
@@ -15262,7 +15262,7 @@ export const emojis: Emoji[] = [
 		aliases: ['curacao'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇽',
@@ -15271,7 +15271,7 @@ export const emojis: Emoji[] = [
 		aliases: ['christmas_island'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇨🇾',
@@ -15280,7 +15280,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cyprus'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇨🇿',
@@ -15289,7 +15289,7 @@ export const emojis: Emoji[] = [
 		aliases: ['czech_republic'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇩🇪',
@@ -15298,7 +15298,7 @@ export const emojis: Emoji[] = [
 		aliases: ['de'],
 		tags: ['flag', 'germany'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇩🇬',
@@ -15307,7 +15307,7 @@ export const emojis: Emoji[] = [
 		aliases: ['diego_garcia'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇩🇯',
@@ -15316,7 +15316,7 @@ export const emojis: Emoji[] = [
 		aliases: ['djibouti'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇩🇰',
@@ -15325,7 +15325,7 @@ export const emojis: Emoji[] = [
 		aliases: ['denmark'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇩🇲',
@@ -15334,7 +15334,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dominica'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇩🇴',
@@ -15343,7 +15343,7 @@ export const emojis: Emoji[] = [
 		aliases: ['dominican_republic'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇩🇿',
@@ -15352,7 +15352,7 @@ export const emojis: Emoji[] = [
 		aliases: ['algeria'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇦',
@@ -15361,7 +15361,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ceuta_melilla'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇪🇨',
@@ -15370,7 +15370,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ecuador'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇪',
@@ -15379,7 +15379,7 @@ export const emojis: Emoji[] = [
 		aliases: ['estonia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇬',
@@ -15388,7 +15388,7 @@ export const emojis: Emoji[] = [
 		aliases: ['egypt'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇭',
@@ -15397,7 +15397,7 @@ export const emojis: Emoji[] = [
 		aliases: ['western_sahara'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇪🇷',
@@ -15406,7 +15406,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eritrea'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇸',
@@ -15415,7 +15415,7 @@ export const emojis: Emoji[] = [
 		aliases: ['es'],
 		tags: ['spain'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇪🇹',
@@ -15424,7 +15424,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ethiopia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇪🇺',
@@ -15433,7 +15433,7 @@ export const emojis: Emoji[] = [
 		aliases: ['eu', 'european_union'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇫🇮',
@@ -15442,7 +15442,7 @@ export const emojis: Emoji[] = [
 		aliases: ['finland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇫🇯',
@@ -15451,7 +15451,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fiji'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇫🇰',
@@ -15460,7 +15460,7 @@ export const emojis: Emoji[] = [
 		aliases: ['falkland_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇫🇲',
@@ -15469,7 +15469,7 @@ export const emojis: Emoji[] = [
 		aliases: ['micronesia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇫🇴',
@@ -15478,7 +15478,7 @@ export const emojis: Emoji[] = [
 		aliases: ['faroe_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇫🇷',
@@ -15487,7 +15487,7 @@ export const emojis: Emoji[] = [
 		aliases: ['fr'],
 		tags: ['france', 'french'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇬🇦',
@@ -15496,7 +15496,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gabon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇧',
@@ -15505,7 +15505,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gb', 'uk'],
 		tags: ['flag', 'british'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇬🇩',
@@ -15514,7 +15514,7 @@ export const emojis: Emoji[] = [
 		aliases: ['grenada'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇪',
@@ -15523,7 +15523,7 @@ export const emojis: Emoji[] = [
 		aliases: ['georgia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇫',
@@ -15532,7 +15532,7 @@ export const emojis: Emoji[] = [
 		aliases: ['french_guiana'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇬',
@@ -15541,7 +15541,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guernsey'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇬🇭',
@@ -15550,7 +15550,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ghana'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇮',
@@ -15559,7 +15559,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gibraltar'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇱',
@@ -15568,7 +15568,7 @@ export const emojis: Emoji[] = [
 		aliases: ['greenland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇬🇲',
@@ -15577,7 +15577,7 @@ export const emojis: Emoji[] = [
 		aliases: ['gambia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇳',
@@ -15586,7 +15586,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guinea'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇵',
@@ -15595,7 +15595,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guadeloupe'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇬🇶',
@@ -15604,7 +15604,7 @@ export const emojis: Emoji[] = [
 		aliases: ['equatorial_guinea'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇷',
@@ -15613,7 +15613,7 @@ export const emojis: Emoji[] = [
 		aliases: ['greece'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇸',
@@ -15622,7 +15622,7 @@ export const emojis: Emoji[] = [
 		aliases: ['south_georgia_south_sandwich_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇬🇹',
@@ -15631,7 +15631,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guatemala'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇺',
@@ -15640,7 +15640,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guam'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇼',
@@ -15649,7 +15649,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guinea_bissau'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇬🇾',
@@ -15658,7 +15658,7 @@ export const emojis: Emoji[] = [
 		aliases: ['guyana'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇭🇰',
@@ -15667,7 +15667,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hong_kong'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇭🇲',
@@ -15676,7 +15676,7 @@ export const emojis: Emoji[] = [
 		aliases: ['heard_mcdonald_islands'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇭🇳',
@@ -15685,7 +15685,7 @@ export const emojis: Emoji[] = [
 		aliases: ['honduras'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇭🇷',
@@ -15694,7 +15694,7 @@ export const emojis: Emoji[] = [
 		aliases: ['croatia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇭🇹',
@@ -15703,7 +15703,7 @@ export const emojis: Emoji[] = [
 		aliases: ['haiti'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇭🇺',
@@ -15712,7 +15712,7 @@ export const emojis: Emoji[] = [
 		aliases: ['hungary'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇨',
@@ -15721,7 +15721,7 @@ export const emojis: Emoji[] = [
 		aliases: ['canary_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇮🇩',
@@ -15730,7 +15730,7 @@ export const emojis: Emoji[] = [
 		aliases: ['indonesia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇪',
@@ -15739,7 +15739,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ireland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇱',
@@ -15748,7 +15748,7 @@ export const emojis: Emoji[] = [
 		aliases: ['israel'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇲',
@@ -15757,7 +15757,7 @@ export const emojis: Emoji[] = [
 		aliases: ['isle_of_man'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇮🇳',
@@ -15766,7 +15766,7 @@ export const emojis: Emoji[] = [
 		aliases: ['india'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇴',
@@ -15775,7 +15775,7 @@ export const emojis: Emoji[] = [
 		aliases: ['british_indian_ocean_territory'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇮🇶',
@@ -15784,7 +15784,7 @@ export const emojis: Emoji[] = [
 		aliases: ['iraq'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇷',
@@ -15793,7 +15793,7 @@ export const emojis: Emoji[] = [
 		aliases: ['iran'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇸',
@@ -15802,7 +15802,7 @@ export const emojis: Emoji[] = [
 		aliases: ['iceland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇮🇹',
@@ -15811,7 +15811,7 @@ export const emojis: Emoji[] = [
 		aliases: ['it'],
 		tags: ['italy'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇯🇪',
@@ -15820,7 +15820,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jersey'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇯🇲',
@@ -15829,7 +15829,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jamaica'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇯🇴',
@@ -15838,7 +15838,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jordan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇯🇵',
@@ -15847,7 +15847,7 @@ export const emojis: Emoji[] = [
 		aliases: ['jp'],
 		tags: ['japan'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇰🇪',
@@ -15856,7 +15856,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kenya'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇬',
@@ -15865,7 +15865,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kyrgyzstan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇭',
@@ -15874,7 +15874,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cambodia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇮',
@@ -15883,7 +15883,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kiribati'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇲',
@@ -15892,7 +15892,7 @@ export const emojis: Emoji[] = [
 		aliases: ['comoros'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇳',
@@ -15901,7 +15901,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_kitts_nevis'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇵',
@@ -15910,7 +15910,7 @@ export const emojis: Emoji[] = [
 		aliases: ['north_korea'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇷',
@@ -15919,7 +15919,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kr'],
 		tags: ['korea'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇰🇼',
@@ -15928,7 +15928,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kuwait'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇾',
@@ -15937,7 +15937,7 @@ export const emojis: Emoji[] = [
 		aliases: ['cayman_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇰🇿',
@@ -15946,7 +15946,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kazakhstan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇦',
@@ -15955,7 +15955,7 @@ export const emojis: Emoji[] = [
 		aliases: ['laos'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇧',
@@ -15964,7 +15964,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lebanon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇨',
@@ -15973,7 +15973,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_lucia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇮',
@@ -15982,7 +15982,7 @@ export const emojis: Emoji[] = [
 		aliases: ['liechtenstein'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇰',
@@ -15991,7 +15991,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sri_lanka'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇷',
@@ -16000,7 +16000,7 @@ export const emojis: Emoji[] = [
 		aliases: ['liberia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇸',
@@ -16009,7 +16009,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lesotho'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇹',
@@ -16018,7 +16018,7 @@ export const emojis: Emoji[] = [
 		aliases: ['lithuania'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇺',
@@ -16027,7 +16027,7 @@ export const emojis: Emoji[] = [
 		aliases: ['luxembourg'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇻',
@@ -16036,7 +16036,7 @@ export const emojis: Emoji[] = [
 		aliases: ['latvia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇱🇾',
@@ -16045,7 +16045,7 @@ export const emojis: Emoji[] = [
 		aliases: ['libya'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇦',
@@ -16054,7 +16054,7 @@ export const emojis: Emoji[] = [
 		aliases: ['morocco'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇨',
@@ -16063,7 +16063,7 @@ export const emojis: Emoji[] = [
 		aliases: ['monaco'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇲🇩',
@@ -16072,7 +16072,7 @@ export const emojis: Emoji[] = [
 		aliases: ['moldova'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇪',
@@ -16081,7 +16081,7 @@ export const emojis: Emoji[] = [
 		aliases: ['montenegro'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇫',
@@ -16090,7 +16090,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_martin'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇲🇬',
@@ -16099,7 +16099,7 @@ export const emojis: Emoji[] = [
 		aliases: ['madagascar'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇭',
@@ -16108,7 +16108,7 @@ export const emojis: Emoji[] = [
 		aliases: ['marshall_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇲🇰',
@@ -16117,7 +16117,7 @@ export const emojis: Emoji[] = [
 		aliases: ['macedonia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇱',
@@ -16126,7 +16126,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mali'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇲',
@@ -16135,7 +16135,7 @@ export const emojis: Emoji[] = [
 		aliases: ['myanmar'],
 		tags: ['burma'],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇳',
@@ -16144,7 +16144,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mongolia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇴',
@@ -16153,7 +16153,7 @@ export const emojis: Emoji[] = [
 		aliases: ['macau'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇵',
@@ -16162,7 +16162,7 @@ export const emojis: Emoji[] = [
 		aliases: ['northern_mariana_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇶',
@@ -16171,7 +16171,7 @@ export const emojis: Emoji[] = [
 		aliases: ['martinique'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇲🇷',
@@ -16180,7 +16180,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mauritania'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇸',
@@ -16189,7 +16189,7 @@ export const emojis: Emoji[] = [
 		aliases: ['montserrat'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇹',
@@ -16198,7 +16198,7 @@ export const emojis: Emoji[] = [
 		aliases: ['malta'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇺',
@@ -16207,7 +16207,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mauritius'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇲🇻',
@@ -16216,7 +16216,7 @@ export const emojis: Emoji[] = [
 		aliases: ['maldives'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇼',
@@ -16225,7 +16225,7 @@ export const emojis: Emoji[] = [
 		aliases: ['malawi'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇽',
@@ -16234,7 +16234,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mexico'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇾',
@@ -16243,7 +16243,7 @@ export const emojis: Emoji[] = [
 		aliases: ['malaysia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇲🇿',
@@ -16252,7 +16252,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mozambique'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇦',
@@ -16261,7 +16261,7 @@ export const emojis: Emoji[] = [
 		aliases: ['namibia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇨',
@@ -16270,7 +16270,7 @@ export const emojis: Emoji[] = [
 		aliases: ['new_caledonia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇪',
@@ -16279,7 +16279,7 @@ export const emojis: Emoji[] = [
 		aliases: ['niger'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇫',
@@ -16288,7 +16288,7 @@ export const emojis: Emoji[] = [
 		aliases: ['norfolk_island'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇳🇬',
@@ -16297,7 +16297,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nigeria'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇮',
@@ -16306,7 +16306,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nicaragua'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇱',
@@ -16315,7 +16315,7 @@ export const emojis: Emoji[] = [
 		aliases: ['netherlands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇴',
@@ -16324,7 +16324,7 @@ export const emojis: Emoji[] = [
 		aliases: ['norway'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇵',
@@ -16333,7 +16333,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nepal'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇷',
@@ -16342,7 +16342,7 @@ export const emojis: Emoji[] = [
 		aliases: ['nauru'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇳🇺',
@@ -16351,7 +16351,7 @@ export const emojis: Emoji[] = [
 		aliases: ['niue'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇳🇿',
@@ -16360,7 +16360,7 @@ export const emojis: Emoji[] = [
 		aliases: ['new_zealand'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇴🇲',
@@ -16369,7 +16369,7 @@ export const emojis: Emoji[] = [
 		aliases: ['oman'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇦',
@@ -16378,7 +16378,7 @@ export const emojis: Emoji[] = [
 		aliases: ['panama'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇪',
@@ -16387,7 +16387,7 @@ export const emojis: Emoji[] = [
 		aliases: ['peru'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇫',
@@ -16396,7 +16396,7 @@ export const emojis: Emoji[] = [
 		aliases: ['french_polynesia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇵🇬',
@@ -16405,7 +16405,7 @@ export const emojis: Emoji[] = [
 		aliases: ['papua_new_guinea'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇭',
@@ -16414,7 +16414,7 @@ export const emojis: Emoji[] = [
 		aliases: ['philippines'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇰',
@@ -16423,7 +16423,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pakistan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇱',
@@ -16432,7 +16432,7 @@ export const emojis: Emoji[] = [
 		aliases: ['poland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇲',
@@ -16441,7 +16441,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_pierre_miquelon'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇵🇳',
@@ -16450,7 +16450,7 @@ export const emojis: Emoji[] = [
 		aliases: ['pitcairn_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇵🇷',
@@ -16459,7 +16459,7 @@ export const emojis: Emoji[] = [
 		aliases: ['puerto_rico'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇸',
@@ -16468,7 +16468,7 @@ export const emojis: Emoji[] = [
 		aliases: ['palestinian_territories'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇹',
@@ -16477,7 +16477,7 @@ export const emojis: Emoji[] = [
 		aliases: ['portugal'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇼',
@@ -16486,7 +16486,7 @@ export const emojis: Emoji[] = [
 		aliases: ['palau'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇵🇾',
@@ -16495,7 +16495,7 @@ export const emojis: Emoji[] = [
 		aliases: ['paraguay'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇶🇦',
@@ -16504,7 +16504,7 @@ export const emojis: Emoji[] = [
 		aliases: ['qatar'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇷🇪',
@@ -16513,7 +16513,7 @@ export const emojis: Emoji[] = [
 		aliases: ['reunion'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇷🇴',
@@ -16522,7 +16522,7 @@ export const emojis: Emoji[] = [
 		aliases: ['romania'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇷🇸',
@@ -16531,7 +16531,7 @@ export const emojis: Emoji[] = [
 		aliases: ['serbia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇷🇺',
@@ -16540,7 +16540,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ru'],
 		tags: ['russia'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇷🇼',
@@ -16549,7 +16549,7 @@ export const emojis: Emoji[] = [
 		aliases: ['rwanda'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇦',
@@ -16558,7 +16558,7 @@ export const emojis: Emoji[] = [
 		aliases: ['saudi_arabia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇧',
@@ -16567,7 +16567,7 @@ export const emojis: Emoji[] = [
 		aliases: ['solomon_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇨',
@@ -16576,7 +16576,7 @@ export const emojis: Emoji[] = [
 		aliases: ['seychelles'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇩',
@@ -16585,7 +16585,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sudan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇪',
@@ -16594,7 +16594,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sweden'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇬',
@@ -16603,7 +16603,7 @@ export const emojis: Emoji[] = [
 		aliases: ['singapore'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇭',
@@ -16612,7 +16612,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_helena'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇸🇮',
@@ -16621,7 +16621,7 @@ export const emojis: Emoji[] = [
 		aliases: ['slovenia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇯',
@@ -16630,7 +16630,7 @@ export const emojis: Emoji[] = [
 		aliases: ['svalbard_jan_mayen'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇸🇰',
@@ -16639,7 +16639,7 @@ export const emojis: Emoji[] = [
 		aliases: ['slovakia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇱',
@@ -16648,7 +16648,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sierra_leone'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇲',
@@ -16657,7 +16657,7 @@ export const emojis: Emoji[] = [
 		aliases: ['san_marino'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇳',
@@ -16666,7 +16666,7 @@ export const emojis: Emoji[] = [
 		aliases: ['senegal'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇴',
@@ -16675,7 +16675,7 @@ export const emojis: Emoji[] = [
 		aliases: ['somalia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇷',
@@ -16684,7 +16684,7 @@ export const emojis: Emoji[] = [
 		aliases: ['suriname'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇸',
@@ -16693,7 +16693,7 @@ export const emojis: Emoji[] = [
 		aliases: ['south_sudan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇹',
@@ -16702,7 +16702,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sao_tome_principe'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇻',
@@ -16711,7 +16711,7 @@ export const emojis: Emoji[] = [
 		aliases: ['el_salvador'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇽',
@@ -16720,7 +16720,7 @@ export const emojis: Emoji[] = [
 		aliases: ['sint_maarten'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇾',
@@ -16729,7 +16729,7 @@ export const emojis: Emoji[] = [
 		aliases: ['syria'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇸🇿',
@@ -16738,7 +16738,7 @@ export const emojis: Emoji[] = [
 		aliases: ['swaziland'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇦',
@@ -16747,7 +16747,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tristan_da_cunha'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇹🇨',
@@ -16756,7 +16756,7 @@ export const emojis: Emoji[] = [
 		aliases: ['turks_caicos_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇩',
@@ -16765,7 +16765,7 @@ export const emojis: Emoji[] = [
 		aliases: ['chad'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇹🇫',
@@ -16774,7 +16774,7 @@ export const emojis: Emoji[] = [
 		aliases: ['french_southern_territories'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇬',
@@ -16783,7 +16783,7 @@ export const emojis: Emoji[] = [
 		aliases: ['togo'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇭',
@@ -16792,7 +16792,7 @@ export const emojis: Emoji[] = [
 		aliases: ['thailand'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇯',
@@ -16801,7 +16801,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tajikistan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇰',
@@ -16810,7 +16810,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tokelau'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇹🇱',
@@ -16819,7 +16819,7 @@ export const emojis: Emoji[] = [
 		aliases: ['timor_leste'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇲',
@@ -16828,7 +16828,7 @@ export const emojis: Emoji[] = [
 		aliases: ['turkmenistan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇳',
@@ -16837,7 +16837,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tunisia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇴',
@@ -16846,7 +16846,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tonga'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇷',
@@ -16855,7 +16855,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tr'],
 		tags: ['turkey'],
 		unicode_version: '8.0',
-		ios_version: '9.1',
+		ios_version: '9.1'
 	},
 	{
 		emoji: '🇹🇹',
@@ -16864,7 +16864,7 @@ export const emojis: Emoji[] = [
 		aliases: ['trinidad_tobago'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇻',
@@ -16873,7 +16873,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tuvalu'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇹🇼',
@@ -16882,7 +16882,7 @@ export const emojis: Emoji[] = [
 		aliases: ['taiwan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇹🇿',
@@ -16891,7 +16891,7 @@ export const emojis: Emoji[] = [
 		aliases: ['tanzania'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇺🇦',
@@ -16900,7 +16900,7 @@ export const emojis: Emoji[] = [
 		aliases: ['ukraine'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇺🇬',
@@ -16909,7 +16909,7 @@ export const emojis: Emoji[] = [
 		aliases: ['uganda'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇺🇲',
@@ -16918,7 +16918,7 @@ export const emojis: Emoji[] = [
 		aliases: ['us_outlying_islands'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇺🇳',
@@ -16927,7 +16927,7 @@ export const emojis: Emoji[] = [
 		aliases: ['united_nations'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🇺🇸',
@@ -16936,7 +16936,7 @@ export const emojis: Emoji[] = [
 		aliases: ['us'],
 		tags: ['flag', 'united', 'america'],
 		unicode_version: '6.0',
-		ios_version: '6.0',
+		ios_version: '6.0'
 	},
 	{
 		emoji: '🇺🇾',
@@ -16945,7 +16945,7 @@ export const emojis: Emoji[] = [
 		aliases: ['uruguay'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇺🇿',
@@ -16954,7 +16954,7 @@ export const emojis: Emoji[] = [
 		aliases: ['uzbekistan'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇦',
@@ -16963,7 +16963,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vatican_city'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇻🇨',
@@ -16972,7 +16972,7 @@ export const emojis: Emoji[] = [
 		aliases: ['st_vincent_grenadines'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇪',
@@ -16981,7 +16981,7 @@ export const emojis: Emoji[] = [
 		aliases: ['venezuela'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇬',
@@ -16990,7 +16990,7 @@ export const emojis: Emoji[] = [
 		aliases: ['british_virgin_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇮',
@@ -16999,7 +16999,7 @@ export const emojis: Emoji[] = [
 		aliases: ['us_virgin_islands'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇳',
@@ -17008,7 +17008,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vietnam'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇻🇺',
@@ -17017,7 +17017,7 @@ export const emojis: Emoji[] = [
 		aliases: ['vanuatu'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇼🇫',
@@ -17026,7 +17026,7 @@ export const emojis: Emoji[] = [
 		aliases: ['wallis_futuna'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇼🇸',
@@ -17035,7 +17035,7 @@ export const emojis: Emoji[] = [
 		aliases: ['samoa'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇽🇰',
@@ -17044,7 +17044,7 @@ export const emojis: Emoji[] = [
 		aliases: ['kosovo'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇾🇪',
@@ -17053,7 +17053,7 @@ export const emojis: Emoji[] = [
 		aliases: ['yemen'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇾🇹',
@@ -17062,7 +17062,7 @@ export const emojis: Emoji[] = [
 		aliases: ['mayotte'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '9.0',
+		ios_version: '9.0'
 	},
 	{
 		emoji: '🇿🇦',
@@ -17071,7 +17071,7 @@ export const emojis: Emoji[] = [
 		aliases: ['south_africa'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇿🇲',
@@ -17080,7 +17080,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zambia'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🇿🇼',
@@ -17089,7 +17089,7 @@ export const emojis: Emoji[] = [
 		aliases: ['zimbabwe'],
 		tags: [],
 		unicode_version: '6.0',
-		ios_version: '8.3',
+		ios_version: '8.3'
 	},
 	{
 		emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿',
@@ -17098,7 +17098,7 @@ export const emojis: Emoji[] = [
 		aliases: ['england'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
@@ -17107,7 +17107,7 @@ export const emojis: Emoji[] = [
 		aliases: ['scotland'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
+		ios_version: '12.1'
 	},
 	{
 		emoji: '🏴󠁧󠁢󠁷󠁬󠁳󠁿',
@@ -17116,6 +17116,6 @@ export const emojis: Emoji[] = [
 		aliases: ['wales'],
 		tags: [],
 		unicode_version: '11.0',
-		ios_version: '12.1',
-	},
-].filter(e => parseFloat(e.unicode_version) < 11.0);
+		ios_version: '12.1'
+	}
+].filter((e) => parseFloat(e.unicode_version) < 11.0);

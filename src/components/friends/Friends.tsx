@@ -8,16 +8,16 @@ export default function Friends() {
 
 	useEffect(() => {
 		mainRef.current?.scrollIntoView({
-			behavior: 'smooth',
+			behavior: 'smooth'
 		});
 	}, []);
 
 	return (
-		<Center ref={mainRef} h="100%" className="adjustScreen">
-			<Stack spacing="24px">
-				<Heading as="h1">Amigos</Heading>
+		<Center ref={mainRef} h='100%' className='adjustScreen'>
+			<Stack spacing='24px'>
+				<Heading as='h1'>Amigos</Heading>
 				<Text>Vaya.. Parece que no tienes</Text>
-				<Text as="sup">Broma simplemente no he creado la página</Text>
+				<Text as='sup'>Broma simplemente no he creado la página</Text>
 			</Stack>
 		</Center>
 	);

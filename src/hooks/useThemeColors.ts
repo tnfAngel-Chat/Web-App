@@ -7,6 +7,6 @@ export default function useThemeColors() {
 	return {
 		getColorValue: (value: keyof ThemeColors) => {
 			return `${theme?.colors[value]}`;
-		},
+		}
 	};
 }

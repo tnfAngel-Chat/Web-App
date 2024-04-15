@@ -1,5 +1,5 @@
+import { Socket, io } from 'socket.io-client';
 import { Client } from '.';
-import { io, Socket } from 'socket.io-client';
 
 export class ClientSocket {
 	client: Client;
@@ -15,8 +15,8 @@ export class ClientSocket {
 			this.io = io(this.client.links.gateway, {
 				path: '/gateway',
 				auth: {
-					token: '1.token.test',
-				},
+					token: '1.token.test'
+				}
 			});
 		}
 

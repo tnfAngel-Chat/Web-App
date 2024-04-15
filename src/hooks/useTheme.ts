@@ -20,6 +20,6 @@ export default function useTheme() {
 
 			dispatch(setTheme(theme));
 		},
-		themes,
+		themes
 	] as const;
 }

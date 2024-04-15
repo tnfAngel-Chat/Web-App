@@ -1,25 +1,22 @@
 import useThemeColors from '@/hooks/useThemeColors';
 import {
+	Modal,
+	ModalBody,
 	ModalCloseButton,
-	ModalOverlay,
 	ModalContent,
 	ModalHeader,
-	ModalBody,
+	ModalOverlay,
 	Stack,
-	Modal,
-	Text,
+	Text
 } from '@chakra-ui/react';
 
 export default function AddServerModal({ isOpen, onClose }: any) {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Modal isOpen={isOpen} size="lg" isCentered onClose={onClose}>
-			<ModalOverlay backdropFilter="blur(5px)" />
-			<ModalContent
-				color={getColorValue('textColor')}
-				bg={getColorValue('modalBackground')}
-			>
+		<Modal isOpen={isOpen} size='lg' isCentered onClose={onClose}>
+			<ModalOverlay backdropFilter='blur(5px)' />
+			<ModalContent color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
 				<ModalHeader>Añadir un servidor</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>

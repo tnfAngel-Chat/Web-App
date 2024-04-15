@@ -1,6 +1,6 @@
 import useThemeColors from '@/hooks/useThemeColors';
-import { Tooltip, Box, type PlacementWithLogical } from '@chakra-ui/react';
-import { useRef, useState, useEffect } from 'react';
+import { Box, type PlacementWithLogical, Tooltip } from '@chakra-ui/react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function OverflownText({
 	children,
@@ -16,17 +16,11 @@ export default function OverflownText({
 	const { getColorValue } = useThemeColors();
 
 	function updateOverflow() {
-		if (ref.current)
-			setIsOverflown(
-				ref?.current?.scrollWidth > ref?.current?.clientWidth
-			);
+		if (ref.current) setIsOverflown(ref?.current?.scrollWidth > ref?.current?.clientWidth);
 	}
 
 	useEffect(() => {
-		if (ref.current)
-			setIsOverflown(
-				ref?.current?.scrollWidth > ref?.current?.clientWidth
-			);
+		if (ref.current) setIsOverflown(ref?.current?.scrollWidth > ref?.current?.clientWidth);
 	}, []);
 
 	return (
@@ -39,13 +33,7 @@ export default function OverflownText({
 			color={getColorValue('textColor')}
 			hasArrow
 		>
-			<Box
-				position="relative"
-				onMouseOver={updateOverflow}
-				isTruncated
-				ref={ref}
-				{...props}
-			>
+			<Box position='relative' onMouseOver={updateOverflow} isTruncated ref={ref} {...props}>
 				{children}
 			</Box>
 		</Tooltip>

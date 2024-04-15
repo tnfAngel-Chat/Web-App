@@ -1,16 +1,12 @@
 'use client';
 
 import GuildChannelScreen from '@/components/screens/GuildChannelScreen';
-import {
-	setActivePage,
-	setSelectedChannel,
-	setSelectedGuild,
-} from '@/store/slices/selectionsSlice';
+import { setActivePage, setSelectedChannel, setSelectedGuild } from '@/store/slices/selectionsSlice';
 import { Flex } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
 
 export default function SelectedGuildChannelPage({
-	params,
+	params
 }: {
 	params: { guildId: string; channelId: string };
 }) {
@@ -23,7 +19,7 @@ export default function SelectedGuildChannelPage({
 	dispatch(setActivePage('guild'));
 
 	return (
-		<Flex h="100%" w="100%">
+		<Flex h='100%' w='100%'>
 			<GuildChannelScreen />
 		</Flex>
 	);

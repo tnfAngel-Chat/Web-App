@@ -16,14 +16,7 @@ export type AvatarProps = {
 	onClick?: any;
 };
 
-export default function Avatar({
-	src,
-	alt,
-	size,
-	quality,
-	indicator,
-	onClick,
-}: Readonly<AvatarProps>) {
+export default function Avatar({ src, alt, size, quality, indicator, onClick }: Readonly<AvatarProps>) {
 	return (
 		<Box
 			height={`${size}px`}
@@ -40,7 +33,7 @@ export default function Avatar({
 					height: `${size}px`,
 					borderRadius: '50%',
 					objectFit: 'cover',
-					userSelect: 'none',
+					userSelect: 'none'
 				}}
 				quality={quality || 100}
 				alt={alt}

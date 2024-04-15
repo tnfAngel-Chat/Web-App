@@ -1,14 +1,5 @@
 {
 	"typescript.tsdk": "node_modules\\typescript\\lib",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"cSpell.words": [
-		"amoled",
-		"chakra",
-		"collapsibles",
-		"persistor",
-		"reduxjs",
-		"tnfangel",
-		"unoptimized",
-		"Videocam"
-	]
+	"cSpell.words": ["amoled", "chakra", "collapsibles", "persistor", "reduxjs", "tnfangel", "unoptimized", "Videocam"]
 }

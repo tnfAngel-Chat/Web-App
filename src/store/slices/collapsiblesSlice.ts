@@ -5,7 +5,7 @@ export type CollapsiblesState = {
 };
 
 const initialState: CollapsiblesState = {
-	showChannelMembers: true,
+	showChannelMembers: true
 };
 
 export const collapsiblesSlice = createSlice({
@@ -16,8 +16,8 @@ export const collapsiblesSlice = createSlice({
 			state.showChannelMembers = !state.showChannelMembers;
 
 			return state;
-		},
-	},
+		}
+	}
 });
 
 export const { toggleChannelMembers } = collapsiblesSlice.actions;

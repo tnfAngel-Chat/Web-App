@@ -1,5 +1,5 @@
-import { Client } from '..';
 import { Collection } from '@discordjs/collection';
+import { Client } from '..';
 
 export class BaseManager<CollectionKeyType extends { id: string }> {
 	client: Client;
@@ -27,7 +27,6 @@ export class BaseManager<CollectionKeyType extends { id: string }> {
 
 			if (existing) return existing;
 		}
-
 
 		return id;
 	}

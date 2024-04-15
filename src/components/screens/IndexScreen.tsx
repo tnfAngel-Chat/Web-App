@@ -13,9 +13,15 @@ export default function IndexScreen() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
-		<Center h="100%" w="100%" bg={getColorValue('appBackground')} backgroundRepeat="no-repeat" backgroundSize="cover">
-			<Stack spacing="24px" bg={getColorValue('sidebarBackground')} padding="20px" borderRadius="10px">
-				<Heading as="h1">tnfAngel Chat</Heading>
+		<Center
+			h='100%'
+			w='100%'
+			bg={getColorValue('appBackground')}
+			backgroundRepeat='no-repeat'
+			backgroundSize='cover'
+		>
+			<Stack spacing='24px' bg={getColorValue('sidebarBackground')} padding='20px' borderRadius='10px'>
+				<Heading as='h1'>tnfAngel Chat</Heading>
 
 				<Button
 					rightIcon={<ArrowForwardIcon />}
@@ -25,12 +31,8 @@ export default function IndexScreen() {
 					Empezar
 				</Button>
 
-				<SettingsModal
-						isOpen={isOpen}
-						onOpen={onOpen}
-						onClose={onClose}
-					/>
-				<Button variant="outline" onClick={onOpen} rightIcon={<MdSettings />}>
+				<SettingsModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+				<Button variant='outline' onClick={onOpen} rightIcon={<MdSettings />}>
 					Abrir ajustes
 				</Button>
 			</Stack>

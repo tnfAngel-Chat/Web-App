@@ -7,6 +7,6 @@ export default function normalizeMessage(message: IRawMessage): IMessage {
 	return {
 		...message,
 		mode: message.mode ?? MessageModes.Sent,
-		author: normalizeUser(client.users.resolve(message.author)),
+		author: normalizeUser(client.users.resolve(message.author))
 	};
 }

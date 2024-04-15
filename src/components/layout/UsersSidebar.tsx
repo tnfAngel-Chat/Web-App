@@ -1,22 +1,15 @@
 'use client';
 
-import {
-	Flex,
-	Box,
-	Stack,
-	Text,
-	Center,
-	useDisclosure,
-} from '@chakra-ui/react';
+import useThemeColors from '@/hooks/useThemeColors';
 import { UserStatusTypes } from '@/types/enums/UserStatusTypes';
 import type { IUser } from '@/types/interfaces/User';
-import Avatar from '../user/Avatar';
+import { Box, Center, Flex, Stack, Text, useDisclosure } from '@chakra-ui/react';
+import { useState } from 'react';
 import OverflownText from '../misc/OverflownText';
-import useThemeColors from '@/hooks/useThemeColors';
+import UserProfileModal from '../modals/UserProfileModal';
+import Avatar from '../user/Avatar';
 import StatusIndicator from '../user/StatusIndicator';
 import Separator from './Separator';
-import UserProfileModal from '../modals/UserProfileModal';
-import { useState } from 'react';
 
 export type UserListItemProps = {
 	user: IUser;
@@ -29,38 +22,32 @@ export function UserListItem({ user, onClick }: Readonly<UserListItemProps>) {
 	return (
 		<Flex
 			onClick={onClick}
-			maxHeight="55px"
-			minHeight="50px"
-			borderRadius="5px"
-			bg="transparent"
+			maxHeight='55px'
+			minHeight='50px'
+			borderRadius='5px'
+			bg='transparent'
 			_hover={{
 				cursor: 'pointer',
-				bg: getColorValue('sidebarButtonActive'),
+				bg: getColorValue('sidebarButtonActive')
 			}}
-			padding="5px 10px 5px 10px"
+			padding='5px 10px 5px 10px'
 		>
-			<Flex h="100%" flex="1" gap="10px" alignItems="center" minW="0px">
+			<Flex h='100%' flex='1' gap='10px' alignItems='center' minW='0px'>
 				<Center>
 					<Avatar
-						size="36"
+						size='36'
 						src={user.avatar}
-						alt="Avatar"
-						indicator={
-							<StatusIndicator status={user.status} size="14" />
-						}
+						alt='Avatar'
+						indicator={<StatusIndicator status={user.status} size='14' />}
 					/>
 				</Center>
-				<Center minW="0px">
-					<Box textAlign="left" minW="0px">
-						<OverflownText fontSize="md" tooltipPlacement="top">
+				<Center minW='0px'>
+					<Box textAlign='left' minW='0px'>
+						<OverflownText fontSize='md' tooltipPlacement='top'>
 							{user.username}
 						</OverflownText>
 						{user.presence ? (
-							<OverflownText
-								minW="0px"
-								fontSize="sm"
-								tooltipPlacement="top"
-							>
+							<OverflownText minW='0px' fontSize='sm' tooltipPlacement='top'>
 								{user.presence}
 							</OverflownText>
 						) : null}
@@ -75,17 +62,13 @@ export function StatusSection({ label }: Readonly<{ label: string }>) {
 	const { getColorValue } = useThemeColors();
 
 	return (
-		<Flex gap="10px">
-			<Center w="40%">
-				<Text
-					fontSize="11px"
-					fontWeight="normal"
-					color={getColorValue('textMutedColor')}
-				>
+		<Flex gap='10px'>
+			<Center w='40%'>
+				<Text fontSize='11px' fontWeight='normal' color={getColorValue('textMutedColor')}>
 					{label}
 				</Text>
 			</Center>
-			<Center w="100%" h="100%">
+			<Center w='100%' h='100%'>
 				<Separator />
 			</Center>
 		</Flex>
@@ -112,15 +95,9 @@ export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
 
 	return (
 		<>
-			<UserProfileModal
-				isOpen={isOpen}
-				onClose={onClose}
-				user={clickedUser}
-			/>
-			<Stack w="100%" h="100%">
-				{onlineUsers.length > 0 && (
-					<StatusSection label={`ONLINE - ${onlineUsers.length}`} />
-				)}
+			<UserProfileModal isOpen={isOpen} onClose={onClose} user={clickedUser} />
+			<Stack w='100%' h='100%'>
+				{onlineUsers.length > 0 && <StatusSection label={`ONLINE - ${onlineUsers.length}`} />}
 				{onlineUsers.map((user) => {
 					return (
 						<UserListItem
@@ -133,9 +110,7 @@ export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
 						/>
 					);
 				})}
-				{offlineUsers.length > 0 && (
-					<StatusSection label={`OFFLINE - ${offlineUsers.length}`} />
-				)}
+				{offlineUsers.length > 0 && <StatusSection label={`OFFLINE - ${offlineUsers.length}`} />}
 				{offlineUsers.map((user) => {
 					return (
 						<UserListItem
@@ -158,23 +133,20 @@ export type UsersSidebarProps = {
 	userSidebarRef?: any;
 };
 
-export default function UsersSidebar({
-	users,
-	userSidebarRef,
-}: UsersSidebarProps) {
+export default function UsersSidebar({ users, userSidebarRef }: UsersSidebarProps) {
 	const { getColorValue } = useThemeColors();
 
 	return (
 		<Stack
-			scrollSnapAlign="end"
-			scrollSnapStop="always"
-			h="100%"
-			minW="250px"
-			maxW="250px"
+			scrollSnapAlign='end'
+			scrollSnapStop='always'
+			h='100%'
+			minW='250px'
+			maxW='250px'
 			ref={userSidebarRef}
 			bg={getColorValue('sidebarBackground')}
 		>
-			<Box h="100%" w="100%" padding="10px">
+			<Box h='100%' w='100%' padding='10px'>
 				<UsersSidebarContent users={users} />
 			</Box>
 		</Stack>

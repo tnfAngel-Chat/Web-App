@@ -1,17 +1,17 @@
-import { Stack, Box, Tooltip, Center, useDisclosure } from '@chakra-ui/react';
 import useThemeColors from '@/hooks/useThemeColors';
-import type { IGuild } from '@/types/interfaces/Guild';
-import Image from 'next/image';
-import { MdAdd, MdHome } from 'react-icons/md';
-import { useRouter } from 'next/navigation';
-import { useSelector } from 'react-redux';
 import type { RootState } from '@/store';
+import type { IGuild } from '@/types/interfaces/Guild';
+import { Box, Center, Stack, Tooltip, useDisclosure } from '@chakra-ui/react';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { MdAdd, MdHome } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 import AddServerModal from '../modals/AddServerModal';
 
 export function IconLink({
 	name,
 	icon,
-	onClick,
+	onClick
 }: Readonly<{
 	name: string;
 	icon: any;
@@ -19,18 +19,12 @@ export function IconLink({
 }>) {
 	const { getColorValue } = useThemeColors();
 	return (
-		<Box
-			minH="50px"
-			maxH="50px"
-			w="50px"
-			onClick={onClick}
-			cursor="pointer"
-		>
+		<Box minH='50px' maxH='50px' w='50px' onClick={onClick} cursor='pointer'>
 			<Tooltip
-				w="100%"
-				h="100%"
+				w='100%'
+				h='100%'
 				label={name}
-				placement="start"
+				placement='start'
 				openDelay={10}
 				gutter={17}
 				bg={getColorValue('tooltipBackground')}
@@ -38,11 +32,11 @@ export function IconLink({
 				hasArrow
 			>
 				<Center
-					w="100%"
-					h="100%"
-					borderRadius="50%"
+					w='100%'
+					h='100%'
+					borderRadius='50%'
 					_hover={{
-						bg: getColorValue('sidebarButtonHover'),
+						bg: getColorValue('sidebarButtonHover')
 					}}
 					bg={getColorValue('iconLinkBackground')}
 				>
@@ -55,7 +49,7 @@ export function IconLink({
 
 export function GuildLink({
 	guild,
-	isSelected,
+	isSelected
 }: Readonly<{
 	guild: IGuild;
 	isSelected: boolean;
@@ -67,10 +61,10 @@ export function GuildLink({
 	const selectedGuildChannel = selectedState.guilds[guild.id];
 
 	return (
-		<Box minH="50px" maxH="50px" h="50px" cursor="pointer">
+		<Box minH='50px' maxH='50px' h='50px' cursor='pointer'>
 			<Tooltip
 				label={guild.name}
-				placement="start"
+				placement='start'
 				openDelay={10}
 				gutter={17}
 				bg={getColorValue('tooltipBackground')}
@@ -78,27 +72,17 @@ export function GuildLink({
 				hasArrow
 			>
 				<Box
-					h="100%"
-					w="100%"
-					borderRadius="50%"
-					outline={`5px solid ${
-						isSelected
-							? getColorValue('sidebarButtonActive')
-							: 'transparent'
-					}`}
+					h='100%'
+					w='100%'
+					borderRadius='50%'
+					outline={`5px solid ${isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}`}
 					_hover={{
 						outlineColor: isSelected
 							? getColorValue('sidebarButtonActive')
-							: getColorValue('sidebarButtonHover'),
+							: getColorValue('sidebarButtonHover')
 					}}
 					onClick={() => {
-						router.push(
-							`/guilds/${guild.id}${
-								selectedGuildChannel
-									? `/${selectedGuildChannel}`
-									: ''
-							}`
-						);
+						router.push(`/guilds/${guild.id}${selectedGuildChannel ? `/${selectedGuildChannel}` : ''}`);
 					}}
 				>
 					<Image
@@ -110,7 +94,7 @@ export function GuildLink({
 							width: '100%',
 							height: '100%',
 							objectFit: 'cover',
-							userSelect: 'none',
+							userSelect: 'none'
 						}}
 						quality={100}
 						alt={guild.name}
@@ -132,24 +116,18 @@ export default function GuildsBar() {
 	const guilds = guildsState.guilds;
 
 	return (
-		<Box
-			scrollSnapAlign="start"
-			scrollSnapStop="always"
-			h="100%"
-			minW="70px"
-			maxW="70px"
-		>
+		<Box scrollSnapAlign='start' scrollSnapStop='always' h='100%' minW='70px' maxW='70px'>
 			<Stack
-				h="100%"
-				w="100%"
-				spacing="20px"
+				h='100%'
+				w='100%'
+				spacing='20px'
 				bg={getColorValue('guildsBackground')}
-				overflow="auto"
-				padding="10px"
+				overflow='auto'
+				padding='10px'
 			>
 				<IconLink
-					name="Mensajes Directos"
-					icon={<MdHome fontSize="30px" />}
+					name='Mensajes Directos'
+					icon={<MdHome fontSize='30px' />}
 					onClick={() =>
 						router.push(
 							selectedState.selectedDirectChannel
@@ -162,22 +140,11 @@ export default function GuildsBar() {
 					<GuildLink
 						key={guild.id}
 						guild={guild}
-						isSelected={
-							selectedState.activePage === 'guild' &&
-							selectedState.selectedGuild === guild.id
-						}
+						isSelected={selectedState.activePage === 'guild' && selectedState.selectedGuild === guild.id}
 					/>
 				))}
-				<AddServerModal
-					isOpen={isOpen}
-					onOpen={onOpen}
-					onClose={onClose}
-				/>
-				<IconLink
-					name="Añadir un servidor"
-					icon={<MdAdd fontSize="30px" />}
-					onClick={onOpen}
-				/>
+				<AddServerModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+				<IconLink name='Añadir un servidor' icon={<MdAdd fontSize='30px' />} onClick={onOpen} />
 			</Stack>
 		</Box>
 	);

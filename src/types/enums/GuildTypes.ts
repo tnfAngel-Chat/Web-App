@@ -1,3 +1,3 @@
 export const enum GuildTypes {
-	Common,
+	Common
 }
