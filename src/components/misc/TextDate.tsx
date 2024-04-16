@@ -18,7 +18,7 @@ export default function TextDate({ timestamp, long, fontSize }: Readonly<TextDat
 				fontSize={fontSize}
 				color={getColorValue('textMutedColor')}
 			>
-				{long ? 'Hoy a las 10:31' : '10:31 AM'}
+				{long ? 'Today at 10:31' : '10:31 AM'}
 			</OverflownText>
 		</Box>
 	);

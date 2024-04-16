@@ -15,9 +15,8 @@ export default function Friends() {
 	return (
 		<Center ref={mainRef} h='100%' className='adjustScreen'>
 			<Stack spacing='24px'>
-				<Heading as='h1'>Amigos</Heading>
-				<Text>Vaya.. Parece que no tienes</Text>
-				<Text as='sup'>Broma simplemente no he creado la página</Text>
+				<Heading as='h1'>Friends</Heading>
+				<Text>Oh, you don't have any friends right now...</Text>
 			</Stack>
 		</Center>
 	);

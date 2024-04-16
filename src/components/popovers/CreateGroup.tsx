@@ -16,8 +16,8 @@ export default function CreateGroup({ children }: Readonly<{ children: any }>) {
 			<PopoverTrigger>{children}</PopoverTrigger>
 			<PopoverContent w={['100vw', 'sm']} backdropFilter='blur(5px)' bg={getColorValue('sidebarBackground')}>
 				<PopoverCloseButton />
-				<PopoverHeader>Seleccionar amigos para crear un grupo</PopoverHeader>
-				<PopoverBody>Aun no hay amigos</PopoverBody>
+				<PopoverHeader>Select friends to create a group</PopoverHeader>
+				<PopoverBody>You don't have friends yet.</PopoverBody>
 			</PopoverContent>
 		</Popover>
 	);

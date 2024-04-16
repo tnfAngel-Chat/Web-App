@@ -50,11 +50,11 @@ export function WelcomeMessage({ channel }: Readonly<MessagesBoxProps>) {
 							</Heading>
 						</Center>
 					</Flex>
-					<Heading as='h1'>Comienzo de tu chat</Heading>
+					<Heading as='h1'>Start of your chat</Heading>
 					<Text>
 						{channel.type === ChannelTypes.DirectMessage
-							? `Este es el comienzo de tu chat con @${recipient.username}`
-							: `Este es el comienzo de tu chat en ${channel.name}`}
+							? `This is the start of your chat with @${recipient.username}`
+							: `This is the start of your chat on ${channel.name}`}
 					</Text>
 				</Stack>
 			</Center>

@@ -116,7 +116,7 @@ export function DirectChannelLink({ channel, isSelected }: Readonly<DirectChanne
 								</Text>
 							) : null
 						) : channel.type === ChannelTypes.Group ? (
-							<Text fontSize='sm'>{channel.recipients.length} Miembros</Text>
+							<Text fontSize='sm'>{channel.recipients.length} Members</Text>
 						) : null}
 					</Flex>
 				</Flex>
@@ -156,7 +156,7 @@ export function MainSidebarContent({ selectedChannelId }: Readonly<MainSidebarCo
 		<Stack w='100%' h='100%'>
 			<DirectButtonLink
 				icon={MdPeople}
-				label='Amigos'
+				label='Friends'
 				href='/friends'
 				isSelected={selectedChannelId === 'friends'}
 			/>

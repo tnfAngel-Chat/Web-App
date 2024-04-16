@@ -1,7 +1,7 @@
 'use client';
 import useThemeColors from '@/hooks/useThemeColors';
 import type { RootState } from '@/store';
-import { Center, Flex, Stack } from '@chakra-ui/react';
+import { Center, Text, Flex, Heading, Stack } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import GuildSidebar from '../layout/GuildSidebar';
@@ -48,7 +48,10 @@ export default function GuildScreen() {
 				w='100%'
 			>
 				<Center w='100%' h='100%'>
-					Bienvenido a el servidor
+					<Stack>
+						<Heading as='h1' size="lg">Welcome to {guild.name}</Heading>
+						<Text>Select a channel to get started.</Text>
+					</Stack>
 				</Center>
 			</Stack>
 		</Flex>

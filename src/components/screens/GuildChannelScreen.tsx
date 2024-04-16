@@ -98,16 +98,17 @@ export default function GuildChannelScreen() {
 						{
 							type: UserTypes.User,
 							id: '1',
-							username: 'Ángel',
+							username: 'tnfAngel',
 							status: UserStatusTypes.Online,
-							presence: 'Hola'
+							presence: 'Testing',
+							avatar: 'https://avatars.githubusercontent.com/u/57068341?v=4'
 						},
 						{
 							type: UserTypes.User,
 							id: '3',
-							username: 'Juan',
+							username: 'Test',
 							status: UserStatusTypes.DoNotDisturb,
-							avatar: 'https://media.discordapp.net/attachments/770017179512471598/965703809366110268/makesweet-hn74h8.gif'
+							avatar: 'https://api.dicebear.com/8.x/pixel-art/svg?seed=a'
 						}
 					].map(normalizeUser)}
 					userSidebarRef={userSidebarRef}

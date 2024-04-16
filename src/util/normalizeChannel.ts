@@ -7,9 +7,7 @@ export default function normalizeChannel(channel: IRawChannel): Channel {
 		case ChannelTypes.Text:
 			return {
 				...channel,
-				icon:
-					channel.icon ??
-					'https://cdn.discordapp.com/attachments/865211651492937749/1086976530757996637/IMG-20230318-WA0026.jpg',
+				icon: channel.icon ?? 'https://api.dicebear.com/8.x/shapes/svg',
 				lastMessage: channel.lastMessage ?? null,
 				parentId: channel.parentId ?? null
 			};
@@ -25,9 +23,7 @@ export default function normalizeChannel(channel: IRawChannel): Channel {
 			return {
 				...channel,
 				name: channel.name ?? recipients.map((member) => member.username).join(', '),
-				icon:
-					channel.icon ??
-					'https://cdn.discordapp.com/attachments/865211651492937749/1086976552123760670/illosandia.png',
+				icon: channel.icon ?? 'https://api.dicebear.com/8.x/shapes/svg',
 				recipients: recipients,
 				lastMessage: channel.lastMessage ?? null
 			};

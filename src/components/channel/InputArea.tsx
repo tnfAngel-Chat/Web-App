@@ -413,7 +413,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 								onClose={onChatEmojiPickerClose}
 							>
 								<Textarea
-									autoFocus={isMobile ? false : true}
+									autoFocus={isMobile}
 									placeholder={`Message @${
 										channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name
 									}`}

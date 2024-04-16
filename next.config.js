@@ -16,26 +16,6 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: '*',
 				port: ''
-			},
-			{
-				protocol: 'https',
-				hostname: 'tnfangel.xyz',
-				port: ''
-			},
-			{
-				protocol: 'https',
-				hostname: '*discordapp.com',
-				port: ''
-			},
-			{
-				protocol: 'https',
-				hostname: '*discord.com',
-				port: ''
-			},
-			{
-				protocol: 'https',
-				hostname: '*discordapp.net',
-				port: ''
 			}
 		]
 	},
