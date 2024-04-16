@@ -6,7 +6,7 @@ import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
 import { SWRConfig } from 'swr';
 import { store } from '../store';
-import '../styles/global.scss';
+import '../styles/global.css';
 
 const config = {
 	initialColorMode: 'dark',
@@ -19,9 +19,9 @@ const theme = extendTheme({ config, fonts });
 
 export default function RootLayout({
 	children
-}: {
+}: Readonly<{
 	children: React.ReactNode;
-}) {
+}>) {
 	return (
 		<html lang='en'>
 			<head>

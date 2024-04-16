@@ -7,9 +7,9 @@ import { useDispatch } from 'react-redux';
 
 export default function SelectedGuildChannelPage({
 	params
-}: {
+}: Readonly<{
 	params: { guildId: string; channelId: string };
-}) {
+}>) {
 	const { guildId, channelId } = params;
 
 	const dispatch = useDispatch();

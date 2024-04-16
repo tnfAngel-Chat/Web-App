@@ -58,7 +58,7 @@ export default function GuildChannelScreen() {
 	const channel = channels.find((channel) => channel.id === selectedState.guilds[guild.id]);
 
 	if (!channel) {
-		console.log('Sending to friends (no channel) GuildchannelScren');
+		console.log('Sending to friends (no channel) GuildchannelScreen');
 
 		router.prefetch(`/guilds/${guild.id}`);
 		router.push(`/guilds/${guild.id}`);
