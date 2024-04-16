@@ -2,7 +2,9 @@ import million from 'million/compiler';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: process.env.NEXT_OUTPUT,
 	reactStrictMode: true,
+	poweredByHeader: false,
 	images: {
 		remotePatterns: [
 			{
