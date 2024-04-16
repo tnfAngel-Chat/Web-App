@@ -49,7 +49,7 @@ export default function FriendsTopBarContent({
 					<Icon color={getColorValue('textMutedColor')} as={MdPeople} boxSize='24px' />
 				</Center>
 				<Center minW='0px'>
-					<OverflownText fontSize='lg'>Amigos</OverflownText>
+					<OverflownText fontSize='lg'>Friends</OverflownText>
 				</Center>
 				<Center minW='0px'>
 					<OverflownText fontSize='sm' color={getColorValue('textMutedColor')}>

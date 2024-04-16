@@ -160,7 +160,7 @@ export default function EmojiPicker({
 						bg={getColorValue('sidebarBackground')}
 					>
 						<PopoverCloseButton />
-						<PopoverHeader>Seleccionar emojis</PopoverHeader>
+						<PopoverHeader>Select emojis</PopoverHeader>
 						<PopoverBody>
 							<Stack>
 								<Flex gap='10px' alignItems='center'>

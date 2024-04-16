@@ -26,11 +26,11 @@ export default function SettingsModal({ isOpen, onClose }: any) {
 		<Modal isOpen={isOpen} size='full' onClose={onClose}>
 			<ModalOverlay backdropFilter='blur(5px)' />
 			<ModalContent color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
-				<ModalHeader>Ajustes de usuario</ModalHeader>
+				<ModalHeader>User settings</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>
 					<Stack>
-						<Text>Tema</Text>
+						<Text>Theme</Text>
 						<Menu>
 							<MenuButton w='150px' as={Button} rightIcon={<MdKeyboardArrowDown />}>
 								{theme?.name ?? 'Unknown theme'}

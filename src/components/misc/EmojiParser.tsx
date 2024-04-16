@@ -20,7 +20,9 @@ function EmojiParser({
 
 	return (
 		<Image
-			src={`https://twemoji.maxcdn.com/v/latest/${ext === 'png' ? '72x72' : 'svg'}/${HEXCodePoint}.${ext}`}
+			src={`https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/${
+				ext === 'png' ? '72x72' : 'svg'
+			}/${HEXCodePoint}.${ext}`}
 			width={width}
 			height={height}
 			alt={emoji}

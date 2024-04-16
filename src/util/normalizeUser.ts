@@ -5,7 +5,7 @@ export default function normalizeUser(user: IRawUser): IUser {
 		...user,
 		avatar: user.avatar
 			? user.avatar
-			: 'https://media.discordapp.net/attachments/866159939247931432/1060336031234277407/plink.gif',
+			: 'https://api.dicebear.com/8.x/identicon/svg?backgroundColor=b6e3f4&seed=' + user.id,
 		presence: user.presence ? user.presence : null
 	};
 }

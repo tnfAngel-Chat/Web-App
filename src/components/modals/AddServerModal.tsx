@@ -17,11 +17,11 @@ export default function AddServerModal({ isOpen, onClose }: any) {
 		<Modal isOpen={isOpen} size='lg' isCentered onClose={onClose}>
 			<ModalOverlay backdropFilter='blur(5px)' />
 			<ModalContent color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
-				<ModalHeader>Añadir un servidor</ModalHeader>
+				<ModalHeader>Add a server</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>
 					<Stack>
-						<Text>En proceso</Text>
+						<Text>WIP</Text>
 					</Stack>
 				</ModalBody>
 			</ModalContent>

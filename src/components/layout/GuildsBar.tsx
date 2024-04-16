@@ -126,7 +126,7 @@ export default function GuildsBar() {
 				padding='10px'
 			>
 				<IconLink
-					name='Mensajes Directos'
+					name='Direct Messages'
 					icon={<MdHome fontSize='30px' />}
 					onClick={() =>
 						router.push(
@@ -144,7 +144,7 @@ export default function GuildsBar() {
 					/>
 				))}
 				<AddServerModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-				<IconLink name='Añadir un servidor' icon={<MdAdd fontSize='30px' />} onClick={onOpen} />
+				<IconLink name='Add a server' icon={<MdAdd fontSize='30px' />} onClick={onOpen} />
 			</Stack>
 		</Box>
 	);

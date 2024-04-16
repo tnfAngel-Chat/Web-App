@@ -2,7 +2,17 @@
 
 import useThemeColors from '@/hooks/useThemeColors';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { Button, Center, Heading, Stack, useDisclosure } from '@chakra-ui/react';
+import {
+	Alert,
+	AlertDescription,
+	AlertIcon,
+	AlertTitle,
+	Button,
+	Center,
+	Heading,
+	Stack,
+	useDisclosure
+} from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
 import { MdSettings } from 'react-icons/md';
 import SettingsModal from '../modals/SettingsModal';
@@ -20,21 +30,35 @@ export default function IndexScreen() {
 			backgroundRepeat='no-repeat'
 			backgroundSize='cover'
 		>
-			<Stack spacing='24px' bg={getColorValue('sidebarBackground')} padding='20px' borderRadius='10px'>
+			<Stack
+				spacing='20px'
+				padding='20px'
+				borderRadius='10px'
+				alignItems='center'
+				bg={getColorValue('sidebarBackground')}
+			>
+				<Alert status='error' borderRadius='5px'>
+					<AlertIcon />
+					<Stack spacing='0px'>
+						<AlertTitle>This is in an early proof-of-concept version!</AlertTitle>
+						<AlertDescription>Nothing will work and it will be incomplete.</AlertDescription>
+					</Stack>
+				</Alert>
 				<Heading as='h1'>tnfAngel Chat</Heading>
-
-				<Button
-					rightIcon={<ArrowForwardIcon />}
-					onMouseEnter={() => router.prefetch('/friends')}
-					onClick={() => router.push('/friends')}
-				>
-					Empezar
-				</Button>
-
+				<Stack spacing='10px' w='100%' alignItems='center' mt='10px'>
+					<Button
+						w='100%'
+						rightIcon={<ArrowForwardIcon />}
+						onMouseEnter={() => router.prefetch('/friends')}
+						onClick={() => router.push('/friends')}
+					>
+						Get started
+					</Button>
+					<Button w='100%' variant='outline' onClick={onOpen} rightIcon={<MdSettings />}>
+						Open settings
+					</Button>
+				</Stack>
 				<SettingsModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-				<Button variant='outline' onClick={onOpen} rightIcon={<MdSettings />}>
-					Abrir ajustes
-				</Button>
 			</Stack>
 		</Center>
 	);

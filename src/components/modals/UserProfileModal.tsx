@@ -65,7 +65,7 @@ export default function UserProfileModal({
 								<Heading size='md'>About me</Heading>
 							</CardHeader>
 							<CardBody minH='150px' pt='2px'>
-								<Text fontSize='sm'>que pasa bobolon</Text>
+								<Text fontSize='sm'>Nothing right here...</Text>
 							</CardBody>
 						</Card>
 					</Stack>
