@@ -131,36 +131,37 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			client.sentMessagesIds.push(tempMessageId);
 
-			await ky
-				.post(`${client.links.api}/channels/${channel?.id}/messages`, {
-					json: { content: content, nonce: tempMessageId }
-				})
-				.json<{ id: string }>()
-				.then((result) => {
-					dispatch(
-						modifyMessage({
-							channelId: rawMessage.channelId,
-							messageId: rawMessage.id,
-							newMessage: normalizeMessage({
-								...rawMessage,
-								mode: MessageModes.Sent,
-								id: result.id
+			if (client.links.api)
+				await ky
+					.post(`${client.links.api}/channels/${channel?.id}/messages`, {
+						json: { content: content, nonce: tempMessageId }
+					})
+					.json<{ id: string }>()
+					.then((result) => {
+						dispatch(
+							modifyMessage({
+								channelId: rawMessage.channelId,
+								messageId: rawMessage.id,
+								newMessage: normalizeMessage({
+									...rawMessage,
+									mode: MessageModes.Sent,
+									id: result.id
+								})
 							})
-						})
-					);
-				})
-				.catch(() => {
-					dispatch(
-						modifyMessage({
-							channelId: rawMessage.channelId,
-							messageId: rawMessage.id,
-							newMessage: normalizeMessage({
-								...rawMessage,
-								mode: MessageModes.Blocked
+						);
+					})
+					.catch(() => {
+						dispatch(
+							modifyMessage({
+								channelId: rawMessage.channelId,
+								messageId: rawMessage.id,
+								newMessage: normalizeMessage({
+									...rawMessage,
+									mode: MessageModes.Blocked
+								})
 							})
-						})
-					);
-				});
+						);
+					});
 		}
 	}
 

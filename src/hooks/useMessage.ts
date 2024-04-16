@@ -4,7 +4,7 @@ import useSWRImmutable from 'swr/immutable';
 
 export default function useChannelMessage(channelId: string, messageId: string) {
 	const { data, isLoading, error } = useSWRImmutable<IRawMessage[]>(
-		`${client.links.api}/channels/${channelId}/messages/${messageId}`
+		client.links.api ? `${client.links.api}/channels/${channelId}/messages/${messageId}` : undefined
 	);
 
 	return { data, isLoading, error };
