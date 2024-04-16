@@ -114,7 +114,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 
 			const rawMessage = {
 				type: MessageTypes.Text,
-				mode: MessageModes.Sending,
+				mode: client.links.api ? MessageModes.Sending : MessageModes.Sent,
 				id: tempMessageId,
 				nonce: tempMessageId,
 				channelId: channel.id,
@@ -122,6 +122,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 				author: client.user.id,
 				timestamp: Date.now()
 			};
+
 			dispatch(
 				addMessage({
 					channelId: channel.id,
@@ -129,38 +130,39 @@ export default function InputArea({ channel }: InputBoxProps) {
 				})
 			);
 
-			client.sentMessagesIds.push(tempMessageId);
+			//client.sentMessagesIds.push(tempMessageId);
 
-			await ky
-				.post(`${client.links.api}/channels/${channel?.id}/messages`, {
-					json: { content: content, nonce: tempMessageId }
-				})
-				.json<{ id: string }>()
-				.then((result) => {
-					dispatch(
-						modifyMessage({
-							channelId: rawMessage.channelId,
-							messageId: rawMessage.id,
-							newMessage: normalizeMessage({
-								...rawMessage,
-								mode: MessageModes.Sent,
-								id: result.id
+			if (client.links.api)
+				await ky
+					.post(`${client.links.api}/channels/${channel?.id}/messages`, {
+						json: { content: content, nonce: tempMessageId }
+					})
+					.json<{ id: string }>()
+					.then((result) => {
+						dispatch(
+							modifyMessage({
+								channelId: rawMessage.channelId,
+								messageId: rawMessage.id,
+								newMessage: normalizeMessage({
+									...rawMessage,
+									mode: MessageModes.Sent,
+									id: result.id
+								})
 							})
-						})
-					);
-				})
-				.catch(() => {
-					dispatch(
-						modifyMessage({
-							channelId: rawMessage.channelId,
-							messageId: rawMessage.id,
-							newMessage: normalizeMessage({
-								...rawMessage,
-								mode: MessageModes.Blocked
+						);
+					})
+					.catch(() => {
+						dispatch(
+							modifyMessage({
+								channelId: rawMessage.channelId,
+								messageId: rawMessage.id,
+								newMessage: normalizeMessage({
+									...rawMessage,
+									mode: MessageModes.Blocked
+								})
 							})
-						})
-					);
-				});
+						);
+					});
 		}
 	}
 

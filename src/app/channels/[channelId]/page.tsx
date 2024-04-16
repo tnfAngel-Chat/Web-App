@@ -7,9 +7,9 @@ import { useDispatch } from 'react-redux';
 
 export default function SelectedChannelPage({
 	params
-}: {
+}: Readonly<{
 	params: { channelId: string };
-}) {
+}>) {
 	const { channelId } = params;
 
 	const dispatch = useDispatch();
