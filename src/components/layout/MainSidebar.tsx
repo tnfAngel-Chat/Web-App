@@ -51,7 +51,11 @@ export function DirectButtonLink({
 						</Center>
 					</Box>
 					<Box>
-						<Text className={isSelected ? 'text-bold' : ''} fontSize='md'>
+						<Text
+							fontWeight='600'
+							color={isSelected ? getColorValue('textColor') : getColorValue('textMutedColor')}
+							fontSize='md'
+						>
 							{label}
 						</Text>
 					</Box>
@@ -103,7 +107,8 @@ export function DirectChannelLink({ channel, isSelected }: Readonly<DirectChanne
 							<OverflownText
 								fontSize='md'
 								tooltipPlacement='top'
-								className={isSelected ? 'text-bold' : ''}
+								fontWeight='600'
+								color={isSelected ? getColorValue('textColor') : getColorValue('textMutedColor')}
 							>
 								{channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name}
 							</OverflownText>
