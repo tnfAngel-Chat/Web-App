@@ -34,7 +34,7 @@ export type InputBoxProps = {
 	channel: Channel;
 };
 
-export default function InputArea({ channel }: InputBoxProps) {
+export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 	const { openFilePicker, filesContent } = useFilePicker({
 		readAs: 'DataURL',
 		limitFilesConfig: { min: 1 }
@@ -393,7 +393,7 @@ export default function InputArea({ channel }: InputBoxProps) {
 							</Flex>
 						</Flex>
 					) : null}
-					<Flex h='100%' w='100%' gap='24px'>
+					<Flex h='100%' w='100%' gap={['12px', '24px']}>
 						<Flex gap='24px' paddingTop='6px'>
 							<IconButton
 								aria-label='Add attachments'
@@ -415,7 +415,6 @@ export default function InputArea({ channel }: InputBoxProps) {
 								onClose={onChatEmojiPickerClose}
 							>
 								<Textarea
-									autoFocus={isMobile}
 									placeholder={`Message @${
 										channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name
 									}`}
