@@ -43,6 +43,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import EmojiParser from '../misc/EmojiParser';
 import OverflownText from '../misc/OverflownText';
+import { isMobile } from 'react-device-detect';
 
 export function EmojisTab({
 	tabEmojis,
@@ -165,8 +166,9 @@ export default function EmojiPicker({
 							<Stack>
 								<Flex gap='10px' alignItems='center'>
 									<Input
-										ref={initialFocusRef}
+										ref={isMobile ? undefined : initialFocusRef}
 										placeholder='Search for emoji'
+										autoFocus={false}
 										focusBorderColor={getColorValue('focusBorderColor')}
 										value={searchInput}
 										onChange={(e) => setSearchInput(e.target.value)}
