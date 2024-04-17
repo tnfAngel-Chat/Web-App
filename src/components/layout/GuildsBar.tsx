@@ -11,10 +11,12 @@ import AddServerModal from '../modals/AddServerModal';
 export function IconLink({
 	name,
 	icon,
+	isSelected,
 	onClick
 }: Readonly<{
 	name: string;
 	icon: any;
+	isSelected?: boolean;
 	onClick: any;
 }>) {
 	const { getColorValue } = useThemeColors();
@@ -35,10 +37,14 @@ export function IconLink({
 					w='100%'
 					h='100%'
 					borderRadius='50%'
-					_hover={{
-						bg: getColorValue('sidebarButtonHover')
-					}}
 					bg={getColorValue('iconLinkBackground')}
+					outline={`2px solid ${isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}`}
+					_hover={{
+						bg: getColorValue('sidebarButtonHover'),
+						outlineColor: isSelected
+							? getColorValue('sidebarButtonActive')
+							: getColorValue('sidebarButtonHover')
+					}}
 				>
 					{icon}
 				</Center>
@@ -75,7 +81,7 @@ export function GuildLink({
 					h='100%'
 					w='100%'
 					borderRadius='50%'
-					outline={`5px solid ${isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}`}
+					outline={`4px solid ${isSelected ? getColorValue('sidebarButtonActive') : 'transparent'}`}
 					_hover={{
 						outlineColor: isSelected
 							? getColorValue('sidebarButtonActive')
@@ -135,6 +141,7 @@ export default function GuildsBar() {
 								: '/friends'
 						)
 					}
+					isSelected={selectedState.activePage === 'direct'}
 				/>
 				{guilds.map((guild) => (
 					<GuildLink
