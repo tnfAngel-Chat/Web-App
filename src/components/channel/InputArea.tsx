@@ -458,7 +458,11 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 									size='sm'
 									fontSize='24px'
 									icon={<MdSend />}
-									onClick={() => handleSend(inputContent, inputAttachments)}
+									onMouseDown={(e) => {
+										e.preventDefault();
+										e.stopPropagation();
+										handleSend(inputContent, inputAttachments);
+									}}
 								/>
 							</Flex>
 						)}
