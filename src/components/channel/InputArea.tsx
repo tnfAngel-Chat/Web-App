@@ -430,6 +430,7 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 									minH='45px'
 									size='md'
 									resize='none'
+									textOverflow='ellipsis'
 									focusBorderColor={getColorValue('focusBorderColor')}
 									onKeyDown={handleKeyDown}
 									onChange={handleChange}
