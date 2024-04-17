@@ -45,7 +45,8 @@ export function GuildChannelLink({ guild, channel, isSelected }: Readonly<GuildC
 							<OverflownText
 								fontSize='md'
 								tooltipPlacement='top'
-								className={isSelected ? 'text-bold' : ''}
+								fontWeight='600'
+								color={isSelected ? getColorValue('textColor') : getColorValue('textMutedColor')}
 							>
 								{channel.name}
 							</OverflownText>
