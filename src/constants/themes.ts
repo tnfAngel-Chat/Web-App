@@ -4,6 +4,7 @@ export interface ThemeColors {
 	sidebarButtonActive: string;
 	ternaryBackground: string;
 	sidebarButtonHover: string;
+	inputBackground: string;
 	focusBorderColor: string;
 	modalBackground: string;
 	sidebarBackground: string;
@@ -42,6 +43,7 @@ export const themes: Theme[] = [
 			modalBackground: '#2E2E2E',
 			primaryBackground: '#333333',
 			secondaryBackground: '#3F3F3F',
+			inputBackground: '#474747',
 			focusBorderColor: '#FFFFFF21',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
@@ -71,6 +73,7 @@ export const themes: Theme[] = [
 			modalBackground: '#F1F1F1',
 			primaryBackground: '#E0E0E0',
 			secondaryBackground: '#EBEBEB',
+			inputBackground: '#FFFFFF',
 			focusBorderColor: '#0000005E',
 			sidebarButtonHover: '#00000010',
 			sidebarButtonActive: '#00000020',
@@ -101,6 +104,7 @@ export const themes: Theme[] = [
 			primaryBackground: '#000000',
 			secondaryBackground: '#181818',
 			focusBorderColor: '#3B3B3B',
+			inputBackground: '#080808',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
 			messageHover: '#2E2E2E20',
@@ -130,6 +134,7 @@ export const themes: Theme[] = [
 			modalBackground: '#110C18',
 			secondaryBackground: '#191120',
 			focusBorderColor: '#392947',
+			inputBackground: '#1F1627',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
@@ -158,6 +163,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#00000015',
 			ternaryBackground: '#0000009C',
 			focusBorderColor: '#FFFFFF2A',
+			inputBackground: '#FFFFFF10',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
@@ -187,6 +193,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#0000001E',
 			ternaryBackground: '#0000009A',
 			focusBorderColor: '#FFFFFF2A',
+			inputBackground: '#FFFFFF10',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
@@ -216,6 +223,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#00000015',
 			ternaryBackground: '#0000009C',
 			focusBorderColor: '#FFFFFF2A',
+			inputBackground: '#FFFFFF10',
 			sidebarBackground: '#0000008F',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
@@ -245,6 +253,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#0000003A',
 			ternaryBackground: '#00000098',
 			focusBorderColor: '#FFFFFF2A',
+			inputBackground: '#FFFFFF10',
 			sidebarBackground: '#0000007A',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
@@ -274,6 +283,7 @@ export const themes: Theme[] = [
 			secondaryBackground: '#0000003A',
 			ternaryBackground: '#00000098',
 			focusBorderColor: '#FFFFFF2A',
+			inputBackground: '#FFFFFF10',
 			sidebarBackground: '#0000007A',
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
