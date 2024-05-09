@@ -49,7 +49,7 @@ export default function UserProfileModal({
 							</Center>
 							<Center>
 								<Box textAlign='left'>
-									<OverflownText fontSize='xl' tooltipPlacement='top'>
+									<OverflownText fontSize='xl' tooltipPlacement='top' fontWeight='bold'>
 										@{user.username}
 									</OverflownText>
 									{user.presence && (
