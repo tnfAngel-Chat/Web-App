@@ -208,7 +208,7 @@ export default function MainSidebar({
 			<Box h='100%' w='100%' bg={getColorValue('sidebarBackground')} overflow='auto' padding='10px'>
 				<MainSidebarContent selectedChannelId={selectedChannelId} />
 			</Box>
-			<Box minH='75px' bg={getColorValue('ternaryBackground')}>
+			<Box bg={getColorValue('ternaryBackground')}>
 				<ProfileBox />
 			</Box>
 		</Stack>
