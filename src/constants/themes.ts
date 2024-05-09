@@ -37,7 +37,7 @@ export const themes: Theme[] = [
 		baseTheme: 'dark',
 		colors: {
 			appBackground: '#333333',
-			ternaryBackground: '#292929',
+			ternaryBackground: '#272727',
 			sidebarBackground: '#2E2E2E',
 			modalBackground: '#2E2E2E',
 			primaryBackground: '#333333',
@@ -46,7 +46,7 @@ export const themes: Theme[] = [
 			sidebarButtonHover: '#ffffff10',
 			sidebarButtonActive: '#ffffff20',
 			messageHover: '#00000020',
-			guildsBackground: '#252525',
+			guildsBackground: '#232323',
 			separatorColor: '#ffffff20',
 			tooltipBackground: '#181818',
 			iconLinkBackground: '#2E2E2E',
