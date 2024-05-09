@@ -35,7 +35,7 @@ export default function UserProfileModal({
 	return (
 		<Modal isOpen={isOpen} size='lg' onClose={onClose} isCentered>
 			<ModalOverlay backdropFilter='blur(5px)' />
-			<ModalContent color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
+			<ModalContent m='5px' color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
 				<ModalBody padding='15px'>
 					<Stack h='100%'>
 						<Flex padding='0px 0px 20px 0px' h='100%' flex='1' gap='15px' alignItems='center'>

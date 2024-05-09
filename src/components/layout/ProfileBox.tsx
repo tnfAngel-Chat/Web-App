@@ -11,7 +11,7 @@ export default function ProfileBox() {
 	const user = client.user;
 
 	return (
-		<Box w='100%' h='100%' maxW='100%' maxH='100%' padding='10px 20px 10px 20px'>
+		<Box w='100%' h='100%' maxW='100%' maxH='100%' py={['10px', '15px']} px={['15px', '20px']}>
 			<Flex minW='0px' h='100%' gap='5px'>
 				<Flex minW='0px' gap='12px' alignItems='left'>
 					<Center>
@@ -23,10 +23,10 @@ export default function ProfileBox() {
 						/>
 					</Center>
 					<Center w='100%' minW='0px'>
-						<Box textAlign='left' w='100%' maxW='100%' minW='0px'>
+						<Flex textAlign='left' w='100%' maxW='100%' minW='0px' direction='column'>
 							<OverflownText fontSize='md'>{user.username}</OverflownText>
-							{user.presence ? <OverflownText fontSize='sm'>{user.presence}</OverflownText> : null}
-						</Box>
+							{user.presence ? <OverflownText fontSize='sm' >{user.presence}</OverflownText> : null}
+						</Flex>
 					</Center>
 				</Flex>
 				<Spacer />

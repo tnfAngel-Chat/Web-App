@@ -102,7 +102,7 @@ export default function GuildSidebar({ guild }: { guild: IGuild }) {
 			<Box h='100%' w='100%' bg={getColorValue('sidebarBackground')} overflow='auto' padding='10px'>
 				<GuildSidebarContent guild={guild} />
 			</Box>
-			<Box minH='75px' bg={getColorValue('ternaryBackground')}>
+			<Box bg={getColorValue('ternaryBackground')}>
 				<ProfileBox />
 			</Box>
 		</Stack>
