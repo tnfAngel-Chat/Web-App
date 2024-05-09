@@ -14,7 +14,7 @@ export default function Friends() {
 
 	return (
 		<Center ref={mainRef} h='100%' className='adjustScreen'>
-			<Stack spacing='24px'>
+			<Stack spacing='24px' p='10px'>
 				<Heading as='h1'>Friends</Heading>
 				<Text>Oh, you don't have any friends right now...</Text>
 			</Stack>
