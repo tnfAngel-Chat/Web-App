@@ -10,67 +10,55 @@ import OverflownText from '../misc/OverflownText';
 export default function FriendsTopBarContent({
 	friendsFlexRef,
 	friendsRef
-}: {
+}: Readonly<{
 	friendsFlexRef: any;
 	friendsRef: any;
-}) {
+}>) {
 	const { getColorValue } = useThemeColors();
 	const { isMobile } = useDevice();
 	const [mobileShowSidebar, setMobileShowSidebar] = useState(true);
 
 	return (
 		<>
-			<Flex gap='8px' h='100%' minW='30px' maxH='100%'>
+			<Flex gap='8px' h='100%' minW='30px' maxH='100%' alignItems='center'>
 				{isMobile && (
-					<Center>
-						<IconButton
-							aria-label='Show menu'
-							bg='transparent'
-							size='sm'
-							fontSize='24px'
-							icon={<MdMenu />}
-							onClick={() => {
-								if (mobileShowSidebar) {
-									friendsFlexRef.current?.scrollIntoView({
-										behavior: 'smooth'
-									});
-									setMobileShowSidebar(false);
-								} else {
-									friendsRef.current?.scrollIntoView({
-										behavior: 'smooth'
-									});
-									setMobileShowSidebar(true);
-								}
-							}}
-						/>
-					</Center>
-				)}
-				<Center>
-					<Icon color={getColorValue('textMutedColor')} as={MdPeople} boxSize='24px' />
-				</Center>
-				<Center minW='0px'>
-					<OverflownText fontSize='lg'>Friends</OverflownText>
-				</Center>
-				<Center minW='0px'>
-					<OverflownText fontSize='sm' color={getColorValue('textMutedColor')}>
-						20
-					</OverflownText>
-				</Center>
-			</Flex>
-			<Spacer />
-			<Flex gap='24px'>
-				<Center>
 					<IconButton
-						aria-label='Search Friend'
+						aria-label='Show menu'
 						bg='transparent'
 						size='sm'
 						fontSize='24px'
-						icon={<MdSearch />}
+						icon={<MdMenu />}
+						onClick={() => {
+							if (mobileShowSidebar) {
+								friendsFlexRef.current?.scrollIntoView({
+									behavior: 'smooth'
+								});
+								setMobileShowSidebar(false);
+							} else {
+								friendsRef.current?.scrollIntoView({
+									behavior: 'smooth'
+								});
+								setMobileShowSidebar(true);
+							}
+						}}
 					/>
-				</Center>
-				<Center>
-					<IconButton aria-label='Add Friend' bg='transparent' size='sm' fontSize='24px' icon={<MdAdd />} />
-				</Center>
+				)}
+				<Flex gap='3px' alignItems='center' minW='0px'>
+					<Icon color={getColorValue('textMutedColor')} as={MdPeople} boxSize='24px' />
+
+					<OverflownText fontSize='lg' fontWeight='600'>
+						Friends
+					</OverflownText>
+				</Flex>
+
+				<OverflownText fontSize='sm' color={getColorValue('textMutedColor')}>
+					20
+				</OverflownText>
+			</Flex>
+			<Spacer />
+			<Flex gap={['5px', '10px', '24px']} alignItems='center'>
+				<IconButton aria-label='Search Friend' bg='transparent' size='sm' fontSize='24px' icon={<MdSearch />} />
+				<IconButton aria-label='Add Friend' bg='transparent' size='sm' fontSize='24px' icon={<MdAdd />} />
 			</Flex>
 		</>
 	);

@@ -6,7 +6,7 @@ import useThemeColors from '@/hooks/useThemeColors';
 import { toggleChannelMembers } from '@/store/slices/collapsiblesSlice';
 import { ChannelTypes } from '@/types/enums/ChannelTypes';
 import type { Channel } from '@/types/interfaces/Channel';
-import {  Flex, Icon, IconButton, Spacer, useDisclosure } from '@chakra-ui/react';
+import { Flex, Icon, IconButton, Spacer, useDisclosure } from '@chakra-ui/react';
 import { useState } from 'react';
 import { MdAlternateEmail, MdMenu, MdNumbers, MdPeople, MdPhone, MdSearch, MdVideocam } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
@@ -60,23 +60,32 @@ export default function ChannelTopBarContent({
 						}}
 					/>
 				)}
-				<Icon
-					color={getColorValue('textMutedColor')}
-					as={channel.type === ChannelTypes.Text ? MdNumbers : MdAlternateEmail}
-					boxSize='24px'
-				/>
+				<Flex gap={['3px', '5px', '10px']} alignItems='center' minW='0px'>
+					<Icon
+						color={getColorValue('textMutedColor')}
+						as={
+							channel.type === ChannelTypes.Text
+								? MdNumbers
+								: channel.type === ChannelTypes.Group
+									? MdPeople
+									: MdAlternateEmail
+						}
+						boxSize='24px'
+					/>
+					<OverflownText
+						fontSize='lg'
+						fontWeight='600'
+						_hover={{
+							cursor: channel.type === ChannelTypes.DirectMessage ? 'pointer' : undefined
+						}}
+						onClick={channel.type === ChannelTypes.DirectMessage ? onOpen : undefined}
+					>
+						{channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name}
+					</OverflownText>
+				</Flex>
 				{channel.type === ChannelTypes.DirectMessage && (
 					<UserProfileModal isOpen={isOpen} onClose={onClose} user={recipient} />
 				)}
-				<OverflownText
-					fontSize='lg'
-					_hover={{
-						cursor: channel.type === ChannelTypes.DirectMessage ? 'pointer' : undefined
-					}}
-					onClick={channel.type === ChannelTypes.DirectMessage ? onOpen : undefined}
-				>
-					{channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name}
-				</OverflownText>
 				{channel.type === ChannelTypes.DirectMessage && (
 					<>
 						<StatusIndicator status={recipient.status} size='13' positioned={false} />
