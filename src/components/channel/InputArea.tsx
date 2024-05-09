@@ -393,7 +393,7 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 							</Flex>
 						</Flex>
 					) : null}
-					<Flex h='100%' w='100%' gap={['12px', '24px']}>
+					<Flex h='100%' w='100%' gap={['8px', '12px', '24px']}>
 						<Flex gap='24px' paddingTop='6px'>
 							<IconButton
 								aria-label='Add attachments'

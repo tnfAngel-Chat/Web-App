@@ -47,7 +47,7 @@ export default function GuildScreen() {
 				spacing='10px'
 				w='100%'
 			>
-				<Center w='100%' h='100%'>
+				<Center w='100%' h='100%' p='10px'>
 					<Stack>
 						<Heading as='h1' size='lg'>
 							Welcome to {guild.name}

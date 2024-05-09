@@ -35,6 +35,7 @@ export default function IndexScreen() {
 				padding='20px'
 				borderRadius='10px'
 				alignItems='center'
+				m='5px'
 				bg={getColorValue('sidebarBackground')}
 			>
 				<Alert status='error' borderRadius='5px'>

@@ -92,7 +92,7 @@ export default function ChannelTopBarContent({ channel, userSidebarRef, channelF
 				) : null}
 			</Flex>
 			<Spacer />
-			<Flex gap={['10px', '24px']}>
+			<Flex gap={['5px', '10px', '24px']}>
 				{(channel.type === ChannelTypes.DirectMessage || channel.type === ChannelTypes.Group) && (
 					<>
 						<Center>
