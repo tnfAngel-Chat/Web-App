@@ -13,7 +13,6 @@ import {
 	ModalHeader,
 	ModalOverlay,
 	Stack,
-	Switch,
 	Text
 } from '@chakra-ui/react';
 import { MdKeyboardArrowDown } from 'react-icons/md';

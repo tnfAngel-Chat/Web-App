@@ -102,27 +102,29 @@ export function DirectChannelLink({ channel, isSelected }: Readonly<DirectChanne
 							}
 						/>
 					</Center>
-					<Flex minW='0px' alignItems='start' direction='column'>
+					<Flex
+						minW='0px'
+						alignItems='start'
+						direction='column'
+						color={isSelected ? getColorValue('textColor') : getColorValue('textMutedColor')}
+					>
 						<Box w='100%'>
-							<OverflownText
-								fontSize='md'
-								tooltipPlacement='top'
-								fontWeight='600'
-								color={isSelected ? getColorValue('textColor') : getColorValue('textMutedColor')}
-							>
+							<OverflownText fontSize='md' tooltipPlacement='top' fontWeight='600'>
 								{channel.type === ChannelTypes.DirectMessage ? recipient.username : channel.name}
 							</OverflownText>
 						</Box>
 
-						{channel.type === ChannelTypes.DirectMessage ? (
-							recipient.presence ? (
-								<Text fontSize='sm' noOfLines={1}>
-									{recipient.presence}
-								</Text>
-							) : null
-						) : channel.type === ChannelTypes.Group ? (
-							<Text fontSize='sm'>{channel.recipients.length} Members</Text>
-						) : null}
+						{channel.type === ChannelTypes.DirectMessage
+							? recipient.presence && (
+									<Text fontSize='sm' noOfLines={1}>
+										{recipient.presence}
+									</Text>
+								)
+							: channel.type === ChannelTypes.Group && (
+									<Text fontSize='sm' noOfLines={1}>
+										{channel.recipients.length} Members
+									</Text>
+								)}
 					</Flex>
 				</Flex>
 				{isHovering ? (

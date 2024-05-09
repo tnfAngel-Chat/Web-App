@@ -52,11 +52,15 @@ export default function UserProfileModal({
 									<OverflownText fontSize='xl' tooltipPlacement='top'>
 										@{user.username}
 									</OverflownText>
-									{user.presence ? (
-										<OverflownText fontSize='sm' tooltipPlacement='top'>
+									{user.presence && (
+										<OverflownText
+											fontSize='sm'
+											color={getColorValue('textMutedColor')}
+											tooltipPlacement='top'
+										>
 											{user.presence}
 										</OverflownText>
-									) : null}
+									)}
 								</Box>
 							</Center>
 						</Flex>
