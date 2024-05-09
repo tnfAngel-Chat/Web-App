@@ -350,7 +350,7 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 	];
 
 	return (
-		<Box bg={getColorValue('secondaryBackground')} w='100%' padding='15px 20px 15px 20px'>
+		<Box bg={getColorValue('secondaryBackground')} w='100%' py={['10px', '15px']} px={['15px', '20px']}>
 			<Box overflow='auto' h='100%' maxH='60vh'>
 				<Flex direction='column' overflow='auto' gap='20px' w='100%'>
 					{inputAttachments.length ? (

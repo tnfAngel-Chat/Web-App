@@ -21,7 +21,7 @@ export type UserTopBarProps = {
 	channelRef: any;
 };
 
-export default function ChannelTopBarContent({ channel, userSidebarRef, channelFlexRef, channelRef }: UserTopBarProps) {
+export default function ChannelTopBarContent({ channel, userSidebarRef, channelFlexRef, channelRef }: Readonly<UserTopBarProps>) {
 	const dispatch = useDispatch();
 	const { getColorValue } = useThemeColors();
 	const recipient = client.users.resolve(channel.type === ChannelTypes.DirectMessage ? channel.recipient : '');
