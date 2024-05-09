@@ -46,11 +46,16 @@ export function UserListItem({ user, onClick }: Readonly<UserListItemProps>) {
 						<OverflownText fontSize='md' tooltipPlacement='top'>
 							{user.username}
 						</OverflownText>
-						{user.presence ? (
-							<OverflownText minW='0px' fontSize='sm' tooltipPlacement='top'>
+						{user.presence && (
+							<OverflownText
+								minW='0px'
+								color={getColorValue('textMutedColor')}
+								fontSize='sm'
+								tooltipPlacement='top'
+							>
 								{user.presence}
 							</OverflownText>
-						) : null}
+						)}
 					</Box>
 				</Center>
 			</Flex>
