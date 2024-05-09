@@ -46,6 +46,7 @@ export default function GuildScreen() {
 				h='100%'
 				spacing='10px'
 				w='100%'
+				className='adjustScreen'
 			>
 				<Center w='100%' h='100%' p='10px'>
 					<Stack>

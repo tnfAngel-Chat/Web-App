@@ -16,7 +16,7 @@ export default function AddServerModal({ isOpen, onClose }: any) {
 	return (
 		<Modal isOpen={isOpen} size='lg' isCentered onClose={onClose}>
 			<ModalOverlay backdropFilter='blur(5px)' />
-			<ModalContent color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
+			<ModalContent m='5px' color={getColorValue('textColor')} bg={getColorValue('modalBackground')}>
 				<ModalHeader>Add a server</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>

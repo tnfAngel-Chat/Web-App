@@ -93,11 +93,12 @@ export default function GuildSidebar({ guild }: { guild: IGuild }) {
 			<Flex
 				minH='42px'
 				maxH='42px'
-				padding='5px 20px 5px 20px'
+				py='10px'
+				px='20px'
 				bg={getColorValue('ternaryBackground')}
 				alignItems='center'
 			>
-				<OverflownText>{guild.name}</OverflownText>
+				<OverflownText fontWeight='bold'>{guild.name}</OverflownText>
 			</Flex>
 			<Box h='100%' w='100%' bg={getColorValue('sidebarBackground')} overflow='auto' padding='10px'>
 				<GuildSidebarContent guild={guild} />
