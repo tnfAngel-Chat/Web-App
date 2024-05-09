@@ -39,6 +39,7 @@ export default function AppWrapper({ children }: any) {
 								scrollSnapType='x mandatory'
 								scrollSnapStop='always'
 								scrollBehavior='smooth'
+								style={{ scrollbarWidth: 'none' }}
 								overflow='auto'
 							>
 								{children}

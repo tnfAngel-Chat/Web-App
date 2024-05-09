@@ -43,6 +43,8 @@ export default function StatusIndicator({ status, size, positioned = true, toolt
 			<Box
 				w={`${size}px`}
 				h={`${size}px`}
+				minW={`${size}px`}
+				minH={`${size}px`}
 				position='relative'
 				borderWidth='2px'
 				borderRadius='50%'

@@ -9,7 +9,7 @@ import { Box, Center, Flex, Icon, Stack } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { MdNumbers } from 'react-icons/md';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import OverflownText from '../misc/OverflownText';
 import ProfileBox from './ProfileBox';
 
@@ -98,7 +98,7 @@ export default function GuildSidebar({ guild }: { guild: IGuild }) {
 				bg={getColorValue('ternaryBackground')}
 				alignItems='center'
 			>
-				<OverflownText fontWeight='bold'>{guild.name}</OverflownText>
+				<OverflownText fontWeight='600'>{guild.name}</OverflownText>
 			</Flex>
 			<Box h='100%' w='100%' bg={getColorValue('sidebarBackground')} overflow='auto' padding='10px'>
 				<GuildSidebarContent guild={guild} />

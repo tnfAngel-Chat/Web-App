@@ -26,8 +26,6 @@ export default function GuildScreen() {
 	const guild = guildsState.guilds.find((guildState) => guildState.id === selectedState.selectedGuild);
 
 	if (!guild) {
-		console.log('Sending to friends (no guild) GuildScreen');
-
 		router.prefetch('/friends');
 		router.push('/friends');
 

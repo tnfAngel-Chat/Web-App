@@ -133,10 +133,14 @@ export default function Channel({ channel }: Readonly<MessagesBoxProps>) {
 	}
 
 	useEffect(() => {
-		mainRef.current?.scrollIntoView({
-			behavior: 'smooth'
-		});
-	}, []);
+		setTimeout(
+			() =>
+				mainRef.current?.scrollIntoView({
+					behavior: 'smooth'
+				}),
+			50
+		);
+	}, [channel.id]);
 
 	return (
 		<Stack w='100%' h='100%' ref={mainRef} wordBreak='break-all' className='adjustScreen'>
@@ -162,9 +166,9 @@ export default function Channel({ channel }: Readonly<MessagesBoxProps>) {
 
 						return (
 							<>
-								{isHeadless ? null : <MessageGroupSpacer />}
+								{!isHeadless && <MessageGroupSpacer />}
 								{MessageElement}
-								{i === stateMessages.length - 1 ? <MessageGroupSpacer /> : null}
+								{i === stateMessages.length - 1 && <MessageGroupSpacer />}
 							</>
 						);
 					})}

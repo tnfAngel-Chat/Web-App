@@ -66,10 +66,10 @@ export default function Message({ message, headless, onShowAuthor, ...props }: M
 					</Box>
 				)}
 				<Box textAlign='left'>
-					{headless ? null : (
+					{!headless && (
 						<Flex gap='6px' alignItems='center'>
 							<Text
-								className='text-bold'
+								fontWeight='600'
 								fontSize='md'
 								onClick={onShowAuthor}
 								_hover={{

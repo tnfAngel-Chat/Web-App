@@ -12,10 +12,6 @@ body {
 	user-select: none;
 }
 
-.text-bold {
-	font-weight: 600;
-}
-
 
 .adjustScreen {
 	min-width: 200px;
