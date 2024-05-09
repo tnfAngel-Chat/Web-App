@@ -431,7 +431,15 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 									size='md'
 									resize='none'
 									textOverflow='ellipsis'
-									focusBorderColor={getColorValue('focusBorderColor')}
+									_hover={{
+										background: getColorValue('inputBackground')
+									}}
+									_focus={{
+										background: getColorValue('inputBackground')
+									}}
+									variant='filled'
+									background={getColorValue('inputBackground')}
+									focusBorderColor='transparent'
 									onKeyDown={handleKeyDown}
 									onChange={handleChange}
 									value={inputContent}
