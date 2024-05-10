@@ -25,7 +25,7 @@ export default function LoadingScreen() {
 						animate={{
 							width: '100%',
 							opacity: [1, 1, 1, 0],
-							transition: { repeat: Infinity, duration: 1 }
+							transition: { repeat: Infinity, duration: 0.6, repeatDelay: 0.8 }
 						}}
 					/>
 				</Flex>
