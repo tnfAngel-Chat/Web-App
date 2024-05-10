@@ -19,10 +19,13 @@ export default function LoadingScreen() {
 						background='#FF0067'
 						borderRadius='2px'
 						initial={{
-							width: '0%'
+							width: '0%',
+							opacity: 1
 						}}
 						animate={{
-							width: '100%'
+							width: '100%',
+							opacity: [1, 1, 1, 0],
+							transition: { repeat: Infinity, duration: 1 }
 						}}
 					/>
 				</Flex>
