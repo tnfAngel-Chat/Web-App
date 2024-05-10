@@ -2,11 +2,12 @@
 
 import AppWrapper from '@/components/general/AppWrapper';
 import { CacheProvider } from '@chakra-ui/next-js';
-import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react';
+import { Box, ChakraProvider, ColorModeScript, Flex, extendTheme } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
 import { SWRConfig } from 'swr';
 import { store } from '../store';
 import '../styles/global.css';
+import ConnectionStatus from '@/components/general/ConnectionStatus';
 
 const config = {
 	initialColorMode: 'dark',
@@ -38,7 +39,14 @@ export default function RootLayout({
 									fetcher: (resource, init) => fetch(resource, init).then((res) => res.json())
 								}}
 							>
-								<AppWrapper>{children}</AppWrapper>
+								<AppWrapper>
+									<Flex h='100%' w='100%' direction='column'>
+										<ConnectionStatus />
+										<Box w='100%' h='100%' zIndex={1}>
+											{children}
+										</Box>
+									</Flex>
+								</AppWrapper>
 							</SWRConfig>
 						</Provider>
 					</CacheProvider>

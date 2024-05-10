@@ -7,6 +7,7 @@ import guildsSlice from './slices/guildsSlice';
 import recentEmojisSlice from './slices/recentEmojisSlice';
 import selectionsSlice from './slices/selectionsSlice';
 import themesSlice from './slices/themeSlice';
+import connectionSlice from './slices/connectionSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
 		themes: themesSlice,
 		recentEmojis: recentEmojisSlice,
 		collapsibles: collapsiblesSlice,
+		connection: connectionSlice,
 		guilds: guildsSlice,
 		channels: channelsSlice,
 		selections: selectionsSlice

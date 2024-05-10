@@ -69,7 +69,7 @@ export function StatusSection({ label }: Readonly<{ label: string }>) {
 	return (
 		<Flex gap='10px'>
 			<Center w='40%'>
-				<Text fontSize='11px' fontWeight='normal' color={getColorValue('textMutedColor')}>
+				<Text fontSize='11px' fontWeight='600' color={getColorValue('textMutedColor')}>
 					{label}
 				</Text>
 			</Center>
@@ -84,7 +84,7 @@ export type UsersSidebarContentProps = {
 	users: IUser[];
 };
 
-export function UsersSidebarContent({ users }: UsersSidebarContentProps) {
+export function UsersSidebarContent({ users }: Readonly<UsersSidebarContentProps>) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [clickedUser, setClickedUser] = useState<IUser>();
 	const onlineUsers: IUser[] = [];
@@ -138,7 +138,7 @@ export type UsersSidebarProps = {
 	userSidebarRef?: any;
 };
 
-export default function UsersSidebar({ users, userSidebarRef }: UsersSidebarProps) {
+export default function UsersSidebar({ users, userSidebarRef }: Readonly<UsersSidebarProps>) {
 	const { getColorValue } = useThemeColors();
 
 	return (

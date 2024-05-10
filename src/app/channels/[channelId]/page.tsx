@@ -2,7 +2,6 @@
 
 import ChannelScreen from '@/components/screens/ChannelScreen';
 import { setActivePage, setSelectedChannel } from '@/store/slices/selectionsSlice';
-import { Flex } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
 
 export default function SelectedChannelPage({
@@ -17,9 +16,5 @@ export default function SelectedChannelPage({
 	dispatch(setSelectedChannel({ channelId }));
 	dispatch(setActivePage('direct'));
 
-	return (
-		<Flex h='100%' w='100%'>
-			<ChannelScreen />
-		</Flex>
-	);
+	return <ChannelScreen />;
 }

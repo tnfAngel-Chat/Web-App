@@ -41,8 +41,6 @@ export default function ChannelScreen() {
 		router.prefetch('/friends');
 		router.push('/friends');
 
-		console.log('Going to friends...');
-
 		return <ChannelLoadingScreen />;
 	}
 

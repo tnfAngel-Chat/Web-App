@@ -37,7 +37,7 @@ export const themes: Theme[] = [
 		name: 'Dark',
 		baseTheme: 'dark',
 		colors: {
-			appBackground: '#333333',
+			appBackground: '#222222',
 			ternaryBackground: '#272727',
 			sidebarBackground: '#2E2E2E',
 			modalBackground: '#2E2E2E',
