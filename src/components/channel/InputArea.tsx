@@ -130,9 +130,9 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 				})
 			);
 
-			//client.sentMessagesIds.push(tempMessageId);
+			if (client.links.api) {
+				client.sentMessagesIds.push(tempMessageId);
 
-			if (client.links.api)
 				await ky
 					.post(`${client.links.api}/channels/${channel?.id}/messages`, {
 						json: { content: content, nonce: tempMessageId }
@@ -163,6 +163,7 @@ export default function InputArea({ channel }: Readonly<InputBoxProps>) {
 							})
 						);
 					});
+			}
 		}
 	}
 
