@@ -40,7 +40,7 @@ export default function RootLayout({
 								}}
 							>
 								<AppWrapper>
-									<Flex h='100%' w='100%' direction='column'>
+									<Flex h='100%' w='100%' direction='column' gap='0px'>
 										<ConnectionStatus />
 										<Box w='100%' h='100%' zIndex={1}>
 											{children}

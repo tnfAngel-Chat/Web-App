@@ -49,15 +49,24 @@ export default function ConnectionStatus() {
 				<Center
 					as={motion.div}
 					w='100%'
-					bg={getColorValue('ternaryBackground')}
 					initial={{ height: '0px' }}
 					animate={{ height: '32px', transition: { delay: 2 } }}
 					exit={{ height: '0px' }}
+					p='0px'
 				>
-					<Flex alignItems='center' gap='10px' zIndex={0}>
-						{statusSignals[statusIndex]}
-						<Text fontWeight='bold'>Connecting...</Text>
-					</Flex>
+					<Center
+						w='100%'
+						h='32px'
+						top='0%'
+						left='0%'
+						bg={getColorValue('ternaryBackground')}
+						position='fixed'
+					>
+						<Flex alignItems='center' gap='10px' zIndex={0}>
+							{statusSignals[statusIndex]}
+							<Text fontWeight='bold'>Connecting...</Text>
+						</Flex>
+					</Center>
 				</Center>
 			)}
 		</AnimatePresence>
