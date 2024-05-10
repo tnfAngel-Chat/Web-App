@@ -1,3 +1,5 @@
+// FIXME: ENV Does not work on docker
+
 export class ClientLinks {
 	api = process.env['API_URL'] ?? ('https://chat-backend.tnfangel.com/api' as string);
 	cdn = process.env['CDN_URL'];
