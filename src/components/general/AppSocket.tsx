@@ -81,6 +81,7 @@ export default function AppSocket({ children, onConnectionReady }: any) {
 			dispatch(setChannels(channels.map((channel) => normalizeChannel(channel))));
 
 			setTheme(preferences.theme);
+			
 			onConnectionReady();
 		}
 
