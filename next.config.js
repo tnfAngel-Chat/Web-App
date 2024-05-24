@@ -8,12 +8,7 @@ const nextConfig = {
 	images: {
 		remotePatterns: [
 			{
-				protocol: 'https',
-				hostname: '*.tnfangel.xyz',
-				port: ''
-			},
-			{
-				protocol: 'https',
+				protocol: 'https', // FIXME: Use own CDN & Proxy when available
 				hostname: '*',
 				port: ''
 			}
