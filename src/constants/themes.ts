@@ -187,7 +187,7 @@ export const themes: Theme[] = [
 		name: 'Mountains',
 		baseTheme: 'dark',
 		colors: {
-			appBackground: 'url(/mountains.svg)',
+			appBackground: 'url(/themes/mountains.svg)',
 			modalBackground: '#0000007F',
 			primaryBackground: '#0000008A',
 			secondaryBackground: '#0000001E',
@@ -217,7 +217,7 @@ export const themes: Theme[] = [
 		name: 'Sky',
 		baseTheme: 'dark',
 		colors: {
-			appBackground: 'url(/sky.svg)',
+			appBackground: 'url(/themes/sky.svg)',
 			modalBackground: '#0000007F',
 			primaryBackground: '#0000008A',
 			secondaryBackground: '#00000015',
@@ -247,7 +247,7 @@ export const themes: Theme[] = [
 		name: 'Neon',
 		baseTheme: 'dark',
 		colors: {
-			appBackground: 'url(/neon.jpg)',
+			appBackground: 'url(/themes/neon.jpg)',
 			modalBackground: '#0000007F',
 			primaryBackground: '#00000063',
 			secondaryBackground: '#0000003A',
@@ -277,7 +277,7 @@ export const themes: Theme[] = [
 		name: 'Wormhole',
 		baseTheme: 'dark',
 		colors: {
-			appBackground: 'url(/wh.webp)',
+			appBackground: 'url(/themes/wh.webp)',
 			modalBackground: '#0000007F',
 			primaryBackground: '#00000063',
 			secondaryBackground: '#0000003A',
